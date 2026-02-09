@@ -1,0 +1,763 @@
+fileFormatVersion: 2
+guid: eb68c9d7789e9b147b2f1a34b1776509
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 379927451179551905
+    second: '!battle_potted_plant 1_0'
+  - first:
+      213: -6043196682780005958
+    second: '!battle_potted_plant 1_1'
+  - first:
+      213: 2304538951780149905
+    second: '!battle_potted_plant 1_2'
+  - first:
+      213: 7807281115227505749
+    second: '!battle_potted_plant 1_3'
+  - first:
+      213: 1716790604857143548
+    second: '!battle_potted_plant 1_4'
+  - first:
+      213: 5716627198642413874
+    second: '!battle_potted_plant 1_5'
+  - first:
+      213: -7009827127440400162
+    second: '!battle_potted_plant 1_6'
+  - first:
+      213: 1909216873618466822
+    second: '!battle_potted_plant 1_7'
+  - first:
+      213: -5840196105710362708
+    second: '!battle_potted_plant 1_8'
+  - first:
+      213: -8642368239192649815
+    second: '!battle_potted_plant 1_9'
+  - first:
+      213: -929675860357108948
+    second: '!battle_potted_plant 1_10'
+  - first:
+      213: -3922175119558417110
+    second: '!battle_potted_plant 1_11'
+  - first:
+      213: -4508257096641111786
+    second: '!battle_potted_plant 1_12'
+  - first:
+      213: 3574353049453172982
+    second: '!battle_potted_plant 1_13'
+  - first:
+      213: -8147892985646122917
+    second: '!battle_potted_plant 1_14'
+  - first:
+      213: 7316695947587456509
+    second: '!battle_potted_plant 1_15'
+  - first:
+      213: 6558836943421053260
+    second: '!battle_potted_plant 1_16'
+  - first:
+      213: 7967686507322634788
+    second: '!battle_potted_plant 1_17'
+  - first:
+      213: 7894707547444779507
+    second: '!battle_potted_plant 1_18'
+  - first:
+      213: -3710502215818272479
+    second: '!battle_potted_plant 1_19'
+  - first:
+      213: 8042354783164500972
+    second: '!battle_potted_plant 1_20'
+  - first:
+      213: 8535302174943306329
+    second: '!battle_potted_plant 1_21'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_0'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1300
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac0afff006c54500800000000000000
+      internalID: 379927451179551905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_1'
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1300
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9241f92a0422ca0800000000000000
+      internalID: -6043196682780005958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_2'
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1300
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a28e777fd5bff10800000000000000
+      internalID: 2304538951780149905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_3'
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1300
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55440ce3fc8095c60800000000000000
+      internalID: 7807281115227505749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_4'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1040
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0fc3c85f343d710800000000000000
+      internalID: 1716790604857143548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_5'
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1040
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231ea60362a855f40800000000000000
+      internalID: 5716627198642413874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_6'
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1040
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0a4040e5718be90800000000000000
+      internalID: -7009827127440400162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_7'
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1040
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608e53f81a6ee7a10800000000000000
+      internalID: 1909216873618466822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_8'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf9384a59473fea0800000000000000
+      internalID: -5840196105710362708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_9'
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 780
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afcdcc20e3201880800000000000000
+      internalID: -8642368239192649815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_10'
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 780
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ba82b0bb02913f0800000000000000
+      internalID: -929675860357108948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_11'
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 780
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2568d36282a199c0800000000000000
+      internalID: -3922175119558417110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_12'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 520
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619929e6e047f61c0800000000000000
+      internalID: -4508257096641111786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_13'
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 520
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f89d762927aa9130800000000000000
+      internalID: 3574353049453172982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_14'
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 520
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b587aaabf7edcee80800000000000000
+      internalID: -8147892985646122917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_15'
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 520
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd8d75e2302a8560800000000000000
+      internalID: 7316695947587456509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_16'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c491258237ba50b50800000000000000
+      internalID: 6558836943421053260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_17'
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 260
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42273aee9a8e29e60800000000000000
+      internalID: 7967686507322634788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_18'
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 260
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f99a0bbfa2af8d60800000000000000
+      internalID: 7894707547444779507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_19'
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 260
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1212adfc4e5a18cc0800000000000000
+      internalID: -3710502215818272479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_20'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb0f28a01f2c9f60800000000000000
+      internalID: 8042354783164500972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_21'
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9526d1c2b1c737670800000000000000
+      internalID: 8535302174943306329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_22'
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22a3b02c2c3f4b439582d060999b510
+      internalID: -545701696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_potted_plant 1_23'
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 0
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799d74d8d043fbd4cadb57436e8db8a8
+      internalID: -984276292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0c995c70ace2dba4ea55f640f12bfded
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":6.0},"gridSpriteSize":{"x":194.0,"y":260.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      '!battle_potted_plant 1_0': 379927451179551905
+      '!battle_potted_plant 1_1': -6043196682780005958
+      '!battle_potted_plant 1_10': -929675860357108948
+      '!battle_potted_plant 1_11': -3922175119558417110
+      '!battle_potted_plant 1_12': -4508257096641111786
+      '!battle_potted_plant 1_13': 3574353049453172982
+      '!battle_potted_plant 1_14': -8147892985646122917
+      '!battle_potted_plant 1_15': 7316695947587456509
+      '!battle_potted_plant 1_16': 6558836943421053260
+      '!battle_potted_plant 1_17': 7967686507322634788
+      '!battle_potted_plant 1_18': 7894707547444779507
+      '!battle_potted_plant 1_19': -3710502215818272479
+      '!battle_potted_plant 1_2': 2304538951780149905
+      '!battle_potted_plant 1_20': 8042354783164500972
+      '!battle_potted_plant 1_21': 8535302174943306329
+      '!battle_potted_plant 1_22': -545701696
+      '!battle_potted_plant 1_23': -984276292
+      '!battle_potted_plant 1_3': 7807281115227505749
+      '!battle_potted_plant 1_4': 1716790604857143548
+      '!battle_potted_plant 1_5': 5716627198642413874
+      '!battle_potted_plant 1_6': -7009827127440400162
+      '!battle_potted_plant 1_7': 1909216873618466822
+      '!battle_potted_plant 1_8': -5840196105710362708
+      '!battle_potted_plant 1_9': -8642368239192649815
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

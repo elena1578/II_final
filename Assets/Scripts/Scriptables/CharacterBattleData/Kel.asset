@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6777a4f2f71853147b4291b9e0925be3, type: 3}
+  m_Name: Kel
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterBattleData
+  characterName: 2
+  battleSprite: {fileID: -1202299261468983308, guid: a421a9cc4fc7a8a4d8dfa8d3af0780c5, type: 3}
+  baseHP: 70
+  baseJuice: 40
+  baseAttack: 20
+  baseDefense: 20
+  baseSpeed: 25
+  defaultAttack: {fileID: 11400000, guid: 41e891932cd60b04296ec6be2558d77b, type: 2}
+  universalGuardAction: {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
+  allActions:
+  - {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
+  attackActions: []
+  healActions: []
+  emotionActions: []

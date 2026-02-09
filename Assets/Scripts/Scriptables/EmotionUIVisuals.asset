@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1e9ee8cc696c5418a99e2c28bbaad9, type: 3}
+  m_Name: EmotionUIVisuals
+  m_EditorClassIdentifier: Assembly-CSharp::EmotionUIVisuals
+  neutralBackground: {fileID: -8794851854726143958, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  happyBackground: {fileID: 1975070538, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  sadBackground: {fileID: -685057357, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  angryBackground: {fileID: 1562771463, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  afraidBackground: {fileID: 2142652181, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  neutralLabel: {fileID: -2757132410801158890, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
+  happyLabel: {fileID: -7193376334235582596, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
+  sadLabel: {fileID: -2337842730492131984, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
+  angryLabel: {fileID: 3658708253363423272, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
+  afraidLabel: {fileID: 4933090311096885412, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}

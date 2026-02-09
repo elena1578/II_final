@@ -1,0 +1,1833 @@
+fileFormatVersion: 2
+guid: 1841be75e300bff4c93a88c9672ac00b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7976907128906571126
+    second: e_statup_0
+  - first:
+      213: -9043856559808449891
+    second: e_statup_1
+  - first:
+      213: 3607884786465985190
+    second: e_statup_2
+  - first:
+      213: -812513332449789085
+    second: e_statup_3
+  - first:
+      213: 6801397794729039904
+    second: e_statup_4
+  - first:
+      213: -6503362680167656320
+    second: e_statup_5
+  - first:
+      213: 3224612671110423990
+    second: e_statup_6
+  - first:
+      213: -2237941829020137380
+    second: e_statup_7
+  - first:
+      213: -3185258404900218956
+    second: e_statup_8
+  - first:
+      213: -2571044201716564301
+    second: e_statup_9
+  - first:
+      213: -2164956996831500735
+    second: e_statup_10
+  - first:
+      213: -293943526417543572
+    second: e_statup_11
+  - first:
+      213: -7307679834310748732
+    second: e_statup_12
+  - first:
+      213: -2753667216996862757
+    second: e_statup_13
+  - first:
+      213: -2318733717344866594
+    second: e_statup_14
+  - first:
+      213: -3502024583466131106
+    second: e_statup_15
+  - first:
+      213: 6560257464219237911
+    second: e_statup_16
+  - first:
+      213: -7565541179494679570
+    second: e_statup_17
+  - first:
+      213: 2740579098755817801
+    second: e_statup_18
+  - first:
+      213: 9208932423542311726
+    second: e_statup_19
+  - first:
+      213: 5342661668091047415
+    second: e_statup_20
+  - first:
+      213: 1110285998464827413
+    second: e_statup_21
+  - first:
+      213: -8884632304153044602
+    second: e_statup_22
+  - first:
+      213: 4340360657908225951
+    second: e_statup_23
+  - first:
+      213: 1696443635543715903
+    second: e_statup_24
+  - first:
+      213: -150021589733102249
+    second: e_statup_25
+  - first:
+      213: 9084657357164994098
+    second: e_statup_26
+  - first:
+      213: -2095721044717567996
+    second: e_statup_27
+  - first:
+      213: -8837833164542491138
+    second: e_statup_28
+  - first:
+      213: -6039052742626667443
+    second: e_statup_29
+  - first:
+      213: -4220725936362044462
+    second: e_statup_30
+  - first:
+      213: 7414394990870968163
+    second: e_statup_31
+  - first:
+      213: -8344611832522367753
+    second: e_statup_32
+  - first:
+      213: 3687814386988911179
+    second: e_statup_33
+  - first:
+      213: 2464592260423323151
+    second: e_statup_34
+  - first:
+      213: -2349616941073811114
+    second: e_statup_35
+  - first:
+      213: -310022038624735257
+    second: e_statup_36
+  - first:
+      213: -3255932592690670279
+    second: e_statup_37
+  - first:
+      213: 5568871725273233928
+    second: e_statup_38
+  - first:
+      213: 2447982252077530640
+    second: e_statup_39
+  - first:
+      213: -2837838194402664750
+    second: e_statup_40
+  - first:
+      213: 6749935489185579371
+    second: e_statup_41
+  - first:
+      213: 7297575645651641734
+    second: e_statup_42
+  - first:
+      213: 3685514001760298113
+    second: e_statup_43
+  - first:
+      213: 5919377178405260395
+    second: e_statup_44
+  - first:
+      213: -8791991785473066866
+    second: e_statup_45
+  - first:
+      213: -5524144133214313978
+    second: e_statup_46
+  - first:
+      213: 2962575580490511208
+    second: e_statup_47
+  - first:
+      213: -1478365034111458510
+    second: e_statup_48
+  - first:
+      213: 3453954247241810881
+    second: e_statup_49
+  - first:
+      213: 5898590429771547040
+    second: e_statup_50
+  - first:
+      213: -7684233147670777887
+    second: e_statup_51
+  - first:
+      213: 4686778739400629953
+    second: e_statup_52
+  - first:
+      213: 5937107276620175401
+    second: e_statup_53
+  - first:
+      213: -7140707590906514013
+    second: e_statup_54
+  - first:
+      213: -7382945222078111625
+    second: e_statup_55
+  - first:
+      213: 6657003391307197521
+    second: e_statup_56
+  - first:
+      213: -2208230570288787298
+    second: e_statup_57
+  - first:
+      213: 7570181546870160669
+    second: e_statup_58
+  - first:
+      213: 8545357214761585077
+    second: e_statup_59
+  - first:
+      213: 3943397907463714741
+    second: e_statup_60
+  - first:
+      213: -2227951817306508396
+    second: e_statup_61
+  - first:
+      213: -2703611542425996566
+    second: e_statup_62
+  - first:
+      213: 3461134665264150396
+    second: e_statup_63
+  - first:
+      213: 7649659975694162516
+    second: e_statup_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: e_statup_0
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1155
+        width: 44
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a822e3fca355c4190800000000000000
+      internalID: -7976907128906571126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1154
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92f7011064cd7280800000000000000
+      internalID: -9043856559808449891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_2
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1192
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a257df0918c11230800000000000000
+      internalID: 3607884786465985190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_3
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1154
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36bbf04dd6f59b4f0800000000000000
+      internalID: -812513332449789085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1149
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02813fa424b636e50800000000000000
+      internalID: 6801397794729039904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_5
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1155
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0841313491a6fb5a0800000000000000
+      internalID: -6503362680167656320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_6
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1155
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5a2cfb32020cc20800000000000000
+      internalID: 3224612671110423990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_7
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1099
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58444d73cb31f0e0800000000000000
+      internalID: -2237941829020137380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_8
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 949
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b758126b50bbc3d0800000000000000
+      internalID: -3185258404900218956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_9
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 996
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be3bd6abe0d15cd0800000000000000
+      internalID: -2571044201716564301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_10
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1017
+        width: 13
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146acd1f41784f1e0800000000000000
+      internalID: -2164956996831500735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_11
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1032
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e4bdb8be3bbebf0800000000000000
+      internalID: -293943526417543572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_12
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1017
+        width: 13
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c55f9f88e7e59a90800000000000000
+      internalID: -7307679834310748732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_13
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1032
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd47345714209c9d0800000000000000
+      internalID: -2753667216996862757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_14
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 1017
+        width: 13
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede20f028f332dfd0800000000000000
+      internalID: -2318733717344866594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 882
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51e0d3223f466fc0800000000000000
+      internalID: -3502024583466131106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_16
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 882
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e74ede767ba0b50800000000000000
+      internalID: 6560257464219237911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_17
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 862
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb31a6916cc10790800000000000000
+      internalID: -7565541179494679570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_18
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 929
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941633c8b2e780620800000000000000
+      internalID: 2740579098755817801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_19
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 859
+        width: 45
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b01d98f33bccf70800000000000000
+      internalID: 9208932423542311726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_20
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 929
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fda9a10b72f42a40800000000000000
+      internalID: 5342661668091047415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_21
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 861
+        width: 44
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5100699ab37886f00800000000000000
+      internalID: 1110285998464827413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_22
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 822
+        width: 44
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6895ffefdf173b480800000000000000
+      internalID: -8884632304153044602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_23
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 822
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9753bba50f0c3c30800000000000000
+      internalID: 4340360657908225951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_24
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 822
+        width: 45
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f303e069f7afa8710800000000000000
+      internalID: 1696443635543715903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_25
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 822
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75da153b8240bedf0800000000000000
+      internalID: -150021589733102249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_26
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 822
+        width: 44
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e55f7dbbf231e70800000000000000
+      internalID: 9084657357164994098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_27
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 824
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4008c4d30d08ae2e0800000000000000
+      internalID: -2095721044717567996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_28
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 824
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5474bcf85b95580800000000000000
+      internalID: -8837833164542491138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_29
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 648
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4493efd689f03ca0800000000000000
+      internalID: -6039052742626667443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_30
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 632
+        width: 45
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d3ccdc8f18fc65c0800000000000000
+      internalID: -4220725936362044462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_31
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 699
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367bc4706f835e660800000000000000
+      internalID: 7414394990870968163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_32
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 632
+        width: 45
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc9bfdffbbf13c80800000000000000
+      internalID: -8344611832522367753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_33
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 581
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a8c0665afbd2330800000000000000
+      internalID: 3687814386988911179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_34
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 581
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e85b65a9df33220800000000000000
+      internalID: 2464592260423323151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_35
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 653
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6593e0547db746fd0800000000000000
+      internalID: -2349616941073811114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_36
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 652
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7efea33399492bbf0800000000000000
+      internalID: -310022038624735257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_37
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 514
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9355e00ce8a90d2d0800000000000000
+      internalID: -3255932592690670279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_38
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 511
+        width: 45
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ab0a8345b984d40800000000000000
+      internalID: 5568871725273233928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_39
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 513
+        width: 44
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01eba8763eaf8f120800000000000000
+      internalID: 2447982252077530640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_40
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 565
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ded79c9239fd98d0800000000000000
+      internalID: -2837838194402664750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_41
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 498
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6185b190969cad50800000000000000
+      internalID: 6749935489185579371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_42
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 562
+        width: 45
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685ab90b262364560800000000000000
+      internalID: 7297575645651641734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_43
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 498
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184a6a93573952330800000000000000
+      internalID: 3685514001760298113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_44
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 564
+        width: 44
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c466a7e2ad52250800000000000000
+      internalID: 5919377178405260395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_45
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 447
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88b9b69d029cf580800000000000000
+      internalID: -8791991785473066866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_46
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 447
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602e3b3dd2c4653b0800000000000000
+      internalID: -5524144133214313978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_47
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 505
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86332674bce2d1920800000000000000
+      internalID: 2962575580490511208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_48
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 438
+        width: 45
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233ad6d85dacb7be0800000000000000
+      internalID: -1478365034111458510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_49
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 505
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c3cc498619eeef20800000000000000
+      internalID: 3453954247241810881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_50
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 438
+        width: 52
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a14d0a6eb00cd150800000000000000
+      internalID: 5898590429771547040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_51
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 219
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef2dcd3aae1c5590800000000000000
+      internalID: -7684233147670777887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_52
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 286
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ced3de8e68ca0140800000000000000
+      internalID: 4686778739400629953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_53
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 216
+        width: 45
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9281558ac97d46250800000000000000
+      internalID: 5937107276620175401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_54
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 286
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5f417774c17ec90800000000000000
+      internalID: -7140707590906514013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_55
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 218
+        width: 44
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770edd1ef628a8990800000000000000
+      internalID: -7382945222078111625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_56
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 261
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15caf67605d626c50800000000000000
+      internalID: 6657003391307197521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_57
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 258
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9057cbfef9ca51e0800000000000000
+      internalID: -2208230570288787298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_58
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 260
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1db9622200be0960800000000000000
+      internalID: 7570181546870160669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_59
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 283
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b98fa09c15379670800000000000000
+      internalID: 8545357214761585077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_60
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 283
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7b46af083c9b630800000000000000
+      internalID: 3943397907463714741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_61
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 152
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49372c850a9b411e0800000000000000
+      internalID: -2227951817306508396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_62
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 152
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae27d0360a7da7ad0800000000000000
+      internalID: -2703611542425996566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_63
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 194
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c773cd2e3ab680030800000000000000
+      internalID: 3461134665264150396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_statup_64
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 194
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a16cfd73d092a60800000000000000
+      internalID: 7649659975694162516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      e_statup_0: -7976907128906571126
+      e_statup_1: -9043856559808449891
+      e_statup_10: -2164956996831500735
+      e_statup_11: -293943526417543572
+      e_statup_12: -7307679834310748732
+      e_statup_13: -2753667216996862757
+      e_statup_14: -2318733717344866594
+      e_statup_15: -3502024583466131106
+      e_statup_16: 6560257464219237911
+      e_statup_17: -7565541179494679570
+      e_statup_18: 2740579098755817801
+      e_statup_19: 9208932423542311726
+      e_statup_2: 3607884786465985190
+      e_statup_20: 5342661668091047415
+      e_statup_21: 1110285998464827413
+      e_statup_22: -8884632304153044602
+      e_statup_23: 4340360657908225951
+      e_statup_24: 1696443635543715903
+      e_statup_25: -150021589733102249
+      e_statup_26: 9084657357164994098
+      e_statup_27: -2095721044717567996
+      e_statup_28: -8837833164542491138
+      e_statup_29: -6039052742626667443
+      e_statup_3: -812513332449789085
+      e_statup_30: -4220725936362044462
+      e_statup_31: 7414394990870968163
+      e_statup_32: -8344611832522367753
+      e_statup_33: 3687814386988911179
+      e_statup_34: 2464592260423323151
+      e_statup_35: -2349616941073811114
+      e_statup_36: -310022038624735257
+      e_statup_37: -3255932592690670279
+      e_statup_38: 5568871725273233928
+      e_statup_39: 2447982252077530640
+      e_statup_4: 6801397794729039904
+      e_statup_40: -2837838194402664750
+      e_statup_41: 6749935489185579371
+      e_statup_42: 7297575645651641734
+      e_statup_43: 3685514001760298113
+      e_statup_44: 5919377178405260395
+      e_statup_45: -8791991785473066866
+      e_statup_46: -5524144133214313978
+      e_statup_47: 2962575580490511208
+      e_statup_48: -1478365034111458510
+      e_statup_49: 3453954247241810881
+      e_statup_5: -6503362680167656320
+      e_statup_50: 5898590429771547040
+      e_statup_51: -7684233147670777887
+      e_statup_52: 4686778739400629953
+      e_statup_53: 5937107276620175401
+      e_statup_54: -7140707590906514013
+      e_statup_55: -7382945222078111625
+      e_statup_56: 6657003391307197521
+      e_statup_57: -2208230570288787298
+      e_statup_58: 7570181546870160669
+      e_statup_59: 8545357214761585077
+      e_statup_6: 3224612671110423990
+      e_statup_60: 3943397907463714741
+      e_statup_61: -2227951817306508396
+      e_statup_62: -2703611542425996566
+      e_statup_63: 3461134665264150396
+      e_statup_64: 7649659975694162516
+      e_statup_7: -2237941829020137380
+      e_statup_8: -3185258404900218956
+      e_statup_9: -2571044201716564301
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

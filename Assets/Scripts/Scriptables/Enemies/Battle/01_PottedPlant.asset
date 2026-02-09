@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50bf291a57e9c4545a1cacc3597d5bde, type: 3}
+  m_Name: 01_PottedPlant
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBattleData
+  characterName: 4
+  battleSprite: {fileID: -1341900903539766912, guid: 79853185cac150a4c9d9a07cbf9beb33, type: 3}
+  spriteScale: {x: 1, y: 1, z: 1}
+  animatorController: {fileID: 9100000, guid: c1884212e94a4df498a04d7516811d88, type: 2}
+  baseHP: 100
+  baseJuice: 400
+  baseAttack: 20
+  baseDefense: 25
+  baseSpeed: 10
+  expReward: 274
+  clamReward: 44
+  attackActions:
+  - {fileID: 11400000, guid: e82e7ad3928faac4282d603ec719a976, type: 2}
+  - {fileID: 11400000, guid: e8f92882855727b4781bca50d8091c00, type: 2}
+  - {fileID: 11400000, guid: bae4467f654edac489d7df5ea73b43ce, type: 2}
+  - {fileID: 11400000, guid: 7707f2b06ee7c3146a7f168240b78346, type: 2}
+  healActions: []
+  emotionActions:
+  - {fileID: 11400000, guid: d97bb9ffd3898bb48babf03f27aca6d4, type: 2}
+  noneActions: []

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Enemy
+  - Collision
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - MapBackground
+  - Tree
+  - Enemy
+  - Player
+  - BattleUI
+  - Collision
+  - Decoration
+  - OverworldUI
+  - Trigger
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1988695427
+    locked: 0
+  - name: Collision
+    uniqueID: 3057377849
+    locked: 0
+  - name: Tree
+    uniqueID: 2022666971
+    locked: 0
+  - name: Decoration
+    uniqueID: 1394493191
+    locked: 0
+  - name: Trigger
+    uniqueID: 454611591
+    locked: 0
+  - name: Enemy
+    uniqueID: 921718921
+    locked: 0
+  - name: Player
+    uniqueID: 2250183401
+    locked: 0
+  - name: OverworldUI
+    uniqueID: 227556243
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  - MapBackground
+  - Tree
+  - Enemy
+  - Player
+  - Collision
+  - Decoration
+  - OverworldUI
+  - Trigger

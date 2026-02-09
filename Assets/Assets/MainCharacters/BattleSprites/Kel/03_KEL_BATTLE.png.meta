@@ -1,0 +1,1063 @@
+fileFormatVersion: 2
+guid: a421a9cc4fc7a8a4d8dfa8d3af0780c5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1202299261468983308
+    second: 03_KEL_BATTLE_0
+  - first:
+      213: -8596908782572917119
+    second: 03_KEL_BATTLE_1
+  - first:
+      213: 5244694843729974989
+    second: 03_KEL_BATTLE_2
+  - first:
+      213: -6920809788061581997
+    second: 03_KEL_BATTLE_3
+  - first:
+      213: 2315779031682995621
+    second: 03_KEL_BATTLE_4
+  - first:
+      213: -3060444158493174769
+    second: 03_KEL_BATTLE_5
+  - first:
+      213: -27307273513747337
+    second: 03_KEL_BATTLE_6
+  - first:
+      213: -5570569808148923270
+    second: 03_KEL_BATTLE_7
+  - first:
+      213: 475584418709974634
+    second: 03_KEL_BATTLE_8
+  - first:
+      213: 1896288725937046245
+    second: 03_KEL_BATTLE_9
+  - first:
+      213: -2732705707541482160
+    second: 03_KEL_BATTLE_10
+  - first:
+      213: -3690860334451199068
+    second: 03_KEL_BATTLE_11
+  - first:
+      213: 5167782508767077214
+    second: 03_KEL_BATTLE_12
+  - first:
+      213: -7925354461667780128
+    second: 03_KEL_BATTLE_13
+  - first:
+      213: -6157695053513923248
+    second: 03_KEL_BATTLE_14
+  - first:
+      213: 7566863977323248965
+    second: 03_KEL_BATTLE_15
+  - first:
+      213: 1717106821683835929
+    second: 03_KEL_BATTLE_16
+  - first:
+      213: -2720142669868982431
+    second: 03_KEL_BATTLE_17
+  - first:
+      213: 3919295544390874559
+    second: 03_KEL_BATTLE_18
+  - first:
+      213: 8752587688344166087
+    second: 03_KEL_BATTLE_19
+  - first:
+      213: -157095630626525231
+    second: 03_KEL_BATTLE_20
+  - first:
+      213: -6715508196104562864
+    second: 03_KEL_BATTLE_21
+  - first:
+      213: -2798806575917690298
+    second: 03_KEL_BATTLE_22
+  - first:
+      213: -985133258335870656
+    second: 03_KEL_BATTLE_23
+  - first:
+      213: -6832347642999706124
+    second: 03_KEL_BATTLE_24
+  - first:
+      213: -7907459984743223773
+    second: 03_KEL_BATTLE_25
+  - first:
+      213: 7241183486271799014
+    second: 03_KEL_BATTLE_26
+  - first:
+      213: -2284420248476418242
+    second: 03_KEL_BATTLE_27
+  - first:
+      213: -133907861163474880
+    second: 03_KEL_BATTLE_28
+  - first:
+      213: -8927821237027354376
+    second: 03_KEL_BATTLE_29
+  - first:
+      213: 4876595837952754378
+    second: 03_KEL_BATTLE_30
+  - first:
+      213: 4549291082016297259
+    second: 03_KEL_BATTLE_31
+  - first:
+      213: -7517449768474709004
+    second: 03_KEL_BATTLE_32
+  - first:
+      213: -4942237150034169891
+    second: 03_KEL_BATTLE_33
+  - first:
+      213: 1149477191408312242
+    second: 03_KEL_BATTLE_34
+  - first:
+      213: -8562426044231116696
+    second: 03_KEL_BATTLE_35
+  - first:
+      213: -8605723464659171597
+    second: 03_KEL_BATTLE_36
+  - first:
+      213: 2656860997238381252
+    second: 03_KEL_BATTLE_37
+  - first:
+      213: 6856665520825790643
+    second: 03_KEL_BATTLE_38
+  - first:
+      213: -4836508455509668845
+    second: 03_KEL_BATTLE_39
+  - first:
+      213: 4249536169731210225
+    second: 03_KEL_BATTLE_40
+  - first:
+      213: -6577119255620663636
+    second: 03_KEL_BATTLE_41
+  - first:
+      213: 6584646681367994709
+    second: 03_KEL_BATTLE_42
+  - first:
+      213: 7269817344173786327
+    second: 03_KEL_BATTLE_43
+  - first:
+      213: 3102503516176689305
+    second: 03_KEL_BATTLE_44
+  - first:
+      213: -1236180345891125848
+    second: 03_KEL_BATTLE_45
+  - first:
+      213: 4426397614636979468
+    second: 03_KEL_BATTLE_46
+  - first:
+      213: 1376415457252522248
+    second: 03_KEL_BATTLE_47
+  - first:
+      213: 6007907475777863877
+    second: 03_KEL_BATTLE_48
+  - first:
+      213: -3666438773246094719
+    second: 03_KEL_BATTLE_49
+  - first:
+      213: -4741470834363259628
+    second: 03_KEL_BATTLE_50
+  - first:
+      213: 501234397556191047
+    second: 03_KEL_BATTLE_51
+  - first:
+      213: -5566407917474933121
+    second: 03_KEL_BATTLE_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff3d661133905fe0800000000000000
+      internalID: -1202299261468983308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e2e48b205a1b880800000000000000
+      internalID: -8596908782572917119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc619db3c26e8c840800000000000000
+      internalID: 5244694843729974989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35dfa807a2854ff90800000000000000
+      internalID: -6920809788061581997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a553c182cc432020800000000000000
+      internalID: 2315779031682995621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f045816b04e1785d0800000000000000
+      internalID: -3060444158493174769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77cbd6eed2cfe9ff0800000000000000
+      internalID: -27307273513747337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c74cc064c51b2b0800000000000000
+      internalID: -5570569808148923270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_8
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e2be1528d999600800000000000000
+      internalID: 475584418709974634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e24e0d9c88f05a10800000000000000
+      internalID: 1896288725937046245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055be4233aa731ad0800000000000000
+      internalID: -2732705707541482160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3f471b41e67ccc0800000000000000
+      internalID: -3690860334451199068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53e987cfc6a7b740800000000000000
+      internalID: 5167782508767077214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_13
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e91c318b1c730290800000000000000
+      internalID: -7925354461667780128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_14
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0556f1449f87b8aa0800000000000000
+      internalID: -6157695053513923248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d3d0842b6e20960800000000000000
+      internalID: 7566863977323248965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_16
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9147dd38e8364d710800000000000000
+      internalID: 1717106821683835929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f931857ac104ad0800000000000000
+      internalID: -2720142669868982431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb570354882246630800000000000000
+      internalID: 3919295544390874559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_19
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce163d1120777970800000000000000
+      internalID: 8752587688344166087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_20
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df6db43b52e1ddf0800000000000000
+      internalID: -157095630626525231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05796fc30e8bdc2a0800000000000000
+      internalID: -6715508196104562864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_22
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64216677f34a829d0800000000000000
+      internalID: -2798806575917690298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_23
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041a770658a1452f0800000000000000
+      internalID: -985133258335870656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd660d9400ae21a0800000000000000
+      internalID: -6832347642999706124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_25
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ea3c51a0f034290800000000000000
+      internalID: -7907459984743223773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_26
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eeb7ace30add7460800000000000000
+      internalID: 7241183486271799014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f7adb23eb1c40e0800000000000000
+      internalID: -2284420248476418242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_28
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04008be7283442ef0800000000000000
+      internalID: -133907861163474880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_29
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8cbc4f2e10a1480800000000000000
+      internalID: -8927821237027354376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2825ac3162da340800000000000000
+      internalID: 4876595837952754378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_31
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b211f6bc224522f30800000000000000
+      internalID: 4549291082016297259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_KEL_BATTLE_32
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3f835c347aca790800000000000000
+      internalID: -7517449768474709004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4754aa94a34dd324abbb4346dca11f47
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":11.0},"gridSpriteSize":{"x":106.0,"y":106.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      03_KEL_BATTLE_0: -1202299261468983308
+      03_KEL_BATTLE_1: -8596908782572917119
+      03_KEL_BATTLE_10: -2732705707541482160
+      03_KEL_BATTLE_11: -3690860334451199068
+      03_KEL_BATTLE_12: 5167782508767077214
+      03_KEL_BATTLE_13: -7925354461667780128
+      03_KEL_BATTLE_14: -6157695053513923248
+      03_KEL_BATTLE_15: 7566863977323248965
+      03_KEL_BATTLE_16: 1717106821683835929
+      03_KEL_BATTLE_17: -2720142669868982431
+      03_KEL_BATTLE_18: 3919295544390874559
+      03_KEL_BATTLE_19: 8752587688344166087
+      03_KEL_BATTLE_2: 5244694843729974989
+      03_KEL_BATTLE_20: -157095630626525231
+      03_KEL_BATTLE_21: -6715508196104562864
+      03_KEL_BATTLE_22: -2798806575917690298
+      03_KEL_BATTLE_23: -985133258335870656
+      03_KEL_BATTLE_24: -6832347642999706124
+      03_KEL_BATTLE_25: -7907459984743223773
+      03_KEL_BATTLE_26: 7241183486271799014
+      03_KEL_BATTLE_27: -2284420248476418242
+      03_KEL_BATTLE_28: -133907861163474880
+      03_KEL_BATTLE_29: -8927821237027354376
+      03_KEL_BATTLE_3: -6920809788061581997
+      03_KEL_BATTLE_30: 4876595837952754378
+      03_KEL_BATTLE_31: 4549291082016297259
+      03_KEL_BATTLE_32: -7517449768474709004
+      03_KEL_BATTLE_4: 2315779031682995621
+      03_KEL_BATTLE_5: -3060444158493174769
+      03_KEL_BATTLE_6: -27307273513747337
+      03_KEL_BATTLE_7: -5570569808148923270
+      03_KEL_BATTLE_8: 475584418709974634
+      03_KEL_BATTLE_9: 1896288725937046245
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

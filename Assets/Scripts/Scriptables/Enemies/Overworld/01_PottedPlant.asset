@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a6c2b47e001114b82bf759913eb6ca, type: 3}
+  m_Name: 01_PottedPlant
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldData
+  enemyPrefab: {fileID: 0}
+  correspondingBattleData: {fileID: 11400000, guid: 4711c9f6172a1264b962878f8ff8efe6, type: 2}
+  sprite: {fileID: 7163209058922862290, guid: 7c9e6ba54bfe7304e934b0ca5aa5db7e, type: 3}
+  animatorController: {fileID: 9100000, guid: 009d95f277f08d849a632fee33e6e5ac, type: 2}
+  moveSpeed: 1
+  chanceToMove: 0.708
+  alertRadius: 5

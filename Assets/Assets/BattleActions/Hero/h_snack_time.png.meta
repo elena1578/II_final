@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: fe139878710345b4d9d617b3e3811491
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1858714232145552629
+    second: h_snack_time_0
+  - first:
+      213: -4777772134388269601
+    second: h_snack_time_1
+  - first:
+      213: -6263103669774807355
+    second: h_snack_time_2
+  - first:
+      213: 2806271221214009549
+    second: h_snack_time_3
+  - first:
+      213: 4861758661154063402
+    second: h_snack_time_4
+  - first:
+      213: -11249128447298003
+    second: h_snack_time_5
+  - first:
+      213: -9204342590200187248
+    second: h_snack_time_6
+  - first:
+      213: -5106324445237148018
+    second: h_snack_time_7
+  - first:
+      213: 4424076419879444131
+    second: h_snack_time_8
+  - first:
+      213: -2093517996406493773
+    second: h_snack_time_9
+  - first:
+      213: -7932819584972462770
+    second: h_snack_time_10
+  - first:
+      213: -3681034760898780375
+    second: h_snack_time_11
+  - first:
+      213: -2098247725984739614
+    second: h_snack_time_12
+  - first:
+      213: 2583596260229445823
+    second: h_snack_time_13
+  - first:
+      213: 3264478878559636557
+    second: h_snack_time_14
+  - first:
+      213: 3130552432246647262
+    second: h_snack_time_15
+  - first:
+      213: 4262398807109070072
+    second: h_snack_time_16
+  - first:
+      213: 3611191237879116389
+    second: h_snack_time_17
+  - first:
+      213: 5526678774875382330
+    second: h_snack_time_18
+  - first:
+      213: -6721731046582214818
+    second: h_snack_time_19
+  - first:
+      213: 5077514920708741003
+    second: h_snack_time_20
+  - first:
+      213: 3909496129534832707
+    second: h_snack_time_21
+  - first:
+      213: -2427834683070656938
+    second: h_snack_time_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: h_snack_time_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 439
+        width: 73
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b5006f0458436e0800000000000000
+      internalID: -1858714232145552629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_1
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 428
+        width: 103
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddf608be81f1bdb0800000000000000
+      internalID: -4777772134388269601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 412
+        width: 145
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce80ab456cf419a0800000000000000
+      internalID: -6263103669774807355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_3
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 385
+        width: 205
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc8dcd3bec0e1f620800000000000000
+      internalID: 2806271221214009549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 291
+        width: 64
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2444cd5ebf687340800000000000000
+      internalID: 4861758661154063402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 264
+        width: 64
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26bdde2af808dff0800000000000000
+      internalID: -11249128447298003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 258
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0967e105e2b934080800000000000000
+      internalID: -9204342590200187248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e860fb5b8f0b229b0800000000000000
+      internalID: -5106324445237148018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_8
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 273
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae981a601a756d30800000000000000
+      internalID: 4424076419879444131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_9
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 108
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bdad45697452f2e0800000000000000
+      internalID: -2093517996406493773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_10
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 112
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45647a0e96f8e190800000000000000
+      internalID: -7932819584972462770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 114
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92363ce43665aecc0800000000000000
+      internalID: -3681034760898780375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_12
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee88e96fc681e2e0800000000000000
+      internalID: -2098247725984739614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 95
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8f0063c17cad320800000000000000
+      internalID: 2583596260229445823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_14
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 98
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c005d7e32cd4d20800000000000000
+      internalID: 3264478878559636557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_15
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 101
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9ebcac9d4f17b20800000000000000
+      internalID: 3130552432246647262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_16
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 88
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fce8c4c125172b30800000000000000
+      internalID: 4262398807109070072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_17
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 92
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562b9c54c478d1230800000000000000
+      internalID: 3611191237879116389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_18
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 89
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32632c6015b2bc40800000000000000
+      internalID: 5526678774875382330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 73
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f90c4f93d97b2a0800000000000000
+      internalID: -6721731046582214818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_20
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 70
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8717962be4f67640800000000000000
+      internalID: 5077514920708741003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_21
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 78
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34030b33402514630800000000000000
+      internalID: 3909496129534832707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: h_snack_time_22
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 70
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e433e08399e4ed0800000000000000
+      internalID: -2427834683070656938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      h_snack_time_0: -1858714232145552629
+      h_snack_time_1: -4777772134388269601
+      h_snack_time_10: -7932819584972462770
+      h_snack_time_11: -3681034760898780375
+      h_snack_time_12: -2098247725984739614
+      h_snack_time_13: 2583596260229445823
+      h_snack_time_14: 3264478878559636557
+      h_snack_time_15: 3130552432246647262
+      h_snack_time_16: 4262398807109070072
+      h_snack_time_17: 3611191237879116389
+      h_snack_time_18: 5526678774875382330
+      h_snack_time_19: -6721731046582214818
+      h_snack_time_2: -6263103669774807355
+      h_snack_time_20: 5077514920708741003
+      h_snack_time_21: 3909496129534832707
+      h_snack_time_22: -2427834683070656938
+      h_snack_time_3: 2806271221214009549
+      h_snack_time_4: 4861758661154063402
+      h_snack_time_5: -11249128447298003
+      h_snack_time_6: -9204342590200187248
+      h_snack_time_7: -5106324445237148018
+      h_snack_time_8: 4424076419879444131
+      h_snack_time_9: -2093517996406493773
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

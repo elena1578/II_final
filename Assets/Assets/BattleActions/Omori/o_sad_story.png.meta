@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 742b583fa579b4d489151eb5d6e48d2c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8385382437379486717
+    second: o_sad_story_0
+  - first:
+      213: 3213474932535084726
+    second: o_sad_story_1
+  - first:
+      213: -3458289632006333289
+    second: o_sad_story_2
+  - first:
+      213: -3063160493818018614
+    second: o_sad_story_3
+  - first:
+      213: 539182296552693005
+    second: o_sad_story_4
+  - first:
+      213: 3297780339809687860
+    second: o_sad_story_5
+  - first:
+      213: 8040201344609578198
+    second: o_sad_story_6
+  - first:
+      213: -604387482885433539
+    second: o_sad_story_7
+  - first:
+      213: 5062272629332839403
+    second: o_sad_story_8
+  - first:
+      213: -4998011019390188562
+    second: o_sad_story_9
+  - first:
+      213: -1726213255594482714
+    second: o_sad_story_10
+  - first:
+      213: 2332475090060675001
+    second: o_sad_story_11
+  - first:
+      213: -7689538559723650900
+    second: o_sad_story_12
+  - first:
+      213: 2508334863997612515
+    second: o_sad_story_13
+  - first:
+      213: -6187694046442533203
+    second: o_sad_story_14
+  - first:
+      213: 7379457056420690620
+    second: o_sad_story_15
+  - first:
+      213: 9050371795324385049
+    second: o_sad_story_16
+  - first:
+      213: 3555010078597547753
+    second: o_sad_story_17
+  - first:
+      213: -3606610190645109007
+    second: o_sad_story_18
+  - first:
+      213: -4467890357256113210
+    second: o_sad_story_19
+  - first:
+      213: -6074503173526020899
+    second: o_sad_story_20
+  - first:
+      213: -5003280513770529317
+    second: o_sad_story_21
+  - first:
+      213: 2555110143284537760
+    second: o_sad_story_22
+  - first:
+      213: -1093810972657638510
+    second: o_sad_story_23
+  - first:
+      213: -5751336946358961683
+    second: o_sad_story_24
+  - first:
+      213: 7687770425122638080
+    second: o_sad_story_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: o_sad_story_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 394
+        width: 101
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3bdcd26ecde5470800000000000000
+      internalID: 8385382437379486717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_1
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 394
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b64068ec6e889c20800000000000000
+      internalID: 3213474932535084726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_2
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 394
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c98d907efa100d0800000000000000
+      internalID: -3458289632006333289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_3
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 394
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac487fb92c77d75d0800000000000000
+      internalID: -3063160493818018614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_4
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 394
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0dd337217f8b7700800000000000000
+      internalID: 539182296552693005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 202
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4399f952fb114cd20800000000000000
+      internalID: 3297780339809687860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_7
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 202
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37dbe759c8cc97f0800000000000000
+      internalID: -604387482885433539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_10
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 201
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e368bd90324b08e0800000000000000
+      internalID: -1726213255594482714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_13
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 201
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e13e42e4456fc220800000000000000
+      internalID: 2508334863997612515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_17
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 201
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e68dbbc4dee55130800000000000000
+      internalID: 3555010078597547753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_20
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 10
+        width: 101
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc9ffa3c8703bba0800000000000000
+      internalID: -6074503173526020899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_23
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 9
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293215337b002d0f0800000000000000
+      internalID: -1093810972657638510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: o_sad_story_25
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 10
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0094038587270ba60800000000000000
+      internalID: 7687770425122638080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 39eddcfe026869d4888e92a1d6cdc490
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      o_sad_story_0: 8385382437379486717
+      o_sad_story_1: 3213474932535084726
+      o_sad_story_10: -1726213255594482714
+      o_sad_story_11: 2332475090060675001
+      o_sad_story_12: -7689538559723650900
+      o_sad_story_13: 2508334863997612515
+      o_sad_story_14: -6187694046442533203
+      o_sad_story_15: 7379457056420690620
+      o_sad_story_16: 9050371795324385049
+      o_sad_story_17: 3555010078597547753
+      o_sad_story_18: -3606610190645109007
+      o_sad_story_19: -4467890357256113210
+      o_sad_story_2: -3458289632006333289
+      o_sad_story_20: -6074503173526020899
+      o_sad_story_21: -5003280513770529317
+      o_sad_story_22: 2555110143284537760
+      o_sad_story_23: -1093810972657638510
+      o_sad_story_24: -5751336946358961683
+      o_sad_story_25: 7687770425122638080
+      o_sad_story_3: -3063160493818018614
+      o_sad_story_4: 539182296552693005
+      o_sad_story_5: 3297780339809687860
+      o_sad_story_6: 8040201344609578198
+      o_sad_story_7: -604387482885433539
+      o_sad_story_8: 5062272629332839403
+      o_sad_story_9: -4998011019390188562
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

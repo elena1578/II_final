@@ -1,0 +1,1378 @@
+fileFormatVersion: 2
+guid: 28bd3b996dfe833449d813b222e2df20
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2184308944223275586
+    second: 01_OMORI_BATTLE_0
+  - first:
+      213: -8615516670256836941
+    second: 01_OMORI_BATTLE_1
+  - first:
+      213: 2028407040905850944
+    second: 01_OMORI_BATTLE_2
+  - first:
+      213: 6021131950200590200
+    second: 01_OMORI_BATTLE_3
+  - first:
+      213: 6353813926210355069
+    second: 01_OMORI_BATTLE_4
+  - first:
+      213: 1656512471371010421
+    second: 01_OMORI_BATTLE_5
+  - first:
+      213: -2185922458346679568
+    second: 01_OMORI_BATTLE_6
+  - first:
+      213: -3623445377913680921
+    second: 01_OMORI_BATTLE_7
+  - first:
+      213: -6764308675144161971
+    second: 01_OMORI_BATTLE_8
+  - first:
+      213: -2239418061759265874
+    second: 01_OMORI_BATTLE_9
+  - first:
+      213: 7473212754308333896
+    second: 01_OMORI_BATTLE_10
+  - first:
+      213: 3081592870759868624
+    second: 01_OMORI_BATTLE_11
+  - first:
+      213: -2785228805429104625
+    second: 01_OMORI_BATTLE_12
+  - first:
+      213: -8667834599616594043
+    second: 01_OMORI_BATTLE_13
+  - first:
+      213: -6633560587913290936
+    second: 01_OMORI_BATTLE_14
+  - first:
+      213: 6031066684693419295
+    second: 01_OMORI_BATTLE_15
+  - first:
+      213: -69169999046415288
+    second: 01_OMORI_BATTLE_16
+  - first:
+      213: -9027458911210588014
+    second: 01_OMORI_BATTLE_17
+  - first:
+      213: 2866011505530130904
+    second: 01_OMORI_BATTLE_18
+  - first:
+      213: -8563025529226049974
+    second: 01_OMORI_BATTLE_19
+  - first:
+      213: 2276090359381044230
+    second: 01_OMORI_BATTLE_20
+  - first:
+      213: -686431466440026555
+    second: 01_OMORI_BATTLE_21
+  - first:
+      213: 8782447020714892536
+    second: 01_OMORI_BATTLE_22
+  - first:
+      213: 4507991268701841344
+    second: 01_OMORI_BATTLE_23
+  - first:
+      213: 8378247159381618548
+    second: 01_OMORI_BATTLE_24
+  - first:
+      213: -9205069862632905834
+    second: 01_OMORI_BATTLE_25
+  - first:
+      213: -1044761256232973120
+    second: 01_OMORI_BATTLE_26
+  - first:
+      213: 3348183157476275039
+    second: 01_OMORI_BATTLE_27
+  - first:
+      213: 6755061126593306296
+    second: 01_OMORI_BATTLE_28
+  - first:
+      213: -7402844601224921659
+    second: 01_OMORI_BATTLE_29
+  - first:
+      213: -6951749405743602948
+    second: 01_OMORI_BATTLE_30
+  - first:
+      213: -1524934536569783996
+    second: 01_OMORI_BATTLE_31
+  - first:
+      213: 4018880375129614710
+    second: 01_OMORI_BATTLE_32
+  - first:
+      213: -4559364285686405232
+    second: 01_OMORI_BATTLE_33
+  - first:
+      213: -5275044931572989288
+    second: 01_OMORI_BATTLE_34
+  - first:
+      213: 663334187818488632
+    second: 01_OMORI_BATTLE_35
+  - first:
+      213: -1618697399325232117
+    second: 01_OMORI_BATTLE_36
+  - first:
+      213: -4715644824651851955
+    second: 01_OMORI_BATTLE_37
+  - first:
+      213: -496767874455183162
+    second: 01_OMORI_BATTLE_38
+  - first:
+      213: -2904514675691918775
+    second: 01_OMORI_BATTLE_39
+  - first:
+      213: 6210588333971329993
+    second: 01_OMORI_BATTLE_40
+  - first:
+      213: -4543795943384733353
+    second: 01_OMORI_BATTLE_41
+  - first:
+      213: -6808754911645490652
+    second: 01_OMORI_BATTLE_42
+  - first:
+      213: -569050224723939357
+    second: 01_OMORI_BATTLE_43
+  - first:
+      213: -4263805901194221938
+    second: 01_OMORI_BATTLE_44
+  - first:
+      213: -4566575823789821696
+    second: 01_OMORI_BATTLE_45
+  - first:
+      213: -8677149806178136714
+    second: 01_OMORI_BATTLE_46
+  - first:
+      213: -4706697059709977391
+    second: 01_OMORI_BATTLE_47
+  - first:
+      213: -5260589350335848060
+    second: 01_OMORI_BATTLE_48
+  - first:
+      213: -6192889877396656390
+    second: 01_OMORI_BATTLE_49
+  - first:
+      213: 3286594153926453087
+    second: 01_OMORI_BATTLE_50
+  - first:
+      213: 6036157967505422253
+    second: 01_OMORI_BATTLE_51
+  - first:
+      213: 6332660157414786215
+    second: 01_OMORI_BATTLE_52
+  - first:
+      213: -8566118870881484623
+    second: 01_OMORI_BATTLE_53
+  - first:
+      213: -1167972189441860699
+    second: 01_OMORI_BATTLE_54
+  - first:
+      213: -8036062264486774878
+    second: 01_OMORI_BATTLE_55
+  - first:
+      213: -5770311622768673749
+    second: 01_OMORI_BATTLE_56
+  - first:
+      213: -7031064031030633329
+    second: 01_OMORI_BATTLE_57
+  - first:
+      213: -5861210161260557751
+    second: 01_OMORI_BATTLE_58
+  - first:
+      213: 3835085212790374430
+    second: 01_OMORI_BATTLE_59
+  - first:
+      213: -2232640464308670126
+    second: 01_OMORI_BATTLE_60
+  - first:
+      213: -4364907361197157229
+    second: 01_OMORI_BATTLE_61
+  - first:
+      213: -747685384901572134
+    second: 01_OMORI_BATTLE_62
+  - first:
+      213: 7842419349144058957
+    second: 01_OMORI_BATTLE_63
+  - first:
+      213: -3035640082703052583
+    second: 01_OMORI_BATTLE_64
+  - first:
+      213: -3302591266650942088
+    second: 01_OMORI_BATTLE_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1484
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a032c6969305e10800000000000000
+      internalID: 2184308944223275586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1484
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be82e04c398f6880800000000000000
+      internalID: -8615516670256836941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1484
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040381de479562c10800000000000000
+      internalID: 2028407040905850944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1378
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f067d7b9b5f8350800000000000000
+      internalID: 6021131950200590200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1378
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fb2b81a184d2850800000000000000
+      internalID: 6353813926210355069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1378
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 571d21ee05d1df610800000000000000
+      internalID: 1656512471371010421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1272
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f292bb0b1b0aa1e0800000000000000
+      internalID: -2185922458346679568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1272
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb8c6a60afe6bdc0800000000000000
+      internalID: -3623445377913680921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_8
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1272
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4560fa49195022a0800000000000000
+      internalID: -6764308675144161971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1166
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3ce35432dfbe0e0800000000000000
+      internalID: -2239418061759265874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1166
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841877fb76f26b760800000000000000
+      internalID: 7473212754308333896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1166
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8a404936404ca20800000000000000
+      internalID: 3081592870759868624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0076328821e859d0800000000000000
+      internalID: -2785228805429104625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_13
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f33061b5aa5b780800000000000000
+      internalID: -8667834599616594043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_14
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b95699acbd0f3a0800000000000000
+      internalID: -6633560587913290936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1518dd1237a2b350800000000000000
+      internalID: 6031066684693419295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 298bbd423f508b280800000000000000
+      internalID: -9027458911210588014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d15e4d874e16c720800000000000000
+      internalID: 2866011505530130904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_19
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4641e766a50a2980800000000000000
+      internalID: -8563025529226049974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_20
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c29936f1c469f10800000000000000
+      internalID: 2276090359381044230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5461138d73e4976f0800000000000000
+      internalID: -686431466440026555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_22
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc1660b80581e970800000000000000
+      internalID: 8782447020714892536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_23
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7298dac2a9f8e30800000000000000
+      internalID: 4507991268701841344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47fed5fc663854470800000000000000
+      internalID: 8378247159381618548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_25
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693ac110bb5014080800000000000000
+      internalID: -9205069862632905834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_26
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc842f3c234081f0800000000000000
+      internalID: -1044761256232973120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53b150a7d2277e20800000000000000
+      internalID: 3348183157476275039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_29
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdf190ae00d34990800000000000000
+      internalID: -7402844601224921659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_31
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44978025e1856dae0800000000000000
+      internalID: -1524934536569783996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_32
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679a362886ee5c730800000000000000
+      internalID: 4018880375129614710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0972f06b652e9b0c0800000000000000
+      internalID: -4559364285686405232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_34
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8920e5745964bc6b0800000000000000
+      internalID: -5275044931572989288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_35
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8331b48ede2a43900800000000000000
+      internalID: 663334187818488632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_16
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc14f06a15433ca4188593346383a9b9
+      internalID: -69169999046415288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_28
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4814651e903590549acd8dbfdeadb64f
+      internalID: 6755061126593306296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9bca18e756e3c4fabc7e05f0a07c82
+      internalID: -6951749405743602948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0e969a3444f98478feb18d88e1e695
+      internalID: -1618697399325232117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_37
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b89e95ca1138d4f97ceaf80fd2a115
+      internalID: -4715644824651851955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_38
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43af65b6701543943b17ffbedd510d2c
+      internalID: -496767874455183162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afeb319472295b409d0217c2d19eb33
+      internalID: -2904514675691918775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_40
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b35d6d0d30f00e44a4ff44844ebd67c
+      internalID: 6210588333971329993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_41
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be790fabbb875a418b687cb56f82806
+      internalID: -4543795943384733353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5716c5d579320d24998665d4e470cb3d
+      internalID: -6808754911645490652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_43
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4fc15b59edae948bb8d8c82de4b118
+      internalID: -569050224723939357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_OMORI_BATTLE_44
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21fe3838ec7d634ebcb373b0fd395f5
+      internalID: -4263805901194221938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 27583154badeaac47b8ec41447577cea
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":15.0},"gridSpriteSize":{"x":106.0,"y":106.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      01_OMORI_BATTLE_0: 2184308944223275586
+      01_OMORI_BATTLE_1: -8615516670256836941
+      01_OMORI_BATTLE_10: 7473212754308333896
+      01_OMORI_BATTLE_11: 3081592870759868624
+      01_OMORI_BATTLE_12: -2785228805429104625
+      01_OMORI_BATTLE_13: -8667834599616594043
+      01_OMORI_BATTLE_14: -6633560587913290936
+      01_OMORI_BATTLE_15: 6031066684693419295
+      01_OMORI_BATTLE_16: -69169999046415288
+      01_OMORI_BATTLE_17: -9027458911210588014
+      01_OMORI_BATTLE_18: 2866011505530130904
+      01_OMORI_BATTLE_19: -8563025529226049974
+      01_OMORI_BATTLE_2: 2028407040905850944
+      01_OMORI_BATTLE_20: 2276090359381044230
+      01_OMORI_BATTLE_21: -686431466440026555
+      01_OMORI_BATTLE_22: 8782447020714892536
+      01_OMORI_BATTLE_23: 4507991268701841344
+      01_OMORI_BATTLE_24: 8378247159381618548
+      01_OMORI_BATTLE_25: -9205069862632905834
+      01_OMORI_BATTLE_26: -1044761256232973120
+      01_OMORI_BATTLE_27: 3348183157476275039
+      01_OMORI_BATTLE_28: 6755061126593306296
+      01_OMORI_BATTLE_29: -7402844601224921659
+      01_OMORI_BATTLE_3: 6021131950200590200
+      01_OMORI_BATTLE_30: -6951749405743602948
+      01_OMORI_BATTLE_31: -1524934536569783996
+      01_OMORI_BATTLE_32: 4018880375129614710
+      01_OMORI_BATTLE_33: -4559364285686405232
+      01_OMORI_BATTLE_34: -5275044931572989288
+      01_OMORI_BATTLE_35: 663334187818488632
+      01_OMORI_BATTLE_36: -1618697399325232117
+      01_OMORI_BATTLE_37: -4715644824651851955
+      01_OMORI_BATTLE_38: -496767874455183162
+      01_OMORI_BATTLE_39: -2904514675691918775
+      01_OMORI_BATTLE_4: 6353813926210355069
+      01_OMORI_BATTLE_40: 6210588333971329993
+      01_OMORI_BATTLE_41: -4543795943384733353
+      01_OMORI_BATTLE_42: -6808754911645490652
+      01_OMORI_BATTLE_43: -569050224723939357
+      01_OMORI_BATTLE_44: -4263805901194221938
+      01_OMORI_BATTLE_5: 1656512471371010421
+      01_OMORI_BATTLE_6: -2185922458346679568
+      01_OMORI_BATTLE_7: -3623445377913680921
+      01_OMORI_BATTLE_8: -6764308675144161971
+      01_OMORI_BATTLE_9: -2239418061759265874
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

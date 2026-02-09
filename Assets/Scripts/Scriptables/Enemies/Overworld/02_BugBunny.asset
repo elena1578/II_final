@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a6c2b47e001114b82bf759913eb6ca, type: 3}
+  m_Name: 02_BugBunny
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldData
+  enemyPrefab: {fileID: 0}
+  correspondingBattleData: {fileID: 11400000, guid: b7a84642e1193844d9f14ee4ef1f6f7f, type: 2}
+  sprite: {fileID: 5431964463116794410, guid: 5baecc3da0c728a448704f759236d063, type: 3}
+  animatorController: {fileID: 0}
+  moveSpeed: 1
+  chanceToMove: 1
+  alertRadius: 5

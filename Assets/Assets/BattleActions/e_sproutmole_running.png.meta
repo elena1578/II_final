@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: a689fa77501a90147b60fa8a2a779d96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7437147626571536565
+    second: e_sproutmole_running_0
+  - first:
+      213: -1847506504689662202
+    second: e_sproutmole_running_1
+  - first:
+      213: -7815373217271038831
+    second: e_sproutmole_running_2
+  - first:
+      213: 237521501169229805
+    second: e_sproutmole_running_3
+  - first:
+      213: -7875806454960957011
+    second: e_sproutmole_running_4
+  - first:
+      213: -984517247581505540
+    second: e_sproutmole_running_5
+  - first:
+      213: -3111858608431390975
+    second: e_sproutmole_running_6
+  - first:
+      213: 1066923299386564123
+    second: e_sproutmole_running_7
+  - first:
+      213: -592873476367735451
+    second: e_sproutmole_running_8
+  - first:
+      213: 5336837990667446099
+    second: e_sproutmole_running_9
+  - first:
+      213: -724797092703612595
+    second: e_sproutmole_running_10
+  - first:
+      213: -1240810530514871360
+    second: e_sproutmole_running_11
+  - first:
+      213: 4143917244450219366
+    second: e_sproutmole_running_12
+  - first:
+      213: -3470447358249187366
+    second: e_sproutmole_running_13
+  - first:
+      213: 3647953071187318998
+    second: e_sproutmole_running_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: e_sproutmole_running_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 391
+        width: 109
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b89fe7dc5e063760800000000000000
+      internalID: 7437147626571536565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_1
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 389
+        width: 106
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607cfbb5f965c56e0800000000000000
+      internalID: -1847506504689662202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_2
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 392
+        width: 119
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c357d67773a8390800000000000000
+      internalID: -7815373217271038831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_3
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 388
+        width: 104
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def95bffb88db4300800000000000000
+      internalID: 237521501169229805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_4
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 385
+        width: 103
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9d25cc1c383b290800000000000000
+      internalID: -7875806454960957011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_5
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 226
+        width: 109
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7b8ae87ca4652f0800000000000000
+      internalID: -984517247581505540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_6
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 244
+        width: 106
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f943d351570d4d0800000000000000
+      internalID: -3111858608431390975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_7
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 253
+        width: 119
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e168686197ece00800000000000000
+      internalID: 1066923299386564123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_8
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 245
+        width: 104
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565a954e6b0b5c7f0800000000000000
+      internalID: -592873476367735451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_9
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 225
+        width: 103
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357ea8170e1401a40800000000000000
+      internalID: 5336837990667446099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 7
+        width: 109
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d415a2362e001f5f0800000000000000
+      internalID: -724797092703612595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_11
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 7
+        width: 106
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbd8178561c7cee0800000000000000
+      internalID: -1240810530514871360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_12
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 8
+        width: 119
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665221647c6228930800000000000000
+      internalID: 4143917244450219366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_13
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 6
+        width: 105
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad74ddfc38e76dfc0800000000000000
+      internalID: -3470447358249187366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_sproutmole_running_14
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 4
+        width: 103
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d85a659df120a230800000000000000
+      internalID: 3647953071187318998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      e_sproutmole_running_0: 7437147626571536565
+      e_sproutmole_running_1: -1847506504689662202
+      e_sproutmole_running_10: -724797092703612595
+      e_sproutmole_running_11: -1240810530514871360
+      e_sproutmole_running_12: 4143917244450219366
+      e_sproutmole_running_13: -3470447358249187366
+      e_sproutmole_running_14: 3647953071187318998
+      e_sproutmole_running_2: -7815373217271038831
+      e_sproutmole_running_3: 237521501169229805
+      e_sproutmole_running_4: -7875806454960957011
+      e_sproutmole_running_5: -984517247581505540
+      e_sproutmole_running_6: -3111858608431390975
+      e_sproutmole_running_7: 1066923299386564123
+      e_sproutmole_running_8: -592873476367735451
+      e_sproutmole_running_9: 5336837990667446099
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

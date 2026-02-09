@@ -1,0 +1,1057 @@
+fileFormatVersion: 2
+guid: bdf3a4dc9a407c943bfe5fa1a13d5105
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7384523090950739693
+    second: 02_AUBREY_BATTLE_0
+  - first:
+      213: -5632202042851865584
+    second: 02_AUBREY_BATTLE_1
+  - first:
+      213: -4219104173663050926
+    second: 02_AUBREY_BATTLE_2
+  - first:
+      213: 3476812306045438497
+    second: 02_AUBREY_BATTLE_3
+  - first:
+      213: -3217773257702235257
+    second: 02_AUBREY_BATTLE_4
+  - first:
+      213: -6783461125946168168
+    second: 02_AUBREY_BATTLE_5
+  - first:
+      213: 4043048209418720377
+    second: 02_AUBREY_BATTLE_6
+  - first:
+      213: 7180014331062048252
+    second: 02_AUBREY_BATTLE_7
+  - first:
+      213: 5201043003097494350
+    second: 02_AUBREY_BATTLE_8
+  - first:
+      213: 7017115791399356649
+    second: 02_AUBREY_BATTLE_9
+  - first:
+      213: 6336176097226541079
+    second: 02_AUBREY_BATTLE_10
+  - first:
+      213: 2127841080353393261
+    second: 02_AUBREY_BATTLE_11
+  - first:
+      213: -1430109911115733298
+    second: 02_AUBREY_BATTLE_12
+  - first:
+      213: 8630128069961885798
+    second: 02_AUBREY_BATTLE_13
+  - first:
+      213: -6026579402066599315
+    second: 02_AUBREY_BATTLE_14
+  - first:
+      213: -8204486604958565698
+    second: 02_AUBREY_BATTLE_15
+  - first:
+      213: -7157166120652709803
+    second: 02_AUBREY_BATTLE_16
+  - first:
+      213: 7396974242501645455
+    second: 02_AUBREY_BATTLE_17
+  - first:
+      213: 5687289368036572083
+    second: 02_AUBREY_BATTLE_18
+  - first:
+      213: -496631304758940696
+    second: 02_AUBREY_BATTLE_19
+  - first:
+      213: -3560914092208875162
+    second: 02_AUBREY_BATTLE_20
+  - first:
+      213: 5249244618894616794
+    second: 02_AUBREY_BATTLE_21
+  - first:
+      213: -5862134819051736581
+    second: 02_AUBREY_BATTLE_22
+  - first:
+      213: -2550731592549973392
+    second: 02_AUBREY_BATTLE_23
+  - first:
+      213: 3979269034493656641
+    second: 02_AUBREY_BATTLE_24
+  - first:
+      213: -412234665275639615
+    second: 02_AUBREY_BATTLE_25
+  - first:
+      213: -5997292259526190134
+    second: 02_AUBREY_BATTLE_26
+  - first:
+      213: 2499867170752759307
+    second: 02_AUBREY_BATTLE_27
+  - first:
+      213: -6641248461289213735
+    second: 02_AUBREY_BATTLE_28
+  - first:
+      213: -940231539576804665
+    second: 02_AUBREY_BATTLE_29
+  - first:
+      213: -1797485327325788549
+    second: 02_AUBREY_BATTLE_30
+  - first:
+      213: -8067525072497098423
+    second: 02_AUBREY_BATTLE_31
+  - first:
+      213: 5033612556974091727
+    second: 02_AUBREY_BATTLE_32
+  - first:
+      213: 980005594088284160
+    second: 02_AUBREY_BATTLE_33
+  - first:
+      213: 5120704058454258266
+    second: 02_AUBREY_BATTLE_34
+  - first:
+      213: 7130366469247376292
+    second: 02_AUBREY_BATTLE_35
+  - first:
+      213: 5373931001955727830
+    second: 02_AUBREY_BATTLE_36
+  - first:
+      213: 4233088429243640270
+    second: 02_AUBREY_BATTLE_37
+  - first:
+      213: 6483079963354086176
+    second: 02_AUBREY_BATTLE_38
+  - first:
+      213: 5141220830381069488
+    second: 02_AUBREY_BATTLE_39
+  - first:
+      213: 595091892489708697
+    second: 02_AUBREY_BATTLE_40
+  - first:
+      213: -7564348556118482429
+    second: 02_AUBREY_BATTLE_41
+  - first:
+      213: -1406898477063752432
+    second: 02_AUBREY_BATTLE_42
+  - first:
+      213: -8690538175706377300
+    second: 02_AUBREY_BATTLE_43
+  - first:
+      213: -1802175274228191335
+    second: 02_AUBREY_BATTLE_44
+  - first:
+      213: 8558607514844033766
+    second: 02_AUBREY_BATTLE_45
+  - first:
+      213: 5829121223147029525
+    second: 02_AUBREY_BATTLE_46
+  - first:
+      213: -2477895068731687382
+    second: 02_AUBREY_BATTLE_47
+  - first:
+      213: -3490246043809055820
+    second: 02_AUBREY_BATTLE_48
+  - first:
+      213: -4529905667008140518
+    second: 02_AUBREY_BATTLE_49
+  - first:
+      213: 714591841953946528
+    second: 02_AUBREY_BATTLE_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6d9c750a81b7660800000000000000
+      internalID: 7384523090950739693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01cc59c251666d1b0800000000000000
+      internalID: -5632202042851865584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253227a9b1bb275c0800000000000000
+      internalID: -4219104173663050926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a8b841f5e104030800000000000000
+      internalID: 3476812306045438497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89cae48db0e4cd1a0800000000000000
+      internalID: -6783461125946168168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9749e2ceceacb1830800000000000000
+      internalID: 4043048209418720377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5da252ef884a360800000000000000
+      internalID: 7180014331062048252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8842e42adc16160800000000000000
+      internalID: 7017115791399356649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a82f4503c978d10800000000000000
+      internalID: 2127841080353393261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba7efae6eec32e80800000000000000
+      internalID: -8204486604958565698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_16
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550e8046553acac90800000000000000
+      internalID: -7157166120652709803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f845609f1e457a660800000000000000
+      internalID: 7396974242501645455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbfca43c8f4dee40800000000000000
+      internalID: 5687289368036572083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_19
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb2187a57c9b19f0800000000000000
+      internalID: -496631304758940696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_20
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669153aef77159ec0800000000000000
+      internalID: -3560914092208875162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad828505b2019d840800000000000000
+      internalID: 5249244618894616794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_22
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1f8f4e07385aea0800000000000000
+      internalID: -5862134819051736581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_23
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07241b4812bf99cd0800000000000000
+      internalID: -2550731592549973392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14eb4b29a14393730800000000000000
+      internalID: 3979269034493656641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_25
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8b42c81c2774af0800000000000000
+      internalID: -412234665275639615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_26
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acbddb8077655cca0800000000000000
+      internalID: -5997292259526190134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06016a62ff41b220800000000000000
+      internalID: 2499867170752759307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_28
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d03fb716bb85d3a0800000000000000
+      internalID: -6641248461289213735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_29
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cae7e47560a3f2f0800000000000000
+      internalID: -940231539576804665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7605c74e9c0e07e0800000000000000
+      internalID: -1797485327325788549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_31
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941c04da0b46a0090800000000000000
+      internalID: -8067525072497098423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_32
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcde26b83fbfad540800000000000000
+      internalID: 5033612556974091727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f837b13afb4324c86c4e84e4b563bb
+      internalID: -3217773257702235257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_8
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4a52a2f5860b742ad9d4e4669dad7c
+      internalID: 5201043003097494350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29554b69dad0ec34cbb52f755c4a3580
+      internalID: 6336176097226541079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e99335bf8f5be468bae5fbd87b7c80
+      internalID: -1430109911115733298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_13
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356e29cfe7ce32a48988c5302dd27266
+      internalID: 8630128069961885798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_AUBREY_BATTLE_14
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cf52147ea9a2f479a7b1ff6b76f494
+      internalID: -6026579402066599315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c4d881e2481bf294cbc66a29ec86c87d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":11.0},"gridSpriteSize":{"x":106.0,"y":106.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      02_AUBREY_BATTLE_0: 7384523090950739693
+      02_AUBREY_BATTLE_1: -5632202042851865584
+      02_AUBREY_BATTLE_10: 6336176097226541079
+      02_AUBREY_BATTLE_11: 2127841080353393261
+      02_AUBREY_BATTLE_12: -1430109911115733298
+      02_AUBREY_BATTLE_13: 8630128069961885798
+      02_AUBREY_BATTLE_14: -6026579402066599315
+      02_AUBREY_BATTLE_15: -8204486604958565698
+      02_AUBREY_BATTLE_16: -7157166120652709803
+      02_AUBREY_BATTLE_17: 7396974242501645455
+      02_AUBREY_BATTLE_18: 5687289368036572083
+      02_AUBREY_BATTLE_19: -496631304758940696
+      02_AUBREY_BATTLE_2: -4219104173663050926
+      02_AUBREY_BATTLE_20: -3560914092208875162
+      02_AUBREY_BATTLE_21: 5249244618894616794
+      02_AUBREY_BATTLE_22: -5862134819051736581
+      02_AUBREY_BATTLE_23: -2550731592549973392
+      02_AUBREY_BATTLE_24: 3979269034493656641
+      02_AUBREY_BATTLE_25: -412234665275639615
+      02_AUBREY_BATTLE_26: -5997292259526190134
+      02_AUBREY_BATTLE_27: 2499867170752759307
+      02_AUBREY_BATTLE_28: -6641248461289213735
+      02_AUBREY_BATTLE_29: -940231539576804665
+      02_AUBREY_BATTLE_3: 3476812306045438497
+      02_AUBREY_BATTLE_30: -1797485327325788549
+      02_AUBREY_BATTLE_31: -8067525072497098423
+      02_AUBREY_BATTLE_32: 5033612556974091727
+      02_AUBREY_BATTLE_4: -3217773257702235257
+      02_AUBREY_BATTLE_5: -6783461125946168168
+      02_AUBREY_BATTLE_6: 4043048209418720377
+      02_AUBREY_BATTLE_7: 7180014331062048252
+      02_AUBREY_BATTLE_8: 5201043003097494350
+      02_AUBREY_BATTLE_9: 7017115791399356649
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

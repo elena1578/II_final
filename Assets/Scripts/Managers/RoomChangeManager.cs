@@ -1,0 +1,158 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
+
+public class RoomChangeManager : MonoBehaviour
+{
+    public static RoomChangeManager instance;
+    private ScreenFade screenFade;
+    private PlayerOverworldController player;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+            Destroy(gameObject);
+    }
+    
+    private void Start()
+    {
+        RoomData startingRoom = RoomManager.GetRoomFromActiveScene();
+        if (startingRoom != null)
+        {
+            if (startingRoom.music != null)
+                    MusicFadeInOut.instance.CheckMusic(startingRoom.music, startingRoom.musicVolume);
+                else
+                    MusicFadeInOut.instance.StopMusic();
+        }
+    }
+
+    /// <summary>
+    /// Call to to transition from currentRoomID to exitingTo room
+    /// </summary>
+    /// <param name="currentRoomID"></param>
+    /// <param name="exitingTo"></param>
+    public void InitializeAndGoToRoom(RoomData.RoomID currentRoomID, RoomData.RoomID exitingTo)
+    {
+        RoomData currentRoom = RoomManager.GetRoom(currentRoomID);  // get ID from RoomManager in GameManager
+        if (currentRoom == null)
+        {
+            Debug.LogError($"[RoomChangeManager] Couldn't find current room: {currentRoomID}");
+            return;
+        }
+
+        // get exit
+        RoomExits exit = Exit(currentRoom, exitingTo);
+        if (exit == null)
+        {
+            Debug.LogError($"[RoomChangeManager] No exit found from {currentRoomID} to {exitingTo}");
+            return;
+        }
+
+        // check if target room is null
+        if (exit.targetRoom == null)
+        {
+            Debug.LogError($"[RoomChangeManager] Exit from {currentRoomID} to {exitingTo} has no target room assigned");
+            return;
+        }
+
+        StartCoroutine(LeaveRoomRoutine(exit.targetRoom, exit.spawnPointID));
+    }
+
+    private RoomExits Exit(RoomData room, RoomData.RoomID exitingTo)
+    {
+        foreach (var exit in room.exits)
+        {
+            if (exit.exitingTo == exitingTo)
+                return exit;
+        }
+        return null;
+    }
+
+    private IEnumerator LeaveRoomRoutine(RoomData targetRoom, RoomData.SpawnPointID spawnPointID)
+    {
+        screenFade = FindFirstObjectByType<ScreenFade>();
+        if (screenFade == null)
+        {
+            Debug.LogWarning("screenFade missing");
+            yield break;
+        }
+
+        // disable player movement
+        player = FindFirstObjectByType<PlayerOverworldController>();
+        if (player != null)
+            player.DisablePlayerMovement();
+
+        // fade out music
+        if (MusicFadeInOut.instance != null)
+            MusicFadeInOut.instance.PreTransitionCheckMusic(targetRoom.music);
+
+        // fade to black
+        screenFade.StartCoroutine(screenFade.FadeIn());
+        yield return new WaitForSeconds(screenFade.fadeDuration);
+
+        // load new room
+        yield return StartCoroutine(EnterRoomRoutine(targetRoom, spawnPointID));
+    }
+
+    private IEnumerator EnterRoomRoutine(RoomData targetRoom, RoomData.SpawnPointID spawnPointID)
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(targetRoom.roomID.ToString());
+        while (!asyncLoad.isDone)
+            yield return null;
+
+        // place player immediately after scene loads prior to fade out
+        if (targetRoom.isOverworldScene)
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null)
+            {
+                // disable rb while positioning
+                Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                    rb.bodyType = RigidbodyType2D.Kinematic;
+
+                SpawnPoint[] spawnPoints = FindObjectsByType<SpawnPoint>(FindObjectsSortMode.None);
+                foreach (var sp in spawnPoints)
+                {
+                    if (sp.spawnPointID == spawnPointID)
+                    {
+                        player.transform.position = sp.transform.position;
+                        break;
+                    }
+                }
+
+                if (rb != null)
+                    rb.bodyType = RigidbodyType2D.Dynamic;
+            }
+            else
+                Debug.LogWarning("No player found in the scene after room change.");
+        }
+
+        // now fade out
+        screenFade = FindFirstObjectByType<ScreenFade>();
+        if (screenFade != null)
+        {
+            yield return StartCoroutine(FadeOutForNewRoom(targetRoom));
+        }
+
+        if (targetRoom.music != null)
+            MusicFadeInOut.instance.CheckMusic(targetRoom.music, targetRoom.musicVolume);
+        else
+            MusicFadeInOut.instance.StopMusic();
+    }
+
+    private IEnumerator FadeOutForNewRoom(RoomData targetRoom)
+    {
+        if (screenFade == null)
+            yield break;
+
+        screenFade.fadeCanvasGroup.alpha = 1;
+        yield return screenFade.StartCoroutine(screenFade.FadeOut());
+    }
+}
+

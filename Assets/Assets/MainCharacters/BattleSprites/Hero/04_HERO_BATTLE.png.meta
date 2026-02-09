@@ -1,0 +1,1024 @@
+fileFormatVersion: 2
+guid: 776f688af0ba19a468f677477e56ff72
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3735797260917301413
+    second: 04_HERO_BATTLE_0
+  - first:
+      213: 5409274294740061746
+    second: 04_HERO_BATTLE_1
+  - first:
+      213: 8579547451706182502
+    second: 04_HERO_BATTLE_2
+  - first:
+      213: -4405247529414528390
+    second: 04_HERO_BATTLE_3
+  - first:
+      213: 7670034334337494710
+    second: 04_HERO_BATTLE_4
+  - first:
+      213: 6409693840975479622
+    second: 04_HERO_BATTLE_5
+  - first:
+      213: 8473891428657195057
+    second: 04_HERO_BATTLE_6
+  - first:
+      213: 2922464145386088801
+    second: 04_HERO_BATTLE_7
+  - first:
+      213: -495198371197093054
+    second: 04_HERO_BATTLE_8
+  - first:
+      213: -6433856612297314739
+    second: 04_HERO_BATTLE_9
+  - first:
+      213: -7864052941446266659
+    second: 04_HERO_BATTLE_10
+  - first:
+      213: -371255900309257568
+    second: 04_HERO_BATTLE_11
+  - first:
+      213: -583865914646180566
+    second: 04_HERO_BATTLE_12
+  - first:
+      213: -6770707278500820290
+    second: 04_HERO_BATTLE_13
+  - first:
+      213: -2787979272117613703
+    second: 04_HERO_BATTLE_14
+  - first:
+      213: 6220213604472571592
+    second: 04_HERO_BATTLE_15
+  - first:
+      213: -2313899604128009319
+    second: 04_HERO_BATTLE_16
+  - first:
+      213: 4798957307043926143
+    second: 04_HERO_BATTLE_17
+  - first:
+      213: -8086859837494466756
+    second: 04_HERO_BATTLE_18
+  - first:
+      213: -3811156174328589634
+    second: 04_HERO_BATTLE_19
+  - first:
+      213: -2233467804075917303
+    second: 04_HERO_BATTLE_20
+  - first:
+      213: 3813163038836944405
+    second: 04_HERO_BATTLE_21
+  - first:
+      213: 8500325039002237592
+    second: 04_HERO_BATTLE_22
+  - first:
+      213: -8742419777474897953
+    second: 04_HERO_BATTLE_23
+  - first:
+      213: -151980093975052368
+    second: 04_HERO_BATTLE_24
+  - first:
+      213: -4210973402965833599
+    second: 04_HERO_BATTLE_25
+  - first:
+      213: 6185088553356298312
+    second: 04_HERO_BATTLE_26
+  - first:
+      213: -2522554149985786343
+    second: 04_HERO_BATTLE_27
+  - first:
+      213: -7215868595133243393
+    second: 04_HERO_BATTLE_28
+  - first:
+      213: -490790656464618503
+    second: 04_HERO_BATTLE_29
+  - first:
+      213: -8653113135414698023
+    second: 04_HERO_BATTLE_30
+  - first:
+      213: -8946433888045447226
+    second: 04_HERO_BATTLE_31
+  - first:
+      213: -3617516305756141340
+    second: 04_HERO_BATTLE_32
+  - first:
+      213: 6763418350089108371
+    second: 04_HERO_BATTLE_33
+  - first:
+      213: 7776607891223894970
+    second: 04_HERO_BATTLE_34
+  - first:
+      213: 7858529591684659948
+    second: 04_HERO_BATTLE_35
+  - first:
+      213: -6478508417953841153
+    second: 04_HERO_BATTLE_36
+  - first:
+      213: -1304828885153497858
+    second: 04_HERO_BATTLE_37
+  - first:
+      213: 2627626568719863210
+    second: 04_HERO_BATTLE_38
+  - first:
+      213: -1972627795626727325
+    second: 04_HERO_BATTLE_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f952e2f28c72cc0800000000000000
+      internalID: -3735797260917301413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e02aebf4a911b40800000000000000
+      internalID: 5409274294740061746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72749546ba6dd2c0800000000000000
+      internalID: -4405247529414528390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be6c39e69f617a60800000000000000
+      internalID: 7670034334337494710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 954
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6434a5e969ec3f850800000000000000
+      internalID: 6409693840975479622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138e6569b5f499570800000000000000
+      internalID: 8473891428657195057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169ad8608adae8820800000000000000
+      internalID: 2922464145386088801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_8
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 848
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bf17f74b3b029f0800000000000000
+      internalID: -495198371197093054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e6838cf7956b6a0800000000000000
+      internalID: -6433856612297314739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0ca3ae3854dd290800000000000000
+      internalID: -7864052941446266659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 742
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a28c45c9b809daf0800000000000000
+      internalID: -371255900309257568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d4e094b01b5e7f0800000000000000
+      internalID: -583865914646180566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_13
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba8eca5a9d9902a0800000000000000
+      internalID: -6770707278500820290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_14
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 636
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b07449f9b1f49d0800000000000000
+      internalID: -2787979272117613703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6c3a13153a25650800000000000000
+      internalID: 6220213604472571592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_16
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9937802d19063efd0800000000000000
+      internalID: -2313899604128009319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 530
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f705e9aae32599240800000000000000
+      internalID: 4798957307043926143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37e4c5e2d3b5cf80800000000000000
+      internalID: -8086859837494466756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_19
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb29b9dd6ad0c1bc0800000000000000
+      internalID: -3811156174328589634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_20
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 424
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90088c89dd02101e0800000000000000
+      internalID: -2233467804075917303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e6680b4931be430800000000000000
+      internalID: 3813163038836944405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_22
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a3619169837f570800000000000000
+      internalID: 8500325039002237592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_23
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 318
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7524e188faca680800000000000000
+      internalID: -8742419777474897953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bfbfa5e8ee04edf0800000000000000
+      internalID: -151980093975052368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_25
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1888a9d200e9f85c0800000000000000
+      internalID: -4210973402965833599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_26
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 212
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848032fe449d5d550800000000000000
+      internalID: 6185088553356298312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916e86b9d561efcd0800000000000000
+      internalID: -2522554149985786343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_28
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff9f297eb51cdb90800000000000000
+      internalID: -7215868595133243393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_29
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 106
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb785e8f7c5039f0800000000000000
+      internalID: -490790656464618503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df17521377f9e780800000000000000
+      internalID: -8653113135414698023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_31
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7c88077c1e7d380800000000000000
+      internalID: -8946433888045447226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_32
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8c83a16100ccdc0800000000000000
+      internalID: -3617516305756141340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_HERO_BATTLE_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1060
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce1e9f694c1bf44a97644cb9adc631c
+      internalID: 8579547451706182502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8986670c66fe700468e7f0a9bdeee05e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":11.0},"gridSpriteSize":{"x":106.0,"y":106.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      04_HERO_BATTLE_0: -3735797260917301413
+      04_HERO_BATTLE_1: 5409274294740061746
+      04_HERO_BATTLE_10: -7864052941446266659
+      04_HERO_BATTLE_11: -371255900309257568
+      04_HERO_BATTLE_12: -583865914646180566
+      04_HERO_BATTLE_13: -6770707278500820290
+      04_HERO_BATTLE_14: -2787979272117613703
+      04_HERO_BATTLE_15: 6220213604472571592
+      04_HERO_BATTLE_16: -2313899604128009319
+      04_HERO_BATTLE_17: 4798957307043926143
+      04_HERO_BATTLE_18: -8086859837494466756
+      04_HERO_BATTLE_19: -3811156174328589634
+      04_HERO_BATTLE_2: 8579547451706182502
+      04_HERO_BATTLE_20: -2233467804075917303
+      04_HERO_BATTLE_21: 3813163038836944405
+      04_HERO_BATTLE_22: 8500325039002237592
+      04_HERO_BATTLE_23: -8742419777474897953
+      04_HERO_BATTLE_24: -151980093975052368
+      04_HERO_BATTLE_25: -4210973402965833599
+      04_HERO_BATTLE_26: 6185088553356298312
+      04_HERO_BATTLE_27: -2522554149985786343
+      04_HERO_BATTLE_28: -7215868595133243393
+      04_HERO_BATTLE_29: -490790656464618503
+      04_HERO_BATTLE_3: -4405247529414528390
+      04_HERO_BATTLE_30: -8653113135414698023
+      04_HERO_BATTLE_31: -8946433888045447226
+      04_HERO_BATTLE_32: -3617516305756141340
+      04_HERO_BATTLE_4: 7670034334337494710
+      04_HERO_BATTLE_5: 6409693840975479622
+      04_HERO_BATTLE_6: 8473891428657195057
+      04_HERO_BATTLE_7: 2922464145386088801
+      04_HERO_BATTLE_8: -495198371197093054
+      04_HERO_BATTLE_9: -6433856612297314739
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
