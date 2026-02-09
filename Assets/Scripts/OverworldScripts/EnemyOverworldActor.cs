@@ -136,7 +136,7 @@ public class EnemyOverworldActor : GridMovementController
 
     private void ChasePlayer(Transform player)
     {
-        Debug.Log(data.name + " has spotted the player!");
+        // Debug.Log(data.name + " has spotted the player!");
         
         movement = SnapToDirection((player.position - transform.position).normalized);
 
@@ -160,8 +160,8 @@ public class EnemyOverworldActor : GridMovementController
     {
         if (other.collider.CompareTag("Player"))
         {
-            // Debug.Log("Beginning battle with " + data.name);
-            // BattleTransitionManager.instance.StartBattle(EnemyOverworldActor.this);
+            Debug.Log("Beginning battle with " + data.name);
+            BattleTransitionManager.instance.StartBattle(data);
         }
     }
 }

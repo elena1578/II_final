@@ -43,7 +43,7 @@ public class AkUnitySoundEngineInitialization
 
 	public bool InitializeSoundEngine()
 	{
-		UnityEngine.Debug.LogFormat("WwiseUnity: Wwise(R) SDK Version {0}.", AkUnitySoundEngine.WwiseVersion);
+		// UnityEngine.Debug.LogFormat("WwiseUnity: Wwise(R) SDK Version {0}.", AkUnitySoundEngine.WwiseVersion);
 
 #if UNITY_ANDROID && ! UNITY_EDITOR
 		//Obtains the Android Java Object "currentActivity" in order to set it for the android io hook initialization
@@ -121,12 +121,12 @@ public class AkUnitySoundEngineInitialization
 #if !AK_WWISE_ADDRESSABLES
 #if !UNITY_ANDROID || UNITY_EDITOR
 #if UNITY_EDITOR
-			var format = "WwiseUnity: Failed to set SoundBanks base path to <{0}>. Make sure SoundBank path is correctly set under Edit > Project Settings > Wwise > Editor > Asset Management.";
+			// var format = "WwiseUnity: Failed to set SoundBanks base path to <{0}>. Make sure SoundBank path is correctly set under Edit > Project Settings > Wwise > Editor > Asset Management.";
 #else
-			var format = "WwiseUnity: Failed to set SoundBanks base path to <{0}>. Make sure SoundBank path is correctly set under Edit > Project Settings > Wwise > Initialization.";
+			// var format = "WwiseUnity: Failed to set SoundBanks base path to <{0}>. Make sure SoundBank path is correctly set under Edit > Project Settings > Wwise > Initialization.";
 #endif
 			// It might be normal for SetBasePath to return AK_PathNotFound on Android. Silence the error log to avoid confusion.
-			UnityEngine.Debug.LogErrorFormat(format, soundBankBasePath);
+			// UnityEngine.Debug.LogErrorFormat(format, soundBankBasePath);
 #endif
 #endif
 		}

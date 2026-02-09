@@ -21,7 +21,7 @@ public class BattleManager : MonoBehaviour
     private TurnOrderManager turnOrder;
     private BattleContext context;
     private BattleResult battleResult;
-    private BattleTransitionManager battleTransitionManager;    
+
 
     private void Awake()
     {
@@ -326,7 +326,7 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         HasActiveBattle = false;
-        battleTransitionManager.instance.ReturnToOverworld();
+        BattleTransitionManager.instance.ReturnToOverworld();
     }
 
     private IEnumerator HandleVictorySequence()
@@ -395,7 +395,7 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(postDialogDelay);
 
         // 2. return to title screen
-        battleTransitionManager.instance.ReturnToTitleScreen();
+        BattleTransitionManager.instance.ReturnToTitleScreen();
     }
 
     public BattleResult CreateBattleResult(bool win)
@@ -419,7 +419,7 @@ public class BattleManager : MonoBehaviour
         if (fleeSuccessful)
         {
             EndBattle(false);
-            battleTransitionManager.instance.ReturnToOverworld();
+            BattleTransitionManager.instance.ReturnToOverworld();
             Debug.Log("Fled from battle successfully!");
         }
         else

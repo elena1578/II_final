@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections;
 using System;
 
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -39,6 +40,8 @@ public class GameManager : MonoBehaviour
     }
 }
 
+
+#region RoomManager
 [System.Serializable]
 public static class RoomManager
 {
@@ -104,3 +107,4 @@ public static class RoomManager
         return null;
     }
 }
+#endregion

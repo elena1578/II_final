@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
+
 public class ScreenFade : MonoBehaviour
 {
     public static ScreenFade instance;

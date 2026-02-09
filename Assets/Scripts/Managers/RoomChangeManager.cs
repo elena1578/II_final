@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+
 public class RoomChangeManager : MonoBehaviour
 {
     public static RoomChangeManager instance;
@@ -10,13 +11,14 @@ public class RoomChangeManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
+        if (instance != null && instance != this)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
             Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     
     private void Start()
@@ -31,6 +33,8 @@ public class RoomChangeManager : MonoBehaviour
         }
     }
 
+
+    #region Standard
     /// <summary>
     /// Call to to transition from currentRoomID to exitingTo room
     /// </summary>
@@ -101,7 +105,7 @@ public class RoomChangeManager : MonoBehaviour
 
     private IEnumerator EnterRoomRoutine(RoomData targetRoom, RoomData.SpawnPointID spawnPointID)
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(targetRoom.roomID.ToString());
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(targetRoom.roomID.ToString());  // e.g., "Entrance153_01"
         while (!asyncLoad.isDone)
             yield return null;
 
@@ -130,7 +134,7 @@ public class RoomChangeManager : MonoBehaviour
                     rb.bodyType = RigidbodyType2D.Dynamic;
             }
             else
-                Debug.LogWarning("No player found in the scene after room change.");
+                Debug.Log("No player found in the scene after room change, skipping player placement");
         }
 
         // now fade out
@@ -145,6 +149,70 @@ public class RoomChangeManager : MonoBehaviour
         else
             MusicFadeInOut.instance.StopMusic();
     }
+    #endregion
+
+
+    #region Battle Case
+    public void InitializeAndReturnFromBattle(RoomData targetRoom, Vector3 playerPosition)
+        => StartCoroutine(LeaveBattleRoutine(targetRoom, playerPosition));
+
+    private IEnumerator LeaveBattleRoutine(RoomData targetRoom, Vector3 playerPosition)
+    {
+        screenFade = FindFirstObjectByType<ScreenFade>();
+        if (screenFade == null)
+        {
+            Debug.LogWarning("ScreenFade missing");
+            yield break;
+        }
+
+        // fade out music
+        if (MusicFadeInOut.instance != null)
+            MusicFadeInOut.instance.PreTransitionCheckMusic(targetRoom.music);
+
+        // fade to black
+        screenFade.StartCoroutine(screenFade.FadeIn());
+        yield return new WaitForSeconds(screenFade.fadeDuration);
+
+        // load new room
+        yield return StartCoroutine(ReturnToRoomRoutine(targetRoom, playerPosition));
+    }
+
+    private IEnumerator ReturnToRoomRoutine(RoomData targetRoom, Vector3 playerPosition)
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(targetRoom.roomID.ToString());  // e.g., "Entrance153_01"
+        while (!asyncLoad.isDone)
+            yield return null;
+
+        // place player immediately after scene loads prior to fade out
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            // disable rb while positioning
+            Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
+            if (rb != null)
+                rb.bodyType = RigidbodyType2D.Kinematic;
+
+            player.transform.position = playerPosition;
+
+            if (rb != null)
+                rb.bodyType = RigidbodyType2D.Dynamic;
+        }
+        else
+            Debug.Log("No player found in the scene after battle transition, skipping player placement");
+
+        // now fade out
+        screenFade = FindFirstObjectByType<ScreenFade>();
+        if (screenFade != null)
+        {
+            yield return StartCoroutine(FadeOutForNewRoom(targetRoom));
+        }
+
+        if (targetRoom.music != null)
+            MusicFadeInOut.instance.CheckMusic(targetRoom.music, targetRoom.musicVolume);
+        else
+            MusicFadeInOut.instance.StopMusic();
+    }
+    #endregion
 
     private IEnumerator FadeOutForNewRoom(RoomData targetRoom)
     {

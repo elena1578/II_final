@@ -33,7 +33,8 @@ public class RoomData : ScriptableObject
         South,
         East,
         West,
-        SpiderWeb
+        SpiderWeb,
+        None
     }
   #endregion
 }

@@ -23,6 +23,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "CurrentRoomDebugPrint",
+                    "type": "Button",
+                    "id": "c3a7841e-6a47-4283-8ab2-579f543dc8f5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -157,6 +166,17 @@
                     "action": "Run",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6a506f43-457f-429c-ad48-ab33db8a855b",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CurrentRoomDebugPrint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -186,6 +206,15 @@
                     "name": "ToggleSpeedUp",
                     "type": "Button",
                     "id": "7e65205f-b798-4429-a6aa-a074af39ffed",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RoomDebugPrint",
+                    "type": "Button",
+                    "id": "e211136c-f787-4673-b323-69c71679a1a6",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -344,6 +373,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "ToggleSpeedUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f8651e5b-b38c-4dc9-8b2f-25c0e1e00924",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RoomDebugPrint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
