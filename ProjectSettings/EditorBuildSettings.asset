@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BattleRoom_00.unity
     guid: dc4433d8065ace344a8327e7843c80a1
   - enabled: 1
+    path: Assets/Scenes/Entrance153_01.unity
+    guid: 417d66a75237614499a1e634b473c2ec
+  - enabled: 1
     path: Assets/Scenes/Railroad154_02.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:

@@ -6,7 +6,8 @@ public abstract class GridMovementController : MonoBehaviour
 {
     [Header("Settings via Inheritance")]
     [SerializeField] protected float moveSpeed = 1f;
-    protected float gridSize = 0.25f;
+    protected float gridSize = 0.32f;
+    protected Vector3 gridOffset = new Vector3(0.23f, -2.75f, 0f); 
     protected float collisionRadius = 0.12f;
 
     protected Vector2 movement;
@@ -18,7 +19,7 @@ public abstract class GridMovementController : MonoBehaviour
 
 
     /// <summary>
-    /// Ensures object starts aligned to the grid
+    /// ensures object starts aligned to the grid
     /// </summary>
     protected virtual void Awake()
     {
@@ -53,22 +54,44 @@ public abstract class GridMovementController : MonoBehaviour
         lastDirection = dir;
     }
 
+    // /// <summary>
+    // /// checks if the target position is free of collision before moving
+    // /// </summary>
+    // /// <param name="target"></param>
+    // /// <returns></returns>
+    // private bool CanMoveTo(Vector3 target)
+    // {
+    //     return !Physics2D.OverlapCircle(
+    //         target,
+    //         collisionRadius,
+    //         collisionLayer
+    //     );
+    // }
+
     /// <summary>
-    /// Checks if the target position is free of collision before moving
+    /// checks if the target position is free of collision before moving
     /// </summary>
     /// <param name="target"></param>
     /// <returns></returns>
     private bool CanMoveTo(Vector3 target)
     {
-        return !Physics2D.OverlapCircle(
-            target,
+        Vector2 origin = rb.position;
+        Vector2 direction = (target - (Vector3)origin).normalized;
+        float distance = Vector2.Distance(origin, target);
+
+        RaycastHit2D hit = Physics2D.CircleCast(
+            origin,
             collisionRadius,
+            direction,
+            distance,
             collisionLayer
         );
+
+        return hit.collider == null;
     }
 
     /// <summary>
-    /// Moves the object towards the target tile
+    /// moves the object towards the target tile
     /// </summary>
     private void MoveToTile()
     {
@@ -81,7 +104,7 @@ public abstract class GridMovementController : MonoBehaviour
         rb.MovePosition(newPos);
 
         // snap to target position if close enough
-        if (Vector2.Distance(rb.position, targetPosition) < 0.001f)
+        if (Vector2.Distance(rb.position, targetPosition) <= moveSpeed * Time.fixedDeltaTime)
         {
             rb.MovePosition(targetPosition);
             isMoving = false;
@@ -98,14 +121,24 @@ public abstract class GridMovementController : MonoBehaviour
 
     protected Vector3 SnapToGrid(Vector3 pos)
     {
-        float x = Mathf.Round(pos.x / gridSize) * gridSize;
-        float y = Mathf.Round(pos.y / gridSize) * gridSize;
+        float x = Mathf.Round((pos.x - gridOffset.x) / gridSize) * gridSize + gridOffset.x;
+        float y = Mathf.Round((pos.y - gridOffset.y) / gridSize) * gridSize + gridOffset.y;
         return new Vector3(x, y, pos.z);
     }
 
+    public void ForceSnapToGrid(Vector3 worldPosition)
+    {
+        isMoving = false;
+        movement = Vector2.zero;
+
+        targetPosition = SnapToGrid(worldPosition);
+        rb.position = targetPosition;
+        rb.linearVelocity = Vector2.zero;
+    }
+
     /// <summary>
-    /// Helper method to get random direction Vector2
-    /// Mainly for enemy movement
+    /// helper method to get random direction Vector2.
+    /// mainly for enemy movement
     /// </summary>
     /// <returns></returns>
     protected Vector2 GetRandomDirection()
@@ -120,4 +153,35 @@ public abstract class GridMovementController : MonoBehaviour
             default: return Vector2.zero;
         }
     }
+
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        float size = gridSize > 0.0001f ? gridSize : 0.2f;
+        const int radius = 30;
+
+        Vector3 origin = transform.position;
+        origin.x = Mathf.Round((origin.x - gridOffset.x) / size) * size + gridOffset.x;
+        origin.y = Mathf.Round((origin.y - gridOffset.y) / size) * size + gridOffset.y;
+
+        Gizmos.color = new Color(0f, 1f, 1f, 0.4f);
+
+        for (int x = -radius; x <= radius; x++)
+        {
+            for (int y = -radius; y <= radius; y++)
+            {
+                Vector3 cellCenter = new Vector3(
+                    origin.x + x * size,
+                    origin.y + y * size,
+                    origin.z
+                );
+
+                Gizmos.DrawWireCube(
+                    cellCenter,
+                    new Vector3(size, size, 0.01f)
+                );
+            }
+        }
+    }
+#endif
 }

@@ -9,6 +9,7 @@ public class RoomChangeManager : MonoBehaviour
     private ScreenFade screenFade;
     private PlayerOverworldController player;
 
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -112,11 +113,13 @@ public class RoomChangeManager : MonoBehaviour
         // place player immediately after scene loads prior to fade out
         if (targetRoom.isOverworldScene)
         {
-            GameObject player = GameObject.FindWithTag("Player");
-            if (player != null)
+            GameObject playerGO = GameObject.FindWithTag("Player");
+            if (playerGO != null)
             {
-                // disable rb while positioning
-                Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
+                Rigidbody2D rb = playerGO.GetComponent<Rigidbody2D>();
+                PlayerOverworldController controller =
+                    playerGO.GetComponent<PlayerOverworldController>();
+
                 if (rb != null)
                     rb.bodyType = RigidbodyType2D.Kinematic;
 
@@ -125,13 +128,23 @@ public class RoomChangeManager : MonoBehaviour
                 {
                     if (sp.spawnPointID == spawnPointID)
                     {
-                        player.transform.position = sp.transform.position;
+                        if (controller != null)
+                            controller.ForceSnapToGrid(sp.transform.position);
+                        else
+                            playerGO.transform.position = sp.transform.position;
+
                         break;
                     }
                 }
 
                 if (rb != null)
+                {
                     rb.bodyType = RigidbodyType2D.Dynamic;
+                    rb.linearVelocity = Vector2.zero;
+                }
+
+                if (controller != null)
+                    controller.EnablePlayerMovement();
             }
             else
                 Debug.Log("No player found in the scene after room change, skipping player placement");
@@ -184,21 +197,32 @@ public class RoomChangeManager : MonoBehaviour
             yield return null;
 
         // place player immediately after scene loads prior to fade out
-        GameObject player = GameObject.FindWithTag("Player");
-        if (player != null)
+        GameObject playerGO = GameObject.FindWithTag("Player");
+        if (playerGO != null)
         {
-            // disable rb while positioning
-            Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
+            Rigidbody2D rb = playerGO.GetComponent<Rigidbody2D>();
+            PlayerOverworldController controller =
+                playerGO.GetComponent<PlayerOverworldController>();
+
             if (rb != null)
                 rb.bodyType = RigidbodyType2D.Kinematic;
 
-            player.transform.position = playerPosition;
+            if (controller != null)
+                controller.ForceSnapToGrid(playerPosition);
+            else
+                playerGO.transform.position = playerPosition;
 
             if (rb != null)
+            {
                 rb.bodyType = RigidbodyType2D.Dynamic;
+                rb.linearVelocity = Vector2.zero;
+            }
+
+            if (controller != null)
+                controller.EnablePlayerMovement();
+            else
+                Debug.Log("No player found in the scene after battle transition, skipping player placement");
         }
-        else
-            Debug.Log("No player found in the scene after battle transition, skipping player placement");
 
         // now fade out
         screenFade = FindFirstObjectByType<ScreenFade>();
