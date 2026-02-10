@@ -24,7 +24,7 @@ public class OverworldDebugTool : MonoBehaviour
         if (!currentRoomDebug.WasPressedThisFrame())
             return;
 
-        Debug.Log($"[OverworldDebugTool] Current Room: {RoomManager.GetRoomFromActiveScene()?.roomID}");
+        Debug.Log($"[OverworldDebugTool] Current room: {RoomManager.GetRoomFromActiveScene()?.roomID}");
     }
 }
 #endif

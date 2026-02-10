@@ -158,13 +158,13 @@ public abstract class GridMovementController : MonoBehaviour
     private void OnDrawGizmos()
     {
         float size = gridSize > 0.0001f ? gridSize : 0.2f;
-        const int radius = 30;
+        const int radius = 40;
 
         Vector3 origin = transform.position;
         origin.x = Mathf.Round((origin.x - gridOffset.x) / size) * size + gridOffset.x;
         origin.y = Mathf.Round((origin.y - gridOffset.y) / size) * size + gridOffset.y;
 
-        Gizmos.color = new Color(0f, 1f, 1f, 0.4f);
+        Gizmos.color = Color.green;
 
         for (int x = -radius; x <= radius; x++)
         {
