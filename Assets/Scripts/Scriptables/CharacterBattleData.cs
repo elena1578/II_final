@@ -9,6 +9,7 @@ public class CharacterBattleData : ScriptableObject
     [Header("Visuals")]
     public Sprite battleSprite;
 
+    // characters will use their level 14 stats
     [Header("Base Stats")]
     public int baseHP;
     public int baseJuice;

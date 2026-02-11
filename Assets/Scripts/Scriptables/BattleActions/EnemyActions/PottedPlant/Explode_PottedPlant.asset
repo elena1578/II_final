@@ -15,15 +15,16 @@ MonoBehaviour:
   actionName: 8
   actionType: 0
   targetType: 1
-  battleLogText: '{actor} explodes!'
+  battleLogText: '{actor} explodes!
+
+    {target} takes {damage} damage!'
   descriptionText: 
   juiceCost: 0
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
   damageFormula: 0
   basePower: 40
-  variance: 0.1
   critChance: 0.1
   critMultiplier: 1.5
   animationTrigger: 

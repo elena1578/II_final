@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6777a4f2f71853147b4291b9e0925be3, type: 3}
   m_Name: Omori
   m_EditorClassIdentifier: Assembly-CSharp::CharacterBattleData
+  characterName: 0
   battleSprite: {fileID: 2184308944223275586, guid: 28bd3b996dfe833449d813b222e2df20, type: 3}
-  baseHP: 70
-  baseJuice: 40
-  baseAttack: 20
-  baseDefense: 20
-  baseSpeed: 20
+  baseHP: 106
+  baseJuice: 73
+  baseAttack: 25
+  baseDefense: 22
+  baseSpeed: 28
   defaultAttack: {fileID: 11400000, guid: 67c514c36c859ce40a44360282a0aa35, type: 2}
   universalGuardAction: {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
   allActions:

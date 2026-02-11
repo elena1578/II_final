@@ -52,6 +52,9 @@ public class BattleDialogManager : MonoBehaviour
         text.text = "";
     }
 
+    public void ShowPlanningPrompt(BattleActor actor) => Show($"What will {actor.name.ToDisplayName()} do?");
+
+
     #region Parsing
     private string Parse(string template, BattleActionResult result)
     {
@@ -64,7 +67,7 @@ public class BattleDialogManager : MonoBehaviour
         text = text.Replace("{heal}", result.heal.ToString());
 
         if (result.didCrit)
-            text = "CRIT!\n" + text;
+            text = "IT HIT RIGHT IN THE HEART!\n" + text;
 
         return text;
     }

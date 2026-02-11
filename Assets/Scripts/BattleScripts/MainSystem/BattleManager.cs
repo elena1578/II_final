@@ -139,7 +139,7 @@ public class BattleManager : MonoBehaviour
                 uiManager.SetActiveActor(player);
                 uiManager.PopulateActionButtons(player);
                 commandButtons.ShowMainCommands();
-                Debug.Log($"[PLAN] {context.currentActor.GetType().Name} selecting action");
+                BattleDialogManager.instance.ShowPlanningPrompt(player);
             }
             return;
         }
@@ -210,8 +210,9 @@ public class BattleManager : MonoBehaviour
     private void ResolvePlannedActions()
     {
         commandButtons.HideAllCommands();
-        plannedActions.Sort((a, b) => b.actor.speed.CompareTo(a.actor.speed));
+        uiManager.ClearActiveActor();  // hide select frame
 
+        plannedActions.Sort((a, b) => b.actor.speed.CompareTo(a.actor.speed));
         StartCoroutine(ResolveActionsRoutine());
     }
 
@@ -323,7 +324,7 @@ public class BattleManager : MonoBehaviour
             yield return HandleDefeatSequence();
 
         // small pause before transition
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(4f);
 
         HasActiveBattle = false;
         BattleTransitionManager.instance.ReturnToOverworld();

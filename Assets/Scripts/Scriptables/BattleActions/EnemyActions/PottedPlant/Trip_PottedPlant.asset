@@ -15,15 +15,17 @@ MonoBehaviour:
   actionName: 7
   actionType: 0
   targetType: 0
-  battleLogText: '{target} trips on {actor}''s roots.'
+  battleLogText: '{target} trips on {actor}''s roots.
+
+    {target} takes {damage}
+    damage!'
   descriptionText: 
   juiceCost: 0
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
   damageFormula: 1
   basePower: 0
-  variance: 0.1
   critChance: 0.1
   critMultiplier: 1.5
   animationTrigger: 

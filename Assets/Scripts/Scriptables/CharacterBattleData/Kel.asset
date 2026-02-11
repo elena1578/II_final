@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterBattleData
   characterName: 2
   battleSprite: {fileID: -1202299261468983308, guid: a421a9cc4fc7a8a4d8dfa8d3af0780c5, type: 3}
-  baseHP: 70
-  baseJuice: 40
-  baseAttack: 20
-  baseDefense: 20
-  baseSpeed: 25
+  baseHP: 90
+  baseJuice: 88
+  baseAttack: 21
+  baseDefense: 15
+  baseSpeed: 36
   defaultAttack: {fileID: 11400000, guid: 41e891932cd60b04296ec6be2558d77b, type: 2}
   universalGuardAction: {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
   allActions:
