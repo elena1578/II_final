@@ -16,7 +16,7 @@ MonoBehaviour:
   battleSprite: {fileID: -1341900903539766912, guid: 79853185cac150a4c9d9a07cbf9beb33, type: 3}
   spriteScale: {x: 1, y: 1, z: 1}
   animatorController: {fileID: 9100000, guid: c1884212e94a4df498a04d7516811d88, type: 2}
-  baseHP: 100
+  baseHP: 200
   baseJuice: 400
   baseAttack: 20
   baseDefense: 25
@@ -32,3 +32,49 @@ MonoBehaviour:
   emotionActions:
   - {fileID: 11400000, guid: d97bb9ffd3898bb48babf03f27aca6d4, type: 2}
   noneActions: []
+  actionAI:
+  - action: {fileID: 11400000, guid: bae4467f654edac489d7df5ea73b43ce, type: 2}
+    priorityNumber: 1
+    neutralChance: 1
+    happyChance: 1
+    sadChance: 1
+    angryChance: 1
+    hpBelowPercent: 0.2
+    requireHpBelow: 1
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: e82e7ad3928faac4282d603ec719a976, type: 2}
+    priorityNumber: 2
+    neutralChance: 0.65
+    happyChance: 0.3
+    sadChance: 0.3
+    angryChance: 0.75
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: e8f92882855727b4781bca50d8091c00, type: 2}
+    priorityNumber: 3
+    neutralChance: 0.2
+    happyChance: 0.2
+    sadChance: 0.65
+    angryChance: 0.15
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: 7707f2b06ee7c3146a7f168240b78346, type: 2}
+    priorityNumber: 4
+    neutralChance: 1
+    happyChance: 1
+    sadChance: 1
+    angryChance: 0
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: d97bb9ffd3898bb48babf03f27aca6d4, type: 2}
+    priorityNumber: 5
+    neutralChance: 0
+    happyChance: 0
+    sadChance: 0
+    angryChance: 1
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 1

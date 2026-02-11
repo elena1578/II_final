@@ -5,6 +5,7 @@ public abstract class BattleActor
     public CharacterName name { get; protected set; }
     public int maxHP { get; protected set; }
     public int currentHP { get; protected set; }
+    public float hpPercent => (float)currentHP / maxHP;
 
     public int maxJuice { get; protected set; }
     public int currentJuice { get; protected set; }

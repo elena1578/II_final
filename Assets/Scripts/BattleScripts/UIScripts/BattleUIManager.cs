@@ -48,12 +48,6 @@ public class BattleUIManager : MonoBehaviour
             actor.ui?.UpdateAll();
     }
 
-    // public void SetActiveActor(BattleActor actor)
-    // {
-    //     foreach (var a in BattleManager.instance.GetAllActors())
-    //         a.ui?.SetTurnActive(a == actor);
-    // }
-
     public void SetActiveActor(PlayerBattleActor actor)
     {
         foreach (var partyActor in BattleManager.instance.GetAllActors())

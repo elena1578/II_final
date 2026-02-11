@@ -25,7 +25,7 @@ public class BattleActionData : ScriptableObject
     public int basePower;
     private float variance = 0.2f;
     public float critChance = 0.1f;
-    [HideInInspector]public float critMultiplier = 1.5f;
+    [HideInInspector] public float critMultiplier = 1.5f;
 
     [Header("Animation")]
     public string animationTrigger;  // just the name of the attack, e.g., "headbutt", "sad_poem", etc.

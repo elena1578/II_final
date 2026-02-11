@@ -29,6 +29,9 @@ public class EnemyBattleData : ScriptableObject
     public List<BattleActionData> emotionActions;
     public List<BattleActionData> noneActions;
 
+    [Header("Action AI")]
+    public List<EnemyAI> actionAI;
+
 
     #region Action Calls
     public BattleActionData GetRandomAttackAction()
@@ -60,3 +63,28 @@ public class EnemyBattleData : ScriptableObject
     }
     #endregion
 }
+
+
+#region Enemy AI
+[System.Serializable]
+public class EnemyAI
+{
+    public BattleActionData action;
+
+    [Header("Priority Order")]
+    [Tooltip("The lower the number, the higher the priority")] public int priorityNumber;
+
+    [Header("Emotion Chances")]
+    public float neutralChance = 1f;
+    public float happyChance = 1f;
+    public float sadChance = 1f;
+    public float angryChance = 1f;
+
+    [Header("Conditionals")]
+    [Range(0f, 1f)] public float hpBelowPercent = 1f; 
+    public bool requireHpBelow;  // just for explode for now
+    [Tooltip("If true, this action will always be used if reached. This should be the lowest priority action")] public bool alwaysUseIfReached;
+}
+#endregion
+
+
