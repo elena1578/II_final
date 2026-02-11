@@ -23,9 +23,9 @@ public class BattleActionData : ScriptableObject
     [Header("Damage")]
     public DamageFormula damageFormula;
     public int basePower;
-    public float variance = 0.1f;
+    private float variance = 0.2f;
     public float critChance = 0.1f;
-    public float critMultiplier = 1.5f;
+    [HideInInspector]public float critMultiplier = 1.5f;
 
     [Header("Animation")]
     public string animationTrigger;  // just the name of the attack, e.g., "headbutt", "sad_poem", etc.
@@ -81,17 +81,26 @@ public class BattleActionData : ScriptableObject
 
 
     #region Damage Calcs
-    public int CalculateDamage(BattleActor actor, BattleActor target, BattleActionData data)
+    public int CalculateDamage(BattleActor actor, BattleActor target, out bool didCrit)
     {
+        didCrit = false;
         int damage = 0;
 
-        switch (data.damageFormula)
+        // damage formula breakdown:
+        // Final Damage = {[(damage formula) * (emotion multiplier) * (critical multiplier) * (damage variance)] 
+        // + additional critical damage} * (flex multiplier).
+
+        // emotion calcs:
+        // * Emotion Resistance: Takes 20% / 35% / 50% less damage from the weaker emotion.
+        // * Emotion Weakness: Deals 50% / 100% / 150% more damage to the weaker emotion.
+
+        switch (damageFormula)
         {
             case DamageFormula.Flat:
-                damage = data.basePower;
+                damage = basePower;
                 break;
 
-            // also used for counter for aubrey
+            // also used for aubrey's counter
             case DamageFormula.BasicAttack:
                 damage = actor.atk * 2 - target.def;
                 break;
@@ -109,14 +118,15 @@ public class BattleActionData : ScriptableObject
                 break;
         }
 
-        // variance
-        float variance = Random.Range(1f - data.variance, 1f + data.variance);
-        damage = Mathf.RoundToInt(damage * variance);
+        // variance (base game: 80-120 damage for an attack with 100 base power; 20% variance)
+        float varianceRoll = Random.Range(1f - variance, 1f + variance);
+        damage = Mathf.RoundToInt(damage * varianceRoll);
 
-        // crit
-        if (Random.value < data.critChance)
+        // crit roll
+        if (Random.value < critChance)
         {
-            damage = Mathf.RoundToInt(damage * data.critMultiplier);
+            didCrit = true;
+            damage = Mathf.RoundToInt((damage * critMultiplier) + 2);
         }
 
         return Mathf.Max(0, damage);

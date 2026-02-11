@@ -4,7 +4,6 @@ using UnityEngine;
 public class EnemyOverworldData : ScriptableObject
 {
     [Header("Definition")]
-    public GameObject enemyPrefab;
     public EnemyBattleData correspondingBattleData;
     public Sprite sprite;
     public RuntimeAnimatorController animatorController;

@@ -32,14 +32,20 @@ public class AttackAction : IBattleAction
         }
 
         // damage calc & application
-        int totalDamage = 0;  
+        int totalDamage = 0;
+        bool crit = false;
 
         foreach (var target in targets)
         {
             if (target == null || !target.isAlive)
                 continue;
 
-            int damage = data.CalculateDamage(actor, target, data);
+            bool didCritForHit;
+            int damage = data.CalculateDamage(actor, target, out didCritForHit);
+
+            if (didCritForHit)
+                crit = true;
+
             target.TakeDamage(damage);
             totalDamage += damage;
         }
@@ -49,7 +55,8 @@ public class AttackAction : IBattleAction
         {
             actor = actor,
             targets = targets,
-            damage = totalDamage
+            damage = totalDamage,
+            didCrit = crit
         };
     }
 }

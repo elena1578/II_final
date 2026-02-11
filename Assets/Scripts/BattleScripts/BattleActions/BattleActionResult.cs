@@ -13,6 +13,7 @@ public class BattleActionResult
     public bool didDamage => damage > 0;
     public bool didHeal => heal > 0;
     public bool didEmotion => emotion.HasValue;
+    public bool didCrit;
 
     public static BattleActionResult None(BattleActor actor)
     {
@@ -23,6 +24,7 @@ public class BattleActionResult
             damage = 0,
             heal = 0,
             emotion = null,
+            didCrit = false
         };
     }
 }

@@ -63,6 +63,9 @@ public class BattleDialogManager : MonoBehaviour
         text = text.Replace("{damage}", result.damage.ToString());
         text = text.Replace("{heal}", result.heal.ToString());
 
+        if (result.didCrit)
+            text = "CRIT!\n" + text;
+
         return text;
     }
 

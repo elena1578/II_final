@@ -48,6 +48,8 @@ public class EnemyOverworldActor : GridMovementController
             alertRadius = data.alertRadius;
             chanceToMove = data.chanceToMove;
         }
+
+        SnapToGrid(transform.position);  // once spawned + initialized, ensure grid alignment
     }
 
     protected override void FixedUpdate()

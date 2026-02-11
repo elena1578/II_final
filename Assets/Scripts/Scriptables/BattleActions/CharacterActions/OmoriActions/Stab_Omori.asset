@@ -15,19 +15,21 @@ MonoBehaviour:
   actionName: 11
   actionType: 0
   targetType: 0
-  battleLogText: '{actor} stabs {target}.'
+  battleLogText: '{actor} stabs {target}.
+
+    {target} takes {damage} damage!'
   descriptionText: 'STAB
 
     Always deals a critical hit. Ignores DEFENSE when OMORI
     is SAD.'
   juiceCost: 13
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
   damageFormula: 2
   basePower: 0
   variance: 0.1
-  critChance: 0.1
+  critChance: 1
   critMultiplier: 1.5
   animationTrigger: stab
   animationDuration: 3

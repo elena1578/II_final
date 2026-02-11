@@ -4355,6 +4355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleDialogManager
   text: {fileID: 2127081140}
   typeSpeed: 0.04
+  didCrit: 0
 --- !u!1 &1065253676
 GameObject:
   m_ObjectHideFlags: 0
