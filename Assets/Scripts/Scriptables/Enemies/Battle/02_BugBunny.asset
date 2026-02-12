@@ -16,14 +16,55 @@ MonoBehaviour:
   battleSprite: {fileID: 211726624969530064, guid: d3c327e0e881e3d48923723efaca90a9, type: 3}
   spriteScale: {x: 1, y: 1, z: 1}
   animatorController: {fileID: 0}
-  baseHP: 0
+  baseHP: 145
   baseJuice: 62
   baseAttack: 25
   baseDefense: 5
   baseSpeed: 25
   expReward: 202
   clamReward: 16
-  attackActions: []
+  attackActions:
+  - {fileID: 11400000, guid: f24ac3373ca935f49bce1ac5bcccd7f5, type: 2}
+  - {fileID: 11400000, guid: 6fe5eda7a651bd34a8e3a72669e9c8c2, type: 2}
   healActions: []
-  emotionActions: []
-  noneActions: []
+  emotionActions:
+  - {fileID: 11400000, guid: d97bb9ffd3898bb48babf03f27aca6d4, type: 2}
+  noneActions:
+  - {fileID: 11400000, guid: a070e025d0e5c9b41ace1d13b9730002, type: 2}
+  actionAI:
+  - action: {fileID: 11400000, guid: f24ac3373ca935f49bce1ac5bcccd7f5, type: 2}
+    priorityNumber: 1
+    neutralChance: 0.65
+    happyChance: 0.35
+    sadChance: 0.3
+    angryChance: 0.65
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: a070e025d0e5c9b41ace1d13b9730002, type: 2}
+    priorityNumber: 2
+    neutralChance: 0.3
+    happyChance: 0.3
+    sadChance: 0.65
+    angryChance: 0.15
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: 6fe5eda7a651bd34a8e3a72669e9c8c2, type: 2}
+    priorityNumber: 3
+    neutralChance: 0.5
+    happyChance: 1
+    sadChance: 0.3
+    angryChance: 0.65
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: d97bb9ffd3898bb48babf03f27aca6d4, type: 2}
+    priorityNumber: 4
+    neutralChance: 1
+    happyChance: 0
+    sadChance: 1
+    angryChance: 1
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 1

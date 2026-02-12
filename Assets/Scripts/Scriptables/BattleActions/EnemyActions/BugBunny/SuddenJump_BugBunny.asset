@@ -12,11 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a12b7a56dc38142ab63a31fd1e2841, type: 3}
   m_Name: SuddenJump_BugBunny
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
-  actionName: 0
+  actionName: 15
   actionType: 0
-  battleLogText: '{actor} suddenly lunges at {target}!'
+  targetType: 0
+  battleLogText: '{actor} suddenly lunges at {target}!
+
+    {target} takes {damage}
+    damage!'
+  descriptionText: 
   juiceCost: 0
-  damageAmount: 0
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
+  damageFormula: 1
+  basePower: 0
+  critChance: 0.1
+  critMultiplier: 1.5
+  animationTrigger: 
+  animationDuration: 1.5
+  animationTarget: 0

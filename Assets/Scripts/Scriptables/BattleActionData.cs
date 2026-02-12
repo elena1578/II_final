@@ -50,7 +50,8 @@ public class BattleActionData : ScriptableObject
         Stab,
         BreadSlice,
         PepTalk,
-        Counter
+        Counter,
+        SuddenJump
     }
 
     public enum ActionType
@@ -85,14 +86,18 @@ public class BattleActionData : ScriptableObject
     {
         didCrit = false;
         int damage = 0;
+        int atk = GetModifiedAttackFromEmotion(actor);
+        int def = GetModifiedDefenseFromEmotion(target);
 
         // damage formula breakdown:
         // Final Damage = {[(damage formula) * (emotion multiplier) * (critical multiplier) * (damage variance)] 
         // + additional critical damage} * (flex multiplier).
 
-        // emotion calcs:
-        // * Emotion Resistance: Takes 20% / 35% / 50% less damage from the weaker emotion.
-        // * Emotion Weakness: Deals 50% / 100% / 150% more damage to the weaker emotion.
+        // emotion effects:
+        // happy: Multiply luck by 2, multiply speed by 1.25, decrease hit rate by 10%.
+        // sad: Multiply defense by 1.25, multiply speed by 0.8, 30% of the HP damage taken is done to juice instead.
+        // angry: Multiply attack by 1.3, multiply defense by 0.5.
+
 
         switch (damageFormula)
         {
@@ -118,6 +123,10 @@ public class BattleActionData : ScriptableObject
                 break;
         }
 
+        // emotion multiplier
+        float emotionMultiplier = EmotionSystem.GetDamageMultiplier(actor, target);
+        damage = Mathf.RoundToInt(damage * emotionMultiplier);
+
         // variance (base game: 80-120 damage for an attack with 100 base power; 20% variance)
         float varianceRoll = Random.Range(1f - variance, 1f + variance);
         damage = Mathf.RoundToInt(damage * varianceRoll);
@@ -130,6 +139,29 @@ public class BattleActionData : ScriptableObject
         }
 
         return Mathf.Max(0, damage);
+    }
+
+    private int GetModifiedAttackFromEmotion(BattleActor actor)
+    {
+        float multiplier = 1f;
+
+        if (actor.currentEmotion == EmotionType.Angry)
+            multiplier = 1.3f;
+
+        return Mathf.RoundToInt(actor.atk * multiplier);
+    }
+
+    private int GetModifiedDefenseFromEmotion(BattleActor actor)
+    {
+        float multiplier = 1f;
+
+        if (actor.currentEmotion == EmotionType.Sad)
+            multiplier = 1.25f;
+
+        if (actor.currentEmotion == EmotionType.Angry)
+            multiplier = 0.5f;
+
+        return Mathf.RoundToInt(actor.def * multiplier);
     }
     #endregion
 }

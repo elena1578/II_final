@@ -48,14 +48,26 @@ public abstract class BattleActor
     public virtual void TakeDamage(int amount)
     {
         if (!isAlive)
-            return;
+        return;
 
         int finalDamage = Mathf.RoundToInt(amount * damageMultiplier);
-        damageMultiplier = 1f;  // reset after hit
+        damageMultiplier = 1f;  // reset guard multiplier after hit
 
-        currentHP = Mathf.Max(0, currentHP - finalDamage);
+        int hpDamage = finalDamage;
+        int juiceDamage = 0;
 
-        Debug.Log($"[HP CHANGE] {GetType().Name}: {currentHP}/{maxHP}");
+        // check if sad, if yes, 30% of damage is juice damage instead of HP damage
+        if (currentEmotion == EmotionType.Sad)
+        {
+            juiceDamage = Mathf.RoundToInt(finalDamage * 0.3f);
+            hpDamage = finalDamage - juiceDamage;
+        }
+
+        currentHP = Mathf.Max(0, currentHP - hpDamage);
+        currentJuice = Mathf.Max(0, currentJuice - juiceDamage);
+
+        Debug.Log($"[BattleActor - Damage] {GetType().Name} took {hpDamage} HP and {juiceDamage} juice");
+
         ui?.PlayHurtAnimation();
         ui?.UpdateAll();
 
@@ -79,7 +91,7 @@ public abstract class BattleActor
 
     public virtual void OnDeath()
     {
-        Debug.Log($"{GetType().Name} is toast!");
+        Debug.Log($"[BattleActor] {GetType().Name} is toast!");
         ui?.SetToastAnimation();
     }
 
@@ -111,7 +123,20 @@ public abstract class BattleActor
         currentEmotion = emotion;
         ui?.SetEmotionAnimation(emotion);
 
-        Debug.Log($"{GetType().Name} emotion set to {emotion}");
+        Debug.Log($"[BattleActor] {GetType().Name} emotion set to {emotion}");
+    }
+
+    public int GetModifiedSpeedFromEmotion()
+    {
+        float multiplier = 1f;
+
+        if (currentEmotion == EmotionType.Happy)
+            multiplier = 1.25f;
+
+        if (currentEmotion == EmotionType.Sad)
+            multiplier = 0.8f;
+
+        return Mathf.RoundToInt(speed * multiplier);
     }
 
     public void EnableGuard(float multiplier)
