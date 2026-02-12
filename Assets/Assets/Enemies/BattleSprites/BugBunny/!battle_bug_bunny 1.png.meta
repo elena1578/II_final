@@ -1,0 +1,769 @@
+fileFormatVersion: 2
+guid: c5f0b251e798e5d4a917051b56bb4234
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 578889262283449929
+    second: '!battle_bug_bunny 1_0'
+  - first:
+      213: -2210067972899676452
+    second: '!battle_bug_bunny 1_1'
+  - first:
+      213: -1987207952730834865
+    second: '!battle_bug_bunny 1_2'
+  - first:
+      213: 3368489896372309608
+    second: '!battle_bug_bunny 1_3'
+  - first:
+      213: 5724248850593316702
+    second: '!battle_bug_bunny 1_4'
+  - first:
+      213: -6176994905543754405
+    second: '!battle_bug_bunny 1_5'
+  - first:
+      213: 7672751138116483559
+    second: '!battle_bug_bunny 1_6'
+  - first:
+      213: 3882158758875693384
+    second: '!battle_bug_bunny 1_7'
+  - first:
+      213: 6650912123446876811
+    second: '!battle_bug_bunny 1_8'
+  - first:
+      213: 498725849954210607
+    second: '!battle_bug_bunny 1_9'
+  - first:
+      213: -2138964167891788647
+    second: '!battle_bug_bunny 1_10'
+  - first:
+      213: -8954411185382204144
+    second: '!battle_bug_bunny 1_11'
+  - first:
+      213: 5396929568036220249
+    second: '!battle_bug_bunny 1_12'
+  - first:
+      213: 7148536679735787441
+    second: '!battle_bug_bunny 1_13'
+  - first:
+      213: -7756451881455351173
+    second: '!battle_bug_bunny 1_14'
+  - first:
+      213: 5505815471258663817
+    second: '!battle_bug_bunny 1_15'
+  - first:
+      213: -4353423172911611387
+    second: '!battle_bug_bunny 1_16'
+  - first:
+      213: 6356115400262768361
+    second: '!battle_bug_bunny 1_17'
+  - first:
+      213: -2995249064752391850
+    second: '!battle_bug_bunny 1_18'
+  - first:
+      213: -5848329188038838668
+    second: '!battle_bug_bunny 1_19'
+  - first:
+      213: 5353152043189452627
+    second: '!battle_bug_bunny 1_20'
+  - first:
+      213: -367096028630931278
+    second: '!battle_bug_bunny 1_21'
+  - first:
+      213: -143146187316803078
+    second: '!battle_bug_bunny 1_22'
+  - first:
+      213: -7335279534756344465
+    second: '!battle_bug_bunny 1_23'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_0'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 850
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94661ba87b0a80800800000000000000
+      internalID: 578889262283449929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_1'
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 850
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cded8d953e24451e0800000000000000
+      internalID: -2210067972899676452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_2'
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 850
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48b5aa45e40c64e0800000000000000
+      internalID: -1987207952730834865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_3'
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 850
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e83c6b6b74fbe20800000000000000
+      internalID: 3368489896372309608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_4'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f7d81500e907f40800000000000000
+      internalID: 5724248850593316702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_5'
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 680
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5dbaab4cd7e64aa0800000000000000
+      internalID: -6176994905543754405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_6'
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 680
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e9386512861b7a60800000000000000
+      internalID: 7672751138116483559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_7'
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 680
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841057892d230e530800000000000000
+      internalID: 3882158758875693384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_8'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ad3669659cc4c50800000000000000
+      internalID: 6650912123446876811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_9'
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 510
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2353d6a484dbe600800000000000000
+      internalID: 498725849954210607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_10'
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 510
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c55890c6fd052e0800000000000000
+      internalID: -2138964167891788647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_11'
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 510
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d528a287a8bb380800000000000000
+      internalID: -8954411185382204144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_12'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95de99419deb5ea40800000000000000
+      internalID: 5396929568036220249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_13'
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 340
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf70835c34b43360800000000000000
+      internalID: 7148536679735787441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_14'
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 340
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a8178fb1c8b5490800000000000000
+      internalID: -7756451881455351173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_15'
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 340
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98bf8330006986c40800000000000000
+      internalID: 5505815471258663817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_16'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50246ad80b88593c0800000000000000
+      internalID: -4353423172911611387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_17'
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 170
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e65d08c745753850800000000000000
+      internalID: 6356115400262768361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_18'
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 170
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659dc9958dcbe66d0800000000000000
+      internalID: -2995249064752391850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_19'
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 170
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4767569d69f86dea0800000000000000
+      internalID: -5848329188038838668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_20'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fb6facb673a4a40800000000000000
+      internalID: 5353152043189452627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_21'
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b82ffe5b10d7eaf0800000000000000
+      internalID: -367096028630931278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_22'
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9c7021d41730ef0800000000000000
+      internalID: -143146187316803078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_bug_bunny 1_23'
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 0
+        width: 142
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6dc7aa802ad33a90800000000000000
+      internalID: -7335279534756344465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ce97148e3a6154b42a2d9d312eec8a03
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":6.0},"gridSpriteSize":{"x":142.0,"y":170.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      '!battle_bug_bunny 1_0': 578889262283449929
+      '!battle_bug_bunny 1_1': -2210067972899676452
+      '!battle_bug_bunny 1_10': -2138964167891788647
+      '!battle_bug_bunny 1_11': -8954411185382204144
+      '!battle_bug_bunny 1_12': 5396929568036220249
+      '!battle_bug_bunny 1_13': 7148536679735787441
+      '!battle_bug_bunny 1_14': -7756451881455351173
+      '!battle_bug_bunny 1_15': 5505815471258663817
+      '!battle_bug_bunny 1_16': -4353423172911611387
+      '!battle_bug_bunny 1_17': 6356115400262768361
+      '!battle_bug_bunny 1_18': -2995249064752391850
+      '!battle_bug_bunny 1_19': -5848329188038838668
+      '!battle_bug_bunny 1_2': -1987207952730834865
+      '!battle_bug_bunny 1_20': 5353152043189452627
+      '!battle_bug_bunny 1_21': -367096028630931278
+      '!battle_bug_bunny 1_22': -143146187316803078
+      '!battle_bug_bunny 1_23': -7335279534756344465
+      '!battle_bug_bunny 1_3': 3368489896372309608
+      '!battle_bug_bunny 1_4': 5724248850593316702
+      '!battle_bug_bunny 1_5': -6176994905543754405
+      '!battle_bug_bunny 1_6': 7672751138116483559
+      '!battle_bug_bunny 1_7': 3882158758875693384
+      '!battle_bug_bunny 1_8': 6650912123446876811
+      '!battle_bug_bunny 1_9': 498725849954210607
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

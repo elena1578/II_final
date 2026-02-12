@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: c1a6cb5e7271d6443879b86b084e52aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3218662090380093037
+    second: '!battle_rare_bear 1_0'
+  - first:
+      213: -4867248436967773497
+    second: '!battle_rare_bear 1_1'
+  - first:
+      213: 8652909353224227935
+    second: '!battle_rare_bear 1_2'
+  - first:
+      213: -3244380625819177994
+    second: '!battle_rare_bear 1_3'
+  - first:
+      213: 2515641664077209943
+    second: '!battle_rare_bear 1_4'
+  - first:
+      213: 7594932243971795715
+    second: '!battle_rare_bear 1_5'
+  - first:
+      213: -999173905333496876
+    second: '!battle_rare_bear 1_6'
+  - first:
+      213: 4547657144166821054
+    second: '!battle_rare_bear 1_7'
+  - first:
+      213: -9185139723461308566
+    second: '!battle_rare_bear 1_8'
+  - first:
+      213: 4587005630721864512
+    second: '!battle_rare_bear 1_9'
+  - first:
+      213: -7989283937674186786
+    second: '!battle_rare_bear 1_10'
+  - first:
+      213: -6340176569340887469
+    second: '!battle_rare_bear 1_11'
+  - first:
+      213: -2825622635169072186
+    second: '!battle_rare_bear 1_12'
+  - first:
+      213: 4338162811353208066
+    second: '!battle_rare_bear 1_13'
+  - first:
+      213: -4779774216063284589
+    second: '!battle_rare_bear 1_14'
+  - first:
+      213: -4494448076391266846
+    second: '!battle_rare_bear 1_15'
+  - first:
+      213: -526016561529475516
+    second: '!battle_rare_bear 1_16'
+  - first:
+      213: -7144245562806843428
+    second: '!battle_rare_bear 1_17'
+  - first:
+      213: 6046494189860808594
+    second: '!battle_rare_bear 1_18'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_0'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2020
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d662f153e1cfaac20800000000000000
+      internalID: 3218662090380093037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_1'
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2020
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cae5f8955f047cb0800000000000000
+      internalID: -4867248436967773497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_2'
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2020
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cc590363f451870800000000000000
+      internalID: 8652909353224227935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_3'
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2020
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb63e1a205a9f2d0800000000000000
+      internalID: -3244380625819177994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_4'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1616
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751ae79d3ca59e220800000000000000
+      internalID: 2515641664077209943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_5'
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1616
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b691fd2ae966960800000000000000
+      internalID: 7594932243971795715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_6'
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1616
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3d1cf70a83222f0800000000000000
+      internalID: -999173905333496876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_7'
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1616
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebca45ef3168c1f30800000000000000
+      internalID: 4547657144166821054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_8'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1212
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f42c22614d78080800000000000000
+      internalID: -9185139723461308566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_9'
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1212
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043b4e1715158af30800000000000000
+      internalID: 4587005630721864512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_10'
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1212
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf2235769c502190800000000000000
+      internalID: -7989283937674186786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_11'
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1212
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e7e2b700b2308a0800000000000000
+      internalID: -6340176569340887469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_12'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 808
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbb1712f2f59c8d0800000000000000
+      internalID: -2825622635169072186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_13'
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 808
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2059484a710443c30800000000000000
+      internalID: 4338162811353208066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_14'
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 808
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a0af0cca4daadb0800000000000000
+      internalID: -4779774216063284589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_15'
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 808
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5c241894380a1c0800000000000000
+      internalID: -4494448076391266846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_16'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 404
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e201869b633b8f0800000000000000
+      internalID: -526016561529475516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_17'
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 404
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7ccb0338a8adc90800000000000000
+      internalID: -7144245562806843428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_18'
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 404
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297ed131e6679e350800000000000000
+      internalID: 6046494189860808594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_19'
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 404
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc9836a703706247b09462f71e57be7
+      internalID: -2022363611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_20'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e6a11b11c337e40b9d17e3d83f1640
+      internalID: -1203372896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_21'
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3650ef83e2c301f489a071f7d8c9cabf
+      internalID: -1905812444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_22'
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32c351744d3452449f6f560119acab1
+      internalID: 187501191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_rare_bear 1_23'
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 0
+        width: 324
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac8fbb249c764842aac6e97a16fdf58
+      internalID: -381210750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f33164bec586f0a45af9eed29f1f6a29
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":6.0},"gridSpriteSize":{"x":324.0,"y":404.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      '!battle_rare_bear 1_0': 3218662090380093037
+      '!battle_rare_bear 1_1': -4867248436967773497
+      '!battle_rare_bear 1_10': -7989283937674186786
+      '!battle_rare_bear 1_11': -6340176569340887469
+      '!battle_rare_bear 1_12': -2825622635169072186
+      '!battle_rare_bear 1_13': 4338162811353208066
+      '!battle_rare_bear 1_14': -4779774216063284589
+      '!battle_rare_bear 1_15': -4494448076391266846
+      '!battle_rare_bear 1_16': -526016561529475516
+      '!battle_rare_bear 1_17': -7144245562806843428
+      '!battle_rare_bear 1_18': 6046494189860808594
+      '!battle_rare_bear 1_19': -2022363611
+      '!battle_rare_bear 1_2': 8652909353224227935
+      '!battle_rare_bear 1_20': -1203372896
+      '!battle_rare_bear 1_21': -1905812444
+      '!battle_rare_bear 1_22': 187501191
+      '!battle_rare_bear 1_23': -381210750
+      '!battle_rare_bear 1_3': -3244380625819177994
+      '!battle_rare_bear 1_4': 2515641664077209943
+      '!battle_rare_bear 1_5': 7594932243971795715
+      '!battle_rare_bear 1_6': -999173905333496876
+      '!battle_rare_bear 1_7': 4547657144166821054
+      '!battle_rare_bear 1_8': -9185139723461308566
+      '!battle_rare_bear 1_9': 4587005630721864512
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

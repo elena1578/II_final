@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50bf291a57e9c4545a1cacc3597d5bde, type: 3}
+  m_Name: 04_RareBear
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBattleData
+  characterName: 7
+  battleSprite: {fileID: 3218662090380093037, guid: c1a6cb5e7271d6443879b86b084e52aa, type: 3}
+  spriteScale: {x: 1, y: 1, z: 1}
+  animatorController: {fileID: 9100000, guid: 1d73df738fefa4549b73c2083c69a1ba, type: 2}
+  baseHP: 700
+  baseJuice: 225
+  baseAttack: 15
+  baseDefense: 15
+  baseSpeed: 10
+  expReward: 350
+  clamReward: 20
+  attackActions:
+  - {fileID: 11400000, guid: f4184e39deac0054c9e8a32d3072b714, type: 2}
+  healActions: []
+  emotionActions:
+  - {fileID: 11400000, guid: bc94dd637d5eb5945bd21b1792d09eae, type: 2}
+  noneActions: []
+  actionAI:
+  - action: {fileID: 11400000, guid: f4184e39deac0054c9e8a32d3072b714, type: 2}
+    priorityNumber: 1
+    neutralChance: 0.2
+    happyChance: 0.2
+    sadChance: 0.2
+    angryChance: 1
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: bc94dd637d5eb5945bd21b1792d09eae, type: 2}
+    priorityNumber: 1
+    neutralChance: 1
+    happyChance: 1
+    sadChance: 1
+    angryChance: 0
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 1

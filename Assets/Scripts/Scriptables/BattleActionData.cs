@@ -51,7 +51,8 @@ public class BattleActionData : ScriptableObject
         BreadSlice,
         PepTalk,
         Counter,
-        SuddenJump
+        SuddenJump,
+        Roar
     }
 
     public enum ActionType

@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: 5
   battleSprite: {fileID: 211726624969530064, guid: d3c327e0e881e3d48923723efaca90a9, type: 3}
   spriteScale: {x: 1, y: 1, z: 1}
-  animatorController: {fileID: 0}
+  animatorController: {fileID: 9100000, guid: 5ef845ad0c01e774f991499dd2bcb742, type: 2}
   baseHP: 145
   baseJuice: 62
   baseAttack: 25
