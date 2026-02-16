@@ -135,6 +135,7 @@ public class BattleActorUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (portraitAnimator == null)
             return;
 
+        // toast animation currently isn't playing, need to fix
         portraitAnimator.SetBool("toast", true);
     }
 

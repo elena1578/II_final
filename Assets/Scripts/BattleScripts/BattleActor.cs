@@ -77,8 +77,9 @@ public abstract class BattleActor
             if (name == CharacterName.Omori && !hasHasNotSuccumbed)
             {
                 hasHasNotSuccumbed = true;
-                currentHP = 1; 
-                SetEmotion(EmotionType.Neutral);  // reset any applied emotions
+                currentHP = 1;  // set to 1 HP instead of 0
+                ui?.SetSuccumbAnimation();
+                ui?.UpdateAll();  // make sure 1 HP shows up immediately UI-wise
                 Debug.Log("Omori has not succumbed!");
             }
             else
@@ -137,6 +138,20 @@ public abstract class BattleActor
             multiplier = 0.8f;
 
         return Mathf.RoundToInt(speed * multiplier);
+    }
+
+    /// <summary>
+    /// apply temp base stat modifiers (e.g., actions like Roar) via multipliers
+    /// </summary>
+    /// <param name="attackMult"></param>
+    /// <param name="defenseMult"></param>
+    /// <param name="speedMult"></param>
+    public void ApplyTemporaryStatModifier(float attackMult = 1f, float defenseMult = 1f, float speedMult = 1f)
+    {
+        atk = Mathf.RoundToInt(atk * attackMult);
+        def = Mathf.RoundToInt(def * defenseMult);
+        speed = Mathf.RoundToInt(speed * speedMult);
+        ui?.UpdateAll();
     }
 
     public void EnableGuard(float multiplier)

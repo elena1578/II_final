@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a12b7a56dc38142ab63a31fd1e2841, type: 3}
   m_Name: Roar_RareBear
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
-  actionName: 0
+  actionName: 16
   actionType: 2
   targetType: 4
   battleLogText: '{actor} lets out a huge roar!
