@@ -71,7 +71,7 @@ public class EnemyOverworldSpawner : MonoBehaviour
     {
         if (enemiesToSpawn == null || enemiesToSpawn.Count == 0)
         {
-            Debug.Log("This is probably the BattleRoom, skipping enemy spawn (otherwise enemiesToSpawn is null");
+            Debug.Log("This is probably the BattleRoom, skipping enemy spawn (otherwise enemiesToSpawn is null)");
             return;
         }
 
