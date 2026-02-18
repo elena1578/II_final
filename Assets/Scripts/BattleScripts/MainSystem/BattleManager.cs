@@ -183,30 +183,6 @@ public class BattleManager : MonoBehaviour
         turnStateMachine.EnterState(BattleState.ActorTurn);
     }
 
-    // private void ResolvePlannedActions()
-    // {
-    //     commandButtons.HideAllCommands();
-
-    //     // execute in speed order
-    //     plannedActions.Sort((a, b) => b.actor.speed.CompareTo(a.actor.speed));
-
-    //     foreach (var entry in plannedActions)
-    //     {
-    //         if (!entry.actor.isAlive)
-    //             continue;
-
-    //         Debug.Log($"[EXECUTE] {entry.actor.GetType().Name} uses {entry.action.actionName}");
-    //         UseAction(entry.actor, entry.action);
-    //     }
-
-    //     // clear for next round
-    //     plannedActions.Clear();
-    //     planningIndex = 0;
-
-    //     turnStateMachine.EnterState(BattleState.ResolveTurn);
-    //     uiManager.UpdateAll();  // refresh UIs after all actions
-    // }
-
     private void ResolvePlannedActions()
     {
         commandButtons.HideAllCommands();
@@ -234,9 +210,9 @@ public class BattleManager : MonoBehaviour
 
             Debug.Log($"[EXECUTE] {entry.actor.name} uses {entry.action.actionName}");
 
-            // 1. play action animation + apply logic
-            float animTime = BattleAnimationController.instance.PlayAction(
-                entry.actor, entry.action, targets);
+            // 1. play action animation & sound + apply logic
+            float animTime = BattleAnimationController.instance.PlayAction(entry.actor, entry.action, targets);
+            AudioManager.instance.PlaySFX(entry.action.audioClip, entry.action.clipVolume);
 
             BattleActionResult result = UseAction(entry.actor, entry.action);
 
@@ -255,10 +231,11 @@ public class BattleManager : MonoBehaviour
             yield return new WaitForSeconds(postDialogDelay);
         }
 
-
+        // after all actions resolved, clear planned actions and reset for next turn
         plannedActions.Clear();
         planningIndex = 0;
 
+        // update UIs before next turn starts
         uiManager.UpdateAll();
         turnStateMachine.EnterState(BattleState.ResolveTurn);
     }
@@ -309,10 +286,7 @@ public class BattleManager : MonoBehaviour
 
 
     #region Battle End
-    public void EndBattle(bool win)
-    {
-        StartCoroutine(BattleEndRoutine(win));
-    }
+    public void EndBattle(bool win) => StartCoroutine(BattleEndRoutine(win));
 
     private IEnumerator BattleEndRoutine(bool win)
     {

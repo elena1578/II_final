@@ -14,9 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 4
   actionType: 4
+  targetType: 0
   battleLogText: '{actor} tries to balance on its head.'
+  descriptionText: 
   juiceCost: 0
-  damageAmount: 0
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
+  damageFormula: 0
+  basePower: 0
+  critChance: 0.1
+  critMultiplier: 1.5
+  animationTrigger: 
+  animationDuration: 1.5
+  animationTarget: 0
+  audioClip: {fileID: 8300000, guid: 1bf1d13374891f741811fe36a7b953a4, type: 3}
+  clipVolume: 1

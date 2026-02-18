@@ -28,3 +28,5 @@ MonoBehaviour:
   animationTrigger: rebound
   animationDuration: 1.5
   animationTarget: 0
+  audioClip: {fileID: 8300000, guid: a7957d9acb322444c8f53bc48173e838, type: 3}
+  clipVolume: 1

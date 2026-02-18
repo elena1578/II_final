@@ -20,14 +20,15 @@ MonoBehaviour:
 
     Makes a friend or foe HAPPY.'
   juiceCost: 5
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 1
   damageReductionMultiplier: 0
   damageFormula: 0
   basePower: 0
-  variance: 0.1
   critChance: 0.1
   critMultiplier: 1.5
   animationTrigger: pep_talk
   animationDuration: 3.5
   animationTarget: 0
+  audioClip: {fileID: 8300000, guid: 838aba05763073f49b52e172ac2255ac, type: 3}
+  clipVolume: 1

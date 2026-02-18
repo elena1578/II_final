@@ -28,9 +28,10 @@ MonoBehaviour:
   damageReductionMultiplier: 0
   damageFormula: 2
   basePower: 0
-  variance: 0.1
   critChance: 1
   critMultiplier: 1.5
   animationTrigger: stab
   animationDuration: 3
   animationTarget: 0
+  audioClip: {fileID: 8300000, guid: d77e81e7962ce244bbed0bfbb2864211, type: 3}
+  clipVolume: 1

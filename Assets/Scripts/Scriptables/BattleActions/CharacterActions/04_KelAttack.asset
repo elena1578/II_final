@@ -20,14 +20,15 @@ MonoBehaviour:
     {target} takes {damage} damage!'
   descriptionText: N/A
   juiceCost: 0
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
   damageFormula: 1
   basePower: 0
-  variance: 0.1
   critChance: 0.1
   critMultiplier: 1.5
   animationTrigger: 
   animationDuration: 1.5
   animationTarget: 0
+  audioClip: {fileID: 8300000, guid: efde47baf5d51494090c057f5c6e6d73, type: 3}
+  clipVolume: 1

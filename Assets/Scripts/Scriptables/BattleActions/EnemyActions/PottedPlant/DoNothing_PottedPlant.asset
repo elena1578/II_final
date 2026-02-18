@@ -18,14 +18,15 @@ MonoBehaviour:
   battleLogText: '{actor} is resting in its pot.'
   descriptionText: 
   juiceCost: 0
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
   damageFormula: 0
   basePower: 0
-  variance: 0.1
   critChance: 0.1
   critMultiplier: 1.5
   animationTrigger: 
   animationDuration: 1.5
   animationTarget: 0
+  audioClip: {fileID: 8300000, guid: b90fd67b4eaf2374c832626ea6b22a79, type: 3}
+  clipVolume: 1

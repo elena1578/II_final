@@ -22,14 +22,15 @@ MonoBehaviour:
 
     Inflicts SAD on a friend or foe.'
   juiceCost: 5
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 2
   damageReductionMultiplier: 0
   damageFormula: 0
   basePower: 0
-  variance: 0.1
   critChance: 0.1
   critMultiplier: 1.5
   animationTrigger: sad_poem
   animationDuration: 3
   animationTarget: 0
+  audioClip: {fileID: 8300000, guid: a26493eb094dd1e459d8e7976a9e3c86, type: 3}
+  clipVolume: 1

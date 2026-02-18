@@ -32,6 +32,10 @@ public class BattleActionData : ScriptableObject
     public float animationDuration = 1.5f;
     public AnimationTarget animationTarget;
 
+    [Header("Audio")]
+    public AudioClip audioClip;
+    [Range(0f, 1f)] public float clipVolume = 1f;
+
 
     #region Enums
     public enum BattleActionName

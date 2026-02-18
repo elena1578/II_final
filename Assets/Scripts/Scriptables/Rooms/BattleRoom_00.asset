@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: 0
   isOverworldScene: 0
-  music: {fileID: 0}
-  musicVolume: 1
+  music: {fileID: 8300000, guid: bce34dd6c404f704b920cd18e588efaa, type: 3}
+  musicVolume: 0.8
   exits:
   - exitingTo: 2
     spawnPointID: 5

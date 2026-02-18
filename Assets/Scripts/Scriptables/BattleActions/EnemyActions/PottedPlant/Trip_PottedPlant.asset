@@ -31,3 +31,5 @@ MonoBehaviour:
   animationTrigger: 
   animationDuration: 1.5
   animationTarget: 0
+  audioClip: {fileID: 8300000, guid: 4e9f80d0f9571b24abfbbabf21c726e5, type: 3}
+  clipVolume: 1
