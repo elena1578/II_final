@@ -1,0 +1,538 @@
+fileFormatVersion: 2
+guid: 44e52fa65a6e151498402ba3358c3138
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5594873379757682332
+    second: k_run_n_gun_0
+  - first:
+      213: 8028144137986659453
+    second: k_run_n_gun_1
+  - first:
+      213: -6496767821121991585
+    second: k_run_n_gun_2
+  - first:
+      213: -7271577004892171445
+    second: k_run_n_gun_3
+  - first:
+      213: 5072645260202721973
+    second: k_run_n_gun_4
+  - first:
+      213: 9067514907699372552
+    second: k_run_n_gun_5
+  - first:
+      213: -8006734404751676092
+    second: k_run_n_gun_6
+  - first:
+      213: -6036567539728543572
+    second: k_run_n_gun_7
+  - first:
+      213: 2994689652573991830
+    second: k_run_n_gun_8
+  - first:
+      213: -5316729508254515364
+    second: k_run_n_gun_9
+  - first:
+      213: -1330355491725748119
+    second: k_run_n_gun_10
+  - first:
+      213: -5610528922968974487
+    second: k_run_n_gun_11
+  - first:
+      213: -4240620460172649303
+    second: k_run_n_gun_12
+  - first:
+      213: -8978604102807097162
+    second: k_run_n_gun_13
+  - first:
+      213: -544514255549241834
+    second: k_run_n_gun_14
+  - first:
+      213: -8613694428632777852
+    second: k_run_n_gun_15
+  - first:
+      213: -6788961278034567786
+    second: k_run_n_gun_16
+  - first:
+      213: -6176160535768091674
+    second: k_run_n_gun_17
+  - first:
+      213: 7673026343718291465
+    second: k_run_n_gun_18
+  - first:
+      213: 6885974365698315606
+    second: k_run_n_gun_19
+  - first:
+      213: -545148713334983659
+    second: k_run_n_gun_20
+  - first:
+      213: -2902733514351241241
+    second: k_run_n_gun_21
+  - first:
+      213: 5526216424223518924
+    second: k_run_n_gun_22
+  - first:
+      213: -7477345686523929129
+    second: k_run_n_gun_23
+  - first:
+      213: 5731899360749146833
+    second: k_run_n_gun_24
+  - first:
+      213: 7813283182454871624
+    second: k_run_n_gun_25
+  - first:
+      213: -3178265766005382042
+    second: k_run_n_gun_26
+  - first:
+      213: 6938224382563291411
+    second: k_run_n_gun_27
+  - first:
+      213: 6274346329599691043
+    second: k_run_n_gun_28
+  - first:
+      213: 906386384477604266
+    second: k_run_n_gun_29
+  - first:
+      213: 5977013409420520039
+    second: k_run_n_gun_30
+  - first:
+      213: -8458306723465668524
+    second: k_run_n_gun_31
+  - first:
+      213: 48183604058460443
+    second: k_run_n_gun_32
+  - first:
+      213: -1116767751725228389
+    second: k_run_n_gun_33
+  - first:
+      213: -4823265374428595691
+    second: k_run_n_gun_34
+  - first:
+      213: 255085765936583482
+    second: k_run_n_gun_35
+  - first:
+      213: -2086853332219914167
+    second: k_run_n_gun_36
+  - first:
+      213: -574186034974905902
+    second: k_run_n_gun_37
+  - first:
+      213: 1590873420586559556
+    second: k_run_n_gun_38
+  - first:
+      213: 8999007485587098147
+    second: k_run_n_gun_39
+  - first:
+      213: 4916967734709879849
+    second: k_run_n_gun_40
+  - first:
+      213: 2834122422449062473
+    second: k_run_n_gun_41
+  - first:
+      213: -2606950500303706382
+    second: k_run_n_gun_42
+  - first:
+      213: -7263873825918428106
+    second: k_run_n_gun_43
+  - first:
+      213: 1588040501407189203
+    second: k_run_n_gun_44
+  - first:
+      213: 9191283215283707099
+    second: k_run_n_gun_45
+  - first:
+      213: -8086437890764759667
+    second: k_run_n_gun_46
+  - first:
+      213: -8320446158109525525
+    second: k_run_n_gun_47
+  - first:
+      213: 1078169332404309755
+    second: k_run_n_gun_48
+  - first:
+      213: 4079371039826382157
+    second: k_run_n_gun_49
+  - first:
+      213: 1343700075234675672
+    second: k_run_n_gun_50
+  - first:
+      213: 508732297516352457
+    second: k_run_n_gun_51
+  - first:
+      213: 5048839820128021701
+    second: k_run_n_gun_52
+  - first:
+      213: 7505918229330525959
+    second: k_run_n_gun_53
+  - first:
+      213: 2566509810102298341
+    second: k_run_n_gun_54
+  - first:
+      213: 1896677367473227417
+    second: k_run_n_gun_55
+  - first:
+      213: 1823917589572830505
+    second: k_run_n_gun_56
+  - first:
+      213: -4063949855563800504
+    second: k_run_n_gun_57
+  - first:
+      213: 8865580327207374587
+    second: k_run_n_gun_58
+  - first:
+      213: -611397315409961575
+    second: k_run_n_gun_59
+  - first:
+      213: -6496022070677733761
+    second: k_run_n_gun_60
+  - first:
+      213: 2142247836988633937
+    second: k_run_n_gun_61
+  - first:
+      213: -4203473678823675741
+    second: k_run_n_gun_62
+  - first:
+      213: 4938695278275671633
+    second: k_run_n_gun_63
+  - first:
+      213: 7700415112541529659
+    second: k_run_n_gun_64
+  - first:
+      213: 2940950374092081276
+    second: k_run_n_gun_65
+  - first:
+      213: 8451968248395218702
+    second: k_run_n_gun_66
+  - first:
+      213: 465235437839434908
+    second: k_run_n_gun_67
+  - first:
+      213: 1431586416374663811
+    second: k_run_n_gun_68
+  - first:
+      213: -2897462451652510470
+    second: k_run_n_gun_69
+  - first:
+      213: -6727323578636750597
+    second: k_run_n_gun_70
+  - first:
+      213: 2594449855674789395
+    second: k_run_n_gun_71
+  - first:
+      213: -596797542388299458
+    second: k_run_n_gun_72
+  - first:
+      213: 2199130899380265138
+    second: k_run_n_gun_73
+  - first:
+      213: 945638036227503123
+    second: k_run_n_gun_74
+  - first:
+      213: -8286678659217572801
+    second: k_run_n_gun_75
+  - first:
+      213: -5915360450574887923
+    second: k_run_n_gun_76
+  - first:
+      213: -6511689123478498223
+    second: k_run_n_gun_77
+  - first:
+      213: -2633432739055647885
+    second: k_run_n_gun_78
+  - first:
+      213: -4332842650140836024
+    second: k_run_n_gun_79
+  - first:
+      213: -3303772726017379569
+    second: k_run_n_gun_80
+  - first:
+      213: 8744033443736434507
+    second: k_run_n_gun_81
+  - first:
+      213: -3095246566725366689
+    second: k_run_n_gun_82
+  - first:
+      213: 4322858943884936965
+    second: k_run_n_gun_83
+  - first:
+      213: 2289202493743340953
+    second: k_run_n_gun_84
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: k_run_n_gun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4611144dd440b52b0800000000000000
+      internalID: -5594873379757682332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_run_n_gun_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74545efe82b96f60800000000000000
+      internalID: 8028144137986659453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_run_n_gun_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cc5d98618d6d5a0800000000000000
+      internalID: -6496767821121991585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_run_n_gun_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43d0829d3b261b90800000000000000
+      internalID: -7271577004892171445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_run_n_gun_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2c3f5fcf7a56640800000000000000
+      internalID: 5072645260202721973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_run_n_gun_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802eafc44c846dd70800000000000000
+      internalID: 9067514907699372552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e2383f0ff95b76e4e944b3d0267586d3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":2.0},"gridSpriteSize":{"x":192.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      k_run_n_gun_0: -5594873379757682332
+      k_run_n_gun_1: 8028144137986659453
+      k_run_n_gun_2: -6496767821121991585
+      k_run_n_gun_3: -7271577004892171445
+      k_run_n_gun_4: 5072645260202721973
+      k_run_n_gun_5: 9067514907699372552
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -23,6 +23,8 @@ MonoBehaviour:
   universalGuardAction: {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
   allActions:
   - {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
-  attackActions: []
+  - {fileID: 11400000, guid: 59d6ed3665f79a64e811f594f9610a1f, type: 2}
+  attackActions:
+  - {fileID: 11400000, guid: 59d6ed3665f79a64e811f594f9610a1f, type: 2}
   healActions: []
   emotionActions: []

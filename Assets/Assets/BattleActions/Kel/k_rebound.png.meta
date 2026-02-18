@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 1a89e61940d9dbd4a98fb02863c1e131
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1506289536466930360
+    second: k_rebound_0
+  - first:
+      213: 8454203683099893803
+    second: k_rebound_1
+  - first:
+      213: -7496144743321737718
+    second: k_rebound_2
+  - first:
+      213: 1971913600914017053
+    second: k_rebound_3
+  - first:
+      213: 47192395090059695
+    second: k_rebound_4
+  - first:
+      213: -9082649582684179045
+    second: k_rebound_5
+  - first:
+      213: 1902904813263747967
+    second: k_rebound_6
+  - first:
+      213: 2011555820250902782
+    second: k_rebound_7
+  - first:
+      213: -6369107916540558327
+    second: k_rebound_8
+  - first:
+      213: -7654886291611470513
+    second: k_rebound_9
+  - first:
+      213: -7227781013999821426
+    second: k_rebound_10
+  - first:
+      213: -1574636270988558821
+    second: k_rebound_11
+  - first:
+      213: -3162415306406807916
+    second: k_rebound_12
+  - first:
+      213: 1714874056992481323
+    second: k_rebound_13
+  - first:
+      213: -7150335327312900941
+    second: k_rebound_14
+  - first:
+      213: -4329080946602253061
+    second: k_rebound_15
+  - first:
+      213: 5602629836174687308
+    second: k_rebound_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: k_rebound_0
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 582
+        width: 106
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8453002b5a5981be0800000000000000
+      internalID: -1506289536466930360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_1
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 737
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b20e7fd157d535570800000000000000
+      internalID: 8454203683099893803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 626
+        width: 259
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06656d721858f790800000000000000
+      internalID: -7496144743321737718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 623
+        width: 301
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1bcd3ee8f4ad5b10800000000000000
+      internalID: 1971913600914017053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_4
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 701
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa16179bb39a7a000800000000000000
+      internalID: 47192395090059695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 408
+        width: 54
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9572c49352f3f180800000000000000
+      internalID: -9082649582684179045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 430
+        width: 156
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b77fb78d9786a10800000000000000
+      internalID: 1902904813263747967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_7
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 444
+        width: 256
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0bcef5c5b7aeb10800000000000000
+      internalID: 2011555820250902782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_8
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 199
+        width: 106
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904c87a48126c97a0800000000000000
+      internalID: -6369107916540558327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_9
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 358
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45bd70a97164c590800000000000000
+      internalID: -7654886291611470513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 248
+        width: 300
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d5a325673c1bb90800000000000000
+      internalID: -7227781013999821426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_11
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 322
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ef74187a4c52ae0800000000000000
+      internalID: -1574636270988558821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_12
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 210
+        width: 51
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4963d55b808dc14d0800000000000000
+      internalID: -3162415306406807916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_13
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 232
+        width: 157
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b20e1997ed47cc710800000000000000
+      internalID: 1714874056992481323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_14
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 67
+        width: 259
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc869667e7e4cc90800000000000000
+      internalID: -7150335327312900941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_15
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 63
+        width: 302
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf46cd5c0d30ce3c0800000000000000
+      internalID: -4329080946602253061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: k_rebound_16
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 61
+        width: 177
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c7239e62a80cd40800000000000000
+      internalID: 5602629836174687308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      k_rebound_0: -1506289536466930360
+      k_rebound_1: 8454203683099893803
+      k_rebound_10: -7227781013999821426
+      k_rebound_11: -1574636270988558821
+      k_rebound_12: -3162415306406807916
+      k_rebound_13: 1714874056992481323
+      k_rebound_14: -7150335327312900941
+      k_rebound_15: -4329080946602253061
+      k_rebound_16: 5602629836174687308
+      k_rebound_2: -7496144743321737718
+      k_rebound_3: 1971913600914017053
+      k_rebound_4: 47192395090059695
+      k_rebound_5: -9082649582684179045
+      k_rebound_6: 1902904813263747967
+      k_rebound_7: 2011555820250902782
+      k_rebound_8: -6369107916540558327
+      k_rebound_9: -7654886291611470513
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

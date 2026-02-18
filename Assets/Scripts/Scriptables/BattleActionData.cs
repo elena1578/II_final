@@ -52,7 +52,10 @@ public class BattleActionData : ScriptableObject
         PepTalk,
         Counter,
         SuddenJump,
-        Roar
+        Roar,
+        Rebound,
+        RunNGun,
+        Curveball
     }
 
     public enum ActionType
@@ -77,7 +80,10 @@ public class BattleActionData : ScriptableObject
         BasicAttack,
         Stab,
         BreadSlice,
-        Headbutt
+        Headbutt,
+        Rebound,
+        RunNGun,
+        Curveball
     }
     #endregion
 
@@ -121,6 +127,21 @@ public class BattleActionData : ScriptableObject
 
             case DamageFormula.Headbutt:
                 damage = actor.atk * 3 - target.def;
+                break;
+
+            case DamageFormula.Rebound:
+                damage = Mathf.RoundToInt((actor.atk) * 2.5f) - target.def;
+                break;
+
+            case DamageFormula.RunNGun:
+                damage = Mathf.RoundToInt(actor.speed * 1.5f) - target.def;
+                break;
+
+            case DamageFormula.Curveball:
+                if (actor.currentEmotion != EmotionType.Neutral)
+                    damage = actor.atk * 3 - target.def;
+                else
+                    damage = actor.atk * 2 - target.def;
                 break;
         }
 
