@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class ScreenShake : MonoBehaviour
 {
@@ -11,6 +13,10 @@ public class ScreenShake : MonoBehaviour
     private float shakeTimeRemaining = 0f;
     private float shakeDuration = 0f;
     private float shakeMagnitude = 0f;
+
+#if UNITY_EDITOR    
+    private InputAction shakeAction;
+#endif
 
     private void Awake()
     {
@@ -25,7 +31,25 @@ public class ScreenShake : MonoBehaviour
             Destroy(gameObject);
         }
 
+        RebindCamera();
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) => RebindCamera();
+    private void OnEnable() 
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+#if UNITY_EDITOR
+        shakeAction = new InputAction("shake", binding: "<Keyboard>/p");
+        shakeAction.performed += _ => Shake();
+        shakeAction.Enable();
+        Debug.Log("[ScreenShake] Shake action bound to 'P' key");
+#endif
+    }
+    private void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
+    private void RebindCamera() 
+    {
         initialPosition = FindFirstObjectByType<Camera>().transform.localPosition;
+        Debug.Log("[ScreenShake] Camera bound");
     }
 
     private void Update()
@@ -39,13 +63,11 @@ public class ScreenShake : MonoBehaviour
             if (shakeTimeRemaining <= 0f)
                 GetComponent<Camera>().transform.localPosition = initialPosition;  // reset
         }
-
-        if (Input.GetKeyDown(KeyCode.T))
-            TestShake();
     }
 
     /// <summary>
-    /// Shake screen w/ optional custom duration and magnitude
+    /// shake screen w/ optional custom duration and magnitude.
+    /// default is 1f, 1f
     /// </summary>
     /// <param name="duration"></param>
     /// <param name="magnitude"></param>
@@ -55,10 +77,5 @@ public class ScreenShake : MonoBehaviour
         shakeMagnitude = magnitude > 0 ? magnitude : defaultMagnitude;
 
         shakeTimeRemaining = shakeDuration;
-    }
-
-    public void TestShake()
-    {
-        Shake(0.5f, 0.2f);
     }
 }

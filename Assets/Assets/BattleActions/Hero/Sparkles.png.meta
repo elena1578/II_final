@@ -1,49 +1,106 @@
 fileFormatVersion: 2
-guid: adb178ec2b7d0d34484982c8bf7f9cc8
+guid: 908231ccc95be5448b67b4bce562265b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3412679031246127954
-    second: u_lifejam_0
+      213: 8169671011806649907
+    second: Sparkles_0
   - first:
-      213: -4866131903449080035
-    second: u_lifejam_1
+      213: 1899792054539023115
+    second: Sparkles_1
   - first:
-      213: -963584023843959682
-    second: u_lifejam_2
+      213: 5658517712667618684
+    second: Sparkles_2
   - first:
-      213: -4448276231368738240
-    second: u_lifejam_3
+      213: 541248757636342385
+    second: Sparkles_3
   - first:
-      213: 2669485447632553116
-    second: u_lifejam_4
+      213: -5459949177621275647
+    second: Sparkles_4
   - first:
-      213: -3852347061836210045
-    second: u_lifejam_5
+      213: 7571910899294295488
+    second: Sparkles_5
   - first:
-      213: 7027940450135612838
-    second: u_lifejam_6
+      213: -8315446359504827858
+    second: Sparkles_6
   - first:
-      213: -8680968144947483082
-    second: u_lifejam_7
+      213: -464536711732764626
+    second: Sparkles_7
   - first:
-      213: -2648008368216757005
-    second: u_lifejam_8
+      213: 1073627642864386288
+    second: Sparkles_8
   - first:
-      213: -8235412634481244304
-    second: u_lifejam_9
+      213: -1771445224453153853
+    second: Sparkles_9
   - first:
-      213: -4338900966278496772
-    second: u_lifejam_10
+      213: 7507281517343841426
+    second: Sparkles_10
   - first:
-      213: -4528331356027751561
-    second: u_lifejam_11
+      213: 5653293105177726919
+    second: Sparkles_11
   - first:
-      213: -5118278137591176836
-    second: u_lifejam_12
+      213: 2062810160900934072
+    second: Sparkles_12
   - first:
-      213: -1476111129460568793
-    second: u_lifejam_13
+      213: 6821893273419060047
+    second: Sparkles_13
+  - first:
+      213: 2606951784547883371
+    second: Sparkles_14
+  - first:
+      213: -3063456493105340767
+    second: Sparkles_15
+  - first:
+      213: -4869357019365701372
+    second: Sparkles_16
+  - first:
+      213: -6294869783537117547
+    second: Sparkles_17
+  - first:
+      213: -2049213076321928139
+    second: Sparkles_18
+  - first:
+      213: -3065837422102938556
+    second: Sparkles_19
+  - first:
+      213: -4714652064981683047
+    second: Sparkles_20
+  - first:
+      213: -7566563057495435696
+    second: Sparkles_21
+  - first:
+      213: 2406664850778605833
+    second: Sparkles_22
+  - first:
+      213: 4352862711546021104
+    second: Sparkles_23
+  - first:
+      213: 8460006932734343577
+    second: Sparkles_24
+  - first:
+      213: -8693425623419367564
+    second: Sparkles_25
+  - first:
+      213: -2575821741370759862
+    second: Sparkles_26
+  - first:
+      213: -7787529770862768135
+    second: Sparkles_27
+  - first:
+      213: -8396251347651496720
+    second: Sparkles_28
+  - first:
+      213: -6977477572134977599
+    second: Sparkles_29
+  - first:
+      213: 1644429865988043571
+    second: Sparkles_30
+  - first:
+      213: 8408760153785774902
+    second: Sparkles_31
+  - first:
+      213: 1090466353573213579
+    second: Sparkles_32
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,309 +222,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: u_lifejam_0
+      name: Sparkles_0
       rect:
         serializedVersion: 2
-        x: 45
-        y: 430
-        width: 102
-        height: 102
+        x: 0
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eac7622908ab3a0d0800000000000000
-      internalID: -3412679031246127954
+      spriteID: 33e9a8e1080806170800000000000000
+      internalID: 8169671011806649907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: u_lifejam_1
+      name: Sparkles_1
       rect:
         serializedVersion: 2
-        x: 237
-        y: 430
-        width: 102
-        height: 102
+        x: 192
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1fd8b0d0d6087cb0800000000000000
-      internalID: -4866131903449080035
+      spriteID: b0378eddeca6d5a10800000000000000
+      internalID: 1899792054539023115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: u_lifejam_2
+      name: Sparkles_2
       rect:
         serializedVersion: 2
-        x: 429
-        y: 430
-        width: 102
-        height: 102
+        x: 384
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7c0a838f69a0a2f0800000000000000
-      internalID: -963584023843959682
+      spriteID: c7d2fca21e7178e40800000000000000
+      internalID: 5658517712667618684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: u_lifejam_3
+      name: Sparkles_3
       rect:
         serializedVersion: 2
-        x: 621
-        y: 430
-        width: 102
-        height: 102
+        x: 576
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04af376e55c8442c0800000000000000
-      internalID: -4448276231368738240
+      spriteID: 172290e90e6e28700800000000000000
+      internalID: 541248757636342385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: u_lifejam_4
+      name: Sparkles_4
       rect:
         serializedVersion: 2
-        x: 813
-        y: 430
-        width: 102
-        height: 102
+        x: 768
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c94863ffedaeb0520800000000000000
-      internalID: 2669485447632553116
+      spriteID: 10c9238a62d5a34b0800000000000000
+      internalID: -5459949177621275647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: u_lifejam_5
+      name: Sparkles_5
       rect:
         serializedVersion: 2
-        x: 45
-        y: 238
-        width: 102
-        height: 102
+        x: 0
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 380abb302c6b98ac0800000000000000
-      internalID: -3852347061836210045
+      spriteID: 0c5585f58d4d41960800000000000000
+      internalID: 7571910899294295488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: u_lifejam_6
+      name: Sparkles_6
       rect:
         serializedVersion: 2
-        x: 237
-        y: 238
-        width: 102
-        height: 102
+        x: 192
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ad9ee09a92488160800000000000000
-      internalID: 7027940450135612838
+      spriteID: e2a46e8d799999c80800000000000000
+      internalID: -8315446359504827858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: u_lifejam_7
+      name: Sparkles_7
       rect:
         serializedVersion: 2
-        x: 429
-        y: 238
-        width: 102
-        height: 102
+        x: 384
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 63e6ce54771078780800000000000000
-      internalID: -8680968144947483082
+      spriteID: e206a086252ad89f0800000000000000
+      internalID: -464536711732764626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: u_lifejam_8
+      name: Sparkles_8
       rect:
         serializedVersion: 2
-        x: 621
-        y: 238
-        width: 102
-        height: 102
+        x: 576
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fcad2a3b62604bd0800000000000000
-      internalID: -2648008368216757005
+      spriteID: 0f0c8f127aa46ee00800000000000000
+      internalID: 1073627642864386288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: u_lifejam_9
+      name: Sparkles_9
       rect:
         serializedVersion: 2
-        x: 813
-        y: 238
-        width: 102
-        height: 102
+        x: 768
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0774bfe87dfe5bd80800000000000000
-      internalID: -8235412634481244304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: u_lifejam_10
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 46
-        width: 102
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cfdfe554f8029c3c0800000000000000
-      internalID: -4338900966278496772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: u_lifejam_11
-      rect:
-        serializedVersion: 2
-        x: 237
-        y: 46
-        width: 102
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 773f3b2bf922821c0800000000000000
-      internalID: -4528331356027751561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: u_lifejam_12
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 46
-        width: 102
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c71ea33d62938f8b0800000000000000
-      internalID: -5118278137591176836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: u_lifejam_13
-      rect:
-        serializedVersion: 2
-        x: 622
-        y: 45
-        width: 102
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72d808f9fbcc38be0800000000000000
-      internalID: -1476111129460568793
+      spriteID: 3cb586134ff8a67e0800000000000000
+      internalID: -1771445224453153853
       vertices: []
       indices: 
       edges: []
@@ -476,7 +445,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bb560bbb8f54d894e9fbcc50ca559eb1
     internalID: 0
     vertices: []
     indices: 
@@ -484,22 +453,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":2.0},"gridSpriteSize":{"x":192.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      u_lifejam_0: -3412679031246127954
-      u_lifejam_1: -4866131903449080035
-      u_lifejam_10: -4338900966278496772
-      u_lifejam_11: -4528331356027751561
-      u_lifejam_12: -5118278137591176836
-      u_lifejam_13: -1476111129460568793
-      u_lifejam_2: -963584023843959682
-      u_lifejam_3: -4448276231368738240
-      u_lifejam_4: 2669485447632553116
-      u_lifejam_5: -3852347061836210045
-      u_lifejam_6: 7027940450135612838
-      u_lifejam_7: -8680968144947483082
-      u_lifejam_8: -2648008368216757005
-      u_lifejam_9: -8235412634481244304
+      Sparkles_0: 8169671011806649907
+      Sparkles_1: 1899792054539023115
+      Sparkles_2: 5658517712667618684
+      Sparkles_3: 541248757636342385
+      Sparkles_4: -5459949177621275647
+      Sparkles_5: 7571910899294295488
+      Sparkles_6: -8315446359504827858
+      Sparkles_7: -464536711732764626
+      Sparkles_8: 1073627642864386288
+      Sparkles_9: -1771445224453153853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

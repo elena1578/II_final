@@ -27,7 +27,7 @@ MonoBehaviour:
   basePower: 0
   critChance: 0.1
   critMultiplier: 1.5
-  animationTrigger: 
+  animationTrigger: basic_attack
   animationDuration: 1.5
   animationTarget: 0
   audioClip: {fileID: 8300000, guid: efde47baf5d51494090c057f5c6e6d73, type: 3}
