@@ -10,6 +10,9 @@ public class AudioManager : MonoBehaviour
     private List<AudioSource> musicSources = new List<AudioSource>();
     private int nextSFXIndex = 0;
 
+    [Header("Battle SFX")]
+    public AudioClip victorySFX;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -36,8 +39,8 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // -----------------------------------------------------
-    // music
+    
+    #region Music
     public void PlayMusic(AudioClip clip) => MusicFadeInOut.instance?.CheckMusic(clip, 1f);
     public void StopMusic() => MusicFadeInOut.instance?.StopMusic();
     public void SetMusicVolume(float volume)
@@ -45,9 +48,10 @@ public class AudioManager : MonoBehaviour
         if (MusicFadeInOut.instance?.musicSource != null)
             MusicFadeInOut.instance.musicSource.volume = Mathf.Clamp01(volume);
     }
+    #endregion
 
-    // -----------------------------------------------------
-    // sfx
+    
+    #region SFX
     public void PlaySFX(AudioClip clip, float volume = 1f, float pitch = 1f)
     {
         if (clip == null) return;
@@ -78,4 +82,15 @@ public class AudioManager : MonoBehaviour
             src.pitch = 1f;
         }
     }
+    #endregion
+
+
+    #region Specific Methods
+    public void PlayDefeatSequence()
+    {
+        // play defeat music, stop all sfx, etc.
+        StopAllSFX();
+        PlayMusic(victorySFX);
+    }
+    #endregion
 }

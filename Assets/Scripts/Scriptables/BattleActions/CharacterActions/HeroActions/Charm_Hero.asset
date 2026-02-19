@@ -10,24 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42a12b7a56dc38142ab63a31fd1e2841, type: 3}
-  m_Name: Cook_Hero
+  m_Name: Charm_Hero
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
-  actionName: 1
-  actionType: 1
-  targetType: 4
-  battleLogText: '{actor} cooks a meal for {target}!
-
-    {target} heals {heal} HP!'
+  actionName: 0
+  actionType: 0
+  targetType: 0
+  battleLogText: 
   descriptionText: 
-  juiceCost: 10
-  healPercentage: 0.75
+  juiceCost: 0
+  healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
   damageFormula: 0
   basePower: 0
-  variance: 0.1
   critChance: 0.1
   critMultiplier: 1.5
   animationTrigger: 
   animationDuration: 1.5
   animationTarget: 0
+  audioClip: {fileID: 0}
+  clipVolume: 1

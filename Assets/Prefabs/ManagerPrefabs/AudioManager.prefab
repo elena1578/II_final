@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9d005b87f56da49b13bc5d28fdf5b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  victorySFX: {fileID: 8300000, guid: ae80593d4f08b5044b64963ecfbe0129, type: 3}
 --- !u!82 &699721954843184800
 AudioSource:
   m_ObjectHideFlags: 0
