@@ -28,5 +28,7 @@ MonoBehaviour:
   critChance: 0.1
   critMultiplier: 1.5
   animationTrigger: runngun
-  animationDuration: 5
+  animationDuration: 3.5
   animationTarget: 0
+  audioClip: {fileID: 0}
+  clipVolume: 1
