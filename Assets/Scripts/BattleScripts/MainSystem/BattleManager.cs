@@ -21,6 +21,8 @@ public class BattleManager : MonoBehaviour
     private TurnOrderManager turnOrder;
     private BattleContext context;
     private BattleResult battleResult;
+    private ScreenShake screenShake;
+    private UIDigitSpawner digitSpawner;
 
 
     private void Awake()
@@ -62,6 +64,10 @@ public class BattleManager : MonoBehaviour
         // bind UIs
         uiManager.BindActors(context.party, context.enemies);
         uiManager.UpdateAll();
+
+        // cache refs
+        screenShake = FindFirstObjectByType<ScreenShake>();
+        digitSpawner = FindFirstObjectByType<UIDigitSpawner>();
     }
 
     public void StartBattle(List<CharacterBattleData> partyData, List<EnemyBattleData> enemyData)
@@ -215,6 +221,17 @@ public class BattleManager : MonoBehaviour
             AudioManager.instance.PlaySFX(entry.action.audioClip, entry.action.clipVolume);
 
             BattleActionResult result = UseAction(entry.actor, entry.action);
+
+            // 1a. trigger shake + spawn dmg digits if dmg'd
+            if (result.didDamage)
+            {
+                screenShake?.Shake(0.25f, result.didCrit ? 25f : 15f);
+                foreach (var target in result.targets)
+                {
+                    if (target.ui != null)
+                        digitSpawner.SpawnDamage(result, target.ui.GetComponent<RectTransform>());
+                }
+            }
 
             // 2. show battle dialog
             BattleDialogManager.instance.Show(

@@ -1,73 +1,81 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class ScreenShake : MonoBehaviour
 {
-    [HideInInspector] public ScreenShake instance;
+    [Header("Default Shake Settings")]
+    [SerializeField] private float defaultDuration = 0.25f;
+    [SerializeField] private float defaultMagnitude = 15f;
 
-    [SerializeField] private float defaultDuration = 0f;
-    [SerializeField] private float defaultMagnitude = 0.1f;
+    private RectTransform rectTransform;
+    private Vector2 originalPosition;
 
-    private Vector3 initialPosition;
-    private float shakeTimeRemaining = 0f;
-    private float shakeDuration = 0f;
-    private float shakeMagnitude = 0f;
+    private float shakeTimeRemaining;
+    private float shakeDuration;
+    private float shakeMagnitude;
 
-#if UNITY_EDITOR    
+#if UNITY_EDITOR
     private InputAction shakeAction;
+    private float testDuration = 0.25f;
+    private float testMagnitude = 15f;
 #endif
 
     private void Awake()
     {
-        instance = this;
-        
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
-        RebindCamera();
+        rectTransform = GetComponent<RectTransform>();
+        originalPosition = rectTransform.anchoredPosition;
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) => RebindCamera();
-    private void OnEnable() 
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
 #if UNITY_EDITOR
-        shakeAction = new InputAction("shake", binding: "<Keyboard>/p");
-        shakeAction.performed += _ => Shake();
-        shakeAction.Enable();
-        Debug.Log("[ScreenShake] Shake action bound to 'P' key");
-#endif
-    }
-    private void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
-    private void RebindCamera() 
+    private void OnEnable()
     {
-        initialPosition = FindFirstObjectByType<Camera>().transform.localPosition;
-        Debug.Log("[ScreenShake] Camera bound");
+        if (shakeAction == null)
+        {
+            shakeAction = new InputAction("shake", binding: "<Keyboard>/p");
+            shakeAction.performed += ctx =>
+            {
+                Debug.Log("[ScreenShake] P pressed");
+                Shake(testDuration, testMagnitude);
+            };
+        }
+
+        shakeAction.Enable();
+        Debug.Log("[ScreenShake] Shake action enabled");
     }
+
+    private void OnDisable()
+    {
+        shakeAction?.Disable();
+    }
+#endif
 
     private void Update()
     {
-        if (shakeTimeRemaining > 0)
+        if (shakeTimeRemaining <= 0f)
         {
-            Vector2 shakeOffset = Random.insideUnitCircle * shakeMagnitude;
-            GetComponent<Camera>().transform.localPosition = initialPosition + (Vector3)shakeOffset;
-
-            shakeTimeRemaining -= Time.deltaTime;
-            if (shakeTimeRemaining <= 0f)
-                GetComponent<Camera>().transform.localPosition = initialPosition;  // reset
+            rectTransform.anchoredPosition = originalPosition;  // ensure original pos is reset
+            return;
         }
+
+        shakeTimeRemaining -= Time.deltaTime;
+
+        float progress = 1f - (shakeTimeRemaining / shakeDuration);
+        float damper = 1f - Mathf.Clamp01(progress);  // damps/fades the shake over time
+
+        // consistent oscillation shake vs. random 
+        float frequency = 40f; // how fast it oscillates
+        float x = Mathf.Sin(Time.time * frequency) * shakeMagnitude * damper;  // side-to-side shake
+        Vector2 offset = new Vector2(x, 0f);
+
+        rectTransform.anchoredPosition = originalPosition + offset;
+
+        if (shakeTimeRemaining <= 0f)
+            rectTransform.anchoredPosition = originalPosition;
     }
 
     /// <summary>
-    /// shake screen w/ optional custom duration and magnitude.
-    /// default is 1f, 1f
+    /// call to trigger screen shake [for UI] w/ optional custom duration and magnitude.
+    /// default vals are 0.25f, 15f respectively
     /// </summary>
     /// <param name="duration"></param>
     /// <param name="magnitude"></param>
@@ -79,3 +87,6 @@ public class ScreenShake : MonoBehaviour
         shakeTimeRemaining = shakeDuration;
     }
 }
+
+
+

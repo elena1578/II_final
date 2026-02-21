@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7179640996490331023}
   - component: {fileID: 257833728431794734}
-  - component: {fileID: 1909070819354239625}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -46,18 +45,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   roomCollection: {fileID: 11400000, guid: 45a18006fdd533744b11d407a98ae3ea, type: 2}
---- !u!114 &1909070819354239625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517601069223776035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a71f154a2fb75f488e422f9b3618853, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ScreenShake
-  instance: {fileID: 0}
-  defaultDuration: 1
-  defaultMagnitude: 1
