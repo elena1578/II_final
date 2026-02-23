@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4945405319574562781}
   - component: {fileID: 5204716167727540004}
+  - component: {fileID: 7803315919025627818}
   - component: {fileID: 1627895051765580716}
   - component: {fileID: 3085146124711456436}
   - component: {fileID: 6245498976826263200}
@@ -47,6 +48,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5771076273832984138}
   m_CullTransparentMesh: 1
+--- !u!114 &7803315919025627818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5771076273832984138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf7a651736f6e1f41b52f3fc1f158074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBattleActorDataSetter
+  defaultEnemyBattleData: {fileID: 11400000, guid: 4711c9f6172a1264b962878f8ff8efe6, type: 2}
 --- !u!114 &1627895051765580716
 MonoBehaviour:
   m_ObjectHideFlags: 0

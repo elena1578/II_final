@@ -44,7 +44,6 @@ public abstract class BattleActor
         currentEmotion = startingEmotion;
         this.name = name;
     }
-    
 
     public virtual void TakeDamage(int amount)
     {
