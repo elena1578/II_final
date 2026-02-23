@@ -49,9 +49,6 @@ TagManager:
   - name: Collision
     uniqueID: 3057377849
     locked: 0
-  - name: Tree
-    uniqueID: 2022666971
-    locked: 0
   - name: Decoration
     uniqueID: 1394493191
     locked: 0
@@ -63,6 +60,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2250183401
+    locked: 0
+  - name: Tree
+    uniqueID: 2022666971
     locked: 0
   - name: OverworldUI
     uniqueID: 227556243

@@ -16,7 +16,7 @@ MonoBehaviour:
   battleSprite: {fileID: 0}
   spriteScale: {x: 1, y: 1, z: 1}
   animatorController: {fileID: 0}
-  baseHP: 0
+  baseHP: 170
   baseJuice: 75
   baseAttack: 22
   baseDefense: 10
@@ -27,3 +27,4 @@ MonoBehaviour:
   healActions: []
   emotionActions: []
   noneActions: []
+  actionAI: []

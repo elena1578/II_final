@@ -1028,6 +1028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 179198697}
   - component: {fileID: 179198696}
+  - component: {fileID: 179198699}
   - component: {fileID: 179198698}
   m_Layer: 0
   m_Name: BattleManager
@@ -1073,7 +1074,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179198695}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 095d4282f4e20da448e78d990be207b2, type: 3}
   m_Name: 
@@ -1086,6 +1087,23 @@ MonoBehaviour:
   enemies:
   - {fileID: 11400000, guid: dc678e88b3ff027459f551fdae09d276, type: 2}
   autoStartBattle: 1
+--- !u!114 &179198699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179198695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41074b69045784a489fbda0afc788495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleInitializer
+  defaultParty:
+  - {fileID: 11400000, guid: 08d5bd8c0c8784b46b3eaad666f7585d, type: 2}
+  - {fileID: 11400000, guid: 1f13fce36c8a6a84793ca6ca8e35f624, type: 2}
+  - {fileID: 11400000, guid: 684e808610249724c934a57a432bd287, type: 2}
+  - {fileID: 11400000, guid: 3f13eb584ac7afe4dab89d7186ad1e10, type: 2}
 --- !u!1 &200958308
 GameObject:
   m_ObjectHideFlags: 0
@@ -5383,7 +5401,7 @@ Animator:
   m_GameObject: {fileID: 1234787701}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c1884212e94a4df498a04d7516811d88, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

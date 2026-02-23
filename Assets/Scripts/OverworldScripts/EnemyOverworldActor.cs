@@ -23,15 +23,16 @@ public class EnemyOverworldActor : GridMovementController
     private Transform playerTransform;
 
 
-    private void Start()
+    protected override void Awake()
     {
+        base.Awake();
         animator = GetComponentInChildren<Animator>();
-
-        InitializeData();
     }
 
-    private void InitializeData()
+    public void InitializeData(EnemyOverworldData enemyData)
     {
+        data = enemyData;
+        
         if (data != null)
         {
             // sprite

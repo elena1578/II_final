@@ -24,6 +24,7 @@ MonoBehaviour:
     spawnPointID: 0
     targetRoom: {fileID: 11400000, guid: fc4f9ca3408bcaf4392ee1a790b18426, type: 2}
   enemySpawning:
-    enemiesToSpawn: []
-    maxOverallSpawn: 0
-    minOverallSpawn: 0
+    enemiesToSpawn:
+    - {fileID: 11400000, guid: 51304be9453dde14596c9e57b8b76157, type: 2}
+    - {fileID: 11400000, guid: e7c7601c08e1af744a72be30a01bfc22, type: 2}
+    - {fileID: 11400000, guid: 76219a8a928ff6341b92634a3f96f326, type: 2}

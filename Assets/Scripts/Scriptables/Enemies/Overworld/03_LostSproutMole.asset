@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a6c2b47e001114b82bf759913eb6ca, type: 3}
   m_Name: 03_LostSproutMole
   m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldData
-  enemyPrefab: {fileID: 0}
   correspondingBattleData: {fileID: 11400000, guid: 813286e67f15e49449c72f81f647f6c5, type: 2}
-  moveSpeed: 1
-  wanderRadius: 1
+  sprite: {fileID: -8354864745952003214, guid: 8f27a4288269df44a99ef481f013e169, type: 3}
+  animatorController: {fileID: 9100000, guid: fcb65c14d35067846ac03f9ad0dbb565, type: 2}
+  moveSpeed: 0.5
+  chanceToMove: 0.35
   alertRadius: 5

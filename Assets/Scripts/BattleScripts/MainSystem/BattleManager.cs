@@ -59,7 +59,7 @@ public class BattleManager : MonoBehaviour
         turnStateMachine = new TurnStateMachine(OnStateEntered);
         turnStateMachine.EnterState(BattleState.Start);
 
-        Debug.Log("Battle details: " + $"{party.Count} party members vs {enemies.Count} enemies.");
+        Debug.Log("Battle details: " + $"{party.Count} party members vs {enemies.Count} enemies. Enemy types: " + string.Join(", ", enemies.ConvertAll(e => e.name)));
 
         // bind UIs
         uiManager.BindActors(context.party, context.enemies);

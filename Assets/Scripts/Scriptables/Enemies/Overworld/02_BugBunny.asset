@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a6c2b47e001114b82bf759913eb6ca, type: 3}
   m_Name: 02_BugBunny
   m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldData
-  enemyPrefab: {fileID: 0}
   correspondingBattleData: {fileID: 11400000, guid: b7a84642e1193844d9f14ee4ef1f6f7f, type: 2}
   sprite: {fileID: 5431964463116794410, guid: 5baecc3da0c728a448704f759236d063, type: 3}
-  animatorController: {fileID: 0}
-  moveSpeed: 1
-  chanceToMove: 1
+  animatorController: {fileID: 9100000, guid: 5caab38b05320204db3627a3877dca55, type: 2}
+  moveSpeed: 0.7
+  chanceToMove: 0.5
   alertRadius: 5

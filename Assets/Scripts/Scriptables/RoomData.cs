@@ -56,8 +56,9 @@ public class RoomExits
 public class RoomEnemySpawning
 {
   public List<EnemyOverworldData> enemiesToSpawn;
-  public int maxOverallSpawn;
-  public int minOverallSpawn;
+// this is mostly controlled by EnemyOverworldSpawnArea now per area
+//   public int maxOverallSpawn;
+//   public int minOverallSpawn;
 }
 #endregion
 
