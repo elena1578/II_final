@@ -5,9 +5,9 @@ using UnityEditor;
 public class EnemyOverworldSpawnerEditor : Editor
 {
     // this should be used to:
-    // 1. respawn enemies to check types + bounds (min/max) via a button
+    // 1. respawn enemies to check types + bounds (min/max) via a button (done)
     // 2. gather the types of enemies assigned to each room and determine which enemies are not being spawned BUT have
-        // existing data
+        // existing data (not done)
     
     public override void OnInspectorGUI()
     {

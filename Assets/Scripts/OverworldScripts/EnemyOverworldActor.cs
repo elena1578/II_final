@@ -167,12 +167,14 @@ public class EnemyOverworldActor : GridMovementController
         if (other.collider.CompareTag("Player") && !enteringBattle)
         {
             // destroy other enemies to halt movement & prevent multiple battle triggers
+            // if a save/load system is implemented, this would instead be saving what enemies there are and
+            // respawning them after battle rather vs. destroying them
             EnemyOverworldActor[] otherEnemies = FindObjectsByType<EnemyOverworldActor>(FindObjectsSortMode.None);
             foreach (EnemyOverworldActor enemy in otherEnemies)            {
                 if (enemy != this)
                     Destroy(enemy.gameObject);
             }
-            
+
             enteringBattle = true;
             Debug.Log("Beginning battle with " + data.name);
             BattleTransitionManager.instance.StartBattle(data);
