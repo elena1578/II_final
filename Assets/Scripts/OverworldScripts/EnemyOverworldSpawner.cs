@@ -139,6 +139,19 @@ public class EnemyOverworldSpawner : MonoBehaviour
         position = Vector3.zero;
         return false;
     }
+
+    public void RespawnEnemies()
+    {
+        // destroy existing enemies
+        EnemyOverworldActor[] existingEnemies = FindObjectsByType<EnemyOverworldActor>(FindObjectsSortMode.None);
+        foreach (var enemy in existingEnemies)
+        {
+            Destroy(enemy.gameObject);
+        }
+
+        // respawn new enemies
+        SpawnEnemies();
+    }
     #endregion
 }
     

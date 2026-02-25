@@ -15,6 +15,6 @@ MonoBehaviour:
   correspondingBattleData: {fileID: 11400000, guid: 813286e67f15e49449c72f81f647f6c5, type: 2}
   sprite: {fileID: -8354864745952003214, guid: 8f27a4288269df44a99ef481f013e169, type: 3}
   animatorController: {fileID: 9100000, guid: fcb65c14d35067846ac03f9ad0dbb565, type: 2}
-  moveSpeed: 0.5
+  moveSpeed: 0.65
   chanceToMove: 0.35
   alertRadius: 5

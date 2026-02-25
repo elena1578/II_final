@@ -128,10 +128,10 @@ public class RoomChangeManager : MonoBehaviour
                 {
                     if (sp.spawnPointID == spawnPointID)
                     {
-                        if (controller != null)
-                            controller.ForceSnapToGrid(sp.transform.position);
-                        else
-                            playerGO.transform.position = sp.transform.position;
+                        // match spawn point ID then snap to grid 
+                        playerGO.transform.position = sp.transform.position;
+                        controller.ForceSnapToGrid(sp.transform.position);
+                        Debug.Log($"Player spawned at {spawnPointID} in {targetRoom.roomID}");
 
                         break;
                     }
