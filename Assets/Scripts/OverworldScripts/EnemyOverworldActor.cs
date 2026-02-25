@@ -9,18 +9,20 @@ public class EnemyOverworldActor : GridMovementController
     private float alertRadius = 5.0f;
     private float chanceToMove = 1f;
 
-    // walking behavior
-    private float moveTimer;
-    private float idleTimer;
+    [Header("Movement Settings")]
+    [SerializeField] private float followMoveSpeed = 0.5f;
     [SerializeField] private float minMoveTime = 1.0f;
     [SerializeField] private float maxMoveTime = 3.0f;
     [SerializeField] private float minIdleTime = 0.5f;
     [SerializeField] private float maxIdleTime = 1.5f;
+    private float moveTimer;
+    private float idleTimer;
 
     // internal refs
     private Animator animator;
     private bool alerted = false;
     private Transform playerTransform;
+    private bool enteringBattle = false;
 
 
     protected override void Awake()
@@ -86,7 +88,7 @@ public class EnemyOverworldActor : GridMovementController
     }
 
     /// <summary>
-    /// Randomly chooses the next movement state: moving in a random direction
+    /// randomly chooses the next movement state: moving in a random direction
     /// for a random duration, or idling for a random duration
     /// </summary>
     private void ChooseNextMovementState()
@@ -141,7 +143,8 @@ public class EnemyOverworldActor : GridMovementController
     {
         // Debug.Log(data.name + " has spotted the player!");
         
-        movement = SnapToDirection((player.position - transform.position).normalized);
+        // slow movement speed when chasing
+        movement = SnapToDirection((player.position - transform.position).normalized) * followMoveSpeed;
 
         // override timers
         idleTimer = 0;
@@ -161,8 +164,16 @@ public class EnemyOverworldActor : GridMovementController
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.collider.CompareTag("Player"))
+        if (other.collider.CompareTag("Player") && !enteringBattle)
         {
+            // destroy other enemies to halt movement & prevent multiple battle triggers
+            EnemyOverworldActor[] otherEnemies = FindObjectsByType<EnemyOverworldActor>(FindObjectsSortMode.None);
+            foreach (EnemyOverworldActor enemy in otherEnemies)            {
+                if (enemy != this)
+                    Destroy(enemy.gameObject);
+            }
+            
+            enteringBattle = true;
             Debug.Log("Beginning battle with " + data.name);
             BattleTransitionManager.instance.StartBattle(data);
         }
