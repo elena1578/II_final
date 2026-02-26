@@ -13,7 +13,6 @@ public class SnapColliderToGridEditor : Editor
         BoxCollider2D col = (BoxCollider2D)target;
         
         // keep at the top of the inspector : )
-        // EditorGUILayout.LabelField("Aligns collider to center of grid defined in GridMovementController", EditorStyles.wordWrappedLabel);
         if (GUILayout.Button("Snap To Grid"))
         {
             SnapCollider(col);
@@ -38,7 +37,7 @@ public class SnapColliderToGridEditor : Editor
         size.y = Mathf.Round(size.y / gridSize) * gridSize;
         col.size = size;
 
-        EditorUtility.SetDirty(col);
+        EditorUtility.SetDirty(col);  // save
 
         // undo
         Undo.RegisterCompleteObjectUndo(col, "Snap collider to grid");
