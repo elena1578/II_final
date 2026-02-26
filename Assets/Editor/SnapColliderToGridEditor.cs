@@ -26,11 +26,11 @@ public class SnapColliderToGridEditor : Editor
     {
         Transform t = col.transform;
 
-        // snap position to nearest grid point
-        Vector3 pos = t.position;
-        pos.x = Mathf.Round((pos.x - gridOffset.x) / gridSize) * gridSize + gridOffset.x;
-        pos.y = Mathf.Round((pos.y - gridOffset.y) / gridSize) * gridSize + gridOffset.y;
-        t.position = pos;
+        // snap position to center of entered grid cell(s)
+        Vector3 pos = t.position - gridOffset;
+        pos.x = Mathf.Round(pos.x / gridSize) * gridSize;
+        pos.y = Mathf.Round(pos.y / gridSize) * gridSize;
+        t.position = pos + gridOffset;
 
         // snap size to nearest grid multiple
         Vector2 size = col.size;
@@ -39,5 +39,8 @@ public class SnapColliderToGridEditor : Editor
         col.size = size;
 
         EditorUtility.SetDirty(col);
+
+        // undo
+        Undo.RegisterCompleteObjectUndo(col, "Snap collider to grid");
     }
 }

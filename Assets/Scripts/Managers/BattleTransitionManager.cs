@@ -36,7 +36,11 @@ public class BattleTransitionManager : MonoBehaviour
             return;
         }
 
+        // freeze player via stopping current movement & setting rb to kinematic
         Vector3 playerPosition = playerController != null ? playerController.transform.position : Vector3.zero;
+        Rigidbody2D rb = playerController.GetComponent<Rigidbody2D>();
+        if (rb != null)
+            rb.bodyType = RigidbodyType2D.Kinematic;
 
         currentEnemy = enemy;
         if (currentEnemy == null)

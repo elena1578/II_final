@@ -17,6 +17,9 @@ public class EnemyOverworldActor : GridMovementController
     [SerializeField] private float maxIdleTime = 1.5f;
     private float moveTimer;
     private float idleTimer;
+    private bool frozen = false;  // used to freeze enemies for a few seconds after returning/running from battle
+    private float frozenTimer = 0f;
+    private float frozenDuration = 3f;
 
     // internal refs
     private Animator animator;
@@ -57,6 +60,22 @@ public class EnemyOverworldActor : GridMovementController
 
     protected override void FixedUpdate()
     {
+        if (frozen)
+        {
+            frozenTimer += Time.fixedDeltaTime;
+            movement = Vector2.zero;
+
+            if (frozenTimer >= frozenDuration)
+            {
+                frozen = false;
+                frozenTimer = 0f;
+            }
+
+            UpdateWalkingAnimation();
+            base.FixedUpdate();
+            return;
+        }
+
         if (alerted && playerTransform != null)
             ChasePlayer(playerTransform);
         else
@@ -104,6 +123,24 @@ public class EnemyOverworldActor : GridMovementController
             movement = Vector2.zero;
             idleTimer = Random.Range(minIdleTime, maxIdleTime);
         }
+    }
+
+    public void FreezeForDuration(float duration)
+    {
+        frozen = true;
+        frozenDuration = duration;
+        frozenTimer = 0f;
+        movement = Vector2.zero;
+
+        // set false while frozen to further prevent immediate battle re-triggering
+        alerted = false;
+        enteringBattle = false;
+    }
+
+    public void Unfreeze()
+    {
+        frozen = false;
+        frozenTimer = 0f;
     }
 
     private void UpdateWalkingAnimation()

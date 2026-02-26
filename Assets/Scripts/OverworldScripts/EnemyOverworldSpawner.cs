@@ -21,13 +21,13 @@ public class EnemyOverworldSpawner : MonoBehaviour
     private void OnSceneLoaded() => ContextualizeScene();
     private void Awake()
     {
-        instance = this;    
-
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
             return;
         }
+
+        instance = this;
         DontDestroyOnLoad(gameObject);
     }
     
@@ -143,8 +143,8 @@ public class EnemyOverworldSpawner : MonoBehaviour
     public void RespawnEnemies()
     {
         // destroy existing enemies
-        EnemyOverworldActor[] existingEnemies = FindObjectsByType<EnemyOverworldActor>(FindObjectsSortMode.None);
-        foreach (var enemy in existingEnemies)
+        EnemyOverworldActor[] enemies = FindObjectsByType<EnemyOverworldActor>(FindObjectsSortMode.None);
+        foreach (var enemy in enemies)
         {
             Destroy(enemy.gameObject);
         }
@@ -152,6 +152,27 @@ public class EnemyOverworldSpawner : MonoBehaviour
         // respawn new enemies
         SpawnEnemies();
     }
+
+    public void FreezeAllEnemies(float duration)
+    {
+        EnemyOverworldActor[] enemies = FindObjectsByType<EnemyOverworldActor>(FindObjectsSortMode.None);
+
+        foreach (var enemy in enemies)
+        {
+            enemy.FreezeForDuration(duration);
+        }
+    }
+    
+    public void UnfreezeAllEnemies()
+    {
+        EnemyOverworldActor[] enemies = FindObjectsByType<EnemyOverworldActor>(FindObjectsSortMode.None);
+
+        foreach (var enemy in enemies)
+        {
+            enemy.Unfreeze();
+        }
+    }
     #endregion
 }
+
     

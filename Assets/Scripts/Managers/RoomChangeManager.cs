@@ -235,6 +235,24 @@ public class RoomChangeManager : MonoBehaviour
             MusicFadeInOut.instance.CheckMusic(targetRoom.music, targetRoom.musicVolume);
         else
             MusicFadeInOut.instance.StopMusic();
+
+        // freeze enemies for a few seconds after returning from battle to prevent immediate re-entering
+        EnemyOverworldSpawner spawner = FindFirstObjectByType<EnemyOverworldSpawner>();
+        if (spawner != null)
+        {
+            EnemyOverworldActor[] enemies = FindObjectsByType<EnemyOverworldActor>(FindObjectsSortMode.None);
+
+            if (enemies.Length == 0)
+            {
+                Debug.LogWarning("[RoomChangeManager]No enemies found to freeze after returning from battle");
+                yield break;
+            }
+
+            foreach (var enemy in enemies)
+            {
+                enemy.FreezeForDuration(5f);
+            }
+        }
     }
     #endregion
 
