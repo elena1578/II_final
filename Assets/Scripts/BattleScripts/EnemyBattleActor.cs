@@ -52,7 +52,7 @@ public class EnemyBattleActor : BattleActor
                 return rule.action;
         }
 
-        return BattleActionLibrary.None;
+        return enemyData.defaultAction;  // fallback if no rules are met
     }
 
     private float GetEmotionChance(EnemyAI rule)
@@ -88,8 +88,8 @@ public class EnemyBattleActor : BattleActor
 
     //     if (possibleActions.Count == 0)
     //     {
-    //         Debug.LogWarning($"{enemyData.name} has no valid actions! Using fallback NoneAction");
-    //         return BattleActionLibrary.None;  // see below
+    //         Debug.LogWarning($"{enemyData.name} has no valid actions! Using fallback defaultAction");
+    //         return enemyData.defaultAction;
     //     }
 
     //     return possibleActions[Random.Range(0, possibleActions.Count)];

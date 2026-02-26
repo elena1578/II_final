@@ -31,6 +31,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d97bb9ffd3898bb48babf03f27aca6d4, type: 2}
   noneActions:
   - {fileID: 11400000, guid: a070e025d0e5c9b41ace1d13b9730002, type: 2}
+  defaultAction: {fileID: 11400000, guid: f24ac3373ca935f49bce1ac5bcccd7f5, type: 2}
   actionAI:
   - action: {fileID: 11400000, guid: f24ac3373ca935f49bce1ac5bcccd7f5, type: 2}
     priorityNumber: 1

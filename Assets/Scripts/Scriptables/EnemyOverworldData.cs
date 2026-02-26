@@ -7,6 +7,7 @@ public class EnemyOverworldData : ScriptableObject
     public EnemyBattleData correspondingBattleData;
     public Sprite sprite;
     public RuntimeAnimatorController animatorController;
+    [Range(0f, 1f)] public float spawnChance = 0.5f;
 
     [Header("Behavior Settings")]
     [Range(0f, 1.5f)] public float moveSpeed = 1f;

@@ -28,6 +28,7 @@ public class EnemyBattleData : ScriptableObject
     public List<BattleActionData> healActions;
     public List<BattleActionData> emotionActions;
     public List<BattleActionData> noneActions;
+    public BattleActionData defaultAction;  // mainly used for fallback
 
     [Header("Action AI")]
     public List<EnemyAI> actionAI;

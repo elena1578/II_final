@@ -29,6 +29,7 @@ MonoBehaviour:
   emotionActions:
   - {fileID: 11400000, guid: bc94dd637d5eb5945bd21b1792d09eae, type: 2}
   noneActions: []
+  defaultAction: {fileID: 11400000, guid: f4184e39deac0054c9e8a32d3072b714, type: 2}
   actionAI:
   - action: {fileID: 11400000, guid: f4184e39deac0054c9e8a32d3072b714, type: 2}
     priorityNumber: 1
