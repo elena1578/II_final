@@ -30,7 +30,7 @@ public class BattleActionData : ScriptableObject
     [Header("Animation")]
     public string animationTrigger;  // just the name of the attack, e.g., "headbutt", "sad_poem", etc.
     public float animationDuration = 1.5f;
-    public AnimationTarget animationTarget;
+    public AnimationTarget animationTarget;  // this isn't really working right now but will fix later since it'll be needed for some actions like hero healing party member(s)
 
     [Header("Audio")]
     public AudioClip audioClip;

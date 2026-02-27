@@ -219,7 +219,10 @@ public class RoomChangeManager : MonoBehaviour
             }
 
             if (controller != null)
+            {
+                InputSystemManager.instance.SwapToOverworldMap();  // ensure correct input map
                 controller.EnablePlayerMovement();
+            }
             else
                 Debug.Log("No player found in the scene after battle transition, skipping player placement");
         }
@@ -244,13 +247,15 @@ public class RoomChangeManager : MonoBehaviour
 
             if (enemies.Length == 0)
             {
-                Debug.LogWarning("[RoomChangeManager]No enemies found to freeze after returning from battle");
+                Debug.LogWarning("[RoomChangeManager] No enemies found to freeze after returning from battle");
                 yield break;
             }
 
             foreach (var enemy in enemies)
             {
-                enemy.FreezeForDuration(5f);
+                float duration = 5f;
+                Debug.Log($"[RoomChangeManager]Freezing enemies for {duration} seconds after battle transition");
+                enemy.FreezeForDuration(duration);
             }
         }
     }

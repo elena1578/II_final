@@ -18,7 +18,13 @@ public class EnemyOverworldSpawner : MonoBehaviour
     private EnemyOverworldSpawnArea[] spawnAreas;
     private RoomData currentRoomData;
 
-    private void OnSceneLoaded() => ContextualizeScene();
+    private void OnEnable() => SceneManager.sceneLoaded += OnSceneLoaded;
+    private void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        ContextualizeScene();
+    }
+    
     private void Awake()
     {
         if (instance != null && instance != this)

@@ -12,11 +12,8 @@ public class PlayerOverworldController : GridMovementController
     // private InputAction interactAction, runAction;
     private bool canMove = true;
 
-
     private void Start()
-    {
-        walkAction = InputSystemManager.instance.actions["Walk"];
-        
+    {      
         // ensure player starts aligned to the grid
         ForceSnapToGrid(transform.position);
 
@@ -35,20 +32,16 @@ public class PlayerOverworldController : GridMovementController
 
     private void ReadInput()
     {
-        // set back to dynamic once the player starts moving
+        // ensure dynamic rb before trying to read
         rb.bodyType = RigidbodyType2D.Dynamic;
         
-        if (isMoving)
+        if (isMoving || !canMove)
             return;
 
-        if (!canMove)
-            return;
-        
-        Vector2 input = walkAction.ReadValue<Vector2>();
+        var action = InputSystemManager.instance.actions["Walk"];
+        Vector2 input = action.ReadValue<Vector2>();
 
-        movement = input == Vector2.zero
-            ? Vector2.zero
-            : SnapToDirection(input);
+        movement = input == Vector2.zero ? Vector2.zero : SnapToDirection(input);
     }
 
     private void UpdateWalkingAnimation()
@@ -81,7 +74,7 @@ public class PlayerOverworldController : GridMovementController
     {
         canMove = false;
         movement = Vector2.zero;
-        isMoving = false;
+        // isMoving = false;
         UpdateWalkingAnimation();
     }
 
