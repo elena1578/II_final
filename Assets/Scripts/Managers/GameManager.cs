@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
             RoomManager.Initialize(roomCollection);
     }
 
+    /// <summary>
+    /// quits game. if editor, stops play mode. if built, quits application.
+    /// will later be used for quit button on title screen & pause menu
+    /// </summary>
     public void QuitGame()
     {
         Debug.Log("Quitting game...");
@@ -47,6 +51,11 @@ public static class RoomManager
 {
     public static Dictionary<RoomData.RoomID, RoomData> RoomDictionary;
 
+    /// <summary>
+    /// initializes RoomDictionary from RoomCollectionDatabase scriptable.
+    /// called once on game start
+    /// </summary>
+    /// <param name="collection"></param>
     public static void Initialize(RoomCollectionDatabase collection)
     {
         RoomDictionary = new Dictionary<RoomData.RoomID, RoomData>();

@@ -11,6 +11,9 @@ public class EnemyOverworldSpawnArea : MonoBehaviour
     public int minSpawn = 1;
     public int maxSpawn = 3;
 
+    /// <summary>
+    /// calc center of the spawn area based on position + offset
+    /// </summary>
     private Vector3 AreaCenter
     {
         get
@@ -19,6 +22,11 @@ public class EnemyOverworldSpawnArea : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// return random point within spawn area.
+    /// used to spawn enemies @ random locations within the area in EnemyOverworldSpawner.SpawnEnemies()
+    /// </summary>
+    /// <returns></returns>
     public Vector3 GetRandomPoint()
     {
         Vector3 center = AreaCenter;

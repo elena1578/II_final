@@ -84,7 +84,7 @@ public class EnemyAI
     [Header("Conditionals")]
     [Range(0f, 1f)] public float hpBelowPercent = 1f; 
     public bool requireHpBelow;  // just for explode for now
-    [Tooltip("If true, this action will always be used if reached. This should be the lowest priority action")] public bool alwaysUseIfReached;
+    [Tooltip("If true, this action will always be used if reached. This should be the lowest (highest #) priority action")] public bool alwaysUseIfReached;
 }
 #endregion
 

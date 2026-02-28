@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class ScreenShake : MonoBehaviour
 {
     [Header("Default Shake Settings")]
@@ -13,6 +14,7 @@ public class ScreenShake : MonoBehaviour
     private float shakeTimeRemaining;
     private float shakeDuration;
     private float shakeMagnitude;
+    private float shakeFrequency = 40f;  // how fast screen shakes, higher = faster
 
 #if UNITY_EDITOR
     private InputAction shakeAction;
@@ -59,14 +61,13 @@ public class ScreenShake : MonoBehaviour
 
         shakeTimeRemaining -= Time.deltaTime;
 
+        // consistent oscillation shake side-to-side (vs. random)
         float progress = 1f - (shakeTimeRemaining / shakeDuration);
-        float damper = 1f - Mathf.Clamp01(progress);  // damps/fades the shake over time
+        float damper = 1f - Mathf.Clamp01(progress); 
+        float x = Mathf.Sin(Time.time * shakeFrequency) * shakeMagnitude * damper;
 
-        // consistent oscillation shake vs. random 
-        float frequency = 40f; // how fast it oscillates
-        float x = Mathf.Sin(Time.time * frequency) * shakeMagnitude * damper;  // side-to-side shake
+        // apply shake offset to original pos
         Vector2 offset = new Vector2(x, 0f);
-
         rectTransform.anchoredPosition = originalPosition + offset;
 
         if (shakeTimeRemaining <= 0f)

@@ -2,26 +2,14 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
+
 public class PlayerOverworldController : GridMovementController
 {
     // [Space] can use to break up sections  
-    // private int facingDirection = 0;  // 0 = down, 1 = up, 2 = left, 3 = right
     
     // private refs
-    private InputAction walkAction;
-    // private InputAction interactAction, runAction;
+    private InputAction walkAction;  // add run action later
     private bool canMove = true;
-
-    private void Start()
-    {      
-        // ensure player starts aligned to the grid
-        ForceSnapToGrid(transform.position);
-
-        // no forces applied to player
-        rb.bodyType = RigidbodyType2D.Kinematic;
-        rb.freezeRotation = true;
-        rb.interpolation = RigidbodyInterpolation2D.None;
-    }
 
     protected override void FixedUpdate()
     {
@@ -31,10 +19,7 @@ public class PlayerOverworldController : GridMovementController
     }
 
     private void ReadInput()
-    {
-        // ensure dynamic rb before trying to read
-        rb.bodyType = RigidbodyType2D.Dynamic;
-        
+    {      
         if (isMoving || !canMove)
             return;
 

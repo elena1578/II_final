@@ -63,11 +63,12 @@ public abstract class BattleActor
             hpDamage = finalDamage - juiceDamage;
         }
 
+        // apply dmg + juice changes, ensuring neither goes below 0
         currentHP = Mathf.Max(0, currentHP - hpDamage);
         currentJuice = Mathf.Max(0, currentJuice - juiceDamage);
-
         Debug.Log($"[BattleActor - Damage] {GetType().Name} took {hpDamage} HP and {juiceDamage} juice");
 
+        // animations + UI updates
         ui?.PlayHurtAnimation();
         ui?.UpdateAll();
 
@@ -80,7 +81,7 @@ public abstract class BattleActor
                 currentHP = 1;  // set to 1 HP instead of 0
                 ui?.SetSuccumbAnimation();
                 ui?.UpdateAll();  // make sure 1 HP shows up immediately UI-wise
-                Debug.Log("Omori has not succumbed!");
+                Debug.Log("[BattleActor] Omori has not succumbed!");
             }
             else
             {
@@ -92,7 +93,7 @@ public abstract class BattleActor
 
     public virtual void OnDeath()
     {
-        Debug.Log($"[BattleActor] {GetType().Name} is toast!");
+        // Debug.Log($"[BattleActor] {GetType().Name} is toast!");
         ui?.SetToastAnimation();
     }
 

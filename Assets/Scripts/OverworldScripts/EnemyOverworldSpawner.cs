@@ -133,6 +133,8 @@ public class EnemyOverworldSpawner : MonoBehaviour
         for (int i = 0; i < maxAttempts; i++)
         {
             Vector3 candidate = area.GetRandomPoint();
+
+            // if collision @ candidate position, try to find spawn pos again
             Collider2D hit = Physics2D.OverlapCircle(candidate, 0.4f, collisionLayer);
 
             if (hit == null)

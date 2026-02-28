@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+
 public class MusicFadeInOut : MonoBehaviour
 {
     public static MusicFadeInOut instance;
@@ -49,9 +50,7 @@ public class MusicFadeInOut : MonoBehaviour
     public void PreTransitionCheckMusic(AudioClip newMusic)
     {
         if (newMusic != currentMusic)
-        {
             StartCoroutine(MusicFadeOut(musicSource, 1f));
-        }
     }
 
     public void StopMusic()
@@ -90,6 +89,13 @@ public class MusicFadeInOut : MonoBehaviour
         musicSource.volume = targetVolume;
     }
 
+
+    /// <summary>
+    /// adjusts music volume to target volume over fadeDuration w/o changing or restarting music clip
+    /// </summary>
+    /// <param name="targetVolume"></param>
+    /// <param name="fadeDuration"></param>
+    /// <returns></returns>
     private IEnumerator AdjustMusicVolume(float targetVolume, float fadeDuration)
     {
         float startVolume = musicSource.volume;

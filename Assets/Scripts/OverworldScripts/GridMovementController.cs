@@ -38,6 +38,9 @@ public abstract class GridMovementController : MonoBehaviour
             TryMove();
     }
 
+    /// <summary>
+    /// try to move in direction of input. if collision, stop movement 
+    /// </summary>
     private void TryMove()
     {
         Vector2 dir = SnapToDirection(movement);
@@ -53,20 +56,6 @@ public abstract class GridMovementController : MonoBehaviour
         isMoving = true;
         lastDirection = dir;
     }
-
-    // /// <summary>
-    // /// checks if the target position is free of collision before moving
-    // /// </summary>
-    // /// <param name="target"></param>
-    // /// <returns></returns>
-    // private bool CanMoveTo(Vector3 target)
-    // {
-    //     return !Physics2D.OverlapCircle(
-    //         target,
-    //         collisionRadius,
-    //         collisionLayer
-    //     );
-    // }
 
     /// <summary>
     /// checks if the target position is free of collision before moving
@@ -119,6 +108,11 @@ public abstract class GridMovementController : MonoBehaviour
             return new Vector2(0, Mathf.Sign(dir.y));
     }
 
+    /// <summary>
+    /// returns nearest grid-aligned position based on current position and grid 
+    /// </summary>
+    /// <param name="pos"></param>
+    /// <returns></returns>
     protected Vector3 SnapToGrid(Vector3 pos)
     {
         float x = Mathf.Round((pos.x - gridOffset.x) / gridSize) * gridSize + gridOffset.x;
@@ -157,29 +151,27 @@ public abstract class GridMovementController : MonoBehaviour
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-        float size = gridSize > 0.0001f ? gridSize : 0.2f;
-        const int radius = 40;
+        float size = gridSize;
+        const int radius = 40;  // how many cells to draw in each direction from current position
 
+        // snap origin to nearest grid point 
         Vector3 origin = transform.position;
         origin.x = Mathf.Round((origin.x - gridOffset.x) / size) * size + gridOffset.x;
         origin.y = Mathf.Round((origin.y - gridOffset.y) / size) * size + gridOffset.y;
-
-        Gizmos.color = Color.green;
 
         for (int x = -radius; x <= radius; x++)
         {
             for (int y = -radius; y <= radius; y++)
             {
+                // cal center of each cell based on grid size & offset
                 Vector3 cellCenter = new Vector3(
                     origin.x + x * size,
                     origin.y + y * size,
                     origin.z
                 );
 
-                Gizmos.DrawWireCube(
-                    cellCenter,
-                    new Vector3(size, size, 0.01f)
-                );
+                Gizmos.color = Color.green;
+                Gizmos.DrawWireCube(cellCenter, new Vector3(size, size, 0.01f));
             }
         }
     }

@@ -196,6 +196,27 @@ public class RoomChangeManager : MonoBehaviour
         while (!asyncLoad.isDone)
             yield return null;
 
+        // freeze enemies for a few seconds after returning from battle to prevent immediate re-entering
+        EnemyOverworldSpawner spawner = FindFirstObjectByType<EnemyOverworldSpawner>();
+        if (spawner != null)
+        {
+            EnemyOverworldActor[] enemies = FindObjectsByType<EnemyOverworldActor>(FindObjectsSortMode.None);
+
+            if (enemies.Length == 0)
+                Debug.LogWarning("[RoomChangeManager] No enemies found to freeze after returning from battle");
+            else
+            {
+                foreach (var enemy in enemies)
+                {
+                    float duration = 5f;
+                    Debug.Log($"[RoomChangeManager] Freezing {enemy.data.correspondingBattleData} for {duration} seconds after battle transition");
+                    enemy.FreezeForDuration(duration);
+                }
+            }
+        }
+        else
+            Debug.LogWarning("[RoomChangeManager] No EnemyOverworldSpawner found, skipping enemy freeze after returning from battle");
+
         // place player immediately after scene loads prior to fade out
         GameObject playerGO = GameObject.FindWithTag("Player");
         if (playerGO != null)
@@ -208,7 +229,10 @@ public class RoomChangeManager : MonoBehaviour
                 rb.bodyType = RigidbodyType2D.Kinematic;
 
             if (controller != null)
+            {
+                Debug.Log("[RoomChangeManager] Stored player position from BattleTransitionManager: " + playerPosition);
                 controller.ForceSnapToGrid(playerPosition);
+            }
             else
                 playerGO.transform.position = playerPosition;
 
@@ -238,26 +262,6 @@ public class RoomChangeManager : MonoBehaviour
             MusicFadeInOut.instance.CheckMusic(targetRoom.music, targetRoom.musicVolume);
         else
             MusicFadeInOut.instance.StopMusic();
-
-        // freeze enemies for a few seconds after returning from battle to prevent immediate re-entering
-        EnemyOverworldSpawner spawner = FindFirstObjectByType<EnemyOverworldSpawner>();
-        if (spawner != null)
-        {
-            EnemyOverworldActor[] enemies = FindObjectsByType<EnemyOverworldActor>(FindObjectsSortMode.None);
-
-            if (enemies.Length == 0)
-            {
-                Debug.LogWarning("[RoomChangeManager] No enemies found to freeze after returning from battle");
-                yield break;
-            }
-
-            foreach (var enemy in enemies)
-            {
-                float duration = 5f;
-                Debug.Log($"[RoomChangeManager]Freezing enemies for {duration} seconds after battle transition");
-                enemy.FreezeForDuration(duration);
-            }
-        }
     }
     #endregion
 

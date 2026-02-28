@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class EnemyOverworldActor : GridMovementController
 {
     public EnemyOverworldData data;
@@ -23,6 +24,7 @@ public class EnemyOverworldActor : GridMovementController
 
     // internal refs
     private Animator animator;
+    private SpriteRenderer sr;
     private bool alerted = false;
     private Transform playerTransform;
     private bool enteringBattle = false;
@@ -32,6 +34,7 @@ public class EnemyOverworldActor : GridMovementController
     {
         base.Awake();
         animator = GetComponentInChildren<Animator>();
+        sr = GetComponentInChildren<SpriteRenderer>();
     }
 
     public void InitializeData(EnemyOverworldData enemyData)
@@ -67,8 +70,8 @@ public class EnemyOverworldActor : GridMovementController
 
             if (frozenTimer >= frozenDuration)
             {
-                frozen = false;
-                frozenTimer = 0f;
+                Unfreeze();
+                return;
             }
 
             UpdateWalkingAnimation();
@@ -108,7 +111,8 @@ public class EnemyOverworldActor : GridMovementController
 
     /// <summary>
     /// randomly chooses the next movement state: moving in a random direction
-    /// for a random duration, or idling for a random duration
+    /// for a random duration, or idling for a random duration.
+    /// this will later be expanded to more complex behavior & pathfinding
     /// </summary>
     private void ChooseNextMovementState()
     {
@@ -125,45 +129,12 @@ public class EnemyOverworldActor : GridMovementController
         }
     }
 
-    public void FreezeForDuration(float duration)
-    {
-        frozen = true;
-        frozenDuration = duration;
-        frozenTimer = 0f;
-        movement = Vector2.zero;
-
-        // set false while frozen to further prevent immediate battle re-triggering
-        alerted = false;
-        enteringBattle = false;
-    }
-
-    public void Unfreeze()
-    {
-        frozen = false;
-        frozenTimer = 0f;
-    }
-
-    private void UpdateWalkingAnimation()
-    {
-        bool isMoving = movement.sqrMagnitude > 0.01f;
-        animator.SetBool("isMoving", isMoving);
-
-        if (isMoving)
-        {
-            animator.SetFloat("moveX", movement.x);
-            animator.SetFloat("moveY", movement.y);
-        }
-        else
-        {
-            animator.SetFloat("moveX", lastDirection.x);
-            animator.SetFloat("moveY", lastDirection.y);
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            if (frozen) return;  // ignore if player just returned from battle
+            
             TriggerAlertBalloon();
             playerTransform = other.transform;
             alerted = true;
@@ -201,20 +172,109 @@ public class EnemyOverworldActor : GridMovementController
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.collider.CompareTag("Player") && !enteringBattle)
-        {
+        if (other.collider.CompareTag("Player") && !enteringBattle && !frozen)
+        {           
             // destroy other enemies to halt movement & prevent multiple battle triggers
             // if a save/load system is implemented, this would instead be saving what enemies there are and
             // respawning them after battle rather vs. destroying them
+
             EnemyOverworldActor[] otherEnemies = FindObjectsByType<EnemyOverworldActor>(FindObjectsSortMode.None);
-            foreach (EnemyOverworldActor enemy in otherEnemies)            {
+            foreach (EnemyOverworldActor enemy in otherEnemies)            
+            {
                 if (enemy != this)
                     Destroy(enemy.gameObject);
             }
 
             enteringBattle = true;
+
+            // disable movement of this enemy and player
+            DisableMovement(); 
+            PlayerOverworldController player = other.collider.GetComponent<PlayerOverworldController>();
+            if (player != null)
+                player.DisablePlayerMovement();
+
             Debug.Log("Beginning battle with " + data.name);
             BattleTransitionManager.instance.StartBattle(data);
         }
     }
+
+    // this is slightly outdated/broken (i.e. fix animation flags to be more sim to playercontroller)
+    private void UpdateWalkingAnimation()
+    {
+        bool isMoving = movement.sqrMagnitude > 0.01f;
+        animator.SetBool("isMoving", isMoving);
+
+        if (isMoving)
+        {
+            animator.SetFloat("moveX", movement.x);
+            animator.SetFloat("moveY", movement.y);
+        }
+        else
+        {
+            animator.SetFloat("moveX", lastDirection.x);
+            animator.SetFloat("moveY", lastDirection.y);
+        }
+    }
+
+
+    #region Helpers
+    /// <summary>
+    /// used for battle transitioning, stops movement & resets internal timers
+    /// </summary>
+    private void DisableMovement()
+    {
+        movement = Vector2.zero;
+        moveTimer = 0f;
+        idleTimer = 0f;
+        isMoving = false;
+
+        rb.linearVelocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Kinematic;
+    }
+
+    public void FreezeForDuration(float duration)
+    {
+        frozen = true;
+        frozenDuration = duration;
+        frozenTimer = 0f;
+        
+        movement = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Kinematic; 
+
+        PauseAnimations();
+
+        // set false while frozen to further prevent immediate battle re-triggering
+        alerted = false;
+        enteringBattle = false;
+
+        // give sprite gray color to indicate frozen state
+        if (sr != null)
+            sr.color = Color.gray;
+    }
+
+    public void Unfreeze()
+    {
+        frozen = false;
+        frozenTimer = 0f;
+        rb.bodyType = RigidbodyType2D.Dynamic;
+
+        // reset sprite color
+        if (sr != null)
+            sr.color = Color.white;
+
+        ResumeAnimations();
+    }
+
+    private void PauseAnimations()
+    {
+        if (animator != null)
+            animator.speed = 0f;
+    }
+
+    private void ResumeAnimations()
+    {
+        if (animator != null)
+            animator.speed = 1f;
+    }
+    #endregion
 }
