@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections;
 
+
 public class EnemyTooltipUI : MonoBehaviour
 {
     public static EnemyTooltipUI instance;
@@ -26,6 +27,7 @@ public class EnemyTooltipUI : MonoBehaviour
     private CanvasGroup canvasGroup;
     private Coroutine fadeRoutine;
 
+
     private void Awake()
     {
         instance = this;
@@ -44,6 +46,9 @@ public class EnemyTooltipUI : MonoBehaviour
         UpdateHeartIcon();
     }
 
+    /// <summary>
+    /// allows tooltip to follow mouse cursor (w/ offset)
+    /// </summary>
     private void LateUpdate()
     {
         if (Mouse.current == null)
@@ -51,6 +56,7 @@ public class EnemyTooltipUI : MonoBehaviour
 
         transform.position = Mouse.current.position.ReadValue() + cursorOffset;
     }
+
     public void Show(EnemyBattleActor enemy)
     {
         boundActor = enemy;
@@ -64,6 +70,9 @@ public class EnemyTooltipUI : MonoBehaviour
         StartFade(0f);
     }
 
+    /// <summary>
+    /// set heart states [sprites] on toolip based on current HP percentage
+    /// </summary>
     private void UpdateHeartIcon()
     {
         float hpPercent = boundActor.currentHP / (float)boundActor.maxHP;

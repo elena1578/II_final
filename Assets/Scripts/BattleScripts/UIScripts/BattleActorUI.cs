@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using System.Collections;
 
+
 public class BattleActorUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [Header("Portrait Refs")]
@@ -52,6 +53,7 @@ public class BattleActorUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (hpText != null)
             hpText.text = $"{boundActor.currentHP}/{boundActor.maxHP}";
 
+
         // juice
         if (juiceFill != null)
             juiceFill.fillAmount = (float)boundActor.currentJuice / boundActor.maxJuice;
@@ -68,6 +70,8 @@ public class BattleActorUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
 
     #region Tooltip
+    // used for enemy UI to show name + health bar on hover
+    // for fun could also be added to portrait UIs to show detailed info like buffs, suggested actions, etc.
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (boundActor is EnemyBattleActor enemy)
@@ -106,7 +110,7 @@ public class BattleActorUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (portraitAnimator == null)
             return;
 
-        Debug.Log($"Playing hurt animation for {boundActor}");
+        // Debug.Log($"[BattleActorUI] Playing hurt animation for {boundActor}");
         portraitAnimator.ResetTrigger("hurt");  // safety reset
         portraitAnimator.SetTrigger("hurt");
     }
@@ -135,7 +139,7 @@ public class BattleActorUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (portraitAnimator == null)
             return;
 
-        // toast animation currently isn't playing, need to fix
+        // toast animation currently isn't playing correctly, need to fix
         portraitAnimator.SetBool("toast", true);
     }
 
@@ -149,11 +153,13 @@ public class BattleActorUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         // also not sure if succumb animation is reset back to neutral when healed? need to check
     }
 
-    public void SlideOffScreen()
-    {
-        StartCoroutine(SlideOffScreenRoutine(transform));
-    }
+    public void SlideOffScreen() => StartCoroutine(SlideOffScreenRoutine(transform));
 
+    /// <summary>
+    /// slides actor down off screen. used for when an enemy is toast
+    /// </summary>
+    /// <param name="enemyTransform"></param>
+    /// <returns></returns>
     private IEnumerator SlideOffScreenRoutine(Transform enemyTransform)
     {
         Vector3 start = enemyTransform.localPosition;

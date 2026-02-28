@@ -52,6 +52,10 @@ public class BattleDialogManager : MonoBehaviour
         text.text = "";
     }
 
+    /// <summary>
+    /// used for when an actor starts their turn/is in process of choosing an action
+    /// </summary>
+    /// <param name="actor"></param>
     public void ShowPlanningPrompt(BattleActor actor) => Show($"What will {actor.name.ToDisplayName()} do?");
 
 
@@ -68,6 +72,10 @@ public class BattleDialogManager : MonoBehaviour
 
         if (result.didCrit)
             text = "IT HIT RIGHT IN THE HEART!\n" + text;
+
+        // prob also need to add a parse for damage actions 
+        // (e.g., "{actor} did {damage} damage to {target}!") 
+        // and healing actions (e.g., "{actor} healed {target} for {heal} HP!")
 
         return text;
     }

@@ -18,7 +18,7 @@ public class BattleUIManager : MonoBehaviour
     #region Portraits
     public void BindActors(List<BattleActor> party, List<BattleActor> enemies)
     {
-        // party members
+        // iterate through party & bind to UI 
         for (int i = 0; i < party.Count; i++)
         {
             var actor = party[i];
@@ -30,7 +30,7 @@ public class BattleUIManager : MonoBehaviour
             ui.Bind(actor, player.characterData.battleSprite);
         }
 
-        // enemies
+        // instantiate enemy UI elements & bind
         foreach (var enemy in enemies)
         {
             var ui = Instantiate(enemySlotPrefab, enemyContainer);
@@ -72,7 +72,7 @@ public class BattleUIManager : MonoBehaviour
         // check actors first
         if (actor == null)
         {
-            Debug.LogError("PopulateActionButtons called with null actor");
+            Debug.LogError("[BattleUIManager] PopulateActionButtons called w/ null actor");
             return;
         }
 
@@ -82,8 +82,9 @@ public class BattleUIManager : MonoBehaviour
         var actions = actor.AllActions;
 
         // should be 16 [actions] and 16 [buttons]
-        Debug.Log($"Populating {actions.Count} actions into {actionButtons.Count} buttons");
+        Debug.Log($"[BattleUIManager] Populating {actions.Count} actions into {actionButtons.Count} buttons");
 
+        // iterate through actions & bind to buttons
         for (int i = 0; i < actions.Count && i < actionButtons.Count; i++)
         {
             actionButtons[i].Initialize(actions[i]);

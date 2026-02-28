@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 public class UIDigitGroup : MonoBehaviour
 {
+    [Header("Prefab Refs")]
     [SerializeField] private UIDigit digitPrefab;
     [SerializeField] private RectTransform linePrefab;
     
@@ -18,13 +19,13 @@ public class UIDigitGroup : MonoBehaviour
     public void AddNumber(int amount, Sprite[] spriteSet)
     {
         RectTransform line = Instantiate(linePrefab, transform);
-
-        string number = amount.ToString();
+        string number = amount.ToString();  // convert # to string to iterate through digits
 
         foreach (char c in number)
         {
-            int digit = c - '0';
+            int digit = c - '0';  // convert char back to int (e.g. '5' - '0' = 5)
 
+            // instantiate digit prefab, set sprite based on digit, and add to list
             UIDigit newDigit = Instantiate(digitPrefab, line);
             newDigit.SetSprite(spriteSet[digit]);
 

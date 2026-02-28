@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
+
 public class MainCommandButtons : MonoBehaviour
 {
     [Header("Command Buttons in Scene")]
@@ -51,10 +52,7 @@ public class MainCommandButtons : MonoBehaviour
         ShowSecondaryCommands();
     }
 
-    public void OnRunButtonPressed()
-    {
-        BattleManager.instance.AttemptFlee();
-    }
+    public void OnRunButtonPressed() => BattleManager.instance.AttemptFlee();
 
     public void OnAttackButtonPressed()
     {

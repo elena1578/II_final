@@ -27,14 +27,12 @@ public class EnemyBattleActorDataSetter : MonoBehaviour
 
         // try overworld data first
         if (TryGetBattleTransitionData())
-        {
             dataFound = true;
-        }
+
         // otherwise, try debug data (only in editor)
         else if (TryGetDebugData())
-        {
             dataFound = true;
-        }
+
         // otherwise, if default data is set, use that as a fallback (editor & build)
         else if (defaultEnemyBattleData != null)
         {
@@ -49,6 +47,11 @@ public class EnemyBattleActorDataSetter : MonoBehaviour
             Debug.LogWarning("[EnemyBattleActorDataSetter] No enemy data available to apply.");
     }
 
+    /// <summary>
+    /// try to get battle data via BattleTransitionManager's currentEnemy ref (which contains a 
+    /// ref to the overworld data, which in turn contains a ref to the battle data)
+    /// </summary>
+    /// <returns></returns>
     private bool TryGetBattleTransitionData()
     {
         if (BattleTransitionManager.instance == null)
@@ -91,6 +94,9 @@ public class EnemyBattleActorDataSetter : MonoBehaviour
 #endif
     }
 
+    /// <summary>
+    /// set visuals (sprite + animator) based on provided battle data (if not null)
+    /// </summary>
     private void ApplyVisuals()
     {
         if (enemyBattleData == null)

@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 
+
 /// <summary>
 /// used to contextualize NOT state, but data about the current battle
 /// (e.g., current party members, enemies, turn order, etc.)
@@ -32,6 +33,7 @@ public class BattleContext
             case ActionTargetType.SingleEnemy:
                 return Wrap(GetRandomAlive(GetEnemiesOf(actor)));
 
+            // .Where(a => a.isAlive) filters out dead targets, so if all enemies are dead this will return an empty list vs. list w/ null target
             case ActionTargetType.AllEnemies:
                 return GetEnemiesOf(actor).Where(a => a.isAlive).ToList();
 
@@ -77,7 +79,7 @@ public class BattleContext
     }
 
     /// <summary>
-    /// helper to wrap a single target in a list
+    /// helper to wrap single target in a list
     /// </summary>
     /// <param name="actor"></param>
     /// <returns></returns>

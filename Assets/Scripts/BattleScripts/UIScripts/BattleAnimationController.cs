@@ -11,6 +11,14 @@ public class BattleAnimationController : MonoBehaviour
         instance = this;
     }
 
+    /// <summary>
+    /// play animation for an actor/target based on action data.
+    /// returns duration of the animation to wait before next action
+    /// </summary>
+    /// <param name="actor"></param>
+    /// <param name="action"></param>
+    /// <param name="targets"></param>
+    /// <returns></returns>
     public float PlayAction(BattleActor actor, BattleActionData action, List<BattleActor> targets)
     {
         float duration = action.animationDuration;
@@ -20,10 +28,10 @@ public class BattleAnimationController : MonoBehaviour
             action.animationTarget == BattleActionData.AnimationTarget.Both)
         {
             actor.ui?.PlayActionAnimation(action.animationTrigger);
-            Debug.Log($"Playing animation {action.animationTrigger} for ACTOR {actor.name}");
+            Debug.Log($"[BattleAnimationController] Playing animation {action.animationTrigger} for actor {actor.name}");
         }
 
-        // target animations
+        // target animation
         if (action.animationTarget == BattleActionData.AnimationTarget.Target ||
             action.animationTarget == BattleActionData.AnimationTarget.Both)
         {
@@ -33,7 +41,7 @@ public class BattleAnimationController : MonoBehaviour
                     continue;
 
                 target.ui?.PlayActionAnimation(action.animationTrigger);
-                Debug.Log($"Playing animation {action.animationTrigger} for TARGET {target.name}");
+                Debug.Log($"[BattleAnimationController] Playing animation {action.animationTrigger} for target {target.name}");
             }
         }
 

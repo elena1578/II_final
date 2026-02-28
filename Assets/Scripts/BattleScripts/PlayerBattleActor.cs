@@ -22,7 +22,7 @@ public class PlayerBattleActor : BattleActor
             startingEmotion: EmotionType.Neutral
         );
 
-        Debug.Log($"[PlayerBattleActor Created] {name} with {maxHP} HP, {atk} ATK, {def} DEF, {speed} SPD.");
+        Debug.Log($"[PlayerBattleActor Created] {characterData.characterName} with {maxHP} HP, {atk} ATK, {def} DEF, {speed} SPD.");
     }
 
     public override BattleActionData DecideAction(BattleContext context)
