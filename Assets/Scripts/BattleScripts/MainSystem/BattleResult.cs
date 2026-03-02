@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class BattleResult
 {
+    // ref'd in BattleManager when battle ends
     public bool win;
     public int expEarned;
     public int clamsEarned;

@@ -16,7 +16,7 @@ public class NoneAction : IBattleAction
 
    public BattleActionResult UseAction(BattleContext context, BattleActor actor)
     {
-        Debug.Log($"{actor.name} does nothing!");
+        Debug.Log($"[NoneAction] {actor.name} does nothing!");
 
         return BattleActionResult.None(actor);
     }

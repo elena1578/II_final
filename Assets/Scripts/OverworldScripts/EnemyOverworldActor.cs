@@ -193,7 +193,7 @@ public class EnemyOverworldActor : GridMovementController
             if (player != null)
                 player.DisablePlayerMovement();
 
-            Debug.Log("Beginning battle with " + data.name);
+            Debug.Log("[EnemyOverworldActor] Beginning battle with " + data.name);
             BattleTransitionManager.instance.StartBattle(data);
         }
     }

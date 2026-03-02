@@ -70,6 +70,6 @@ public class BattleInitializer : MonoBehaviour
             enemyBattleData
         };
 
-        BattleManager.instance.StartBattle(defaultParty, enemies);
+        BattleManager.instance.StartBattle(defaultParty, enemies); 
     }
 }

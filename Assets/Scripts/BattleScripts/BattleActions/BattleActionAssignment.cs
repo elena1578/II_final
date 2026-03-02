@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 
+
 public static class BattleActionAssignment
 {
     public static IBattleAction Create(BattleActionData action)
@@ -21,7 +22,7 @@ public static class BattleActionAssignment
             case BattleActionData.ActionType.None:
                 return new NoneAction(action);
             default:
-                throw new Exception("unknown action type");
+                throw new Exception("[BattleActionAssignment] unknown action type");
         }
     }
 }

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 /// <summary>
-/// Builds and manages the turn order queue based on speed.
-/// Reacts to speed changes and actor removal mid-battle.
+/// builds & manages turn order queue based on actor speed.
+/// reacts to speed changes and actor removal mid-battle [via rebuilding queue from cached list]
 /// </summary>
 public class TurnOrderManager
 {
@@ -15,7 +15,7 @@ public class TurnOrderManager
 
     /// <summary>
     /// builds turn order queue from list of actors, ordered by speed.
-    /// highest speed goes first
+    /// (highest speed goes first)
     /// </summary>
     public void BuildQueue(List<BattleActor> actors)
     {
@@ -28,9 +28,9 @@ public class TurnOrderManager
         foreach (var actor in cachedActors)
             turnQueue.Enqueue(actor);
 
-        // Debug.Log("[TURN ORDER]");
-        // foreach (var actor in cachedActors)
-        //     Debug.Log($" - {actor.GetType().Name} (SPD {actor.speed})");
+        Debug.Log("[TurnOrderManager] Built turn queue:");
+        foreach (var actor in cachedActors)
+            Debug.Log($" - {actor.name} (SPD {actor.speed})");
 
         actorsActedThisRound = 0;
     }
@@ -42,16 +42,18 @@ public class TurnOrderManager
     public BattleActor GetNextActor()
     {
         if (turnQueue.Count == 0)
-        {
             BuildQueue(cachedActors);
-        }
 
-        BattleActor next = turnQueue.Dequeue();
-        actorsActedThisRound++;
+        BattleActor next = turnQueue.Dequeue();  // get next actor
+        actorsActedThisRound++;  // increment count of actors who have acted this round
 
         return next;
     }
 
+    /// <summary>
+    /// called when an actor's speed changes mid-battle to rebuild queue
+    /// </summary>
+    /// <param name="actor"></param>
     public void OnSpeedChanged(BattleActor actor)
     {
         if (!cachedActors.Contains(actor))
@@ -72,6 +74,10 @@ public class TurnOrderManager
         }
     }
 
+    /// <summary>
+    /// called when an actor is removed mid-battle (e.g., defeated) to rebuild queue w/o that actor
+    /// </summary>
+    /// <param name="actor"></param>
     public void RemoveActor(BattleActor actor)
     {
         if (!cachedActors.Remove(actor))

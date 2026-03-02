@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+
 public class BattleActionResult
 {
     public BattleActor actor;

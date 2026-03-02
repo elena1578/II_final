@@ -40,6 +40,7 @@ public class AttackAction : IBattleAction
             if (target == null || !target.isAlive)
                 continue;
 
+            // check for crit, if yes, apply crit multiplier
             bool didCritForHit;
             int damage = data.CalculateDamage(actor, target, out didCritForHit);
 

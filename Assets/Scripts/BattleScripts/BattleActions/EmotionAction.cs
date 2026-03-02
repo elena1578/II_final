@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+
 public class EmotionAction : IBattleAction
 {
     private BattleActionData data;

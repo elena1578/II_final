@@ -1,0 +1,13 @@
+--- Overworld ---
+
+WASD/Arrow Keys: Move
+
+--- Battle ---
+
+Point and click w/ mouse: Select [button/action]
+Back: Escape, backspace, or delete
+
+--- Editor Tools ---
+
+Toggle game speed up: Shift + Z
+Reset game speed to default: Ctrl + Shift + Z

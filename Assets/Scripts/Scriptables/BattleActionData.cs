@@ -161,7 +161,7 @@ public class BattleActionData : ScriptableObject
         if (Random.value < critChance)
         {
             didCrit = true;
-            damage = Mathf.RoundToInt((damage * critMultiplier) + 2);
+            damage = Mathf.RoundToInt((damage * critMultiplier) + 2);  
         }
 
         return Mathf.Max(0, damage);

@@ -1,6 +1,7 @@
+using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-using UnityEngine;
+
 
 public class BattleManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class BattleManager : MonoBehaviour
     public BattleUIManager uiManager;
     public MainCommandButtons commandButtons;
     [Space]
+    [Tooltip("How long to wait between dialog completing and next action starting")]
     [SerializeField] private float postDialogDelay = 1f;
     
     public static BattleManager instance;
@@ -15,6 +17,7 @@ public class BattleManager : MonoBehaviour
     private List<(BattleActor actor, BattleActionData action)> plannedActions;
     private int planningIndex = 0;
     public bool HasActiveBattle { get; private set; }
+    private const float fleeChance = 0.5f;  // 50% chance to flee successfully
 
     // runtime systems
     private TurnStateMachine turnStateMachine;
@@ -47,8 +50,8 @@ public class BattleManager : MonoBehaviour
     {
         InputSystemManager.instance.SwapToBattleMap();
         
+        // establish context + turn order
         context = new BattleContext(party, enemies);
-
         turnOrder = new TurnOrderManager();
         turnOrder.BuildQueue(GetAllActors());
 
@@ -56,10 +59,11 @@ public class BattleManager : MonoBehaviour
         planningIndex = 0;
         plannedActions.Clear();
 
+        // set up state machine + enter first state
         turnStateMachine = new TurnStateMachine(OnStateEntered);
         turnStateMachine.EnterState(BattleState.Start);
 
-        Debug.Log("Battle details: " + $"{party.Count} party members vs {enemies.Count} enemies. Enemy types: " + string.Join(", ", enemies.ConvertAll(e => e.name)));
+        Debug.Log("[BattleManager] Battle details: " + $"{party.Count} party members vs {enemies.Count} enemies. Enemy types: " + string.Join(", ", enemies.ConvertAll(e => e.name)));
 
         // bind UIs
         uiManager.BindActors(context.party, context.enemies);
@@ -70,6 +74,11 @@ public class BattleManager : MonoBehaviour
         digitSpawner = FindFirstObjectByType<UIDigitSpawner>();
     }
 
+    /// <summary>
+    /// called by BattleInitializer on Start to set party & enemy data
+    /// </summary>
+    /// <param name="partyData"></param>
+    /// <param name="enemyData"></param>
     public void StartBattle(List<CharacterBattleData> partyData, List<EnemyBattleData> enemyData)
     {
         if (HasActiveBattle)
@@ -89,6 +98,10 @@ public class BattleManager : MonoBehaviour
         InitializeBattle(party, enemies);
     }
 
+    /// <summary>
+    /// helper that sets list of all actors (characters + enemies) for turn order
+    /// </summary>
+    /// <returns></returns>
     public List<BattleActor> GetAllActors()
     {
         List<BattleActor> all = new List<BattleActor>();
@@ -102,7 +115,7 @@ public class BattleManager : MonoBehaviour
         switch (state)
         {
             case BattleState.Start:
-                Debug.Log("[BATTLE] Battle started");
+                // Debug.Log("[BattleManager] Battle started");
                 turnStateMachine.EnterState(BattleState.ActorTurn);
                 break;
 
@@ -125,7 +138,7 @@ public class BattleManager : MonoBehaviour
     #endregion
 
 
-    #region Battle Flow
+    #region Actor Planning
     public void HandleCurrentActorTurn()
     {
         // all party members plan first
@@ -133,6 +146,8 @@ public class BattleManager : MonoBehaviour
         {
             context.currentActor = context.party[planningIndex];
 
+            // check if alive, if yes, proceed with planning
+            // if no, skip to next actor's turn
             if (!context.currentActor.isAlive)
             {
                 planningIndex++;
@@ -140,6 +155,7 @@ public class BattleManager : MonoBehaviour
                 return;
             }
 
+            // if character actor, show action buttons + prompt dialog
             if (context.currentActor is PlayerBattleActor player)
             {
                 uiManager.SetActiveActor(player);
@@ -150,7 +166,7 @@ public class BattleManager : MonoBehaviour
             return;
         }
 
-        // once all party members have planned, enemies plan
+        // once all character actors have planned, enemies plan/decide their actions
         foreach (var enemy in context.enemies)
         {
             if (!enemy.isAlive)
@@ -160,9 +176,12 @@ public class BattleManager : MonoBehaviour
             plannedActions.Add((enemy, action));
         }
 
-        ResolvePlannedActions();
+        ResolvePlannedActions();  // once all actors have planned, play out round actions (ordered by speed stat)
     }
 
+    /// <summary>
+    /// helper to check if it's currently the player's turn
+    /// </summary>
     public bool IsPlayerTurn => context.currentActor is PlayerBattleActor;
 
     /// <summary>
@@ -172,28 +191,32 @@ public class BattleManager : MonoBehaviour
     {
         if (context.currentActor is not PlayerBattleActor player)
         {
-            Debug.LogError("Current actor = not player, ignoring");
+            Debug.LogError("[BattleManager] Current actor = not player, ignoring");
             return;
         }
 
         BattleActionData action = player.DefaultAttack;
-        OnPlayerSelectedAction(action);
+        OnPlayerSelectedAction(action);  // add to planned actions
     }
 
     public void OnPlayerSelectedAction(BattleActionData actionData)
     {
+        // add action to planned list & increment index to move to next actor's turn
         plannedActions.Add((context.currentActor, actionData));
         planningIndex++;
 
         commandButtons.HideAllCommands();
-        turnStateMachine.EnterState(BattleState.ActorTurn);
+        turnStateMachine.EnterState(BattleState.ActorTurn);  // proceed to next actor's turn (player or enemy)
     }
+    #endregion
 
+    #region Round Resolution
     private void ResolvePlannedActions()
     {
         commandButtons.HideAllCommands();
         uiManager.ClearActiveActor();  // hide select frame
 
+        // order planned actions by speed stat (highest speed goes first)
         plannedActions.Sort((a, b) => b.actor.speed.CompareTo(a.actor.speed));
         StartCoroutine(ResolveActionsRoutine());
     }
@@ -202,6 +225,7 @@ public class BattleManager : MonoBehaviour
     {
         foreach (var entry in plannedActions)
         {
+            // skip if died during round
             if (!entry.actor.isAlive)
                 continue;
 
@@ -210,11 +234,11 @@ public class BattleManager : MonoBehaviour
             // if no valid targets, skip action (e.g., attack when all enemies dead)
             if (targets.Count == 0)
             {
-                Debug.Log($"[CANCEL] {entry.actor.name}'s action cancelled (no targets)");
+                Debug.Log($"[BattleManager] {entry.actor.name}'s action cancelled (no targets)");
                 continue;
             }
 
-            Debug.Log($"[EXECUTE] {entry.actor.name} uses {entry.action.actionName}");
+            Debug.Log($"[BattleManager] {entry.actor.name} uses {entry.action.actionName}");
 
             // 1. play action animation & sound + apply logic
             float animTime = BattleAnimationController.instance.PlayAction(entry.actor, entry.action, targets);
@@ -239,7 +263,7 @@ public class BattleManager : MonoBehaviour
                 result
             );
 
-            yield return new WaitForSeconds(animTime);
+            yield return new WaitForSeconds(animTime);  // wait for animation to complete (def'd in BattleActionData)
 
             // 3. wait for dialog to finish + small delay after
             while (BattleDialogManager.instance.typing)
@@ -257,6 +281,12 @@ public class BattleManager : MonoBehaviour
         turnStateMachine.EnterState(BattleState.ResolveTurn);
     }
 
+    /// <summary>
+    /// helper to use a BattleAction via BattleActionAssignment factory
+    /// </summary>
+    /// <param name="actor"></param>
+    /// <param name="actionData"></param>
+    /// <returns></returns>
     private BattleActionResult UseAction(BattleActor actor, BattleActionData actionData)
     {
         IBattleAction action = BattleActionAssignment.Create(actionData);
@@ -272,6 +302,7 @@ public class BattleManager : MonoBehaviour
 
     private bool CheckBattleEnd()
     {
+        // check if all enemies or all party members are dead, if yes, end battle & set result
         bool enemiesAlive = context.enemies.Exists(e => e.isAlive);
         bool partyAlive = context.party.Exists(p => p.isAlive);
 
@@ -355,6 +386,10 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(postDialogDelay);
     }
 
+    /// <summary>
+    /// helper to calc total EXP via summing EXP rewards of all defeated enemies in battle result
+    /// </summary>
+    /// <returns></returns>
     private int CalculateEXP()
     {
         int total = 0;
@@ -366,6 +401,10 @@ public class BattleManager : MonoBehaviour
         return total;
     }
 
+    /// <summary>
+    /// helper to calc total clams via summing clam rewards of all defeated enemies in battle result
+    /// </summary>
+    /// <returns></returns>
     private int CalculateClams()
     {
         int total = 0;
@@ -405,18 +444,19 @@ public class BattleManager : MonoBehaviour
 
     public void AttemptFlee()
     {
-        // simple flee logic: 50% chance to flee successfully
-        bool fleeSuccessful = Random.value < 0.5f;
+        // 50% chance to successfully flee
+        // if successful, end battle with loss result & return to overworld (so player doesn't get rewards)
+        bool fleeSuccessful = Random.value < fleeChance;
 
         if (fleeSuccessful)
         {
             EndBattle(false);
             BattleTransitionManager.instance.ReturnToOverworld();
-            Debug.Log("Fled from battle successfully!");
+            Debug.Log("[BattleManager] Fled from battle successfully!");
         }
         else
         {
-            Debug.Log("Flee attempt failed!");
+            Debug.Log("[BattleManager] Flee attempt failed!");
             turnStateMachine.EnterState(BattleState.ResolveTurn);
         }
     }

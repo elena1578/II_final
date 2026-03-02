@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class EmotionSystem : MonoBehaviour
 {
     // https://www.omori.wiki/Battle_system#Emotions
@@ -10,15 +11,18 @@ public class EmotionSystem : MonoBehaviour
 
     public static float GetDamageMultiplier(BattleActor attacker, BattleActor target)
     {
+        // neutral = default dmg
         if (attacker.currentEmotion == EmotionType.Neutral ||
             target.currentEmotion == EmotionType.Neutral)
             return 1f;
 
+        // set strong emotions (e.g., angry > sad)
         bool attackerStrong =
             (attacker.currentEmotion == EmotionType.Angry && target.currentEmotion == EmotionType.Sad) ||
             (attacker.currentEmotion == EmotionType.Sad && target.currentEmotion == EmotionType.Happy) ||
             (attacker.currentEmotion == EmotionType.Happy && target.currentEmotion == EmotionType.Angry);
 
+        // set weak emotions (e.g., angry < happy)
         bool attackerWeak =
             (target.currentEmotion == EmotionType.Angry && attacker.currentEmotion == EmotionType.Sad) ||
             (target.currentEmotion == EmotionType.Sad && attacker.currentEmotion == EmotionType.Happy) ||
@@ -39,12 +43,14 @@ public class EmotionSystem : MonoBehaviour
     private static float GetWeaknessBonus(int tier)
     {
         // 50% / 100% / 150%
+        // tier system currently unimplemented since emotions only hit tier 1, 
+        // but is built to handle multiple since they'll prob be added later
         return tier switch
         {
             1 => 0.5f,
             2 => 1.0f,
             3 => 1.5f,
-            _ => 0.5f
+            _ => 0.5f  // default to 50%
         };
     }
 
@@ -57,7 +63,7 @@ public class EmotionSystem : MonoBehaviour
             1 => 0.20f,
             2 => 0.35f,
             3 => 0.50f,
-            _ => 0.20f
+            _ => 0.20f  // default to 20%
         };
     }
 
