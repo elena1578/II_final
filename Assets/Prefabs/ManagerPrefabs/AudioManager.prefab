@@ -53,9 +53,9 @@ MonoBehaviour:
   mouseClick: {fileID: 8300000, guid: 03371099ef56ec940969067a6b3418f2, type: 3}
   back: {fileID: 8300000, guid: 347b9ae996fa59a49a4674b26cab35fa, type: 3}
   error: {fileID: 8300000, guid: 0595e3b92cc3e4a499392da6f1ec3a4e, type: 3}
-  alert: {fileID: 0}
-  victory: {fileID: 8300000, guid: ae80593d4f08b5044b64963ecfbe0129, type: 3}
-  defeatMusic: {fileID: 0}
+  alert: {fileID: 8300000, guid: c16f841168e9a2c4e942d8a237009c96, type: 3}
+  victoryMusic: {fileID: 8300000, guid: e555d2a77707ecc4b98ae166054701d2, type: 3}
+  defeatMusic: {fileID: 8300000, guid: 1705c08e24301f34392363337227e512, type: 3}
 --- !u!114 &8923897153587187627
 MonoBehaviour:
   m_ObjectHideFlags: 0

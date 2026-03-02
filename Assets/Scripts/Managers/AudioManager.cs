@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("Battle")]
     public AudioClip alert;
-    public AudioClip victory;
+    public AudioClip victoryMusic;
     public AudioClip defeatMusic;
 
 

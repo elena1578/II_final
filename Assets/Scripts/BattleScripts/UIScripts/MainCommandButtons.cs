@@ -52,27 +52,20 @@ public class MainCommandButtons : MonoBehaviour
     {
         HideMainCommands();
         ShowSecondaryCommands();
-        PlaySelectSFX();
     }
 
-    public void OnRunButtonPressed() 
-    {
-        BattleManager.instance.AttemptFlee();
-        PlaySelectSFX();
-    }
+    public void OnRunButtonPressed() => BattleManager.instance.AttemptFlee();
 
     public void OnAttackButtonPressed()
     {
         BattleManager.instance.SelectDefaultAttack();
         HideSecondaryCommands();
-        PlaySelectSFX();
     }
 
     public void OnSkillButtonPressed()
     {
         ShowSkillSelection();
         HideSecondaryCommands();
-        PlaySelectSFX();
     }   
 
     public void OnSnackButtonPressed()
@@ -136,8 +129,6 @@ public class MainCommandButtons : MonoBehaviour
 
 
     #region Audio
-    public void OnButtonHover() => AudioManager.instance.OnButtonHover();   
-    private void PlaySelectSFX() => AudioManager.instance.PlaySelectSFX();
     private void PlayBackSFX() => AudioManager.instance.PlayBackSFX();
     private void PlayErrorSFX() => AudioManager.instance.PlayErrorSFX();
     #endregion

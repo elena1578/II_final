@@ -131,11 +131,10 @@ public class EnemyOverworldActor : GridMovementController
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            if (frozen) return;  // ignore if player just returned from battle
-            
+        if (other.CompareTag("Player") && !alerted && !enteringBattle && !frozen)
+        {     
             TriggerAlertBalloon();
+            AudioManager.instance.PlaySFX(AudioManager.instance.alert, 0.7f);
             playerTransform = other.transform;
             alerted = true;
         }

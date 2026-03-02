@@ -659,7 +659,6 @@ GameObject:
   - component: {fileID: 103559288}
   - component: {fileID: 103559287}
   - component: {fileID: 103559286}
-  - component: {fileID: 103559289}
   m_Layer: 5
   m_Name: SecondaryCommandButtons
   m_TagString: Untagged
@@ -734,35 +733,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103559284}
   m_CullTransparentMesh: 1
---- !u!114 &103559289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103559284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 801025637}
-          m_TargetAssemblyTypeName: MainCommandButtons, Assembly-CSharp
-          m_MethodName: OnButtonHover
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &112646437
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,6 +2121,7 @@ GameObject:
   - component: {fileID: 490799274}
   - component: {fileID: 490799273}
   - component: {fileID: 490799272}
+  - component: {fileID: 490799275}
   m_Layer: 5
   m_Name: SkillButton
   m_TagString: Untagged
@@ -2271,6 +2242,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490799270}
   m_CullTransparentMesh: 1
+--- !u!114 &490799275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490799270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8c97b9e4f4b24479141babaf77c0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSFX
+  playHover: 1
+  playClick: 1
 --- !u!1 &505856198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2420,6 +2405,7 @@ GameObject:
   - component: {fileID: 527858480}
   - component: {fileID: 527858479}
   - component: {fileID: 527858478}
+  - component: {fileID: 527858481}
   m_Layer: 5
   m_Name: AttackButton
   m_TagString: Untagged
@@ -2540,6 +2526,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527858476}
   m_CullTransparentMesh: 1
+--- !u!114 &527858481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527858476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8c97b9e4f4b24479141babaf77c0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSFX
+  playHover: 1
+  playClick: 1
 --- !u!1 &556189501
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,7 +2552,6 @@ GameObject:
   - component: {fileID: 556189504}
   - component: {fileID: 556189503}
   - component: {fileID: 556189505}
-  - component: {fileID: 556189506}
   m_Layer: 5
   m_Name: CommandButtons
   m_TagString: Untagged
@@ -2625,35 +2624,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 1
---- !u!114 &556189506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556189501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 801025637}
-          m_TargetAssemblyTypeName: MainCommandButtons, Assembly-CSharp
-          m_MethodName: OnButtonHover
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &581663970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3331,6 +3301,7 @@ GameObject:
   - component: {fileID: 741363560}
   - component: {fileID: 741363559}
   - component: {fileID: 741363561}
+  - component: {fileID: 741363562}
   m_Layer: 5
   m_Name: FightButton
   m_TagString: Untagged
@@ -3451,6 +3422,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &741363562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741363557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8c97b9e4f4b24479141babaf77c0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSFX
+  playHover: 1
+  playClick: 1
 --- !u!1 &755623343
 GameObject:
   m_ObjectHideFlags: 0
@@ -4229,6 +4214,7 @@ GameObject:
   - component: {fileID: 938959087}
   - component: {fileID: 938959086}
   - component: {fileID: 938959085}
+  - component: {fileID: 938959088}
   m_Layer: 5
   m_Name: SnackButton
   m_TagString: Untagged
@@ -4349,6 +4335,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938959083}
   m_CullTransparentMesh: 1
+--- !u!114 &938959088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938959083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8c97b9e4f4b24479141babaf77c0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSFX
+  playHover: 1
+  playClick: 1
 --- !u!1 &1049453253
 GameObject:
   m_ObjectHideFlags: 0
@@ -4439,7 +4439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleDialogManager
   text: {fileID: 2127081140}
-  typeSpeed: 0.04
+  typeSpeed: 0.06
 --- !u!1 &1065253676
 GameObject:
   m_ObjectHideFlags: 0
@@ -5350,6 +5350,7 @@ GameObject:
   - component: {fileID: 1224228974}
   - component: {fileID: 1224228973}
   - component: {fileID: 1224228975}
+  - component: {fileID: 1224228976}
   m_Layer: 5
   m_Name: RunButton
   m_TagString: Untagged
@@ -5470,6 +5471,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1224228976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224228971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8c97b9e4f4b24479141babaf77c0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSFX
+  playHover: 1
+  playClick: 1
 --- !u!1 &1234787701
 GameObject:
   m_ObjectHideFlags: 0
@@ -7830,6 +7845,7 @@ GameObject:
   - component: {fileID: 1851712449}
   - component: {fileID: 1851712448}
   - component: {fileID: 1851712447}
+  - component: {fileID: 1851712450}
   m_Layer: 5
   m_Name: ToyButton
   m_TagString: Untagged
@@ -7950,6 +7966,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851712445}
   m_CullTransparentMesh: 1
+--- !u!114 &1851712450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851712445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8c97b9e4f4b24479141babaf77c0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSFX
+  playHover: 1
+  playClick: 1
 --- !u!1 &1914050846
 GameObject:
   m_ObjectHideFlags: 0
