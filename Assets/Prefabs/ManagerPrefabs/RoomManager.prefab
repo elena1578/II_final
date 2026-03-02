@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6495520658672278230}
   - component: {fileID: 1613206122662567865}
   - component: {fileID: 2152204118586706617}
-  - component: {fileID: 4035830304988480169}
   m_Layer: 0
   m_Name: RoomManager
   m_TagString: Untagged
@@ -58,19 +57,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ed6ceff16c25a4daf4a9d29310a435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  instance: {fileID: 0}
   storedRoomID: 0
   storedPlayerPosition: {x: 0, y: 0, z: 0}
---- !u!114 &4035830304988480169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4710927033450002847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9edab5e4e9605ff43af0cbd4414b0c15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MusicFadeInOut
-  musicSource: {fileID: 0}
+  currentEnemy: {fileID: 0}

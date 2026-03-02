@@ -44,38 +44,47 @@ public class MainCommandButtons : MonoBehaviour
             HideSkillSelection();
             ShowSecondaryCommands();
         }
+
+        PlayBackSFX();
     }
 
     public void OnFightButtonPressed()
     {
         HideMainCommands();
         ShowSecondaryCommands();
+        PlaySelectSFX();
     }
 
-    public void OnRunButtonPressed() => BattleManager.instance.AttemptFlee();
+    public void OnRunButtonPressed() 
+    {
+        BattleManager.instance.AttemptFlee();
+        PlaySelectSFX();
+    }
 
     public void OnAttackButtonPressed()
     {
         BattleManager.instance.SelectDefaultAttack();
         HideSecondaryCommands();
+        PlaySelectSFX();
     }
 
     public void OnSkillButtonPressed()
     {
         ShowSkillSelection();
         HideSecondaryCommands();
+        PlaySelectSFX();
     }   
 
     public void OnSnackButtonPressed()
     {
         // won't do anything for now
-        // AudioManager.instance.PlaySFX("Error");
+        PlayErrorSFX();
     }
 
     public void OnToyButtonPressed()
     {
         // also won't do anything for now
-        // AudioManager.instance.PlaySFX("Error");
+        PlayErrorSFX();
     }
 
 
@@ -123,5 +132,13 @@ public class MainCommandButtons : MonoBehaviour
         HideMainCommands();
         HideSecondaryCommands();
     }
+    #endregion
+
+
+    #region Audio
+    public void OnButtonHover() => AudioManager.instance.OnButtonHover();   
+    private void PlaySelectSFX() => AudioManager.instance.PlaySelectSFX();
+    private void PlayBackSFX() => AudioManager.instance.PlayBackSFX();
+    private void PlayErrorSFX() => AudioManager.instance.PlayErrorSFX();
     #endregion
 }

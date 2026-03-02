@@ -6,12 +6,21 @@ using System.Collections.Generic;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
-    private List<AudioSource> sfxSources = new List<AudioSource>();
-    private List<AudioSource> musicSources = new List<AudioSource>();
+    private AudioSource musicSource;
+    private AudioSource[] sfxSources;
     private int nextSFXIndex = 0;
 
-    [Header("Battle SFX")]
-    public AudioClip victorySFX;
+    [Header("System")]
+    public AudioClip mouseHover;
+    public AudioClip mouseClick;
+    public AudioClip back;
+    public AudioClip error;
+
+    [Header("Battle")]
+    public AudioClip alert;
+    public AudioClip victory;
+    public AudioClip defeatMusic;
+
 
     private void Awake()
     {
@@ -27,16 +36,25 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        // set order for audiosources
-        // 0 = music, 1-3 = sfx
         AudioSource[] sources = GetComponents<AudioSource>();
-        foreach (var src in sources)
+
+        if (sources.Length < 2)
         {
-            if (src.outputAudioMixerGroup.name == "Music")
-                musicSources.Add(src);
-            else
-                sfxSources.Add(src);
+            Debug.LogError("AudioManager needs at least 1 music source and 1 SFX source to function properly");
+            return;
         }
+
+        musicSource = sources[0];  // source 0 = music
+        bool musicInitialized = true;
+
+        // 1+ = sfx sources
+        sfxSources = new AudioSource[sources.Length - 1];
+        for (int i = 1; i < sources.Length; i++)
+        {
+            sfxSources[i - 1] = sources[i];
+        }
+
+        Debug.Log($"[AudioManager] {sfxSources.Length} SFX sources initialized, music source initialized: {musicInitialized}");
     }
 
     
@@ -54,15 +72,16 @@ public class AudioManager : MonoBehaviour
     #region SFX
     public void PlaySFX(AudioClip clip, float volume = 1f, float pitch = 1f)
     {
-        if (clip == null) return;
+        if (clip == null || sfxSources.Length == 0)
+            return;
 
         AudioSource src = sfxSources[nextSFXIndex];
-        nextSFXIndex = (nextSFXIndex + 1) % sfxSources.Count;
+        nextSFXIndex = (nextSFXIndex + 1) % sfxSources.Length;  // cycle through sources to allow overlapping SFX
 
-        src.Stop(); // prevent leftover state
+        src.Stop();  // prevent leftover state from any prev clip(s)
         src.clip = clip;
         src.volume = Mathf.Clamp01(volume);
-        src.pitch = Mathf.Clamp(pitch, 0.1f, 3f);
+        src.pitch = Mathf.Clamp(pitch, 0.1f, 3f); 
         src.Play();
     }
 
@@ -86,11 +105,10 @@ public class AudioManager : MonoBehaviour
 
 
     #region Specific Methods
-    public void PlayDefeatSequence()
-    {
-        // play defeat music, stop all sfx, etc.
-        StopAllSFX();
-        PlayMusic(victorySFX);
-    }
+    // a bit redundant but keeps calls consistent + allows for easy future adjustments
+    public void OnButtonHover() => PlaySFX(mouseHover);
+    public void PlaySelectSFX() => PlaySFX(mouseClick);
+    public void PlayBackSFX() => PlaySFX(back);
+    public void PlayErrorSFX() => PlaySFX(error);
     #endregion
 }
