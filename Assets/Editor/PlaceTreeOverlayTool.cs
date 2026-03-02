@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEditor;
 
-[InitializeOnLoad]
+
+[InitializeOnLoad]  // ensure static constructor automatically runs (so tool is always active in editor)
 public static class PlaceTreeOverlayTool
 {
     private static string spritePath = "Assets/Assets/MapDecorations/spr_tree_tuft.png";
@@ -9,16 +10,14 @@ public static class PlaceTreeOverlayTool
 
     private static bool aHeld = false;
 
-    static PlaceTreeOverlayTool()
-    {
-        SceneView.duringSceneGui += OnSceneGUI;
-    }
+    static PlaceTreeOverlayTool() => SceneView.duringSceneGui += OnSceneGUI;
 
     private static void OnSceneGUI(SceneView sceneView)
     {
         Event e = Event.current;
 
         // track a key state
+        // keydown = key pressed [this frame], keyup = key released [this frame]
         if (e.type == EventType.KeyDown && e.keyCode == KeyCode.A)
         {
             aHeld = true;
@@ -38,7 +37,7 @@ public static class PlaceTreeOverlayTool
 
     private static void PlaceTreeAtMouse(Event e)
     {
-        // find world position from mouse click
+       // convert mouse pos -> world pos by using ray origin as placement point
         Ray ray = HandleUtility.GUIPointToWorldRay(e.mousePosition);
         Vector3 worldPos = ray.origin;
         worldPos.z = 0f;
@@ -47,7 +46,7 @@ public static class PlaceTreeOverlayTool
         Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(spritePath);
         if (sprite == null)
         {
-            Debug.LogError("Sprite not found at path: " + spritePath);
+            Debug.LogError("[PlaceTreeOverlayTool] Sprite not found at path: " + spritePath);
             return;
         }
 
@@ -60,7 +59,7 @@ public static class PlaceTreeOverlayTool
         tree.transform.position = worldPos;
         tree.transform.SetParent(parent.transform);
 
-        // add sr and set sorting layer to "Trees"
+        // add sr and set sorting layer to "Tree"
         SpriteRenderer sr = tree.AddComponent<SpriteRenderer>();
         sr.sprite = sprite;
         sr.sortingLayerName = "Tree";
