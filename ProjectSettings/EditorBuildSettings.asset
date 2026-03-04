@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bookcase155_03.unity
     guid: 688d7683159e2d3468bfa56fdaf1b092
+  - enabled: 1
+    path: Assets/Scenes/KingCrawler_12.unity
+    guid: 65f4a2bb5902c954fb99b0e5e921a2d4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 17223ab6b45b97246882ab2e313270f3, type: 3}
   m_UseUCBPForAssetBundles: 0

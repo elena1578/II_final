@@ -157,6 +157,23 @@ public class RoomChangeManager : MonoBehaviour
             yield return StartCoroutine(FadeOutForNewRoom(targetRoom));
         }
 
+        // battle case: if music is assigned to detected enemy battle data,
+        // use that instead of what's assigned to RoomData
+        if (BattleTransitionManager.instance != null && BattleTransitionManager.instance.currentEnemy != null)
+        {
+            EnemyOverworldData enemyData = BattleTransitionManager.instance.currentEnemy;
+
+            if (enemyData.correspondingBattleData != null && enemyData.correspondingBattleData.music != null)
+            {
+                MusicFadeInOut.instance.CheckMusic(
+                    enemyData.correspondingBattleData.music,
+                    enemyData.correspondingBattleData.musicVolume
+                );
+                yield break;
+            }
+        }
+
+        // standard case: use RoomData music
         if (targetRoom.music != null)
             MusicFadeInOut.instance.CheckMusic(targetRoom.music, targetRoom.musicVolume);
         else

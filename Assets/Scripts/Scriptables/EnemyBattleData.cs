@@ -16,6 +16,10 @@ public class EnemyBattleData : ScriptableObject
     public bool setCustomTransformPosition = false;
     public Vector3 customTransformPosition;
 
+    [Header("Optional Music Settings")]
+    public AudioClip music;
+    [Range(0f, 1f)] public float musicVolume = 1f;
+
     [Header("Base Stats")]
     public int baseHP;
     public int baseJuice;

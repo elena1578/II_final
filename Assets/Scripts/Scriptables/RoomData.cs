@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+
 [CreateAssetMenu(menuName = "Scriptable Objects/Rooms/NewRoom", fileName = "NewRoom")]
 public class RoomData : ScriptableObject
 {
@@ -21,10 +22,11 @@ public class RoomData : ScriptableObject
 #region Enums
     public enum RoomID
     {
-        BattleRoom_00,
-        Entrance153_01,
-        Railroad154_02,
-        Bookcase155_03
+        BattleRoom_00 = 0,
+        Entrance153_01 = 1,
+        Railroad154_02 = 2,
+        Bookcase155_03 = 3,
+        KingCrawler_12 = 12
     }
 
     public enum SpawnPointID

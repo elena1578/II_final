@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a6c2b47e001114b82bf759913eb6ca, type: 3}
+  m_Name: 05_KingCrawler
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldData
+  correspondingBattleData: {fileID: 11400000, guid: bbb979b729d401549a1b0ffb95deca31, type: 2}
+  sprite: {fileID: -8987018054605711263, guid: ec80cdb307d2aa8419f98739d4d6a464, type: 3}
+  animatorController: {fileID: 9100000, guid: 811ce2e10d2393342979ebe6335b3992, type: 2}
+  spawnChance: 1
+  moveSpeed: 0
+  chanceToMove: 0
+  alertRadius: 0

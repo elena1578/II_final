@@ -7,18 +7,31 @@ public class SnapColliderToGridEditor : Editor
 {
     const float gridSize = 0.32f;
     static readonly Vector3 gridOffset = new Vector3(0.23f, -2.75f, 0f);
+    Editor defaultEditor;
+
+    void OnEnable() => defaultEditor = CreateEditor(targets, System.Type.GetType("UnityEditor.BoxCollider2DEditor, UnityEditor"));
+
+    void OnDisable()
+    {
+        if (defaultEditor != null)
+            DestroyImmediate(defaultEditor);
+    }
 
     public override void OnInspectorGUI()
     {
-        BoxCollider2D col = (BoxCollider2D)target;
-        
         // keep at the top of the inspector : )
         if (GUILayout.Button("Snap To Grid"))
         {
-            SnapCollider(col);
+            foreach (BoxCollider2D col in targets)
+            {
+                SnapCollider(col);
+            }
         }
         
-        base.OnInspectorGUI();
+        EditorGUILayout.Space();
+
+        if (defaultEditor != null)
+            defaultEditor.OnInspectorGUI();
     }
 
     void SnapCollider(BoxCollider2D col)
