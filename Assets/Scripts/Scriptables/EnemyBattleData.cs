@@ -7,8 +7,14 @@ public class EnemyBattleData : ScriptableObject
     [Header("Definition")]
     public CharacterName characterName;
     public Sprite battleSprite; 
-    public Vector3 spriteScale = Vector3.one;
     public RuntimeAnimatorController animatorController;
+
+    [Header("Optional Sprite Settings")]
+    public bool setCustomWidthHeight = false;
+    public float customWidth;
+    public float customHeight;
+    public bool setCustomTransformPosition = false;
+    public Vector3 customTransformPosition;
 
     [Header("Base Stats")]
     public int baseHP;

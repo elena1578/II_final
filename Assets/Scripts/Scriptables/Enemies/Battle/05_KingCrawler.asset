@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBattleData
   characterName: 8
   battleSprite: {fileID: -2504838074292835062, guid: 8172c3b68cebd8f40af5ea758ff10e76, type: 3}
-  spriteScale: {x: 1, y: 1, z: 1}
   animatorController: {fileID: 9100000, guid: baa44d431cd4d19498921f60df62b0a4, type: 2}
+  setCustomWidthHeight: 1
+  customWidth: 675
+  customHeight: 515
+  setCustomTransformPosition: 1
+  customTransformPosition: {x: 0, y: 0, z: 0}
   baseHP: 730
   baseJuice: 250
   baseAttack: 25
@@ -23,9 +27,59 @@ MonoBehaviour:
   baseSpeed: 18
   expReward: 2400
   clamReward: 475
-  attackActions: []
-  healActions: []
-  emotionActions: []
+  attackActions:
+  - {fileID: 11400000, guid: 70170d3564ce7e543997294675f40178, type: 2}
+  - {fileID: 11400000, guid: 72168241de5f56a489e4aa84c9e95cd4, type: 2}
+  - {fileID: 11400000, guid: 2bad354322a5a9b41b542bb335c2ae7e, type: 2}
+  healActions:
+  - {fileID: 11400000, guid: a25ff0688a158b94a9bef03798ddb28d, type: 2}
+  emotionActions:
+  - {fileID: 11400000, guid: 7759a0977cfee034bb8d23892261fc6f, type: 2}
   noneActions: []
-  defaultAction: {fileID: 0}
-  actionAI: []
+  defaultAction: {fileID: 11400000, guid: 70170d3564ce7e543997294675f40178, type: 2}
+  actionAI:
+  - action: {fileID: 11400000, guid: 70170d3564ce7e543997294675f40178, type: 2}
+    priorityNumber: 1
+    neutralChance: 40
+    happyChance: 40
+    sadChance: 40
+    angryChance: 40
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: 7759a0977cfee034bb8d23892261fc6f, type: 2}
+    priorityNumber: 2
+    neutralChance: 25
+    happyChance: 25
+    sadChance: 25
+    angryChance: 0
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: 2bad354322a5a9b41b542bb335c2ae7e, type: 2}
+    priorityNumber: 3
+    neutralChance: 30
+    happyChance: 30
+    sadChance: 30
+    angryChance: 30
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: 72168241de5f56a489e4aa84c9e95cd4, type: 2}
+    priorityNumber: 4
+    neutralChance: 100
+    happyChance: 100
+    sadChance: 100
+    angryChance: 100
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: a25ff0688a158b94a9bef03798ddb28d, type: 2}
+    priorityNumber: 5
+    neutralChance: 100
+    happyChance: 100
+    sadChance: 100
+    angryChance: 100
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 1

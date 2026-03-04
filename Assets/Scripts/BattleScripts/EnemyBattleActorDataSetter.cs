@@ -103,7 +103,19 @@ public class EnemyBattleActorDataSetter : MonoBehaviour
             return;
 
         if (img != null)
+        {
             img.sprite = enemyBattleData.battleSprite;
+
+            if (enemyBattleData.setCustomWidthHeight)
+            {
+                RectTransform rt = img.GetComponent<RectTransform>();
+                if (rt != null)
+                    rt.sizeDelta = new Vector2(enemyBattleData.customWidth, enemyBattleData.customHeight);
+            }
+
+            if (enemyBattleData.setCustomTransformPosition)
+                img.transform.localPosition = enemyBattleData.customTransformPosition;
+        }
 
         if (animator != null)
             animator.runtimeAnimatorController = enemyBattleData.animatorController;
