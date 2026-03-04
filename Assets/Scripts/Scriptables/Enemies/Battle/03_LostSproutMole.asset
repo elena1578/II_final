@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 03_LostSproutMole
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBattleData
   characterName: 6
-  battleSprite: {fileID: 0}
+  battleSprite: {fileID: 6987771343682200269, guid: fe8be14d5518a7f47bf5bcae188b5b68, type: 3}
   spriteScale: {x: 1, y: 1, z: 1}
-  animatorController: {fileID: 0}
+  animatorController: {fileID: 9100000, guid: 3e0b48f91b1b9f34f9c28b447754d46e, type: 2}
   baseHP: 170
   baseJuice: 75
   baseAttack: 22
@@ -23,8 +23,39 @@ MonoBehaviour:
   baseSpeed: 13
   expReward: 210
   clamReward: 12
-  attackActions: []
+  attackActions:
+  - {fileID: 11400000, guid: 93c2d445f83d7f4419c2b9676afe9960, type: 2}
+  - {fileID: 11400000, guid: 1f0d27937a021d34bb5b7b113f593654, type: 2}
   healActions: []
   emotionActions: []
-  noneActions: []
-  actionAI: []
+  noneActions:
+  - {fileID: 11400000, guid: eea09741feb2aa04a95099d91c1379e0, type: 2}
+  defaultAction: {fileID: 11400000, guid: 93c2d445f83d7f4419c2b9676afe9960, type: 2}
+  actionAI:
+  - action: {fileID: 11400000, guid: 93c2d445f83d7f4419c2b9676afe9960, type: 2}
+    priorityNumber: 1
+    neutralChance: 35
+    happyChance: 35
+    sadChance: 30
+    angryChance: 50
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: eea09741feb2aa04a95099d91c1379e0, type: 2}
+    priorityNumber: 2
+    neutralChance: 35
+    happyChance: 35
+    sadChance: 50
+    angryChance: 20
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 0
+  - action: {fileID: 11400000, guid: 1f0d27937a021d34bb5b7b113f593654, type: 2}
+    priorityNumber: 2
+    neutralChance: 100
+    happyChance: 100
+    sadChance: 100
+    angryChance: 100
+    hpBelowPercent: 0
+    requireHpBelow: 0
+    alwaysUseIfReached: 1

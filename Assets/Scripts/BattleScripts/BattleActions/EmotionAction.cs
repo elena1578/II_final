@@ -24,7 +24,7 @@ public class EmotionAction : IBattleAction
             Debug.LogWarning("[EmotionAction] No valid targets");
             return BattleActionResult.None(actor);
         }
-
+        
         BattleActor target = targets[0];
         target.SetEmotion(data.emotionEffect);
 

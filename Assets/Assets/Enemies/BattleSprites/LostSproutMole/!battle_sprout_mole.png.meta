@@ -1,0 +1,742 @@
+fileFormatVersion: 2
+guid: fe8be14d5518a7f47bf5bcae188b5b68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6987771343682200269
+    second: '!battle_sprout_mole_0'
+  - first:
+      213: 8767733053349292137
+    second: '!battle_sprout_mole_1'
+  - first:
+      213: 6365047174435001703
+    second: '!battle_sprout_mole_2'
+  - first:
+      213: 2823929870048475642
+    second: '!battle_sprout_mole_3'
+  - first:
+      213: -1344730974438485793
+    second: '!battle_sprout_mole_4'
+  - first:
+      213: -3065099815296140424
+    second: '!battle_sprout_mole_5'
+  - first:
+      213: 225295469779355358
+    second: '!battle_sprout_mole_6'
+  - first:
+      213: -3265236072491305067
+    second: '!battle_sprout_mole_7'
+  - first:
+      213: 4882423825875407397
+    second: '!battle_sprout_mole_8'
+  - first:
+      213: -7954848146198671101
+    second: '!battle_sprout_mole_9'
+  - first:
+      213: 7361453327975071926
+    second: '!battle_sprout_mole_10'
+  - first:
+      213: -7610203696416851283
+    second: '!battle_sprout_mole_11'
+  - first:
+      213: 2703385393819537484
+    second: '!battle_sprout_mole_12'
+  - first:
+      213: -803553034516768955
+    second: '!battle_sprout_mole_13'
+  - first:
+      213: -5276304431165816651
+    second: '!battle_sprout_mole_14'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_0'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1090
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2e4d7a30d89f060800000000000000
+      internalID: 6987771343682200269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_1'
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1090
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968e55232ce3da970800000000000000
+      internalID: 8767733053349292137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_2'
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1090
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7655dc28ea0355850800000000000000
+      internalID: 6365047174435001703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_3'
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1090
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9bad6414d903720800000000000000
+      internalID: 2823929870048475642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_4'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 872
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0112ead4e865de0800000000000000
+      internalID: -1344730974438485793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_5'
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 872
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b782425f39675d0800000000000000
+      internalID: -3065099815296140424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_6'
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 872
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed604bd3909602300800000000000000
+      internalID: 225295469779355358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_7'
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 872
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5973d5f871d8fa2d0800000000000000
+      internalID: -3265236072491305067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_8'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 654
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5221538f99ad1c340800000000000000
+      internalID: 4882423825875407397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_9'
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 654
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30157a3f1c3ba9190800000000000000
+      internalID: -7954848146198671101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_10'
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 654
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b042949cc2292660800000000000000
+      internalID: 7361453327975071926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_11'
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 654
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa75b60f00236690800000000000000
+      internalID: -7610203696416851283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_12'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 436
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40d79941ba548520800000000000000
+      internalID: 2703385393819537484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_13'
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 436
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547d073c5c439d4f0800000000000000
+      internalID: -803553034516768955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_14'
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 436
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0ca8d231dc6c6b0800000000000000
+      internalID: -5276304431165816651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_15'
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 436
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a51e6945753d2448219ddd9dfee31a
+      internalID: 906989108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_16'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a924535208d84408c12acf9d62dbeb
+      internalID: -1781150596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_17'
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 218
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81297cd32bb9a5c4ea4c2bcc3a79e94d
+      internalID: 1151928095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_18'
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 218
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993ddfd5337591b47be774e056681c06
+      internalID: -1890628016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_19'
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 218
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1597cfae091925b4f9d4bd1e9f42a927
+      internalID: -156504889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_20'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485f2b01d0a04ee42b70232ffc34d438
+      internalID: -1475813596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_21'
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2db68ee1c02b7468f91cb89a75bd01
+      internalID: 1182276201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_22'
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce30ce3efd4ca04c89900215a996ae4
+      internalID: -541750999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_sprout_mole_23'
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e010222d3dd4544a9eefe675bf1b0b
+      internalID: 1870273671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 362ccf88888a72a44831378669d9247e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":6.0},"gridSpriteSize":{"x":140.0,"y":218.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      '!battle_sprout_mole_0': 6987771343682200269
+      '!battle_sprout_mole_1': 8767733053349292137
+      '!battle_sprout_mole_10': 7361453327975071926
+      '!battle_sprout_mole_11': -7610203696416851283
+      '!battle_sprout_mole_12': 2703385393819537484
+      '!battle_sprout_mole_13': -803553034516768955
+      '!battle_sprout_mole_14': -5276304431165816651
+      '!battle_sprout_mole_15': 906989108
+      '!battle_sprout_mole_16': -1781150596
+      '!battle_sprout_mole_17': 1151928095
+      '!battle_sprout_mole_18': -1890628016
+      '!battle_sprout_mole_19': -156504889
+      '!battle_sprout_mole_2': 6365047174435001703
+      '!battle_sprout_mole_20': -1475813596
+      '!battle_sprout_mole_21': 1182276201
+      '!battle_sprout_mole_22': -541750999
+      '!battle_sprout_mole_23': 1870273671
+      '!battle_sprout_mole_3': 2823929870048475642
+      '!battle_sprout_mole_4': -1344730974438485793
+      '!battle_sprout_mole_5': -3065099815296140424
+      '!battle_sprout_mole_6': 225295469779355358
+      '!battle_sprout_mole_7': -3265236072491305067
+      '!battle_sprout_mole_8': 4882423825875407397
+      '!battle_sprout_mole_9': -7954848146198671101
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

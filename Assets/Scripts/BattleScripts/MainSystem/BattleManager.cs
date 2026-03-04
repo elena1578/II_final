@@ -210,6 +210,7 @@ public class BattleManager : MonoBehaviour
     }
     #endregion
 
+
     #region Round Resolution
     private void ResolvePlannedActions()
     {

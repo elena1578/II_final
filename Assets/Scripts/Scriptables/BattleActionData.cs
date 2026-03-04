@@ -59,7 +59,11 @@ public class BattleActionData : ScriptableObject
         Roar,
         Rebound,
         RunNGun,
-        Curveball
+        Curveball,
+        Screech, 
+        Crunch,
+        Ram,
+        Consume
     }
 
     public enum ActionType
@@ -87,7 +91,8 @@ public class BattleActionData : ScriptableObject
         Headbutt,
         Rebound,
         RunNGun,
-        Curveball
+        Curveball,
+        Crunch
     }
     #endregion
 
@@ -146,6 +151,10 @@ public class BattleActionData : ScriptableObject
                     damage = actor.atk * 3 - target.def;
                 else
                     damage = actor.atk * 2 - target.def;
+                break;
+
+            case DamageFormula.Crunch:
+                damage = actor.atk * 3 - target.def;
                 break;
         }
 

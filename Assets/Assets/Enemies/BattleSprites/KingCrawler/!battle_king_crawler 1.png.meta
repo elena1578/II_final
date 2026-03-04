@@ -1,0 +1,784 @@
+fileFormatVersion: 2
+guid: 8172c3b68cebd8f40af5ea758ff10e76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2504838074292835062
+    second: '!battle_king_crawler 1_0'
+  - first:
+      213: -6074938743645613015
+    second: '!battle_king_crawler 1_1'
+  - first:
+      213: 8478138947766628806
+    second: '!battle_king_crawler 1_2'
+  - first:
+      213: -2973314933048997717
+    second: '!battle_king_crawler 1_3'
+  - first:
+      213: -7227761577626297682
+    second: '!battle_king_crawler 1_4'
+  - first:
+      213: -6677839235301674350
+    second: '!battle_king_crawler 1_5'
+  - first:
+      213: 1819931639876788091
+    second: '!battle_king_crawler 1_6'
+  - first:
+      213: 6917886881806157838
+    second: '!battle_king_crawler 1_7'
+  - first:
+      213: -4624931947632019587
+    second: '!battle_king_crawler 1_8'
+  - first:
+      213: 3262983159849864991
+    second: '!battle_king_crawler 1_9'
+  - first:
+      213: 8396958990925573094
+    second: '!battle_king_crawler 1_10'
+  - first:
+      213: 3266198482024223012
+    second: '!battle_king_crawler 1_11'
+  - first:
+      213: -8332657262473995576
+    second: '!battle_king_crawler 1_12'
+  - first:
+      213: 6825236563473375476
+    second: '!battle_king_crawler 1_13'
+  - first:
+      213: 7842935538350225009
+    second: '!battle_king_crawler 1_14'
+  - first:
+      213: 1047159429251528488
+    second: '!battle_king_crawler 1_15'
+  - first:
+      213: 4250310259755722907
+    second: '!battle_king_crawler 1_16'
+  - first:
+      213: -5466431239221637344
+    second: '!battle_king_crawler 1_17'
+  - first:
+      213: 1992605076817149039
+    second: '!battle_king_crawler 1_18'
+  - first:
+      213: 1979860378785657986
+    second: '!battle_king_crawler 1_19'
+  - first:
+      213: -1643098681167850621
+    second: '!battle_king_crawler 1_20'
+  - first:
+      213: -1099756716691980210
+    second: '!battle_king_crawler 1_21'
+  - first:
+      213: 401776632520980665
+    second: '!battle_king_crawler 1_22'
+  - first:
+      213: 4429986632885789054
+    second: '!battle_king_crawler 1_23'
+  - first:
+      213: -5852990563706400262
+    second: '!battle_king_crawler 1_24'
+  - first:
+      213: -7681231307339711196
+    second: '!battle_king_crawler 1_25'
+  - first:
+      213: -1392565582877831409
+    second: '!battle_king_crawler 1_26'
+  - first:
+      213: -6205693162977327591
+    second: '!battle_king_crawler 1_27'
+  - first:
+      213: 8702785729816954834
+    second: '!battle_king_crawler 1_28'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_0'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2565
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0de6e9ea070d3dd0800000000000000
+      internalID: -2504838074292835062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_1'
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 2565
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924deb8266b71bba0800000000000000
+      internalID: -6074938743645613015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_2'
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 2565
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1b802347668a570800000000000000
+      internalID: 8478138947766628806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_3'
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 2565
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8004a52d9acb6d0800000000000000
+      internalID: -2973314933048997717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_4'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2052
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaa1e54b325d1bb90800000000000000
+      internalID: -7227761577626297682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_5'
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 2052
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2927da0a89c8353a0800000000000000
+      internalID: -6677839235301674350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_6'
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 2052
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f995e1f22b14910800000000000000
+      internalID: 1819931639876788091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_7'
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 2052
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e08046a6775410060800000000000000
+      internalID: 6917886881806157838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_8'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1539
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77b907c5e0f0dfb0800000000000000
+      internalID: -4624931947632019587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_9'
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1539
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fcee655e1784d20800000000000000
+      internalID: 3262983159849864991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_10'
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1539
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb24a796bdf78470800000000000000
+      internalID: 8396958990925573094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_11'
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 1539
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42159fed63ed35d20800000000000000
+      internalID: 3266198482024223012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_12'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1026
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca982b3e547c5c80800000000000000
+      internalID: -8332657262473995576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_13'
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1026
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0a6d92e7c18be50800000000000000
+      internalID: 6825236563473375476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_14'
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1026
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176f6a78154b7dc60800000000000000
+      internalID: 7842935538350225009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_15'
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 1026
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827fcbbe3f1488e00800000000000000
+      internalID: 1047159429251528488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_16'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 513
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9820f189a22cfa30800000000000000
+      internalID: 4250310259755722907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_17'
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 513
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f881510c55324b0800000000000000
+      internalID: -5466431239221637344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_18'
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 513
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c735592c727ab10800000000000000
+      internalID: 1992605076817149039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_19'
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 513
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284b3665680e97b10800000000000000
+      internalID: 1979860378785657986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_20'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383d31a747a8239e0800000000000000
+      internalID: -1643098681167850621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_21'
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 0
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40893ac711ecb0f0800000000000000
+      internalID: -1099756716691980210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_22'
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 0
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b83774f7b5639500800000000000000
+      internalID: 401776632520980665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!battle_king_crawler 1_23'
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 0
+        width: 760
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71e2ec1f597a7d30800000000000000
+      internalID: 4429986632885789054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a1b1d33bebe74c744aeca011935bd783
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":6.0},"gridSpriteSize":{"x":760.0,"y":513.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      '!battle_king_crawler 1_0': -2504838074292835062
+      '!battle_king_crawler 1_1': -6074938743645613015
+      '!battle_king_crawler 1_10': 8396958990925573094
+      '!battle_king_crawler 1_11': 3266198482024223012
+      '!battle_king_crawler 1_12': -8332657262473995576
+      '!battle_king_crawler 1_13': 6825236563473375476
+      '!battle_king_crawler 1_14': 7842935538350225009
+      '!battle_king_crawler 1_15': 1047159429251528488
+      '!battle_king_crawler 1_16': 4250310259755722907
+      '!battle_king_crawler 1_17': -5466431239221637344
+      '!battle_king_crawler 1_18': 1992605076817149039
+      '!battle_king_crawler 1_19': 1979860378785657986
+      '!battle_king_crawler 1_2': 8478138947766628806
+      '!battle_king_crawler 1_20': -1643098681167850621
+      '!battle_king_crawler 1_21': -1099756716691980210
+      '!battle_king_crawler 1_22': 401776632520980665
+      '!battle_king_crawler 1_23': 4429986632885789054
+      '!battle_king_crawler 1_3': -2973314933048997717
+      '!battle_king_crawler 1_4': -7227761577626297682
+      '!battle_king_crawler 1_5': -6677839235301674350
+      '!battle_king_crawler 1_6': 1819931639876788091
+      '!battle_king_crawler 1_7': 6917886881806157838
+      '!battle_king_crawler 1_8': -4624931947632019587
+      '!battle_king_crawler 1_9': 3262983159849864991
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
