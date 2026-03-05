@@ -14,9 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 4
   actionType: 4
+  targetType: 4
   battleLogText: '{actor} is rolling around.'
+  descriptionText: 
   juiceCost: 0
-  damageAmount: 0
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
+  damageFormula: 0
+  basePower: 0
+  critChance: 0.1
+  critMultiplier: 1.5
+  animationTrigger: 
+  animationDuration: 1.5
+  animationTarget: 0
+  audioClip: {fileID: 0}
+  clipVolume: 1

@@ -24,6 +24,20 @@ public class EnemyBattleActor : BattleActor
 
     public override BattleActionData DecideAction(BattleContext context)
     {
+        // KING CRAWLER special rule
+        if (enemyData.characterName == CharacterName.KingCrawler)
+        {
+            bool moleExists = context.enemies.Exists(e =>
+                e.isAlive &&
+                e is EnemyBattleActor eb &&
+                eb.enemyData.characterName == CharacterName.LostSproutMole);
+
+            if (moleExists)
+            {
+                return enemyData.GetRandomHealAction();  // consume
+            }
+        }
+            
         // sort by priority (lowest number = highest priority)
         // for OrderBy: https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.orderby?view=net-8.0
         // in this context, result = sorted list of EnemyAI rules:

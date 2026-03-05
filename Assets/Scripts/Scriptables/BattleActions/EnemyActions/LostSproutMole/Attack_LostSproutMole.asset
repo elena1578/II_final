@@ -14,9 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 6
   actionType: 0
-  battleLogText: '{actor} bumps into {target}!'
+  targetType: 0
+  battleLogText: '{actor} bumps into {target}!
+
+    {target} takes {damage} damage!'
+  descriptionText: 
   juiceCost: 0
-  damageAmount: 0
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
+  damageFormula: 1
+  basePower: 0
+  critChance: 0.1
+  critMultiplier: 1.5
+  animationTrigger: attack
+  animationDuration: 3
+  animationTarget: 0
+  audioClip: {fileID: 0}
+  clipVolume: 1

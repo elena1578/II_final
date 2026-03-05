@@ -540,6 +540,23 @@ public class BattleManager : MonoBehaviour
                 yield return new WaitForSeconds(postDialogDelay);
             }
         }
+
+        // remove one mole
+        if (moleExists)
+        {
+            EnemyBattleActor moleToRemove = (EnemyBattleActor)
+                context.enemies.Find(e =>
+                    e.isAlive &&
+                    e is EnemyBattleActor eb &&
+                    eb.enemyData.characterName == CharacterName.LostSproutMole);
+
+            if (moleToRemove != null)
+            {
+                moleToRemove.TakeDamage(moleToRemove.currentHP);  // set HP to 0 to remove from battle
+                uiManager.RemoveEnemyUI(moleToRemove);
+                context.enemies.Remove(moleToRemove);
+            }
+        }
     }
     #endregion
 }

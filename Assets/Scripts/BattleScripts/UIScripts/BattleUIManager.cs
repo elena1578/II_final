@@ -110,6 +110,15 @@ public class BattleUIManager : MonoBehaviour
         ui.transform.SetAsFirstSibling();
     }
 
+    public void RemoveEnemyUI(EnemyBattleActor enemy)
+    {
+        if (enemy.ui != null)
+        {
+            Destroy(enemy.ui.gameObject);
+            enemy.ui = null;
+        }
+    }
+
     public bool IsPositionOccupied(EnemySpawnPosition spawnPosition)
     {
         Transform anchor = GetAnchor(spawnPosition);
