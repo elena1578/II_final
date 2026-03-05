@@ -277,9 +277,12 @@ public class BattleManager : MonoBehaviour
         plannedActions.Clear();
         planningIndex = 0;
 
-        // update UIs before next turn starts
+        // check round events
+        yield return HandleEndOfRoundEvents();
+
         uiManager.UpdateAll();
-        turnStateMachine.EnterState(BattleState.ResolveTurn);
+        if (!CheckBattleEnd())
+            turnStateMachine.EnterState(BattleState.ActorTurn);
     }
 
     /// <summary>
@@ -322,6 +325,28 @@ public class BattleManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    private IEnumerator HandleEndOfRoundEvents()
+    {
+        // king crawler case:
+        // spawn a sprout mole at the end of each round if there are less than 2 sprout moles currently alive
+        // if one is still alive at the end of the following round, use "consume" action to heal king crawler
+        // for a flat 170 HP and remove the sprout mole from battle
+        foreach (var enemy in new List<BattleActor>(context.enemies))
+        {
+            if (!enemy.isAlive)
+                continue;
+
+            if (enemy is EnemyBattleActor e && e.enemyData.characterName == CharacterName.KingCrawler)
+            {
+                yield return HandleKingCrawlerRoundEvent(e);
+            }
+        }
+
+        uiManager.UpdateAll();
+        if (!CheckBattleEnd())
+            turnStateMachine.EnterState(BattleState.ActorTurn);
     }
 
     private void EndTurn()
@@ -459,6 +484,61 @@ public class BattleManager : MonoBehaviour
         {
             Debug.Log("[BattleManager] Flee attempt failed!");
             turnStateMachine.EnterState(BattleState.ResolveTurn);
+        }
+    }
+    #endregion
+
+
+    #region Round Events
+    private IEnumerator HandleKingCrawlerRoundEvent(EnemyBattleActor king)
+    {
+        // check if one or less sprout moles exist
+        int moleCount = context.enemies.FindAll(e =>
+            e.isAlive &&
+            e is EnemyBattleActor eb &&
+            eb.enemyData.characterName == CharacterName.LostSproutMole).Count;
+        bool moleExists = moleCount > 0;
+
+        if (!moleExists)
+        {
+            // spawn mole
+            EnemyBattleData moleData = king.enemyData.enemyToSpawn;
+            EnemyBattleActor newMole = new EnemyBattleActor(moleData);
+            context.enemies.Add(newMole);  // add to context so it can be targeted
+            turnOrder.BuildQueue(GetAllActors());  // rebuild turn order to include new mole
+
+            // update UIs to show new mole
+            EnemySpawnPosition openPosition = uiManager.IsPositionOccupied(EnemySpawnPosition.Left) ? EnemySpawnPosition.Right 
+                : EnemySpawnPosition.Left;  // if left is occupied, go to right instead
+            uiManager.AddEnemyUI(newMole, openPosition);
+            uiManager.UpdateAll();
+
+            BattleDialogManager.instance.Show("KING CRAWLER spawns a LOST SPROUT MOLE!");
+
+            while (BattleDialogManager.instance.typing)
+                yield return null;
+
+            yield return new WaitForSeconds(postDialogDelay);
+        }
+        else
+        {
+            // consume mole if exists
+            EnemyBattleActor mole = (EnemyBattleActor)
+                context.enemies.Find(e =>
+                    e.isAlive &&
+                    e is EnemyBattleActor eb &&
+                    eb.enemyData.characterName == CharacterName.LostSproutMole);
+
+            if (mole != null)
+            {
+                // use consume action
+                BattleActionResult result = UseAction(king, king.enemyData.GetRandomHealAction());
+
+                while (BattleDialogManager.instance.typing)
+                    yield return null;
+
+                yield return new WaitForSeconds(postDialogDelay);
+            }
         }
     }
     #endregion

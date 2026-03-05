@@ -12,15 +12,15 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
-
-        if (instance != null && instance != this)
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
         {
             Destroy(gameObject);
-            return;
         }
-
-        DontDestroyOnLoad(gameObject);
 
         if (roomCollection != null)
             RoomManager.Initialize(roomCollection);

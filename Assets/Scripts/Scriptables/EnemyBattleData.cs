@@ -43,6 +43,9 @@ public class EnemyBattleData : ScriptableObject
     [Header("Action AI")]
     public List<EnemyAI> actionAI;
 
+    [Header("Other Conditionals")]
+    [Tooltip("For King Crawler: the mole that gets spawned when no moles exist. For other enemies, this can be left null or set to a different enemy data if they spawn an enemy mid-battle")] public EnemyBattleData enemyToSpawn;
+
 
     #region Action Calls
     public BattleActionData GetRandomAttackAction()

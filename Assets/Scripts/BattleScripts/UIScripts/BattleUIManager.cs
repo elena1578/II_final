@@ -2,6 +2,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+public enum EnemySpawnPosition
+{
+    Center,
+    Left,
+    Right
+}
+
+
 public class BattleUIManager : MonoBehaviour
 {
     [Header("Character Party UI")]
@@ -10,6 +18,9 @@ public class BattleUIManager : MonoBehaviour
     [Header("Enemy UI")]
     [SerializeField] private Transform enemyContainer;
     [SerializeField] private BattleActorUI enemySlotPrefab;
+    [SerializeField] private Transform centerPosition;
+    [SerializeField] private Transform leftPosition;
+    [SerializeField] private Transform rightPosition;
 
     [Header("Action Buttons")]
     [SerializeField] private List<BattleActionButton> actionButtons;
@@ -33,12 +44,18 @@ public class BattleUIManager : MonoBehaviour
         // instantiate enemy UI elements & bind
         foreach (var enemy in enemies)
         {
-            var ui = Instantiate(enemySlotPrefab, enemyContainer);
-
-            enemy.ui = ui;
-
             var enemyActor = enemy as EnemyBattleActor;
-            ui.Bind(enemy, enemyActor.enemyData.battleSprite);
+
+            // default first enemy = center
+            EnemySpawnPosition spawnPos = EnemySpawnPosition.Center;
+
+            if (IsPositionOccupied(EnemySpawnPosition.Center))
+                spawnPos = EnemySpawnPosition.Left;
+
+            if (IsPositionOccupied(EnemySpawnPosition.Left))
+                spawnPos = EnemySpawnPosition.Right;
+
+            AddEnemyUI(enemyActor, spawnPos);
         }
     }
 
@@ -62,6 +79,52 @@ public class BattleUIManager : MonoBehaviour
         {
             actor.ui?.SetTurnActive(false);
         }
+    }
+
+    /// <summary>
+    /// adds a new enemy UI element for a newly spawned enemy (e.g., king crawler mole) and binds it to the enemy actor
+    /// </summary>
+    /// <param name="enemy"></param>
+    public void AddEnemyUI(EnemyBattleActor enemy, EnemySpawnPosition spawnPosition = EnemySpawnPosition.Center)
+    {
+        // if center pos is taken, try left, then right 
+        // if both taken, default to center (will overlap but at least ensures new enemy gets a UI)
+        if (spawnPosition == EnemySpawnPosition.Center && IsPositionOccupied(EnemySpawnPosition.Center))
+        {
+            spawnPosition = !IsPositionOccupied(EnemySpawnPosition.Left)
+                ? EnemySpawnPosition.Left
+                : EnemySpawnPosition.Right;
+        }
+
+        Transform parent = GetAnchor(spawnPosition);
+
+        var ui = Instantiate(enemySlotPrefab, parent);
+        enemy.ui = ui;
+
+        ui.Bind(enemy, enemy.enemyData.battleSprite);
+
+        var dataSetter = ui.GetComponent<EnemyBattleActorDataSetter>();
+        if (dataSetter != null)
+            dataSetter.SetBattleData(enemy.enemyData);
+
+        ui.transform.SetAsFirstSibling();
+    }
+
+    public bool IsPositionOccupied(EnemySpawnPosition spawnPosition)
+    {
+        Transform anchor = GetAnchor(spawnPosition);
+        return anchor.childCount > 0;
+    }
+
+    private Transform GetAnchor(EnemySpawnPosition pos)
+    {
+        return pos switch
+        {
+            EnemySpawnPosition.Center => centerPosition,
+            EnemySpawnPosition.Left => leftPosition,
+            EnemySpawnPosition.Right => rightPosition,
+            _ => centerPosition
+        };
     }
     #endregion
 

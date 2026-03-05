@@ -19,7 +19,7 @@ MonoBehaviour:
   customWidth: 675
   customHeight: 515
   setCustomTransformPosition: 1
-  customTransformPosition: {x: 0, y: 0, z: 0}
+  customTransformPosition: {x: 0, y: -18, z: 0}
   music: {fileID: 8300000, guid: e8de84f13931c0a43a10b0a4f6c112cb, type: 3}
   musicVolume: 0.85
   baseHP: 730
@@ -85,3 +85,4 @@ MonoBehaviour:
     hpBelowPercent: 0
     requireHpBelow: 0
     alwaysUseIfReached: 1
+  enemyToSpawn: {fileID: 11400000, guid: 813286e67f15e49449c72f81f647f6c5, type: 2}

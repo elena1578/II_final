@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class BattleInitializer : MonoBehaviour
 {
     [Header("Party Members")]
-    public List<CharacterBattleData> defaultParty; // fixed for now (4 main members)
+    public List<CharacterBattleData> defaultParty;  // fixed for now (4 main members)
 
 #if UNITY_EDITOR
     private BattleDebugTool debugTool;

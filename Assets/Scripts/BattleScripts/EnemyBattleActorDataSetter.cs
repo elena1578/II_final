@@ -14,37 +14,42 @@ public class EnemyBattleActorDataSetter : MonoBehaviour
     private Image img;
     private Animator animator;
 
-    private void Start()
+    private void Awake()
     {
         img = GetComponent<Image>();
         animator = GetComponent<Animator>();
+    }
 
+    private void Start()
+    {
 #if UNITY_EDITOR
         battleDebugTool = FindFirstObjectByType<BattleDebugTool>();
 #endif
-
-        bool dataFound = false;
-
-        // try overworld data first
-        if (TryGetBattleTransitionData())
-            dataFound = true;
-
-        // otherwise, try debug data (only in editor)
-        else if (TryGetDebugData())
-            dataFound = true;
-
-        // otherwise, if default data is set, use that as a fallback (editor & build)
-        else if (defaultEnemyBattleData != null)
+        if (enemyBattleData == null)  // only attempt to find if it hasn't been externally assigned
         {
-            enemyBattleData = defaultEnemyBattleData;
-            dataFound = true;
-            Debug.LogWarning("[EnemyBattleActorDataSetter] Using default enemy battle data.");
-        }
+            bool dataFound = false;
 
-        if (dataFound)
-            ApplyVisuals();
-        else
-            Debug.LogWarning("[EnemyBattleActorDataSetter] No enemy data available to apply.");
+            // try overworld data first
+            if (TryGetBattleTransitionData())
+                dataFound = true;
+
+            // otherwise, try debug data (only in editor)
+            else if (TryGetDebugData())
+                dataFound = true;
+
+            // otherwise, if default data is set, use that as a fallback (editor & build)
+            else if (defaultEnemyBattleData != null)
+            {
+                enemyBattleData = defaultEnemyBattleData;
+                dataFound = true;
+                Debug.LogWarning("[EnemyBattleActorDataSetter] Using default enemy battle data.");
+            }
+
+            if (dataFound)
+                ApplyVisuals();
+            else
+                Debug.LogWarning("[EnemyBattleActorDataSetter] No enemy data available to apply.");
+        }
     }
 
     /// <summary>
@@ -120,4 +125,13 @@ public class EnemyBattleActorDataSetter : MonoBehaviour
         if (animator != null)
             animator.runtimeAnimatorController = enemyBattleData.animatorController;
     }
+
+
+    #region Helpers
+    public void SetBattleData(EnemyBattleData data)
+    {
+        enemyBattleData = data;
+        ApplyVisuals();
+    }
+    #endregion
 }

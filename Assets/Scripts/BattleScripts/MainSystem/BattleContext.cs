@@ -19,6 +19,13 @@ public class BattleContext
     {
         this.party = party;
         this.enemies = enemies;
+
+        // cap enemy count to 3
+        if (enemies.Count > 3)
+        {
+            this.enemies = enemies.Take(3).ToList();  // only take first 3 of list if more try to be added
+            Debug.LogWarning("[BattleContext] Enemy count capped at 3. Extra enemies have been ignored.");
+        }
     }
 
 
