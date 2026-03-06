@@ -15,9 +15,7 @@ MonoBehaviour:
   actionName: 23
   actionType: 1
   targetType: 4
-  battleLogText: 'KING CRAWLER ate SPROUT MOLE!
-
-    {target} heals {heal} HP! '
+  battleLogText: "KING CRAWLER devours SPROUT MOLE! \nKING CRAWLER heals {heal} HP!"
   descriptionText: 
   juiceCost: 0
   healPercentage: 0

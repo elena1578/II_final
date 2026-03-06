@@ -75,14 +75,5 @@ MonoBehaviour:
     angryChance: 100
     hpBelowPercent: 0
     requireHpBelow: 0
-    alwaysUseIfReached: 0
-  - action: {fileID: 11400000, guid: a25ff0688a158b94a9bef03798ddb28d, type: 2}
-    priorityNumber: 5
-    neutralChance: 100
-    happyChance: 100
-    sadChance: 100
-    angryChance: 100
-    hpBelowPercent: 0
-    requireHpBelow: 0
     alwaysUseIfReached: 1
   enemyToSpawn: {fileID: 11400000, guid: 813286e67f15e49449c72f81f647f6c5, type: 2}

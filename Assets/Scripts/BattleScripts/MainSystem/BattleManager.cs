@@ -9,8 +9,7 @@ public class BattleManager : MonoBehaviour
     public BattleUIManager uiManager;
     public MainCommandButtons commandButtons;
     [Space]
-    [Tooltip("How long to wait between dialog completing and next action starting")]
-    [SerializeField] private float postDialogDelay = 1f;
+    [Tooltip("How long to wait between dialog completing and next action starting")] public float postDialogDelay = 1f;
     
     public static BattleManager instance;
     public BattleActor currentActor => context.currentActor;
@@ -135,6 +134,7 @@ public class BattleManager : MonoBehaviour
                 break;
         }
     }
+    public void RebuildTurnOrder() => turnOrder.BuildQueue(GetAllActors());
     #endregion
 
 
@@ -232,6 +232,8 @@ public class BattleManager : MonoBehaviour
 
             List<BattleActor> targets = context.GetActionTargets(entry.actor, entry.action);
 
+            targets.RemoveAll(t => t == null || !t.isAlive);  // remove dead targets (esp important for king consume case)
+
             // if no valid targets, skip action (e.g., attack when all enemies dead)
             if (targets.Count == 0)
             {
@@ -291,11 +293,19 @@ public class BattleManager : MonoBehaviour
     /// <param name="actor"></param>
     /// <param name="actionData"></param>
     /// <returns></returns>
-    private BattleActionResult UseAction(BattleActor actor, BattleActionData actionData)
+    public BattleActionResult UseAction(BattleActor actor, BattleActionData actionData)
     {
         IBattleAction action = BattleActionAssignment.Create(actionData);
         return action.UseAction(context, actor);
     }
+
+    /// <summary>
+    /// helper to remove planned actions for an actor (e.g., if they die mid-round).
+    /// can also be used later to reselect an actor's action before all party members have committed 
+    /// </summary>
+    /// <param name="actor"></param>
+    public void RemoveActorFromPlans(BattleActor actor) =>
+        plannedActions.RemoveAll(p => p.actor == actor);
 
     private void ResolveEmotions()
     {
@@ -326,27 +336,26 @@ public class BattleManager : MonoBehaviour
 
         return false;
     }
-
+   
     private IEnumerator HandleEndOfRoundEvents()
     {
         // king crawler case:
         // spawn a sprout mole at the end of each round if there are less than 2 sprout moles currently alive
-        // if one is still alive at the end of the following round, use "consume" action to heal king crawler
-        // for a flat 170 HP and remove the sprout mole from battle
+        // if one is still alive at the end of the following round, use consume action to kill one sprout mole
+        // and heal king crawler
+
         foreach (var enemy in new List<BattleActor>(context.enemies))
         {
             if (!enemy.isAlive)
                 continue;
 
-            if (enemy is EnemyBattleActor e && e.enemyData.characterName == CharacterName.KingCrawler)
+            if (enemy is EnemyBattleActor eba && eba.behavior != null)
             {
-                yield return HandleKingCrawlerRoundEvent(e);
+                yield return eba.behavior.OnEndOfRound(this, context, eba);
             }
         }
 
         uiManager.UpdateAll();
-        if (!CheckBattleEnd())
-            turnStateMachine.EnterState(BattleState.ActorTurn);
     }
 
     private void EndTurn()
@@ -484,78 +493,6 @@ public class BattleManager : MonoBehaviour
         {
             Debug.Log("[BattleManager] Flee attempt failed!");
             turnStateMachine.EnterState(BattleState.ResolveTurn);
-        }
-    }
-    #endregion
-
-
-    #region Round Events
-    private IEnumerator HandleKingCrawlerRoundEvent(EnemyBattleActor king)
-    {
-        // check if one or less sprout moles exist
-        int moleCount = context.enemies.FindAll(e =>
-            e.isAlive &&
-            e is EnemyBattleActor eb &&
-            eb.enemyData.characterName == CharacterName.LostSproutMole).Count;
-        bool moleExists = moleCount > 0;
-
-        if (!moleExists)
-        {
-            // spawn mole
-            EnemyBattleData moleData = king.enemyData.enemyToSpawn;
-            EnemyBattleActor newMole = new EnemyBattleActor(moleData);
-            context.enemies.Add(newMole);  // add to context so it can be targeted
-            turnOrder.BuildQueue(GetAllActors());  // rebuild turn order to include new mole
-
-            // update UIs to show new mole
-            EnemySpawnPosition openPosition = uiManager.IsPositionOccupied(EnemySpawnPosition.Left) ? EnemySpawnPosition.Right 
-                : EnemySpawnPosition.Left;  // if left is occupied, go to right instead
-            uiManager.AddEnemyUI(newMole, openPosition);
-            uiManager.UpdateAll();
-
-            BattleDialogManager.instance.Show("KING CRAWLER spawns a LOST SPROUT MOLE!");
-
-            while (BattleDialogManager.instance.typing)
-                yield return null;
-
-            yield return new WaitForSeconds(postDialogDelay);
-        }
-        else
-        {
-            // consume mole if exists
-            EnemyBattleActor mole = (EnemyBattleActor)
-                context.enemies.Find(e =>
-                    e.isAlive &&
-                    e is EnemyBattleActor eb &&
-                    eb.enemyData.characterName == CharacterName.LostSproutMole);
-
-            if (mole != null)
-            {
-                // use consume action
-                BattleActionResult result = UseAction(king, king.enemyData.GetRandomHealAction());
-
-                while (BattleDialogManager.instance.typing)
-                    yield return null;
-
-                yield return new WaitForSeconds(postDialogDelay);
-            }
-        }
-
-        // remove one mole
-        if (moleExists)
-        {
-            EnemyBattleActor moleToRemove = (EnemyBattleActor)
-                context.enemies.Find(e =>
-                    e.isAlive &&
-                    e is EnemyBattleActor eb &&
-                    eb.enemyData.characterName == CharacterName.LostSproutMole);
-
-            if (moleToRemove != null)
-            {
-                moleToRemove.TakeDamage(moleToRemove.currentHP);  // set HP to 0 to remove from battle
-                uiManager.RemoveEnemyUI(moleToRemove);
-                context.enemies.Remove(moleToRemove);
-            }
         }
     }
     #endregion
