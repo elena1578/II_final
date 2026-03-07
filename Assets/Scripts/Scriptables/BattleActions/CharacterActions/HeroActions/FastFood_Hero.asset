@@ -15,6 +15,8 @@ MonoBehaviour:
   actionName: 1
   actionType: 1
   targetType: 4
+  validTargets: 2
+  multiTarget: 0
   battleLogText: '{actor} cooks a meal for {target}!
 
     {target} heals {heal} HP!'
@@ -25,9 +27,10 @@ MonoBehaviour:
   damageReductionMultiplier: 0
   damageFormula: 0
   basePower: 0
-  variance: 0.1
   critChance: 0.1
   critMultiplier: 1.5
   animationTrigger: 
   animationDuration: 1.5
   animationTarget: 0
+  audioClip: {fileID: 0}
+  clipVolume: 1

@@ -15,6 +15,8 @@ MonoBehaviour:
   actionName: 8
   actionType: 0
   targetType: 1
+  validTargets: 4
+  multiTarget: 1
   battleLogText: '{actor} explodes!
 
     {target} takes {damage} damage!'

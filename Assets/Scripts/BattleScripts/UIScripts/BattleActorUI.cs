@@ -24,7 +24,8 @@ public class BattleActorUI : MonoBehaviour
     public Animator actionAnimator;
 
     [Header("Click Region")]
-    public ClickEnemyBattleUI clickRegion;
+    public ClickBattleActorUI clickRegion;
+    [SerializeField] private Image highlightImage;
     [SerializeField] private float highlightFadeSpeed = 8f;
 
     private BattleActor boundActor;
@@ -95,10 +96,11 @@ public class BattleActorUI : MonoBehaviour
 
     public void SetHoverHighlight(bool state)
     {
-        if (!targetable || portraitImage == null)
+        if (!targetable || highlightImage == null)
             return;
 
         Color target = state ? hoverColor : normalColor;
+        Debug.Log($"[BattleActorUI] Setting hover highlight for {boundActor} to {state} | target color: {target}");
 
         if (highlightRoutine != null)
             StopCoroutine(highlightRoutine);
@@ -108,28 +110,28 @@ public class BattleActorUI : MonoBehaviour
 
     private IEnumerator FadeHighlight(Color target)
     {
-        Color start = portraitImage.color;
+        Color start = highlightImage.color;
         float t = 0f;
 
         while (t < 1f)
         {
             t += Time.deltaTime * highlightFadeSpeed;
-            portraitImage.color = Color.Lerp(start, target, t);
+            highlightImage.color = Color.Lerp(start, target, t);
             yield return null;
         }
 
-        portraitImage.color = target;
+        highlightImage.color = target;
     }
 
     public void ResetHighlight()
     {
-        if (portraitImage == null)
+        if (highlightImage == null)
             return;
 
         if (highlightRoutine != null)
             StopCoroutine(highlightRoutine);
 
-        portraitImage.color = normalColor;
+        highlightImage.color = normalColor;
     }
     #endregion
 

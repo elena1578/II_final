@@ -15,6 +15,8 @@ MonoBehaviour:
   actionName: 6
   actionType: 0
   targetType: 0
+  validTargets: 4
+  multiTarget: 0
   battleLogText: '{actor} slams into {target}!
 
     {target} takes {damage} damage!'
@@ -30,3 +32,5 @@ MonoBehaviour:
   animationTrigger: 
   animationDuration: 1.5
   animationTarget: 0
+  audioClip: {fileID: 0}
+  clipVolume: 1

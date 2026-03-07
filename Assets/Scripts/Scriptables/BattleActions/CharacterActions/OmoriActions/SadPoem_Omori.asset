@@ -15,9 +15,11 @@ MonoBehaviour:
   actionName: 10
   actionType: 2
   targetType: 4
+  validTargets: -1
+  multiTarget: 0
   battleLogText: '{actor} reads a sad poem.
 
-    {actor} feels SAD.'
+    {target} feels SAD.'
   descriptionText: 'SAD POEM
 
     Inflicts SAD on a friend or foe.'

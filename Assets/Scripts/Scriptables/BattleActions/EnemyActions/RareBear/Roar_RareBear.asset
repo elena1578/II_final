@@ -15,6 +15,8 @@ MonoBehaviour:
   actionName: 16
   actionType: 2
   targetType: 4
+  validTargets: 1
+  multiTarget: 0
   battleLogText: '{actor} lets out a huge roar!
 
     {actor} feels ANGRY!'

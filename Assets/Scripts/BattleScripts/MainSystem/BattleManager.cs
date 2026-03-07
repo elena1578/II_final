@@ -18,10 +18,6 @@ public class BattleManager : MonoBehaviour
     public bool HasActiveBattle { get; private set; }
     private const float fleeChance = 0.5f;  // 50% chance to flee successfully
 
-    // for new targeting system (prev only handled one target)
-    private BattleActionData pendingAction;
-    private bool waitingForTarget = false;
-
     // runtime systems
     private TurnStateMachine turnStateMachine;
     private TurnOrderManager turnOrder;
@@ -196,47 +192,54 @@ public class BattleManager : MonoBehaviour
         if (context.currentActor is not PlayerBattleActor player)
             return;
 
-        BeginTargetSelection(player.DefaultAttack);
+        TargetingController.instance.BeginTargeting(
+            player,
+            player.DefaultAttack,
+            OnTargetSelected
+        );
     }
+
+    // public void OnPlayerSelectedAction(BattleActionData actionData)
+    // {
+    //     // if the action needs a target, begin targeting
+    //     if (actionData.validTargets != TargetGroup.None)
+    //     {
+    //         BeginTargetSelection(actionData);
+    //         return;
+    //     }
+
+    //     // otherwise immediately commit the action
+    //     plannedActions.Add((context.currentActor, actionData, null));
+    //     planningIndex++;
+
+    //     commandButtons.HideAllCommands();
+    //     turnStateMachine.EnterState(BattleState.ActorTurn);  // proceed to next actor's turn (player or enemy)
+    // }
 
     public void OnPlayerSelectedAction(BattleActionData actionData)
     {
-        // add action to planned list & increment index to move to next actor's turn
-        plannedActions.Add((context.currentActor, actionData, null));
+        if (actionData.validTargets != TargetGroup.None)
+        {
+            TargetingController.instance.BeginTargeting(
+                context.currentActor,
+                actionData,
+                OnTargetSelected
+            );
+
+            return;
+        }
+
+        CommitAction(actionData, null);
+    }
+
+    public void OnTargetSelected(BattleActor target) => CommitAction(TargetingController.instance.PendingAction, target);
+    public void CommitAction(BattleActionData action, BattleActor target)
+    {
+        plannedActions.Add((context.currentActor, action, target));
         planningIndex++;
 
         commandButtons.HideAllCommands();
         turnStateMachine.EnterState(BattleState.ActorTurn);  // proceed to next actor's turn (player or enemy)
-    }
-
-    public void BeginTargetSelection(BattleActionData action)
-    {
-        pendingAction = action;
-        waitingForTarget = true;
-
-        commandButtons.HideAllCommands();
-        BattleDialogManager.instance.Show("Select a target!");
-        uiManager.EnableEnemyTargeting(true);
-        // add going back to buttons later
-    }
-
-    public bool IsWaitingForTarget() => waitingForTarget;
-
-    public void SelectTarget(BattleActor target)
-    {
-        if (!waitingForTarget)
-            return;
-
-        waitingForTarget = false;
-
-        // add plan after selecting target
-        plannedActions.Add((context.currentActor, pendingAction, target));
-        planningIndex++;
-
-        uiManager.EnableEnemyTargeting(false);
-        pendingAction = null;
-
-        turnStateMachine.EnterState(BattleState.ActorTurn);
     }
     #endregion
 

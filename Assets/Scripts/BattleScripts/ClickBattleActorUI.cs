@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-public class ClickEnemyBattleUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+public class ClickBattleActorUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     private BattleActor actor;
     private bool targetable;
@@ -12,6 +12,8 @@ public class ClickEnemyBattleUI : MonoBehaviour, IPointerClickHandler, IPointerE
     {
         this.actor = actor;
         actorUI = GetComponentInParent<BattleActorUI>();
+
+        Debug.Log($"[ClickBattleActorUI] Bound {actor?.name} | actorUI found: {actorUI != null}");
     }
 
     public void SetTargetable(bool value)
@@ -28,13 +30,14 @@ public class ClickEnemyBattleUI : MonoBehaviour, IPointerClickHandler, IPointerE
         if (!targetable)
             return;
 
-        if (!BattleManager.instance.IsWaitingForTarget())
+        if (!TargetingController.instance.IsTargeting)
             return;
 
         if (actor == null || !actor.isAlive)  // can't select if null/dead
             return;
 
-        BattleManager.instance.SelectTarget(actor);
+        TargetingController.instance.SelectTarget(actor);
+        Debug.Log($"[ClickBattleActorUI] Clicked {actor.name} | waiting: {TargetingController.instance.IsTargeting} | targetable: {targetable}");
     }
 
 

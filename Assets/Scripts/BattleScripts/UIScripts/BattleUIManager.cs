@@ -139,12 +139,32 @@ public class BattleUIManager : MonoBehaviour
             _ => centerPosition
         };
     }
+    #endregion
 
+
+    #region Targeting
     public void EnableEnemyTargeting(bool enable)
     {
         foreach (var enemyUI in enemySlots)
         {
             enemyUI.SetTargetable(enable);
+        }
+    }
+
+    public void EnableAllyTargeting(bool enable)
+    {
+        foreach (var partyUI in partySlots)
+        {
+            partyUI.SetTargetable(enable);
+        }
+    }
+
+    public void EnableSelfTargeting(BattleActor selfActor)
+    {
+        foreach (var partyUI in partySlots)
+        {
+            if (partyUI == selfActor.ui)
+                partyUI.SetTargetable(true);
         }
     }
     #endregion

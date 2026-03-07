@@ -175,6 +175,8 @@ MonoBehaviour:
   actionOverlayRoot: {fileID: 0}
   actionAnimator: {fileID: 0}
   clickRegion: {fileID: 2637225964730070633}
+  highlightImage: {fileID: 6245498976826263200}
+  highlightFadeSpeed: 8
 --- !u!95 &3085146124711456436
 Animator:
   serializedVersion: 7

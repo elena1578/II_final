@@ -15,19 +15,22 @@ MonoBehaviour:
   actionName: 0
   actionType: 0
   targetType: 0
+  validTargets: 4
+  multiTarget: 0
   battleLogText: '{actor} headbutts {target}!
 
     {target} takes {damage} damage!'
   descriptionText: 
   juiceCost: 0
-  healAmount: 0
+  healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
   damageFormula: 4
   basePower: 0
-  variance: 0.1
   critChance: 0.1
   critMultiplier: 1.5
   animationTrigger: headbutt
   animationDuration: 5
   animationTarget: 0
+  audioClip: {fileID: 0}
+  clipVolume: 1

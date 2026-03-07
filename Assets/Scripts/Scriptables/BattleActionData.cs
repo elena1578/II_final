@@ -7,6 +7,8 @@ public class BattleActionData : ScriptableObject
     public BattleActionName actionName;
     public ActionType actionType;
     public ActionTargetType targetType;
+    public TargetGroup validTargets;
+    public bool multiTarget;  // for all allies/enemies
     [TextArea]
     public string battleLogText;
     [TextArea]

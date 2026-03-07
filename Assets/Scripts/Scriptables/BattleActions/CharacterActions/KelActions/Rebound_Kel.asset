@@ -15,6 +15,8 @@ MonoBehaviour:
   actionName: 17
   actionType: 0
   targetType: 1
+  validTargets: 4
+  multiTarget: 0
   battleLogText: Deals damage to all foes.
   descriptionText: 
   juiceCost: 15
