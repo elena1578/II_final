@@ -13,10 +13,14 @@ public class BattleManager : MonoBehaviour
     
     public static BattleManager instance;
     public BattleActor currentActor => context.currentActor;
-    private List<(BattleActor actor, BattleActionData action)> plannedActions;
+    private List<(BattleActor actor, BattleActionData action, BattleActor target)> plannedActions;
     private int planningIndex = 0;
     public bool HasActiveBattle { get; private set; }
     private const float fleeChance = 0.5f;  // 50% chance to flee successfully
+
+    // for new targeting system (prev only handled one target)
+    private BattleActionData pendingAction;
+    private bool waitingForTarget = false;
 
     // runtime systems
     private TurnStateMachine turnStateMachine;
@@ -36,7 +40,7 @@ public class BattleManager : MonoBehaviour
         }
 
         instance = this;
-        plannedActions = new List<(BattleActor, BattleActionData)>();
+        plannedActions = new List<(BattleActor, BattleActionData, BattleActor)>();
     }
 
     #region Setup
@@ -173,7 +177,7 @@ public class BattleManager : MonoBehaviour
                 continue;
 
             BattleActionData action = enemy.DecideAction(context);
-            plannedActions.Add((enemy, action));
+            plannedActions.Add((enemy, action, null));
         }
 
         ResolvePlannedActions();  // once all actors have planned, play out round actions (ordered by speed stat)
@@ -190,23 +194,49 @@ public class BattleManager : MonoBehaviour
     public void SelectDefaultAttack()
     {
         if (context.currentActor is not PlayerBattleActor player)
-        {
-            Debug.LogError("[BattleManager] Current actor = not player, ignoring");
             return;
-        }
 
-        BattleActionData action = player.DefaultAttack;
-        OnPlayerSelectedAction(action);  // add to planned actions
+        BeginTargetSelection(player.DefaultAttack);
     }
 
     public void OnPlayerSelectedAction(BattleActionData actionData)
     {
         // add action to planned list & increment index to move to next actor's turn
-        plannedActions.Add((context.currentActor, actionData));
+        plannedActions.Add((context.currentActor, actionData, null));
         planningIndex++;
 
         commandButtons.HideAllCommands();
         turnStateMachine.EnterState(BattleState.ActorTurn);  // proceed to next actor's turn (player or enemy)
+    }
+
+    public void BeginTargetSelection(BattleActionData action)
+    {
+        pendingAction = action;
+        waitingForTarget = true;
+
+        commandButtons.HideAllCommands();
+        BattleDialogManager.instance.Show("Select a target!");
+        uiManager.EnableEnemyTargeting(true);
+        // add going back to buttons later
+    }
+
+    public bool IsWaitingForTarget() => waitingForTarget;
+
+    public void SelectTarget(BattleActor target)
+    {
+        if (!waitingForTarget)
+            return;
+
+        waitingForTarget = false;
+
+        // add plan after selecting target
+        plannedActions.Add((context.currentActor, pendingAction, target));
+        planningIndex++;
+
+        uiManager.EnableEnemyTargeting(false);
+        pendingAction = null;
+
+        turnStateMachine.EnterState(BattleState.ActorTurn);
     }
     #endregion
 
@@ -230,9 +260,15 @@ public class BattleManager : MonoBehaviour
             if (!entry.actor.isAlive)
                 continue;
 
-            List<BattleActor> targets = context.GetActionTargets(entry.actor, entry.action);
+            List<BattleActor> targets;
 
-            targets.RemoveAll(t => t == null || !t.isAlive);  // remove dead targets (esp important for king consume case)
+            // player: use selected target
+            if (entry.target != null)
+                targets = new List<BattleActor> { entry.target };
+            else
+                targets = context.GetActionTargets(entry.actor, entry.action);  // enemy: resolve targets automatically
+
+            targets.RemoveAll(t => t == null || !t.isAlive);  // remove any null/dead targets (e.g., if target died earlier in round from another action)
 
             // if no valid targets, skip action (e.g., attack when all enemies dead)
             if (targets.Count == 0)
@@ -247,7 +283,7 @@ public class BattleManager : MonoBehaviour
             float animTime = BattleAnimationController.instance.PlayAction(entry.actor, entry.action, targets);
             AudioManager.instance.PlaySFX(entry.action.audioClip, entry.action.clipVolume);
 
-            BattleActionResult result = UseAction(entry.actor, entry.action);
+            BattleActionResult result = UseAction(entry.actor, entry.action, targets);
 
             // 1a. trigger shake + spawn dmg digits if dmg'd
             if (result.didDamage)
@@ -292,11 +328,12 @@ public class BattleManager : MonoBehaviour
     /// </summary>
     /// <param name="actor"></param>
     /// <param name="actionData"></param>
+    /// <param name="targets"></param>
     /// <returns></returns>
-    public BattleActionResult UseAction(BattleActor actor, BattleActionData actionData)
+    public BattleActionResult UseAction(BattleActor actor, BattleActionData actionData, List<BattleActor> targets)
     {
         IBattleAction action = BattleActionAssignment.Create(actionData);
-        return action.UseAction(context, actor);
+        return action.UseAction(context, actor, targets);
     }
 
     /// <summary>

@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using System.Collections;
 
 
-public class BattleActorUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class BattleActorUI : MonoBehaviour
 {
     [Header("Portrait Refs")]
     public Image portraitImage;
@@ -23,13 +23,28 @@ public class BattleActorUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public GameObject actionOverlayRoot;
     public Animator actionAnimator;
 
+    [Header("Click Region")]
+    public ClickEnemyBattleUI clickRegion;
+    [SerializeField] private float highlightFadeSpeed = 8f;
+
     private BattleActor boundActor;
+    private bool targetable;
+    private Coroutine highlightRoutine;
+    private Color normalColor = Color.white;
+    private Color hoverColor = new Color(1.1f, 1.05f, 0.6f);  // light yellow for highlight
 
 
     public void Bind(BattleActor actor, Sprite portrait)
     {
         boundActor = actor;
-        // portraitImage.sprite = portrait;
+
+        // portrait = visual only
+        if (portraitImage != null)
+            portraitImage.raycastTarget = false;
+
+        // bind click region
+        if (clickRegion != null)
+            clickRegion.Bind(actor);
 
         if (portraitAnimator != null)
         {
@@ -69,19 +84,52 @@ public class BattleActorUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     }
 
 
-    #region Tooltip
-    // used for enemy UI to show name + health bar on hover
-    // for fun could also be added to portrait UIs to show detailed info like buffs, suggested actions, etc.
-    public void OnPointerEnter(PointerEventData eventData)
+    #region Targeting
+    public void SetTargetable(bool value)
     {
-        if (boundActor is EnemyBattleActor enemy)
-            EnemyTooltipUI.instance.Show(enemy);
+        targetable = value;
+
+        if (clickRegion != null)
+            clickRegion.SetTargetable(value);
     }
 
-    public void OnPointerExit(PointerEventData eventData)
+    public void SetHoverHighlight(bool state)
     {
-        if (boundActor is EnemyBattleActor)
-            EnemyTooltipUI.instance.Hide();
+        if (!targetable || portraitImage == null)
+            return;
+
+        Color target = state ? hoverColor : normalColor;
+
+        if (highlightRoutine != null)
+            StopCoroutine(highlightRoutine);
+
+        highlightRoutine = StartCoroutine(FadeHighlight(target));
+    }
+
+    private IEnumerator FadeHighlight(Color target)
+    {
+        Color start = portraitImage.color;
+        float t = 0f;
+
+        while (t < 1f)
+        {
+            t += Time.deltaTime * highlightFadeSpeed;
+            portraitImage.color = Color.Lerp(start, target, t);
+            yield return null;
+        }
+
+        portraitImage.color = target;
+    }
+
+    public void ResetHighlight()
+    {
+        if (portraitImage == null)
+            return;
+
+        if (highlightRoutine != null)
+            StopCoroutine(highlightRoutine);
+
+        portraitImage.color = normalColor;
     }
     #endregion
 

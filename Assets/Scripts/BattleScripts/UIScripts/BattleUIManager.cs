@@ -25,6 +25,8 @@ public class BattleUIManager : MonoBehaviour
     [Header("Action Buttons")]
     [SerializeField] private List<BattleActionButton> actionButtons;
 
+    private List<BattleActorUI> enemySlots = new();
+
 
     #region Portraits
     public void BindActors(List<BattleActor> party, List<BattleActor> enemies)
@@ -100,6 +102,7 @@ public class BattleUIManager : MonoBehaviour
 
         var ui = Instantiate(enemySlotPrefab, parent);
         enemy.ui = ui;
+        enemySlots.Add(ui);  // track enemy UIs for cleanup later
 
         ui.Bind(enemy, enemy.enemyData.battleSprite);
 
@@ -114,6 +117,7 @@ public class BattleUIManager : MonoBehaviour
     {
         if (enemy.ui != null)
         {
+            enemySlots.Remove(enemy.ui);
             Destroy(enemy.ui.gameObject);
             enemy.ui = null;
         }
@@ -134,6 +138,14 @@ public class BattleUIManager : MonoBehaviour
             EnemySpawnPosition.Right => rightPosition,
             _ => centerPosition
         };
+    }
+
+    public void EnableEnemyTargeting(bool enable)
+    {
+        foreach (var enemyUI in enemySlots)
+        {
+            enemyUI.SetTargetable(enable);
+        }
     }
     #endregion
 

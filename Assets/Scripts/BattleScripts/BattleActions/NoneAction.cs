@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections.Generic;
+
 
 public class NoneAction : IBattleAction
 {
@@ -14,7 +16,7 @@ public class NoneAction : IBattleAction
         return true;
     }
 
-   public BattleActionResult UseAction(BattleContext context, BattleActor actor)
+   public BattleActionResult UseAction(BattleContext context, BattleActor actor, List<BattleActor> targets)
     {
         Debug.Log($"[NoneAction] {actor.name} does nothing!");
 

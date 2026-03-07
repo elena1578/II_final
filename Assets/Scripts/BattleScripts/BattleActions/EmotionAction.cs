@@ -13,12 +13,11 @@ public class EmotionAction : IBattleAction
         return context.currentActor.currentJuice >= data.juiceCost;
     }
 
-    public BattleActionResult UseAction(BattleContext context, BattleActor actor)
+    public BattleActionResult UseAction(BattleContext context, BattleActor actor, List<BattleActor> targets)
     {
         if (!actor.SpendJuice(data.juiceCost))
             return BattleActionResult.None(actor);
 
-        List<BattleActor> targets = context.GetActionTargets(actor, data);
         if (targets.Count == 0)
         {
             Debug.LogWarning("[EmotionAction] No valid targets");

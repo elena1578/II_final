@@ -16,14 +16,11 @@ public class AttackAction : IBattleAction
         return context.currentActor.currentJuice >= data.juiceCost;
     }
 
-    public BattleActionResult UseAction(BattleContext context, BattleActor actor)
+    public BattleActionResult UseAction(BattleContext context, BattleActor actor, List<BattleActor> targets)
     {
         // juice cost
         if (!actor.SpendJuice(data.juiceCost))
             return BattleActionResult.None(actor);
-
-        // target resolution
-        List<BattleActor> targets = context.GetActionTargets(actor, data);
 
         if (targets.Count == 0)
         {

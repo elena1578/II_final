@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 
 public class KingCrawlerBehaviour : IBattleEnemyBehaviour
@@ -46,7 +47,7 @@ public class KingCrawlerBehaviour : IBattleEnemyBehaviour
             if (mole != null)
             {
                 BattleActionData consume = king.enemyData.GetRandomHealAction();  // only one heal action available so random is fine
-                BattleActionResult result = manager.UseAction(king, consume);
+                BattleActionResult result = manager.UseAction(king, consume, new List<BattleActor> { king });  // target self with heal action
 
                 // remove mole 
                 mole.TakeDamage(mole.currentHP);

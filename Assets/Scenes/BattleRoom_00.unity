@@ -1337,6 +1337,7 @@ MonoBehaviour:
   emotionUIVisuals: {fileID: 11400000, guid: 24cfc02372a2448499921267dc952b8b, type: 2}
   actionOverlayRoot: {fileID: 354274781}
   actionAnimator: {fileID: 354274782}
+  clickRegion: {fileID: 0}
 --- !u!224 &202050353
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4775,6 +4776,7 @@ MonoBehaviour:
   emotionUIVisuals: {fileID: 11400000, guid: 24cfc02372a2448499921267dc952b8b, type: 2}
   actionOverlayRoot: {fileID: 1579534551}
   actionAnimator: {fileID: 1579534553}
+  clickRegion: {fileID: 0}
 --- !u!1 &1113168264
 GameObject:
   m_ObjectHideFlags: 0
@@ -6066,6 +6068,7 @@ MonoBehaviour:
   emotionUIVisuals: {fileID: 11400000, guid: 24cfc02372a2448499921267dc952b8b, type: 2}
   actionOverlayRoot: {fileID: 1750967813}
   actionAnimator: {fileID: 1750967815}
+  clickRegion: {fileID: 0}
 --- !u!1 &1440162229
 GameObject:
   m_ObjectHideFlags: 0
@@ -8569,6 +8572,7 @@ MonoBehaviour:
   emotionUIVisuals: {fileID: 11400000, guid: 24cfc02372a2448499921267dc952b8b, type: 2}
   actionOverlayRoot: {fileID: 473553881}
   actionAnimator: {fileID: 473553883}
+  clickRegion: {fileID: 0}
 --- !u!1 &2070707225
 GameObject:
   m_ObjectHideFlags: 0

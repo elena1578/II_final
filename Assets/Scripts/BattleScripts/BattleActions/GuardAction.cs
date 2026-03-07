@@ -15,7 +15,7 @@ public class GuardAction : IBattleAction
         return true;  // no juice cost for guarding
     }
 
-    public BattleActionResult UseAction(BattleContext context, BattleActor actor)
+    public BattleActionResult UseAction(BattleContext context, BattleActor actor, List<BattleActor> targets)
     {
         actor.EnableGuard(data.damageReductionMultiplier);
 
