@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 13
   actionType: 2
-  targetType: 4
   validTargets: -1
   multiTarget: 0
-  battleLogText: 
+  battleLogText: '{actor} cheers on {target}!'
   descriptionText: 'PEP TALK
 
     Makes a friend or foe HAPPY.'

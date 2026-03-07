@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 11
   actionType: 0
-  targetType: 0
   validTargets: 4
   multiTarget: 0
-  battleLogText: '{actor} stabs {target}.
-
-    {target} takes {damage} damage!'
+  battleLogText: '{actor} stabs {target}.'
   descriptionText: 'STAB
 
     Always deals a critical hit. Ignores DEFENSE when OMORI

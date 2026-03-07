@@ -14,12 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 19
   actionType: 0
-  targetType: 0
   validTargets: 4
   multiTarget: 0
-  battleLogText: Makes a foe feel a random EMOTION. Deals extra damage to foes with
-    EMOTION.
-  descriptionText: 
+  battleLogText: 
+  descriptionText: Makes a foe feel a random EMOTION. Deals extra damage to foes
+    with EMOTION.
   juiceCost: 20
   healPercentage: 0
   emotionEffect: 0

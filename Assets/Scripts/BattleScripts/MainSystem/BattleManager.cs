@@ -301,7 +301,7 @@ public class BattleManager : MonoBehaviour
 
             // 2. show battle dialog
             BattleDialogManager.instance.Show(
-                entry.action.battleLogText,
+                entry.action,
                 result
             );
 

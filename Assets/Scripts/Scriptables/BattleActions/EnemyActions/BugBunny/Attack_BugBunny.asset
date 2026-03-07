@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 6
   actionType: 0
-  targetType: 0
   validTargets: 4
   multiTarget: 0
-  battleLogText: '{actor} swipes at {target}!
-
-    {target} takes {damage} damage!'
+  battleLogText: '{actor} swipes at {target}!'
   descriptionText: 
   juiceCost: 0
   healPercentage: 0

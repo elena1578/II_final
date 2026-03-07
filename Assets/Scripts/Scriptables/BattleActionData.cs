@@ -6,9 +6,8 @@ public class BattleActionData : ScriptableObject
     [Header("Action Definition")]
     public BattleActionName actionName;
     public ActionType actionType;
-    public ActionTargetType targetType;
     public TargetGroup validTargets;
-    public bool multiTarget;  // for all allies/enemies
+    [Tooltip("True = target all allies/enemies, false = single-target [for self, an enemy, or an ally]")] public bool multiTarget;  // for all allies/enemies
     [TextArea]
     public string battleLogText;
     [TextArea]

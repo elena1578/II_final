@@ -14,13 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 20
   actionType: 2
-  targetType: 4
   validTargets: 1
   multiTarget: 0
-  battleLogText: 'KING CRAWLER lets out an ear-piercing screech!
-
-    KING CRAWLER
-    is now ANGRY.'
+  battleLogText: '{actor} lets out an ear-piercing screech!'
   descriptionText: 
   juiceCost: 0
   healPercentage: 0

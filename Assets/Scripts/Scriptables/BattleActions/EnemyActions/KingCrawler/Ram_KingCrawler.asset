@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 22
   actionType: 0
-  targetType: 1
   validTargets: 4
   multiTarget: 1
-  battleLogText: 'KING CRAWLER charges forward!
-
-    {target} takes {damage} damage!'
+  battleLogText: '{actor} charges forward!'
   descriptionText: 
   juiceCost: 0
   healPercentage: 0

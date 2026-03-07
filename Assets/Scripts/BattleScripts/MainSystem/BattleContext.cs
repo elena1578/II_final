@@ -32,27 +32,26 @@ public class BattleContext
     #region Targeting
     public List<BattleActor> GetActionTargets(BattleActor actor, BattleActionData action)
     {
-        switch (action.targetType)
-        {
-            case ActionTargetType.Self:
-                return new List<BattleActor> { actor };
+        List<BattleActor> result = new();
 
-            case ActionTargetType.SingleEnemy:
-                return Wrap(GetRandomAlive(GetEnemiesOf(actor)));
+        if (action.validTargets.HasFlag(TargetGroup.Self))
+            result.Add(actor);
 
-            // .Where(a => a.isAlive) filters out dead targets, so if all enemies are dead this will return an empty list vs. list w/ null target
-            case ActionTargetType.AllEnemies:
-                return GetEnemiesOf(actor).Where(a => a.isAlive).ToList();
+        // .Where(a => a.isAlive) filters out dead targets, so if all enemies are dead this will return an empty list vs. list w/ null target
+        if (action.validTargets.HasFlag(TargetGroup.Allies))
+            result.AddRange(GetAlliesOf(actor).Where(a => a.isAlive));
 
-            case ActionTargetType.SingleAlly:
-                return Wrap(GetRandomAlive(GetAlliesOf(actor)));
+        if (action.validTargets.HasFlag(TargetGroup.Enemies))
+            result.AddRange(GetEnemiesOf(actor).Where(a => a.isAlive));
 
-            case ActionTargetType.AllAllies:
-                return GetAlliesOf(actor).Where(a => a.isAlive).ToList();
+        if (result.Count == 0)
+            return result;
 
-            default:
-                return new List<BattleActor>();
-        }
+        // handle single-target actions
+        if (action.multiTarget == false)
+            return Wrap(GetRandomAlive(result));
+
+        return result;
     }
     #endregion
 

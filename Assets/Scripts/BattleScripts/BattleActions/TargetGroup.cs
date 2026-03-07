@@ -1,13 +1,5 @@
 using UnityEngine;
 
-public enum ActionTargetType
-{
-    SingleEnemy,
-    AllEnemies,
-    SingleAlly,
-    AllAllies,
-    Self
-}
 
 // https://learn.microsoft.com/en-us/dotnet/fundamentals/runtime-libraries/system-flagsattribute
 // allows for multiple values to be combined using bitwise operations (e.g., Self | Allies) to 

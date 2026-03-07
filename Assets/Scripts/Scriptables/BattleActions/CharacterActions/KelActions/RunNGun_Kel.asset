@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 18
   actionType: 0
-  targetType: 0
   validTargets: 4
   multiTarget: 0
-  battleLogText: '{actor} rushes at the {target}!
-
-    {target} takes {damage} damage!'
+  battleLogText: '{actor} rushes at the {target}!'
   descriptionText: KEL does an attack based on his SPEED instead of his ATTACK.
   juiceCost: 0
   healPercentage: 0

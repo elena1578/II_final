@@ -28,9 +28,9 @@ public class BattleDialogManager : MonoBehaviour
         typingRoutine = StartCoroutine(TypeText(message));
     }
 
-    public void Show(string template, BattleActionResult result)
+    public void Show(BattleActionData action, BattleActionResult result)
     {
-        string parsed = Parse(template, result);
+        string parsed = Parse(action, result);
         typing = true;
         Show(parsed);
     }
@@ -60,15 +60,17 @@ public class BattleDialogManager : MonoBehaviour
 
 
     #region Parsing
-    private string Parse(string template, BattleActionResult result)
+    private string Parse(BattleActionData action, BattleActionResult result)
     {
-        string text = template;
+        string text = action.battleLogText;
 
         text = text.Replace("{actor}", GetActorName(result.actor));
         text = text.Replace("{target}", GetActorName(result.targets));
 
         text = text.Replace("{damage}", result.damage.ToString());
         text = text.Replace("{heal}", result.heal.ToString());
+
+        text += GetAutoResultText(action, result);  // auto-add damage, heal, etc. text depending on action type
 
         if (result.didCrit)
             text = "IT HIT RIGHT IN THE HEART!\n" + text;
@@ -94,6 +96,33 @@ public class BattleDialogManager : MonoBehaviour
             return GetActorName(actors[0]);
 
         return string.Join(", ", actors.ConvertAll(a => GetActorName(a)));
+    }
+
+    private string GetAutoResultText(BattleActionData action, BattleActionResult result)
+    {
+        switch (action.actionType)
+        {
+            case BattleActionData.ActionType.Attack:
+                if (result.damage > 0)
+                    return $"\n{GetActorName(result.targets)} takes {result.damage} damage!";
+
+                return "";
+
+            case BattleActionData.ActionType.Heal:
+                if (result.heal > 0)
+                    return $"\n{GetActorName(result.targets)} recovers {result.heal} HP!";
+
+                return "";
+
+            case BattleActionData.ActionType.Emotion:
+                if (action.emotionEffect != EmotionType.Neutral)
+                    return $"\n{GetActorName(result.targets)} became {action.emotionEffect}.";
+
+                return "";
+
+            default:
+                return "";
+        }
     }
     #endregion
 }

@@ -14,13 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 15
   actionType: 0
-  targetType: 0
   validTargets: 4
   multiTarget: 0
-  battleLogText: '{actor} suddenly lunges at {target}!
-
-    {target} takes {damage}
-    damage!'
+  battleLogText: '{actor} suddenly lunges at {target}!'
   descriptionText: 
   juiceCost: 0
   healPercentage: 0

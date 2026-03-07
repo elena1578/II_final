@@ -12,8 +12,7 @@ public class ClickBattleActorUI : MonoBehaviour, IPointerClickHandler, IPointerE
     {
         this.actor = actor;
         actorUI = GetComponentInParent<BattleActorUI>();
-
-        Debug.Log($"[ClickBattleActorUI] Bound {actor?.name} | actorUI found: {actorUI != null}");
+        // Debug.Log($"[ClickBattleActorUI] Bound {actor?.name} | actorUI found: {actorUI != null}");
     }
 
     public void SetTargetable(bool value)

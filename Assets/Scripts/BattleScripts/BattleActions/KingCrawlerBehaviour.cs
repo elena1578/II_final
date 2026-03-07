@@ -65,7 +65,7 @@ public class KingCrawlerBehaviour : IBattleEnemyBehaviour
                 manager.RebuildTurnOrder();
 
                 BattleDialogManager.instance.Show(
-                    consume.battleLogText,
+                    consume,
                     result
                 );
 

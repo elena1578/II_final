@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 10
   actionType: 2
-  targetType: 4
   validTargets: -1
   multiTarget: 0
-  battleLogText: '{actor} reads a sad poem.
-
-    {target} feels SAD.'
+  battleLogText: '{actor} reads a sad poem.'
   descriptionText: 'SAD POEM
 
     Inflicts SAD on a friend or foe.'
