@@ -20,7 +20,7 @@ MonoBehaviour:
   descriptionText: 
   juiceCost: 0
   healPercentage: 0
-  emotionEffect: 0
+  emotionEffect: 1
   damageReductionMultiplier: 0
   damageFormula: 0
   basePower: 0

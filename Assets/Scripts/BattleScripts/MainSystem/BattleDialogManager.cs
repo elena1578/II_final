@@ -75,10 +75,6 @@ public class BattleDialogManager : MonoBehaviour
         if (result.didCrit)
             text = "IT HIT RIGHT IN THE HEART!\n" + text;
 
-        // prob also need to add a parse for damage actions 
-        // (e.g., "{actor} did {damage} damage to {target}!") 
-        // and healing actions (e.g., "{actor} healed {target} for {heal} HP!")
-
         return text;
     }
 
@@ -109,6 +105,8 @@ public class BattleDialogManager : MonoBehaviour
                 return "";
 
             case BattleActionData.ActionType.Heal:
+                if (result.heal > 0 && result.emotion != EmotionType.Neutral)
+                    return $"\n{GetActorName(result.targets)} recovers {result.heal} HP and became {result.emotion}!";
                 if (result.heal > 0)
                     return $"\n{GetActorName(result.targets)} recovers {result.heal} HP!";
 

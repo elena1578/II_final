@@ -45,9 +45,13 @@ public class HealAction : IBattleAction
                 int consumeHeal = 170;
                 int consumeActualHeal = Mathf.Min(consumeHeal, target.maxHP - target.currentHP);  // can't heal beyond max HP
 
+                // apply heal
                 target.Heal(consumeActualHeal);
                 result.heal += consumeActualHeal;
-                result.emotion = EmotionType.Happy;  // also apply happy emotion to self
+
+                // also apply happy emotion to self
+                target.SetEmotion(EmotionType.Happy); 
+                result.emotion = EmotionType.Happy; 
 
                 continue;  // skip regular heal calc
             }
