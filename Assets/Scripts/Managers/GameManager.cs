@@ -3,12 +3,14 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System.Collections;
 using System;
+using UnityEngine.InputSystem;
 
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     [SerializeField] private RoomCollectionDatabase roomCollection;
+    private float duration;
 
     private void Awake()
     {
@@ -18,19 +20,31 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else
-        {
             Destroy(gameObject);
-        }
 
         if (roomCollection != null)
             RoomManager.Initialize(roomCollection);
+    }
+
+        private void OnEnable()
+    {
+        var quitAction = new InputAction(binding: "<Keyboard>/escape", interactions: "hold(duration=2)");
+        quitAction.performed += ctx => QuitGameSession();
+        quitAction.Enable();
+        Debug.Log("[GameManager] Can now quit game session by holding Escape for 2 seconds");
+    }
+
+    private void OnDisable()
+    {
+        var quitAction = new InputAction(binding: "<Keyboard>/escape", interactions: "hold(duration=2)");
+        quitAction.Disable();
     }
 
     /// <summary>
     /// quits game. if editor, stops play mode. if built, quits application.
     /// will later be used for quit button on title screen & pause menu
     /// </summary>
-    public void QuitGame()
+    public void QuitGameSession()
     {
         Debug.Log("Quitting game...");
 

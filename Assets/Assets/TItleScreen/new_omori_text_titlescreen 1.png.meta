@@ -1,0 +1,414 @@
+fileFormatVersion: 2
+guid: 58f81025c068b0441bd76761f67d2a3b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6387701490777469489
+    second: new_omori_text_titlescreen 1_0
+  - first:
+      213: -7574439037688691561
+    second: new_omori_text_titlescreen 1_1
+  - first:
+      213: -742863676649708635
+    second: new_omori_text_titlescreen 1_2
+  - first:
+      213: -2871264597419568746
+    second: new_omori_text_titlescreen 1_3
+  - first:
+      213: 8639941628539281821
+    second: new_omori_text_titlescreen 1_4
+  - first:
+      213: 3483731266801676351
+    second: new_omori_text_titlescreen 1_5
+  - first:
+      213: -5139670035524811049
+    second: new_omori_text_titlescreen 1_6
+  - first:
+      213: -3512511913622310527
+    second: new_omori_text_titlescreen 1_7
+  - first:
+      213: -32499617183736192
+    second: new_omori_text_titlescreen 1_8
+  - first:
+      213: 10456587384782828
+    second: new_omori_text_titlescreen 1_9
+  - first:
+      213: -4728369009981121584
+    second: new_omori_text_titlescreen 1_10
+  - first:
+      213: 7179052250088494696
+    second: new_omori_text_titlescreen 1_11
+  - first:
+      213: 7494147521992940849
+    second: new_omori_text_titlescreen 1_12
+  - first:
+      213: -7495184426461122397
+    second: new_omori_text_titlescreen 1_13
+  - first:
+      213: -1249911681452810019
+    second: new_omori_text_titlescreen 1_14
+  - first:
+      213: 3923923365831642139
+    second: new_omori_text_titlescreen 1_15
+  - first:
+      213: -849676679154658539
+    second: new_omori_text_titlescreen 1_16
+  - first:
+      213: -9123580570798866711
+    second: new_omori_text_titlescreen 1_17
+  - first:
+      213: 5604834778564807344
+    second: new_omori_text_titlescreen 1_18
+  - first:
+      213: 4169406692314911675
+    second: new_omori_text_titlescreen 1_19
+  - first:
+      213: -2303482350020716908
+    second: new_omori_text_titlescreen 1_20
+  - first:
+      213: 6156920327499373152
+    second: new_omori_text_titlescreen 1_21
+  - first:
+      213: -2679395502226568277
+    second: new_omori_text_titlescreen 1_22
+  - first:
+      213: 4447420225341238687
+    second: new_omori_text_titlescreen 1_23
+  - first:
+      213: -8965363602434430622
+    second: new_omori_text_titlescreen 1_24
+  - first:
+      213: 5540769392383132309
+    second: new_omori_text_titlescreen 1_25
+  - first:
+      213: -8065410752959596738
+    second: new_omori_text_titlescreen 1_26
+  - first:
+      213: -7128609791371355027
+    second: new_omori_text_titlescreen 1_27
+  - first:
+      213: 6864474071802401609
+    second: new_omori_text_titlescreen 1_28
+  - first:
+      213: 3619658583121131917
+    second: new_omori_text_titlescreen 1_29
+  - first:
+      213: 3781164836884590686
+    second: new_omori_text_titlescreen 1_30
+  - first:
+      213: 6511111897078201217
+    second: new_omori_text_titlescreen 1_31
+  - first:
+      213: 2996831207990202112
+    second: new_omori_text_titlescreen 1_32
+  - first:
+      213: -3399758652525236745
+    second: new_omori_text_titlescreen 1_33
+  - first:
+      213: 1798666898447286325
+    second: new_omori_text_titlescreen 1_34
+  - first:
+      213: 1255625596377863656
+    second: new_omori_text_titlescreen 1_35
+  - first:
+      213: -4006004523247281194
+    second: new_omori_text_titlescreen 1_36
+  - first:
+      213: 28001868215002831
+    second: new_omori_text_titlescreen 1_37
+  - first:
+      213: 7604068489148729146
+    second: new_omori_text_titlescreen 1_38
+  - first:
+      213: 3899190338531400715
+    second: new_omori_text_titlescreen 1_39
+  - first:
+      213: -7504830372112895050
+    second: new_omori_text_titlescreen 1_40
+  - first:
+      213: -2345650799266378707
+    second: new_omori_text_titlescreen 1_41
+  - first:
+      213: -4797522533899658343
+    second: new_omori_text_titlescreen 1_42
+  - first:
+      213: 4664024149876095508
+    second: new_omori_text_titlescreen 1_43
+  - first:
+      213: -4627705018870150323
+    second: new_omori_text_titlescreen 1_44
+  - first:
+      213: 3445294927772026030
+    second: new_omori_text_titlescreen 1_45
+  - first:
+      213: 8550583991602840209
+    second: new_omori_text_titlescreen 1_46
+  - first:
+      213: -2595313929275782763
+    second: new_omori_text_titlescreen 1_47
+  - first:
+      213: -4666799497861981412
+    second: new_omori_text_titlescreen 1_48
+  - first:
+      213: -4475165021256071596
+    second: new_omori_text_titlescreen 1_49
+  - first:
+      213: 4177527971352524684
+    second: new_omori_text_titlescreen 1_50
+  - first:
+      213: -458704441813870198
+    second: new_omori_text_titlescreen 1_51
+  - first:
+      213: -3922783006735054344
+    second: new_omori_text_titlescreen 1_52
+  - first:
+      213: -6133866737690393522
+    second: new_omori_text_titlescreen 1_53
+  - first:
+      213: 3872280361280043851
+    second: new_omori_text_titlescreen 1_54
+  - first:
+      213: 6375041869991135842
+    second: new_omori_text_titlescreen 1_55
+  - first:
+      213: 8405638017071494992
+    second: new_omori_text_titlescreen 1_56
+  - first:
+      213: -8358628984383181171
+    second: new_omori_text_titlescreen 1_57
+  - first:
+      213: -2216953580443946725
+    second: new_omori_text_titlescreen 1_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: new_omori_text_titlescreen 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 277
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcdc9fe66535a57a0800000000000000
+      internalID: -6387701490777469489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new_omori_text_titlescreen 1_1
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 277
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794c6b983df22e690800000000000000
+      internalID: -7574439037688691561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new_omori_text_titlescreen 1_2
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 0
+        width: 277
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3e0c40c61d0b5f0800000000000000
+      internalID: -742863676649708635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new_omori_text_titlescreen 1_3
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 0
+        width: 277
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9260b70ce046d894cb3a9d96aed0984a
+      internalID: -2871264597419568746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ad1aee306968ebf49a01879c7180265a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":289.0,"y":151.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      new_omori_text_titlescreen 1_0: -6387701490777469489
+      new_omori_text_titlescreen 1_1: -7574439037688691561
+      new_omori_text_titlescreen 1_2: -742863676649708635
+      new_omori_text_titlescreen 1_3: -2871264597419568746
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

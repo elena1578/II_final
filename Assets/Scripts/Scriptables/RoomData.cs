@@ -26,7 +26,8 @@ public class RoomData : ScriptableObject
         Entrance153_01 = 1,
         Railroad154_02 = 2,
         Bookcase155_03 = 3,
-        KingCrawler_12 = 12
+        KingCrawler_12 = 12,
+        TitleScreen_99 = 99
     }
 
     public enum SpawnPointID

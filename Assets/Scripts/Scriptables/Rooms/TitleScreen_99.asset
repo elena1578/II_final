@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8cdb43ccfecd6489d7e7938dcbf66e, type: 3}
+  m_Name: TitleScreen_99
+  m_EditorClassIdentifier: Assembly-CSharp::RoomData
+  roomID: 99
+  isOverworldScene: 0
+  music: {fileID: 8300000, guid: 253ae436bdb566a4ebe76d12b8ffbfba, type: 3}
+  musicVolume: 0.65
+  exits:
+  - exitingTo: 1
+    spawnPointID: 1
+    targetRoom: {fileID: 11400000, guid: fc4f9ca3408bcaf4392ee1a790b18426, type: 2}
+  enemySpawning:
+    enemiesToSpawn: []
