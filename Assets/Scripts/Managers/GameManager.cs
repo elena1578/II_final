@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     [SerializeField] private RoomCollectionDatabase roomCollection;
     private float duration;
+    public static event Action OnStartingQuitHold, OnCancelingQuitHold;
 
     private void Awake()
     {
@@ -24,12 +25,20 @@ public class GameManager : MonoBehaviour
 
         if (roomCollection != null)
             RoomManager.Initialize(roomCollection);
+
+        // disable logging in builds to improve performance
+        if (!Application.isEditor)
+            Debug.unityLogger.logEnabled = false;
     }
 
-        private void OnEnable()
+    private void OnEnable()
     {
         var quitAction = new InputAction(binding: "<Keyboard>/escape", interactions: "hold(duration=2)");
+
+        quitAction.started += ctx => OnStartingQuitHold();
         quitAction.performed += ctx => QuitGameSession();
+        quitAction.canceled += ctx => OnCancelingQuitHold();
+
         quitAction.Enable();
         Debug.Log("[GameManager] Can now quit game session by holding Escape for 2 seconds");
     }
@@ -46,7 +55,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void QuitGameSession()
     {
-        Debug.Log("Quitting game...");
+        Debug.Log("[GameManager] Quitting game...");
 
 #if UNITY_EDITOR
       // stop play mode if in editor
