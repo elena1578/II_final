@@ -58,6 +58,17 @@ public class BattleTransitionManager : MonoBehaviour
         // probably need to add a specific from-battle method
         // either here or roomchangemanager to account going to a vector3 vs. a spawn point
         // think i did ^^^ but keeping here just in case it blows up 
+
+// if starting from battle room for debugging
+#if UNITY_EDITOR
+        if (storedRoomID == RoomData.RoomID.BattleRoom_00)
+        {
+            storedRoomID = RoomData.RoomID.Entrance153_01;  // default room
+            RoomChangeManager.instance.InitializeAndReturnFromBattle(RoomManager.GetRoom(storedRoomID), new Vector3(4.701f, -1.785f, 0f));
+            ClearCurrentData();
+        }
+#endif
+
         RoomChangeManager.instance.InitializeAndReturnFromBattle(RoomManager.GetRoom(storedRoomID), storedPlayerPosition);
         ClearCurrentData();
     }
@@ -70,7 +81,7 @@ public class BattleTransitionManager : MonoBehaviour
 
     private IEnumerator LoadTitleScreenRoutine()
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("TitleScreen");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("TitleScreen_99");
 
         while (!asyncLoad.isDone)
             yield return null;

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 
 public enum EnemySpawnPosition
@@ -24,6 +25,9 @@ public class BattleUIManager : MonoBehaviour
 
     [Header("Action Buttons")]
     [SerializeField] private List<BattleActionButton> actionButtons;
+
+    [Header("Other")]
+    public CanvasGroup fleeCanvasGroup;
 
     private List<BattleActorUI> enemySlots = new();
 
@@ -192,6 +196,28 @@ public class BattleUIManager : MonoBehaviour
         for (int i = 0; i < actions.Count && i < actionButtons.Count; i++)
         {
             actionButtons[i].Initialize(actions[i]);
+        }
+    }
+    #endregion
+
+
+    #region Fleeing
+    public void ShowFleeScreen() => StartCoroutine(FleeRoutine());
+    private IEnumerator FleeRoutine()
+    {       
+        if (fleeCanvasGroup != null)
+        {
+            Debug.Log("[BattleUIManager] Showing flee screen");
+            fleeCanvasGroup.alpha = 1;
+            yield return new WaitForSeconds(1.5f);
+
+            BattleTransitionManager.instance.ReturnToOverworld();
+            // Debug.Log("[BattleManager] Fled from battle successfully!");
+        }
+        else
+        {
+            Debug.LogWarning("[BattleUIManager] Flee canvas group not assigned, skipping showing it");
+            BattleTransitionManager.instance.ReturnToOverworld();
         }
     }
     #endregion

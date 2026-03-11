@@ -3881,6 +3881,7 @@ MonoBehaviour:
   - {fileID: 581663972}
   - {fileID: 79180066}
   - {fileID: 931025011}
+  fleeCanvasGroup: {fileID: 133242787}
 --- !u!114 &801025639
 MonoBehaviour:
   m_ObjectHideFlags: 0

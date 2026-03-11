@@ -17,6 +17,7 @@ public class BattleManager : MonoBehaviour
     private int planningIndex = 0;
     public bool HasActiveBattle { get; private set; }
     private const float fleeChance = 0.5f;  // 50% chance to flee successfully
+    private bool fleeSuccessful;
 
     // runtime systems
     private TurnStateMachine turnStateMachine;
@@ -417,8 +418,11 @@ public class BattleManager : MonoBehaviour
 
         if (win)
             yield return HandleVictorySequence();
-        else
-            yield return HandleDefeatSequence();
+        if (!win)
+            if (fleeSuccessful)
+                yield return HandleFleeSequence();
+            else
+                yield return HandleDefeatSequence();
 
         // small pause before transition
         yield return new WaitForSeconds(4f);
@@ -521,19 +525,29 @@ public class BattleManager : MonoBehaviour
     {
         // 50% chance to successfully flee
         // if successful, end battle with loss result & return to overworld (so player doesn't get rewards)
-        bool fleeSuccessful = Random.value < fleeChance;
+
+        fleeSuccessful = Random.value < fleeChance;  // reroll each attempt
 
         if (fleeSuccessful)
-        {
-            EndBattle(false);
-            BattleTransitionManager.instance.ReturnToOverworld();
-            Debug.Log("[BattleManager] Fled from battle successfully!");
-        }
+            EndBattle(false);  // end battle with loss result (no rewards)
         else
         {
-            Debug.Log("[BattleManager] Flee attempt failed!");
-            turnStateMachine.EnterState(BattleState.ResolveTurn);
+            BattleDialogManager.instance.Show("Couldn't run away!");
+            turnStateMachine.EnterState(BattleState.ActorTurn);  // if flee fails, still counts as turn and proceed to next actor's turn
         }
+    }
+
+    private IEnumerator HandleFleeSequence()
+    {
+        BattleDialogManager.instance.Show("OMORI's party fled from battle!");
+        while (BattleDialogManager.instance.typing)
+            yield return null;
+        yield return new WaitForSeconds(2f);
+
+        if (uiManager != null)
+            uiManager.ShowFleeScreen();
+        else 
+            FindFirstObjectByType<BattleUIManager>()?.ShowFleeScreen();
     }
     #endregion
 }
