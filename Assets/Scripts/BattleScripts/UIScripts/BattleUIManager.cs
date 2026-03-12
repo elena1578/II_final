@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;   
 
 
 public enum EnemySpawnPosition
@@ -27,7 +28,11 @@ public class BattleUIManager : MonoBehaviour
     [SerializeField] private List<BattleActionButton> actionButtons;
 
     [Header("Other")]
-    public CanvasGroup fleeCanvasGroup;
+    [SerializeField] private CanvasGroup fleeCanvasGroup;
+    [SerializeField] private GameObject fleeImage;
+    [SerializeField] [Tooltip("Scale factor for zooming in the flee image")] private float zoomScale = 1.5f;
+    [SerializeField] [Tooltip("Duration of flee animation in seconds")] private float fleeDuration = 1.5f;
+    [SerializeField] [Tooltip("Time to wait after flee animation before transitioning")] private float fleeWaitTime = 1f;
 
     private List<BattleActorUI> enemySlots = new();
 
@@ -208,17 +213,50 @@ public class BattleUIManager : MonoBehaviour
         if (fleeCanvasGroup != null)
         {
             Debug.Log("[BattleUIManager] Showing flee screen");
-            fleeCanvasGroup.alpha = 1;
-            yield return new WaitForSeconds(1.5f);
+            if (fleeImage != null)
+                yield return StartCoroutine(FadeAndZoomIn());
+            else
+                Debug.LogWarning("[BattleUIManager] Flee image not assigned, skipping fade/zoom effect");
 
-            BattleTransitionManager.instance.ReturnToOverworld();
+            yield return new WaitForSeconds(fleeWaitTime);
             // Debug.Log("[BattleManager] Fled from battle successfully!");
         }
         else
-        {
             Debug.LogWarning("[BattleUIManager] Flee canvas group not assigned, skipping showing it");
-            BattleTransitionManager.instance.ReturnToOverworld();
+    }
+
+    /// <summary>
+    /// fade in and zoom out flee image while fleeing
+    /// then transition to overworld scene
+    /// </summary>
+    private IEnumerator FadeAndZoomIn()
+    {
+        float duration = 1.5f;
+        float elapsed = 0f;
+
+        Vector3 targetScale = fleeImage.transform.localScale;
+        Vector3 initialScale = targetScale * zoomScale;  // start zoomed in
+        fleeImage.transform.localScale = initialScale;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / fleeDuration;
+
+            // fade out
+            if (fleeCanvasGroup != null)
+                fleeCanvasGroup.alpha = Mathf.Lerp(0, 1, t);
+
+            // zoom out
+            if (fleeImage != null)
+                fleeImage.transform.localScale = Vector3.Lerp(initialScale, targetScale, t);
+            yield return null;
         }
+
+        // ensure final state is set
+        if (fleeCanvasGroup != null)
+            fleeCanvasGroup.alpha = 1;
+        fleeImage.transform.localScale = targetScale;
     }
     #endregion
 }

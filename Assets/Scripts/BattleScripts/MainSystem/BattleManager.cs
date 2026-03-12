@@ -533,6 +533,7 @@ public class BattleManager : MonoBehaviour
         else
         {
             BattleDialogManager.instance.Show("Couldn't run away!");
+            // need to add plan action step here prob to count actor as having acted
             turnStateMachine.EnterState(BattleState.ActorTurn);  // if flee fails, still counts as turn and proceed to next actor's turn
         }
     }

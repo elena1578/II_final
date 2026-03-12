@@ -3882,6 +3882,10 @@ MonoBehaviour:
   - {fileID: 79180066}
   - {fileID: 931025011}
   fleeCanvasGroup: {fileID: 133242787}
+  fleeImage: {fileID: 1618890020}
+  zoomScale: 4
+  fleeDuration: 0.65
+  fleeWaitTime: 1
 --- !u!114 &801025639
 MonoBehaviour:
   m_ObjectHideFlags: 0
