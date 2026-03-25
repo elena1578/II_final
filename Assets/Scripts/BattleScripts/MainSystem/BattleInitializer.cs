@@ -6,6 +6,7 @@ public class BattleInitializer : MonoBehaviour
 {
     [Header("Party Members")]
     public List<CharacterBattleData> defaultParty;  // fixed for now (4 main members)
+    private const float chanceToSpawnDuplicate = 0.35f;  // 35% chance to spawn a duplicate enemy if the enemy allows it (can be set in the EnemyBattleData)
 
 #if UNITY_EDITOR
     private BattleDebugTool debugTool;
@@ -65,10 +66,16 @@ public class BattleInitializer : MonoBehaviour
             }
         }
 
-        List<EnemyBattleData> enemies = new()
+        // create list of enemies to spawn
+        List<EnemyBattleData> enemies = new();
+        enemies.Add(enemyBattleData);
+
+        // chance to spawn second enemy
+        if (enemyBattleData.allowDuplicateSpawn && Random.value < chanceToSpawnDuplicate)  // 35%
         {
-            enemyBattleData
-        };
+            enemies.Add(enemyBattleData);
+            Debug.Log($"[BattleInitializer] Spawned extra {enemyBattleData.characterName}");
+        }
 
         BattleManager.instance.StartBattle(defaultParty, enemies); 
     }

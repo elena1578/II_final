@@ -14,8 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBattleData
   characterName: 7
   battleSprite: {fileID: 3218662090380093037, guid: c1a6cb5e7271d6443879b86b084e52aa, type: 3}
-  spriteScale: {x: 1, y: 1, z: 1}
   animatorController: {fileID: 9100000, guid: 1d73df738fefa4549b73c2083c69a1ba, type: 2}
+  allowDuplicateSpawn: 0
+  setCustomWidthHeight: 0
+  customWidth: 0
+  customHeight: 0
+  setCustomTransformPosition: 0
+  customTransformPosition: {x: 0, y: 0, z: 0}
+  music: {fileID: 0}
+  musicVolume: 1
   baseHP: 700
   baseJuice: 225
   baseAttack: 15
@@ -49,3 +56,4 @@ MonoBehaviour:
     hpBelowPercent: 0
     requireHpBelow: 0
     alwaysUseIfReached: 1
+  enemyToSpawn: {fileID: 0}

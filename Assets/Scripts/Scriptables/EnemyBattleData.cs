@@ -8,6 +8,7 @@ public class EnemyBattleData : ScriptableObject
     public CharacterName characterName;
     public Sprite battleSprite; 
     public RuntimeAnimatorController animatorController;
+    [Tooltip("If true, sometimes, a copy of this enemy will be spawned in battle.")] public bool allowDuplicateSpawn = true;
 
     [Header("Optional Sprite Settings")]
     public bool setCustomWidthHeight = false;

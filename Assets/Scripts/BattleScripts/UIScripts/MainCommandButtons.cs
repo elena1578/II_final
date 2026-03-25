@@ -111,7 +111,7 @@ public class MainCommandButtons : MonoBehaviour
     }
 
     private void ShowSkillSelection() => skillSelectionGroup.SetActive(true);
-    private void HideSkillSelection() => skillSelectionGroup.SetActive(false);
+    public void HideSkillSelection() => skillSelectionGroup.SetActive(false);
 
     public void PostSkillSelection()
     {

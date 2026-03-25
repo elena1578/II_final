@@ -25,7 +25,6 @@ public class TargetingController : MonoBehaviour
         onTargetSelected = callback;
 
         IsTargeting = true;
-        mainCommandButtons.HideAllCommands();  // hide all command buttons while targeting
         BattleDialogManager.instance.Show("Select a target!");
 
         // enable valid target UIs based on action's valid target groups
@@ -60,5 +59,8 @@ public class TargetingController : MonoBehaviour
         onTargetSelected = null;
         PendingAction = null;
         actingActor = null;
+
+        // reset command buttons to main commands after selecting target
+        mainCommandButtons.PostSkillSelection(); 
     }
 }

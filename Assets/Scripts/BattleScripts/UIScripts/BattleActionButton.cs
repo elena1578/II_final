@@ -65,7 +65,17 @@ public class BattleActionButton : MonoBehaviour, IPointerEnterHandler, IPointerE
             return;
 
         BattleManager.instance.OnPlayerSelectedAction(actionData);
-        mainCommandButtons.PostSkillSelection();  // hide skill UI -> next actor turn
+        StartCoroutine(HideUI());  // hide juice cost and skill description since now selecting target
+    }
+
+    private IEnumerator HideUI()
+    {
+        // fade out juice cost and skill description
+        StartFade(0f, 0.12f, juiceCostCanvasGroup, ref juiceFadeRoutine);
+        StartFade(0f, 0.06f, skillDescriptionCanvasGroup, ref descriptionFadeRoutine);
+
+        yield return new WaitForSecondsRealtime(0.12f);  // wait for fade out to finish
+        mainCommandButtons.HideSkillSelection();  // proceeds to target selection, so hide
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -88,15 +98,7 @@ public class BattleActionButton : MonoBehaviour, IPointerEnterHandler, IPointerE
 
     public void OnPointerExit(PointerEventData eventData) 
     {
-        // juice cost
-        // juiceCostText.text = "";
-        // juiceImage.SetActive(false);
         StartFade(0f, 0.12f, juiceCostCanvasGroup, ref juiceFadeRoutine);
-
-        // skill description
-        // skillDescriptionBox.SetActive(false);
-        // skillNameText.text = "";
-        // skillDescriptionText.text = "";
         StartFade(0f, 0.06f, skillDescriptionCanvasGroup, ref descriptionFadeRoutine);
     }
 

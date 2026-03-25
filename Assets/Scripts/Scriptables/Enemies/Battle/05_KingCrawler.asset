@@ -15,6 +15,7 @@ MonoBehaviour:
   characterName: 8
   battleSprite: {fileID: -2504838074292835062, guid: 8172c3b68cebd8f40af5ea758ff10e76, type: 3}
   animatorController: {fileID: 9100000, guid: baa44d431cd4d19498921f60df62b0a4, type: 2}
+  allowDuplicateSpawn: 0
   setCustomWidthHeight: 1
   customWidth: 675
   customHeight: 515

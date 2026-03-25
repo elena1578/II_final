@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class EnemyBattleActorDataSetter : MonoBehaviour
 {
     private EnemyOverworldData enemyOverworldData;
