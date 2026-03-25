@@ -14,13 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 12
   actionType: 0
-  targetType: 0
   validTargets: 4
   multiTarget: 0
   battleLogText: 
-  descriptionText: 'BREAD SLICE
-
-    If this skill defeats a foe, gain BREAD.
+  descriptionText: 'If this skill defeats a foe, gain BREAD.
 
 '
   juiceCost: 10

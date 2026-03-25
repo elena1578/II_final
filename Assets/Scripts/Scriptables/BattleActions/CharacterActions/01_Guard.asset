@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 3
   actionType: 3
-  targetType: 4
   validTargets: 1
   multiTarget: 0
   battleLogText: '{actor} guards.'
-  descriptionText: 
+  descriptionText: N/A
   juiceCost: 0
   healPercentage: 0
   emotionEffect: 0

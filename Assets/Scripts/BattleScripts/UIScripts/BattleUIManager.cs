@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;   
+using TMPro;
 
 
 public enum EnemySpawnPosition
@@ -26,6 +27,15 @@ public class BattleUIManager : MonoBehaviour
 
     [Header("Action Buttons")]
     [SerializeField] private List<BattleActionButton> actionButtons;
+
+    [Header("Skill UI")]
+    public TextMeshProUGUI juiceCostText;
+    public GameObject juiceCostIcon;
+    public GameObject skillDescriptionBox;
+    public TextMeshProUGUI skillNameText;
+    public TextMeshProUGUI skillDescriptionText;
+    public CanvasGroup skillDescriptionCanvasGroup;
+    public CanvasGroup juiceCostCanvasGroup;
 
     [Header("Other")]
     [SerializeField] private CanvasGroup fleeCanvasGroup;

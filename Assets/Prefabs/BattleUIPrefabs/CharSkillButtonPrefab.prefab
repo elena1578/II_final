@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 1024479739489327454}
   - component: {fileID: 5149088918530516747}
   - component: {fileID: 1340565627637324849}
+  - component: {fileID: 355888720675540550}
   - component: {fileID: 2276809919168718665}
   m_Layer: 5
   m_Name: CharSkillButtonPrefab
@@ -198,6 +199,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionButton
   buttonTextChild: {fileID: 5204333707601851204}
   actionData: {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
+--- !u!114 &355888720675540550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6406112492811741386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8c97b9e4f4b24479141babaf77c0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSFX
+  playHover: 1
+  playClick: 1
 --- !u!114 &2276809919168718665
 MonoBehaviour:
   m_ObjectHideFlags: 0

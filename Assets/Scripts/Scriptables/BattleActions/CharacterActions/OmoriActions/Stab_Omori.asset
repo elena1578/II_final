@@ -17,10 +17,7 @@ MonoBehaviour:
   validTargets: 4
   multiTarget: 0
   battleLogText: '{actor} stabs {target}.'
-  descriptionText: 'STAB
-
-    Always deals a critical hit. Ignores DEFENSE when OMORI
-    is SAD.'
+  descriptionText: Always deals a critical hit. Ignores DEFENSE when OMORI is SAD.
   juiceCost: 13
   healPercentage: 0
   emotionEffect: 0

@@ -17,9 +17,7 @@ MonoBehaviour:
   validTargets: -1
   multiTarget: 0
   battleLogText: '{actor} reads a sad poem.'
-  descriptionText: 'SAD POEM
-
-    Inflicts SAD on a friend or foe.'
+  descriptionText: Inflicts SAD on a friend or foe.
   juiceCost: 5
   healPercentage: 0
   emotionEffect: 2

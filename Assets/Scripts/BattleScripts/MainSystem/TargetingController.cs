@@ -4,6 +4,7 @@ using UnityEngine;
 public class TargetingController : MonoBehaviour
 {
     public static TargetingController instance;
+    public MainCommandButtons mainCommandButtons;
     public bool IsTargeting { get; private set; }
     public BattleActionData PendingAction { get; private set; }
     private BattleActor actingActor;
@@ -24,6 +25,7 @@ public class TargetingController : MonoBehaviour
         onTargetSelected = callback;
 
         IsTargeting = true;
+        mainCommandButtons.HideAllCommands();  // hide all command buttons while targeting
         BattleDialogManager.instance.Show("Select a target!");
 
         // enable valid target UIs based on action's valid target groups

@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 17
   actionType: 0
-  targetType: 1
   validTargets: 4
   multiTarget: 0
-  battleLogText: Deals damage to all foes.
-  descriptionText: 
+  battleLogText: 
+  descriptionText: Deals damage to all foes.
   juiceCost: 15
   healPercentage: 0
   emotionEffect: 0
