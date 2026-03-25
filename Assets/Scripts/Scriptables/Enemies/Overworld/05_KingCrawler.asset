@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 05_KingCrawler
   m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldData
   correspondingBattleData: {fileID: 11400000, guid: bbb979b729d401549a1b0ffb95deca31, type: 2}
+  encounterTable: {fileID: 11400000, guid: 7ef4bd85ee6b2984abea11f09f25aa92, type: 2}
   sprite: {fileID: -8987018054605711263, guid: ec80cdb307d2aa8419f98739d4d6a464, type: 3}
   animatorController: {fileID: 9100000, guid: 811ce2e10d2393342979ebe6335b3992, type: 2}
   spawnChance: 1

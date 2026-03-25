@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 02_BugBunny
   m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldData
   correspondingBattleData: {fileID: 11400000, guid: b7a84642e1193844d9f14ee4ef1f6f7f, type: 2}
+  encounterTable: {fileID: 11400000, guid: f55ed6c9b7ce93c4dab4d99ff83759ad, type: 2}
   sprite: {fileID: 5431964463116794410, guid: 5baecc3da0c728a448704f759236d063, type: 3}
   animatorController: {fileID: 9100000, guid: 5caab38b05320204db3627a3877dca55, type: 2}
+  spawnChance: 0.5
   moveSpeed: 0.7
   chanceToMove: 0.5
   alertRadius: 5

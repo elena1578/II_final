@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 03_LostSproutMole
   m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldData
   correspondingBattleData: {fileID: 11400000, guid: 813286e67f15e49449c72f81f647f6c5, type: 2}
+  encounterTable: {fileID: 11400000, guid: 1d96e37f1c18ae047837f060ba84d45e, type: 2}
   sprite: {fileID: -8354864745952003214, guid: 8f27a4288269df44a99ef481f013e169, type: 3}
   animatorController: {fileID: 9100000, guid: fcb65c14d35067846ac03f9ad0dbb565, type: 2}
+  spawnChance: 0.5
   moveSpeed: 0.65
   chanceToMove: 0.35
   alertRadius: 5

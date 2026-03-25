@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 04_RareBear
   m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldData
   correspondingBattleData: {fileID: 11400000, guid: dc678e88b3ff027459f551fdae09d276, type: 2}
+  encounterTable: {fileID: 11400000, guid: d7bb1a901a3a225478098f237b226673, type: 2}
   sprite: {fileID: 0}
   animatorController: {fileID: 0}
   spawnChance: 0.5

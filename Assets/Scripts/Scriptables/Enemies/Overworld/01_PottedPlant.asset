@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a6c2b47e001114b82bf759913eb6ca, type: 3}
   m_Name: 01_PottedPlant
   m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldData
-  enemyPrefab: {fileID: 0}
   correspondingBattleData: {fileID: 11400000, guid: 4711c9f6172a1264b962878f8ff8efe6, type: 2}
+  encounterTable: {fileID: 11400000, guid: 8f99715a3eaab7f4ab238417d458d14e, type: 2}
   sprite: {fileID: 7163209058922862290, guid: 7c9e6ba54bfe7304e934b0ca5aa5db7e, type: 3}
   animatorController: {fileID: 9100000, guid: 009d95f277f08d849a632fee33e6e5ac, type: 2}
+  spawnChance: 0.5
   moveSpeed: 1
   chanceToMove: 0.708
   alertRadius: 5

@@ -49,6 +49,9 @@ public class TargetingController : MonoBehaviour
 
         IsTargeting = false;
 
+        // reset command buttons to main commands after selecting target
+        mainCommandButtons.PostSkillSelection(); 
+
         ui.EnableEnemyTargeting(false);
         ui.EnableAllyTargeting(false);
 
@@ -59,8 +62,5 @@ public class TargetingController : MonoBehaviour
         onTargetSelected = null;
         PendingAction = null;
         actingActor = null;
-
-        // reset command buttons to main commands after selecting target
-        mainCommandButtons.PostSkillSelection(); 
     }
 }

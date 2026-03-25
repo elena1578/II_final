@@ -5,6 +5,7 @@ public class EnemyOverworldData : ScriptableObject
 {
     [Header("Definition")]
     public EnemyBattleData correspondingBattleData;
+    public EnemyEncounterTableData encounterTable;  // if null, correspondingBattleData will be used for encounters instead
     public Sprite sprite;
     public RuntimeAnimatorController animatorController;
     [Range(0f, 1f)] public float spawnChance = 0.5f;

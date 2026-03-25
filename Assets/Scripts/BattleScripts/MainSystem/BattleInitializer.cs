@@ -66,15 +66,23 @@ public class BattleInitializer : MonoBehaviour
             }
         }
 
-        // create list of enemies to spawn
         List<EnemyBattleData> enemies = new();
-        enemies.Add(enemyBattleData);
 
-        // chance to spawn second enemy
-        if (enemyBattleData.allowDuplicateSpawn && Random.value < chanceToSpawnDuplicate)  // 35%
+        if (transition.currentEnemy.encounterTable != null)
+            enemies = EnemyEncounterGenerator.Create(transition.currentEnemy.encounterTable);
+        else
         {
-            enemies.Add(enemyBattleData);
-            Debug.Log($"[BattleInitializer] Spawned extra {enemyBattleData.characterName}");
+            // fallback to correspondingBattleData if no encounter table is set
+            // (mainly for enemies that haven't been migrated to encounter tables yet)
+            enemyBattleData = transition.currentEnemy.correspondingBattleData;
+
+            if (enemyBattleData != null)
+                enemies.Add(enemyBattleData);
+            else
+            {
+                Debug.LogError("[BattleInitializer] No enemy battle data found.");
+                return;
+            }
         }
 
         BattleManager.instance.StartBattle(defaultParty, enemies); 
