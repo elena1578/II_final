@@ -520,7 +520,10 @@ public class BattleManager : MonoBehaviour
     {
         return context.enemies.FindAll(e => !e.isAlive);
     }
+    #endregion
 
+
+    #region Fleeing
     public void AttemptFlee()
     {
         // 50% chance to successfully flee
@@ -531,11 +534,20 @@ public class BattleManager : MonoBehaviour
         if (fleeSuccessful)
             EndBattle(false);  // end battle with loss result (no rewards)
         else
-        {
-            BattleDialogManager.instance.Show("Couldn't run away!");
-            // need to add plan action step here prob to count actor as having acted
-            turnStateMachine.EnterState(BattleState.ActorTurn);  // if flee fails, still counts as turn and proceed to next actor's turn
-        }
+            StartCoroutine(HandleFleeFailure());
+    }
+
+    private IEnumerator HandleFleeFailure()
+    {
+        commandButtons.HideAllCommands();
+        BattleDialogManager.instance.Show("Couldn't run away!");
+        while (BattleDialogManager.instance.typing)
+            yield return null;
+        yield return new WaitForSeconds(2f);
+
+        // after wait, proceed to next turn
+        planningIndex++;  // consume this actor's turn
+        turnStateMachine.EnterState(BattleState.ActorTurn);  // if flee fails, still counts as turn and proceed to next actor's turn
     }
 
     private IEnumerator HandleFleeSequence()
@@ -543,7 +555,7 @@ public class BattleManager : MonoBehaviour
         BattleDialogManager.instance.Show("OMORI's party fled from battle!");
         while (BattleDialogManager.instance.typing)
             yield return null;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         if (uiManager != null)
             uiManager.ShowFleeScreen();

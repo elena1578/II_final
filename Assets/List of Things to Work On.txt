@@ -1,6 +1,12 @@
+to-do:
 - animations need to move depending on where enemy is/who is being targeted
 - random chance to add enemy of same type in an encounter (e.g., collide w/ one plant -> could be two of them in battle)
 - sfx + animations for enemy actions
-- party member skill descriptions + juice cost in selection menu
 - fog overworld overlay
 - constrict overworld camera bounds to background size/constraints
+- pathfinding for overworld enemies (have to include via assignment)
+
+
+done:
+- party member skill descriptions + juice cost in selection menu
+- if fleeing fails, skip actor's turn/count as their action
