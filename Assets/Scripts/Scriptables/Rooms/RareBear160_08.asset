@@ -10,22 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c8cdb43ccfecd6489d7e7938dcbf66e, type: 3}
-  m_Name: Railroad154_02
+  m_Name: RareBear160_08
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
-  roomID: 2
+  roomID: 8
   isOverworldScene: 1
   music: {fileID: 8300000, guid: 830ac2250fe5d0844b64503062679fe7, type: 3}
   musicVolume: 1
   exits:
-  - exitingTo: 4
-    spawnPointID: 1
-    targetRoom: {fileID: 11400000, guid: 9681235cc0c04254388626b4eb4bbe0f, type: 2}
-  - exitingTo: 1
+  - exitingTo: 6
     spawnPointID: 0
-    targetRoom: {fileID: 11400000, guid: fc4f9ca3408bcaf4392ee1a790b18426, type: 2}
-  - exitingTo: 3
-    spawnPointID: 2
-    targetRoom: {fileID: 11400000, guid: afd8eef2f3e6eab4987eed926b9e7196, type: 2}
+    targetRoom: {fileID: 11400000, guid: 0bb823fcc44a89244906c42a4a497513, type: 2}
+  - exitingTo: 12
+    spawnPointID: 1
+    targetRoom: {fileID: 11400000, guid: 26ad79ee92e1c27419df464b8150739e, type: 2}
   enemySpawning:
     enemiesToSpawn:
     - {fileID: 11400000, guid: 51304be9453dde14596c9e57b8b76157, type: 2}

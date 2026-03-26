@@ -1,8 +1,15 @@
+priorities for milestone:
+- audio integration (less quantity, more dynamics/function)
+- pathfinding
+
+
 to-do:
 - animations need to move depending on where enemy is/who is being targeted
 - sfx + animations for enemy actions
 - fog overworld overlay
 - pathfinding for overworld enemies (have to include via assignment)
+- player sprinting (might be funky w/ grid)
+- persisting health changes after battles (if implemented, will also need to add picnic healing points)
 
 
 done:

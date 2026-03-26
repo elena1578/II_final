@@ -5280,7 +5280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4462356580797375190, guid: 80cb4f812e76a5a4e9c533cfa96b6af2, type: 3}
       propertyPath: exitingTo
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4462356580797375190, guid: 80cb4f812e76a5a4e9c533cfa96b6af2, type: 3}
       propertyPath: currentRoomID
@@ -6253,11 +6253,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1900548104859450384, guid: 6a665f9bada17bb4a8fb27eeaca1ffe3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.68
+      value: 3.413
       objectReference: {fileID: 0}
     - target: {fileID: 1900548104859450384, guid: 6a665f9bada17bb4a8fb27eeaca1ffe3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.72
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: 1900548104859450384, guid: 6a665f9bada17bb4a8fb27eeaca1ffe3, type: 3}
       propertyPath: m_LocalPosition.z

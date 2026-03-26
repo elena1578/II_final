@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c8cdb43ccfecd6489d7e7938dcbf66e, type: 3}
-  m_Name: KingCrawler_12
+  m_Name: TeaTime157_05
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
-  roomID: 12
+  roomID: 5
   isOverworldScene: 1
   music: {fileID: 8300000, guid: 830ac2250fe5d0844b64503062679fe7, type: 3}
   musicVolume: 1
   exits:
-  - exitingTo: 0
-    spawnPointID: 5
-    targetRoom: {fileID: 11400000, guid: 8f27165ca6f362a4094eaeecaf703d2d, type: 2}
+  - exitingTo: 4
+    spawnPointID: 2
+    targetRoom: {fileID: 11400000, guid: 9681235cc0c04254388626b4eb4bbe0f, type: 2}
   enemySpawning:
     enemiesToSpawn: []

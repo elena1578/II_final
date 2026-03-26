@@ -26,7 +26,15 @@ public class RoomData : ScriptableObject
         Entrance153_01 = 1,
         Railroad154_02 = 2,
         Bookcase155_03 = 3,
-        KingCrawler_12 = 12,
+        BrokenRailroad156_04 = 4,
+        TeaTime157_05 = 5,
+        FirstPicnic158_06 = 6,
+        FirstPuzzle159_07 = 7,
+        RareBear160_08 = 8,
+        SecondPuzzle161_09 = 9,
+        LostForest162_10 = 10,
+        LongLegs163_11 = 11,
+        KingCrawler164_12 = 12,
         TitleScreen_99 = 99
     }
 

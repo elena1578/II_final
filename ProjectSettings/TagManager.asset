@@ -67,6 +67,9 @@ TagManager:
   - name: OverworldUI
     uniqueID: 227556243
     locked: 0
+  - name: CameraOverlay
+    uniqueID: 282283019
+    locked: 0
   - name: CameraBounds
     uniqueID: 1546219449
     locked: 0

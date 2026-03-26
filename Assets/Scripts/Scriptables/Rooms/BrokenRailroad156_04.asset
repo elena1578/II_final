@@ -10,24 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c8cdb43ccfecd6489d7e7938dcbf66e, type: 3}
-  m_Name: Railroad154_02
+  m_Name: BrokenRailroad156_04
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
-  roomID: 2
+  roomID: 4
   isOverworldScene: 1
   music: {fileID: 8300000, guid: 830ac2250fe5d0844b64503062679fe7, type: 3}
   musicVolume: 1
   exits:
-  - exitingTo: 4
-    spawnPointID: 1
-    targetRoom: {fileID: 11400000, guid: 9681235cc0c04254388626b4eb4bbe0f, type: 2}
-  - exitingTo: 1
-    spawnPointID: 0
-    targetRoom: {fileID: 11400000, guid: fc4f9ca3408bcaf4392ee1a790b18426, type: 2}
-  - exitingTo: 3
+  - exitingTo: 5
+    spawnPointID: 3
+    targetRoom: {fileID: 11400000, guid: 1bc8148e0962f584bad4ffaf49deac23, type: 2}
+  - exitingTo: 6
     spawnPointID: 2
-    targetRoom: {fileID: 11400000, guid: afd8eef2f3e6eab4987eed926b9e7196, type: 2}
+    targetRoom: {fileID: 0}
   enemySpawning:
     enemiesToSpawn:
     - {fileID: 11400000, guid: 51304be9453dde14596c9e57b8b76157, type: 2}
     - {fileID: 11400000, guid: e7c7601c08e1af744a72be30a01bfc22, type: 2}
-    - {fileID: 11400000, guid: 76219a8a928ff6341b92634a3f96f326, type: 2}
