@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 
 public class EnemyOverworldActor : GridMovementController
@@ -22,9 +23,18 @@ public class EnemyOverworldActor : GridMovementController
     private float frozenTimer = 0f;
     private float frozenDuration = 3f;
 
+    // A* pathfinding
+    private List<Vector3> currentPath;
+    private int pathIndex;
+    private float pathTimer;
+    private float pathUpdateInterval = 0.5f;
+    private Vector3 spawnedPos;
+    private bool returningToSpawn = false;
+
     // internal refs
     private Animator animator;
     private SpriteRenderer sr;
+    private EnemyOverworldSpawnArea spawnArea;
     private bool alerted = false;
     private Transform playerTransform;
     private bool enteringBattle = false;
@@ -59,7 +69,9 @@ public class EnemyOverworldActor : GridMovementController
         }
 
         SnapToGrid(transform.position);  // once spawned + initialized, ensure grid alignment
+        spawnedPos = transform.position;  // store spawn position for pathfinding to return to if player leaves spawn area
     }
+    public void SetSpawnArea(EnemyOverworldSpawnArea area) => spawnArea = area;
 
     protected override void FixedUpdate()
     {
@@ -81,6 +93,8 @@ public class EnemyOverworldActor : GridMovementController
 
         if (alerted && playerTransform != null)
             ChasePlayer(playerTransform);
+        else if (returningToSpawn)
+            ReturnToSpawn();
         else
             IdleAndMove();
 
@@ -88,6 +102,8 @@ public class EnemyOverworldActor : GridMovementController
         base.FixedUpdate();
     }
 
+
+    #region Movement
     private void IdleAndMove()
     {
         // currently moving
@@ -129,6 +145,110 @@ public class EnemyOverworldActor : GridMovementController
         }
     }
 
+    private void ChasePlayer(Transform player)
+    {
+        // if player leaves spawn area, stop chasing and return to initial spawn position
+        if (!IsInsideSpawnArea(player.position))
+        {
+            alerted = false;
+            returningToSpawn = true;
+            currentPath = null;
+            return;
+        }
+        
+        // update path periodically vs. every frame for performance
+        pathTimer -= Time.deltaTime;
+
+        if (pathTimer <= 0)
+        {
+            currentPath = OverworldPathfinder.instance.FindPath(transform.position, player.position);
+            pathIndex = 0;
+            pathTimer = pathUpdateInterval;
+        }
+
+        FollowPath();
+
+        // override timers
+        idleTimer = 0;
+        moveTimer = 0;
+    }
+
+    private void FollowPath()
+    {
+        if (currentPath == null || pathIndex >= currentPath.Count)
+            return;
+
+        Vector3 target = currentPath[pathIndex];
+        Vector2 dir = target - transform.position;
+
+        // next tile enemy wants to move to
+        Vector3 nextTile = currentPath[pathIndex];
+
+        // prevent leaving spawn area
+        if (!IsInsideSpawnArea(nextTile))
+        {
+            currentPath = null;   // cancel path so enemy recalculates
+            movement = Vector2.zero;
+            return;
+        }
+
+        // safety check if tile becomes blocked
+        if (!OverworldPathfinder.instance.IsWalkable(nextTile))
+        {
+            currentPath = null;
+            return;
+        }
+
+        movement = SnapToDirection(dir.normalized) * followMoveSpeed;  // slow down when chasing player
+
+        if (Vector2.Distance(transform.position, target) < 0.1f)
+            pathIndex++;
+    }
+
+    private void ReturnToSpawn()
+    {
+        pathTimer -= Time.deltaTime;
+
+        if (pathTimer <= 0)
+        {
+            currentPath = OverworldPathfinder.instance.FindPath(transform.position, spawnedPos);
+            pathIndex = 0;
+            pathTimer = pathUpdateInterval;
+        }
+
+        FollowPath();
+
+        // if close to spawn point, stop moving & reset state
+        if (Vector2.Distance(transform.position, spawnedPos) < 0.1f)
+        {
+            returningToSpawn = false;
+            alerted = false;  // reset alerted state so enemy can be alerted again if player re-enters spawn area
+            currentPath = null;
+            movement = Vector2.zero;
+        }
+    }
+
+    // this is slightly outdated/broken (i.e. fix animation flags to be more sim to playercontroller)
+    private void UpdateWalkingAnimation()
+    {
+        bool isMoving = movement.sqrMagnitude > 0.01f;
+        animator.SetBool("isMoving", isMoving);
+
+        if (isMoving)
+        {
+            animator.SetFloat("moveX", movement.x);
+            animator.SetFloat("moveY", movement.y);
+        }
+        else
+        {
+            animator.SetFloat("moveX", lastDirection.x);
+            animator.SetFloat("moveY", lastDirection.y);
+        }
+    }
+    #endregion
+
+
+    #region Alert & Battle
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !alerted && !enteringBattle && !frozen)
@@ -144,18 +264,6 @@ public class EnemyOverworldActor : GridMovementController
     {
         if (other.CompareTag("Player"))
             alerted = true;  // once alerted, stays alerted
-    }
-
-    private void ChasePlayer(Transform player)
-    {
-        // Debug.Log(data.name + " has spotted the player!");
-        
-        // slow movement speed when chasing
-        movement = SnapToDirection((player.position - transform.position).normalized) * followMoveSpeed;
-
-        // override timers
-        idleTimer = 0;
-        moveTimer = 0;
     }
 
     private void TriggerAlertBalloon()
@@ -196,24 +304,7 @@ public class EnemyOverworldActor : GridMovementController
             BattleTransitionManager.instance.StartBattle(data);
         }
     }
-
-    // this is slightly outdated/broken (i.e. fix animation flags to be more sim to playercontroller)
-    private void UpdateWalkingAnimation()
-    {
-        bool isMoving = movement.sqrMagnitude > 0.01f;
-        animator.SetBool("isMoving", isMoving);
-
-        if (isMoving)
-        {
-            animator.SetFloat("moveX", movement.x);
-            animator.SetFloat("moveY", movement.y);
-        }
-        else
-        {
-            animator.SetFloat("moveX", lastDirection.x);
-            animator.SetFloat("moveY", lastDirection.y);
-        }
-    }
+    #endregion
 
 
     #region Helpers
@@ -274,6 +365,20 @@ public class EnemyOverworldActor : GridMovementController
     {
         if (animator != null)
             animator.speed = 1f;
+    }
+
+    private bool IsInsideSpawnArea(Vector3 pos)
+    {
+        if (spawnArea == null)
+            return true;
+
+        Vector3 center = spawnArea.transform.position + (Vector3)spawnArea.offset;
+
+        return
+            pos.x >= center.x - spawnArea.size.x / 2f &&
+            pos.x <= center.x + spawnArea.size.x / 2f &&
+            pos.y >= center.y - spawnArea.size.y / 2f &&
+            pos.y <= center.y + spawnArea.size.y / 2f;
     }
     #endregion
 }

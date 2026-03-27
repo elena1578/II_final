@@ -36,11 +36,6 @@ public class EnemyOverworldSpawner : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
-    
-    private void Start()
-    {
-        ContextualizeScene();
-    }
 
     private void SpawnEnemies()
     {
@@ -70,8 +65,9 @@ public class EnemyOverworldSpawner : MonoBehaviour
                     // initialize enemy actor w/ the randomly selected data
                     EnemyOverworldActor actor = enemyGO.GetComponent<EnemyOverworldActor>();
                     actor.InitializeData(selectedData);
-                    
-                    Debug.Log($"Spawned {selectedData.name} at {pos}");
+                    actor.SetSpawnArea(area);  // set spawn area so enemy can't walk outside it 
+
+                    Debug.Log($"[EnemyOverworldSpawner] Spawned {selectedData.name} at {pos}");
                 }
             }
         }
@@ -126,22 +122,43 @@ public class EnemyOverworldSpawner : MonoBehaviour
         return list[index];
     }
 
+    /// <summary>
+    /// need to check for collisions and pathfinding walkability to ensure enemies don't spawn in unreachable locations 
+    /// or inside walls/objects
+    /// </summary>
+    /// <param name="area"></param>
+    /// <param name="position"></param>
+    /// <returns></returns>
     private bool TryGetValidPosition(EnemyOverworldSpawnArea area, out Vector3 position)
     {
-        int maxAttempts = 15;
+        int maxAttempts = 20;
 
         for (int i = 0; i < maxAttempts; i++)
         {
             Vector3 candidate = area.GetRandomPoint();
+            
+            // use pathfinder's walkability check (which uses a slightly smaller collision box than the physical one) 
+            // to weed out positions that are technically not colliding but would still be unreachable for enemies
+            Vector3 snapped = OverworldPathfinder.instance.GridToWorld(
+                OverworldPathfinder.instance.WorldToGrid(candidate)
+            );
+
+            if (!OverworldPathfinder.instance.IsWalkable(snapped))
+                continue;
 
             // if collision @ candidate position, try to find spawn pos again
+            // check physical collision (walls/objects)
             Collider2D hit = Physics2D.OverlapCircle(candidate, 0.4f, collisionLayer);
+            if (hit != null)
+                continue;
 
-            if (hit == null)
-            {
-                position = candidate;
-                return true;
-            }
+            // check pathfinder walkability (since counts collision a bit differently)
+            if (OverworldPathfinder.instance != null &&
+                !OverworldPathfinder.instance.IsWalkable(candidate))
+                continue;
+
+            position = snapped;
+            return true;
         }
 
         position = Vector3.zero;
@@ -179,6 +196,18 @@ public class EnemyOverworldSpawner : MonoBehaviour
         {
             enemy.Unfreeze();
         }
+    }
+
+    // same one as in GridMovementController (but that one is protected)
+    private Vector3 SnapToGrid(Vector3 pos)
+    {
+        float gridSize = 0.32f;
+        Vector3 gridOffset = new Vector3(0.23f, -2.75f, 0f);
+
+        float x = Mathf.Round((pos.x - gridOffset.x) / gridSize) * gridSize + gridOffset.x;
+        float y = Mathf.Round((pos.y - gridOffset.y) / gridSize) * gridSize + gridOffset.y;
+
+        return new Vector3(x, y, pos.z);
     }
     #endregion
 }

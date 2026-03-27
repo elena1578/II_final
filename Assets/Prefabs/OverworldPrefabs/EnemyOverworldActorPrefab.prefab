@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.11, y: 0.22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.83501, y: 0.83501, z: 0.83501}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4698108314817051507}
@@ -51,6 +51,7 @@ MonoBehaviour:
   moveSpeed: 2
   data: {fileID: 0}
   alertBalloonPrefab: {fileID: 5535338942466371753, guid: 487066fc22f7a3448a6ee9771975f6db, type: 3}
+  followMoveSpeed: 0.5
   minMoveTime: 1
   maxMoveTime: 3
   minIdleTime: 0.5
@@ -116,8 +117,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0034922361, y: -0.076939136}
-  m_Size: {x: 0.29046923, y: 0.2948017}
+  m_Offset: {x: -0.00052485365, y: -0.058339313}
+  m_Size: {x: 0.23861228, y: 0.2576021}
   m_Direction: 0
 --- !u!61 &9009915927400032140
 BoxCollider2D:

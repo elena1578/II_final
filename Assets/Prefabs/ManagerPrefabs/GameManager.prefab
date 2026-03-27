@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7179640996490331023}
   - component: {fileID: 257833728431794734}
+  - component: {fileID: 911340480460410833}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,3 +46,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   roomCollection: {fileID: 11400000, guid: 45a18006fdd533744b11d407a98ae3ea, type: 2}
+--- !u!114 &911340480460410833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517601069223776035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c90669d7d15e604a885684c88a8b797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OverworldPathfinder
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  tileSize: 1

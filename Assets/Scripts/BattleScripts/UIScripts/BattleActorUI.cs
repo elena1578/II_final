@@ -100,7 +100,7 @@ public class BattleActorUI : MonoBehaviour
             return;
 
         Color target = state ? hoverColor : normalColor;
-        Debug.Log($"[BattleActorUI] Setting hover highlight for {boundActor} to {state} | target color: {target}");
+        // Debug.Log($"[BattleActorUI] Setting hover highlight for {boundActor} to {state} | target color: {target}");
 
         if (highlightRoutine != null)
             StopCoroutine(highlightRoutine);
