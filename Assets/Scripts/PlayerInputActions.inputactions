@@ -16,7 +16,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Run",
+                    "name": "Sprint",
                     "type": "Button",
                     "id": "44afeb41-c654-42c9-817d-232538126330",
                     "expectedControlType": "",
@@ -147,23 +147,45 @@
                 },
                 {
                     "name": "",
-                    "id": "c09b37bb-5ee7-4a9e-8c6a-ef999f48f73d",
-                    "path": "<Keyboard>/shift",
+                    "id": "b977533e-fc11-491a-8d11-7e1b346c4312",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Run",
+                    "action": "Walk",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "b4eeb4ca-bf88-4154-932f-dac644027cd7",
-                    "path": "<Keyboard>/leftCtrl",
+                    "id": "c09b37bb-5ee7-4a9e-8c6a-ef999f48f73d",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Run",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b1a6bdf6-5285-4d43-8bb7-804b35e0ef4e",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f6165f1c-dcc9-4249-8454-330c4841e90e",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

@@ -8,24 +8,40 @@ public class PlayerOverworldController : GridMovementController
     // [Space] can use to break up sections  
     
     // private refs
-    private InputAction walkAction;  // add run action later
+    private InputAction walkAction, sprintAction; 
     private bool canMove = true;
+    private bool sprinting = false; 
 
-    protected override void FixedUpdate()
+    protected override void Awake()
+    {
+        walkAction = InputSystemManager.instance.actions["Walk"];
+        sprintAction = InputSystemManager.instance.actions["Sprint"];
+        base.Awake();
+    }
+
+    private void Update()
     {
         ReadInput();
         UpdateWalkingAnimation();
-        base.FixedUpdate();
     }
 
     private void ReadInput()
-    {      
-        if (isMoving || !canMove)
+    {
+        // always check for sprint toggle first
+        if (sprintAction.WasPressedThisFrame())
+            sprinting = !sprinting;
+
+        if (!canMove)
             return;
 
-        var action = InputSystemManager.instance.actions["Walk"];
-        Vector2 input = action.ReadValue<Vector2>();
+        Vector2 input = walkAction.ReadValue<Vector2>();
+        moveSpeed = sprinting ? sprintSpeed : walkSpeed;  // set move speed based on sprinting state
 
+        // don't interrupt tile movement
+        if (isMoving)
+            return;
+
+        // snap input to cardinal directions
         movement = input == Vector2.zero ? Vector2.zero : SnapToDirection(input);
     }
 
@@ -58,6 +74,7 @@ public class PlayerOverworldController : GridMovementController
     public void DisablePlayerMovement()
     {
         canMove = false;
+        sprinting = false;
         movement = Vector2.zero;
         // isMoving = false;
         UpdateWalkingAnimation();

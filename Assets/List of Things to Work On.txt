@@ -6,9 +6,11 @@ priorities for milestone:
 to-do:
 - animations need to move depending on where enemy is/who is being targeted
 - sfx + animations for enemy actions
-- pathfinding for overworld enemies (have to include via assignment)
-- player sprinting (might be funky w/ grid)
 - persisting health changes after battles (if implemented, will also need to add picnic healing points)
+- battle start transition update/polish
+- toast player characters animation not playing properly
+- in enemy encounters of 2+, enemy that is toast is not removed from battle + does not slide down screen
+
 
 
 done:
@@ -17,3 +19,5 @@ done:
 - weighted enemy spawn tables
 - constrict overworld camera bounds to background size/constraints
 - fog overworld overlay
+- pathfinding for overworld enemies (have to include via assignment)
+- player sprinting (toggle on/off)

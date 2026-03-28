@@ -5,7 +5,9 @@ using UnityEngine;
 public abstract class GridMovementController : MonoBehaviour
 {
     [Header("Settings via Inheritance")]
-    [SerializeField] protected float moveSpeed = 1f;
+    [SerializeField] protected float walkSpeed = 1f;
+    [SerializeField] protected float sprintSpeed = 2f;
+    protected float moveSpeed = 1f;
     protected float gridSize = 0.32f;
     protected Vector3 gridOffset = new Vector3(0.23f, -2.75f, 0f); 
     protected float collisionRadius = 0.12f;

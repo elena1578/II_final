@@ -161,7 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b841a1b2d4c3da4084bf34aed55aa05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerOverworldController
-  moveSpeed: 1.35
+  walkSpeed: 1.1
+  sprintSpeed: 1.75
 --- !u!70 &4956903681935393239
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

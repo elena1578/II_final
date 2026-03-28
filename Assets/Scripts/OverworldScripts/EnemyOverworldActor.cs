@@ -63,7 +63,7 @@ public class EnemyOverworldActor : GridMovementController
                 animator.runtimeAnimatorController = data.animatorController;
 
             // behavior 
-            moveSpeed = data.moveSpeed;
+            walkSpeed = data.moveSpeed;
             alertRadius = data.alertRadius;
             chanceToMove = data.chanceToMove;
         }
