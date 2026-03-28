@@ -242,11 +242,20 @@ public class BattleManager : MonoBehaviour
     public void OnTargetSelected(BattleActor target) => CommitAction(TargetingController.instance.PendingAction, target);
     public void CommitAction(BattleActionData action, BattleActor target)
     {
+        // set moveFirst flag here if applicable
+        context.currentActor.CheckIfMovingFirst(action);
+        
         plannedActions.Add((context.currentActor, action, target));
         planningIndex++;
 
         commandButtons.HideAllCommands();
         turnStateMachine.EnterState(BattleState.ActorTurn);  // proceed to next actor's turn (player or enemy)
+    }
+
+    public void CheckIfMovingFirst(BattleActionData actionData)
+    {
+        if (actionData.alwaysMoveFirst)
+            turnOrder.SetActorToMoveFirst(context.currentActor);
     }
     #endregion
 
@@ -258,7 +267,15 @@ public class BattleManager : MonoBehaviour
         uiManager.ClearActiveActor();  // hide select frame
 
         // order planned actions by speed stat (highest speed goes first)
-        plannedActions.Sort((a, b) => b.actor.speed.CompareTo(a.actor.speed));
+        plannedActions.Sort((a, b) =>
+        {
+            // moveFirst overrides speed
+            if (a.actor.moveFirst && !b.actor.moveFirst) return -1;
+            if (!a.actor.moveFirst && b.actor.moveFirst) return 1;
+
+            // otherwise sort by highest to lowest speed
+            return b.actor.speed.CompareTo(a.actor.speed);
+        });
         StartCoroutine(ResolveActionsRoutine());
     }
 
@@ -422,6 +439,37 @@ public class BattleManager : MonoBehaviour
                 yield return eba.behavior.OnEndOfRound(this, context, eba);
             }
         }
+
+        // check stat mods and handle accordingly
+        // i.e., decrement duration, remove expired mods, recalc stats if needed
+        foreach (var actor in GetAllActors())
+        {
+            if (!actor.isAlive)
+                continue;
+
+            // only need to handle if has active stat mods
+            if (actor.activeStatModifiers.Count == 0)
+                continue;
+
+            bool needsRecalc = false;
+
+            // decrement duration of all active stat mods
+            for (int i = actor.activeStatModifiers.Count - 1; i >= 0; i--)
+            {
+                var mod = actor.activeStatModifiers[i];
+                mod.remainingTurns--;
+
+                if (mod.remainingTurns <= 0)
+                    needsRecalc = true;
+            }
+
+            if (needsRecalc)
+                actor.RecalcStats();
+        }
+
+        // reset all moveFirst flags at end of round so they don't carry over to next round
+        foreach (var actor in GetAllActors())
+            actor.moveFirst = false;
 
         uiManager.UpdateAll();
     }

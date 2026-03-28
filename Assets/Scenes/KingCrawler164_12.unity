@@ -457,7 +457,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1546219449
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8181034395862407383, guid: d868f8f61d6e2124b9313b022fd605f4, type: 3}
@@ -542,6 +542,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59d432035e320a44ea9028af03755366, type: 3}
+--- !u!1001 &705693195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5812429494586774210, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_Name
+      value: PicnicBasket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748857220255687477, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.549
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748857220255687477, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748857220255687477, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748857220255687477, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748857220255687477, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748857220255687477, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748857220255687477, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748857220255687477, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748857220255687477, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748857220255687477, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
 --- !u!1 &1006692129
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,7 +698,7 @@ GameObject:
   - component: {fileID: 1167777626}
   - component: {fileID: 1167777625}
   m_Layer: 6
-  m_Name: map154 Overlay
+  m_Name: map164_overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -693,7 +750,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2022666971
-  m_SortingLayer: 7
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 62e2fbd848c101e4f8b5dfea691602ff, type: 3}
@@ -829,7 +886,7 @@ GameObject:
   - component: {fileID: 1639821318}
   - component: {fileID: 1639821317}
   m_Layer: 6
-  m_Name: map154
+  m_Name: map164
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1233,6 +1290,7 @@ SceneRoots:
   - {fileID: 429897706}
   - {fileID: 1639821318}
   - {fileID: 1167777626}
+  - {fileID: 705693195}
   - {fileID: 805494698168766824}
   - {fileID: 533812574}
   - {fileID: 549436739}

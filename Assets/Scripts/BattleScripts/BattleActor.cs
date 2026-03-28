@@ -1,11 +1,15 @@
 using UnityEngine;
+using System.Collections.Generic;
+
 
 public abstract class BattleActor
 {
     public CharacterName name { get; protected set; }
+
     public int maxHP { get; protected set; }
     public int currentHP { get; protected set; }
     public float hpPercent => (float)currentHP / maxHP;
+    protected bool hasHasNotSuccumbed = false;
 
     public int maxJuice { get; protected set; }
     public int currentJuice { get; protected set; }
@@ -13,13 +17,17 @@ public abstract class BattleActor
     public int atk { get; protected set; }
     public int def { get; protected set; }
     public int speed { get; protected set; }
+    protected int baseAtk;
+    protected int baseDef;
+    protected int baseSpeed;
 
     public EmotionType currentEmotion { get; protected set; }
     public bool isAlive => currentHP > 0;
     protected float damageMultiplier = 1f;
+    [HideInInspector] public List<ActiveStatModifier> activeStatModifiers = new();
 
+    [HideInInspector] public bool moveFirst = false;  // for actions that should always go first in the turn order, e.g., Hero's Smile
     public BattleActorUI ui { get; set; }
-    protected bool hasHasNotSuccumbed = false;
 
     public virtual void InitializeFromData(
         CharacterName name,
@@ -40,14 +48,23 @@ public abstract class BattleActor
         this.maxJuice = maxJuice;
         this.currentJuice = currentJuice ?? maxJuice;  // same for juice
 
-        this.atk = atk;
-        this.def = def;
-        this.speed = speed;
+        baseAtk = atk;
+        baseDef = def;
+        baseSpeed = speed;
 
         currentEmotion = startingEmotion;
         this.name = name;
+
+        // copy base stats to current stats (will be modified by temp buffs/debuffs in battle)
+        this.atk = baseAtk;
+        this.def = baseDef;
+        this.speed = baseSpeed;
+
+        RecalcStats();
     }
 
+
+    #region HP
     public virtual void TakeDamage(int amount)
     {
         if (!isAlive)
@@ -118,7 +135,10 @@ public abstract class BattleActor
 
         ui?.UpdateAll();
     }
+    #endregion
 
+
+    #region Juice
     public virtual bool SpendJuice(int amount)
     {
         if (amount <= 0)
@@ -136,7 +156,10 @@ public abstract class BattleActor
 
         return true;
     }
+    #endregion
 
+
+    #region Emotion
     public virtual void SetEmotion(EmotionType emotion)
     {
         currentEmotion = emotion;
@@ -157,7 +180,10 @@ public abstract class BattleActor
 
         return Mathf.RoundToInt(speed * multiplier);
     }
+    #endregion
 
+
+    #region Stat Mods
     /// <summary>
     /// apply temp base stat modifiers (e.g., actions like Roar) via multipliers
     /// </summary>
@@ -172,11 +198,92 @@ public abstract class BattleActor
         ui?.UpdateAll();
     }
 
-    public void EnableGuard(float multiplier)
+    public void SetStatChange(BattleActionData.StatChangeType statChangeType, float multiplier, int duration)
     {
-        damageMultiplier = multiplier;
+        activeStatModifiers.Add(new ActiveStatModifier
+        {
+            type = statChangeType,
+            multiplier = multiplier,
+            remainingTurns = duration
+        });
+
+        RecalcStats();
+    }
+
+   public void RecalcStats()
+    {
+        float modifiedAtk = baseAtk;
+        float modifiedDef = baseDef;
+        float modifiedSpeed = baseSpeed;
+
+        foreach (var mod in activeStatModifiers)
+        {
+            switch (mod.type)
+            {
+                case BattleActionData.StatChangeType.AttackUp:
+                case BattleActionData.StatChangeType.AttackDown:
+                    modifiedAtk *= mod.multiplier;
+                    break;
+                case BattleActionData.StatChangeType.DefenseUp:
+                case BattleActionData.StatChangeType.DefenseDown:
+                    modifiedDef *= mod.multiplier;
+                    break;
+                case BattleActionData.StatChangeType.SpeedUp:
+                case BattleActionData.StatChangeType.SpeedDown:
+                    modifiedSpeed *= mod.multiplier;
+                    break;
+            }
+        }
+
+        // do float calcs prior to converting to int to avoid rounding down too much and ending up w/ 0 atk/def/speed
+        atk = Mathf.Max(1, Mathf.RoundToInt(modifiedAtk)); 
+        def = Mathf.Max(0, Mathf.RoundToInt(modifiedDef));
+        speed = Mathf.Max(1, Mathf.RoundToInt(modifiedSpeed));
+
+        Debug.Log($"[BattleActor - RecalcStats] {GetType().Name} stats recalculated: ATK={atk}, DEF={def}, SPD={speed} with {activeStatModifiers.Count} active modifiers");
+        ui?.UpdateAll();
+    }
+
+    public void CountTurnsForActiveStatMods()
+    {
+        for (int i = activeStatModifiers.Count - 1; i >= 0; i--)
+        {
+            var mod = activeStatModifiers[i];
+            mod.remainingTurns--;
+
+            if (mod.remainingTurns <= 0)
+                activeStatModifiers.RemoveAt(i);
+            else
+                activeStatModifiers[i] = mod;
+        }
+
+        RecalcStats();
+    }
+
+    public void EnableGuard(float multiplier) => damageMultiplier = multiplier;
+    public void DisableGuard() => damageMultiplier = 1f;
+    #endregion
+
+    public void CheckIfMovingFirst(BattleActionData actionData)
+    {
+        if (actionData.alwaysMoveFirst)
+        {
+            moveFirst = true;  // flag actor for TurnOrderManager
+            Debug.Log($"[BattleActor] {GetType().Name} will move first with action {actionData.name}");
+        }
     }
 
     public abstract BattleActionData DecideAction(BattleContext context);
 }
+
+
+#region ActiveStatModifer Struct
+public class ActiveStatModifier
+{
+    public BattleActionData.StatChangeType type;
+    public float multiplier;
+    public int remainingTurns;
+}
+#endregion
+
 

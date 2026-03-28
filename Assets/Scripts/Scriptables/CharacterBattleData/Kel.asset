@@ -22,8 +22,10 @@ MonoBehaviour:
   defaultAttack: {fileID: 11400000, guid: 41e891932cd60b04296ec6be2558d77b, type: 2}
   universalGuardAction: {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
   allActions:
-  - {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
+  - {fileID: 11400000, guid: adcb176abd5cc31419e6fc29a84c17a5, type: 2}
+  - {fileID: 11400000, guid: 18f3ca2c722d1cc408c862fbb5f0675f, type: 2}
   - {fileID: 11400000, guid: 59d6ed3665f79a64e811f594f9610a1f, type: 2}
+  - {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
   attackActions:
   - {fileID: 11400000, guid: 59d6ed3665f79a64e811f594f9610a1f, type: 2}
   healActions: []

@@ -11,6 +11,7 @@ to-do:
 
 known bugs to fix:
 - player gets stuck when returning from battle -> overworld
+- enemy pushes player upon colliding to start battle
 
 
 done:
@@ -22,6 +23,8 @@ done:
 - pathfinding for overworld enemies (have to include via assignment)
 - player sprinting (toggle on/off)
 - persisting health changes after battles (if implemented, will also need to add picnic healing points)
+- stat change bat actions (e.g., atk, def, and speed up/down, such as for hero's smile action)
+- allow flag for bat actions that allows action to always move first regardless of speed built in turn queue
 
 fixed bugs:
 - {target} takes {damage} repeating twice for last acting party member

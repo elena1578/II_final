@@ -70,6 +70,10 @@ public class BattleDialogManager : MonoBehaviour
         text = text.Replace("{damage}", result.damage.ToString());
         text = text.Replace("{heal}", result.heal.ToString());
 
+        text = text.Replace("{statChange}", GetStatusTypeForText(result.statChange ?? action.statChangeType));
+        text = text.Replace("{statMultiplier}", result.statMultiplier.ToString());
+        text = text.Replace("{statChangeDuration}", result.statChangeDuration.ToString());
+
         // only add auto result text if base text doesn't already include damage/heal to avoid repetition
         if (!action.battleLogText.Contains("{damage}") && !action.battleLogText.Contains("{heal}"))
             text += GetAutoResultText(action, result);
@@ -120,9 +124,54 @@ public class BattleDialogManager : MonoBehaviour
 
                 return "";
 
+            case BattleActionData.ActionType.StatChange:
+                if (result.statChange.HasValue)
+                {
+                    string turns = NumberToWords(result.statChangeDuration);  // e.g., "3" -> "three"
+                    string changeText = result.statMultiplier == 0.5f ? "halved"  // = 0.5, then "halved"
+                        : (result.statMultiplier > 1f ? "increased" : "decreased");  // otherwise just "increased"/"decreased"
+                    return $"\n{GetActorName(result.targets)}'s {GetStatusTypeForText(result.statChange.Value)} was {changeText} for {turns} turn{(result.statChangeDuration > 1 ? "s" : "")}!";
+                }
+
+                return "";
+
             default:
                 return "";
         }
+    }
+
+    private string GetStatusTypeForText(BattleActionData.StatChangeType statChangeType)
+    {
+        switch (statChangeType)
+        {
+            case BattleActionData.StatChangeType.AttackUp:
+                return "ATK";
+            case BattleActionData.StatChangeType.AttackDown:
+                return "ATK";
+            case BattleActionData.StatChangeType.DefenseUp:
+                return "DEF";
+            case BattleActionData.StatChangeType.DefenseDown:
+                return "DEF";
+            case BattleActionData.StatChangeType.SpeedUp:
+                return "SPD";
+            case BattleActionData.StatChangeType.SpeedDown:
+                return "SPD";
+            default:
+                return "";
+        }
+    }
+
+    private string NumberToWords(int number)
+    {
+        string[] words = { "zero", "one", "two", "three", "four", "five",
+                        "six", "seven", "eight", "nine", "ten",
+                        "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+                        "sixteen", "seventeen", "eighteen", "nineteen", "twenty" };
+
+        if (number >= 0 && number <= 20)
+            return words[number];
+
+        return number.ToString();  // fallback for numbers over 20
     }
     #endregion
 }

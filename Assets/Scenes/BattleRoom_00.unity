@@ -6707,6 +6707,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 933020763171383661, guid: a7654d8c7556cfb4dae1a1dd1959f431, type: 3}
+      propertyPath: 'initialHP.Array.data[0]'
+      value: 106
+      objectReference: {fileID: 0}
+    - target: {fileID: 933020763171383661, guid: a7654d8c7556cfb4dae1a1dd1959f431, type: 3}
+      propertyPath: 'initialJuice.Array.data[0]'
+      value: 73
+      objectReference: {fileID: 0}
     - target: {fileID: 1517601069223776035, guid: a7654d8c7556cfb4dae1a1dd1959f431, type: 3}
       propertyPath: m_Name
       value: GameManager

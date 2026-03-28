@@ -48,12 +48,16 @@ public class AttackAction : IBattleAction
             totalDamage += damage;
         }
 
+        // check if moving first in turn queue (for actions that should always go first)
+        bool moveFirst = data.alwaysMoveFirst;
+
         // result for battle log
         return new BattleActionResult
         {
             actor = actor,
             targets = targets,
             damage = totalDamage,
+            moveFirst = moveFirst,
             didCrit = crit
         };
     }

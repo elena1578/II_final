@@ -15,6 +15,12 @@ public class BattleActionResult
     public bool didHeal => heal > 0;
     public bool didEmotion => emotion.HasValue;
     public bool didCrit;
+    public bool moveFirst;  // for actions that should always go first in the turn order
+
+    // stat changes
+    public BattleActionData.StatChangeType? statChange;
+    public float statMultiplier;
+    public int statChangeDuration;
 
     public static BattleActionResult None(BattleActor actor)
     {
@@ -25,7 +31,11 @@ public class BattleActionResult
             damage = 0,
             heal = 0,
             emotion = null,
-            didCrit = false
+            moveFirst = false,
+            didCrit = false,
+            statChange = null,
+            statMultiplier = 1f,
+            statChangeDuration = 0
         };
     }
 }

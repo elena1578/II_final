@@ -8,6 +8,7 @@ public class BattleActionData : ScriptableObject
     public ActionType actionType;
     public TargetGroup validTargets;
     [Tooltip("True = target all allies/enemies, false = single-target [for self, an enemy, or an ally]")] public bool multiTarget;  // for all allies/enemies
+    public bool alwaysMoveFirst = false;  // for actions that should always go first in the turn order
     [TextArea]
     public string battleLogText;
     [TextArea]
@@ -37,6 +38,11 @@ public class BattleActionData : ScriptableObject
     public AudioClip audioClip;
     [Range(0f, 1f)] public float clipVolume = 1f;
 
+    [Header("Stat Change Action Specific")]
+    public StatChangeType statChangeType;
+    [Tooltip("Expressed as a decimal multiplier, e.g., 1.5 = 150%")] public float statChangeMultiplier;
+    [Tooltip("Duration of the stat change in turns")] public int statChangeDuration;
+
 
     #region Enums
     public enum BattleActionName
@@ -65,7 +71,8 @@ public class BattleActionData : ScriptableObject
         Crunch,
         Ram,
         Consume,
-        FastFood
+        FastFood,
+        Smile
     }
 
     public enum ActionType
@@ -74,7 +81,8 @@ public class BattleActionData : ScriptableObject
         Heal,
         Emotion,
         Guard,
-        None
+        None,
+        StatChange
     }
 
     public enum AnimationTarget
@@ -96,6 +104,16 @@ public class BattleActionData : ScriptableObject
         Curveball,
         Crunch,
         RunAround
+    }
+
+    public enum StatChangeType
+    {
+        AttackUp,
+        AttackDown,
+        DefenseUp,
+        DefenseDown,
+        SpeedUp,
+        SpeedDown
     }
     #endregion
 

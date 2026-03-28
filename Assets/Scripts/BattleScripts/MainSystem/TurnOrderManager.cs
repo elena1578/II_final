@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 
+
 /// <summary>
 /// builds & manages turn order queue based on actor speed.
 /// reacts to speed changes and actor removal mid-battle [via rebuilding queue from cached list]
@@ -15,24 +16,33 @@ public class TurnOrderManager
 
     /// <summary>
     /// builds turn order queue from list of actors, ordered by speed.
-    /// (highest speed goes first)
+    /// also has a check for moveFirst actions to put those actors at the front of the queue regardless of speed (e.g., Hero's Smile)
     /// </summary>
+    /// <param name="actors"></param>
     public void BuildQueue(List<BattleActor> actors)
     {
-        cachedActors = actors
-            .Where(a => a.isAlive)
-            .OrderByDescending(a => a.speed)
-            .ToList();
+        cachedActors = actors.Where(a => a.isAlive).ToList();
 
-        turnQueue.Clear();
-        foreach (var actor in cachedActors)
+        // separate actors whose action should always move first from normal actors
+        // then order each group by speed
+        var moveFirstActors = cachedActors.Where(a => a.moveFirst).ToList();
+        var normalActors = cachedActors.Where(a => !a.moveFirst).OrderByDescending(a => a.speed).ToList();
+
+        turnQueue.Clear();  // clear existing queue before rebuilding
+
+        // enqueue moveFirst actors first, in order of speed
+        foreach (var actor in moveFirstActors.OrderByDescending(a => a.speed))
             turnQueue.Enqueue(actor);
 
-        Debug.Log("[TurnOrderManager] Built turn queue:");
-        foreach (var actor in cachedActors)
-            Debug.Log($" - {actor.name} (SPD {actor.speed})");
+        // then enqueue normal actors
+        foreach (var actor in normalActors)
+            turnQueue.Enqueue(actor);
 
         actorsActedThisRound = 0;
+
+        Debug.Log("[TurnOrderManager] Built turn queue:");
+        foreach (var actor in turnQueue)
+            Debug.Log($" - {actor.name} (SPD {actor.speed}, moveFirst={actor.moveFirst})");
     }
 
     /// <summary>
@@ -45,6 +55,7 @@ public class TurnOrderManager
             BuildQueue(cachedActors);
 
         BattleActor next = turnQueue.Dequeue();  // get next actor
+        next.moveFirst = false;  // reset flag after it's been used to ensure it only affects the turn order for one turn
         actorsActedThisRound++;  // increment count of actors who have acted this round
 
         return next;
@@ -82,6 +93,19 @@ public class TurnOrderManager
     {
         if (!cachedActors.Remove(actor))
             return;
+
+        BuildQueue(cachedActors);
+    }
+
+    public void SetActorToMoveFirst(BattleActor actor)
+    {
+        if (!cachedActors.Contains(actor))
+            return;
+
+        // move the specified actor to the front of the queue
+        // (just for this turn, will be reset next turn when queue is rebuilt from cache based on speed)
+        cachedActors.Remove(actor);
+        cachedActors.Insert(0, actor);
 
         BuildQueue(cachedActors);
     }

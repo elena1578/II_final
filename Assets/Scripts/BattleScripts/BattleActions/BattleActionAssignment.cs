@@ -21,6 +21,8 @@ public static class BattleActionAssignment
                 return new GuardAction(action);
             case BattleActionData.ActionType.None:
                 return new NoneAction(action);
+            case BattleActionData.ActionType.StatChange:
+                return new StatChangeAction(action);
             default:
                 throw new Exception("[BattleActionAssignment] unknown action type");
         }

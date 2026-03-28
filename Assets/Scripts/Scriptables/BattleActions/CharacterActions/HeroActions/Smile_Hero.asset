@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a12b7a56dc38142ab63a31fd1e2841, type: 3}
   m_Name: Smile_Hero
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
-  actionName: 0
-  actionType: 0
+  actionName: 25
+  actionType: 5
   validTargets: 4
-  multiTarget: 1
-  battleLogText: 
+  multiTarget: 0
+  alwaysMoveFirst: 1
+  battleLogText: '{actor} smiles at {target}! '
   descriptionText: Acts first, reducing a foe's ATTACK.
   juiceCost: 25
   healPercentage: 0
@@ -26,8 +27,11 @@ MonoBehaviour:
   basePower: 0
   critChance: 0.1
   critMultiplier: 1.5
-  animationTrigger: 
-  animationDuration: 1.5
+  animationTrigger: smile
+  animationDuration: 2
   animationTarget: 0
   audioClip: {fileID: 0}
-  clipVolume: 1
+  clipVolume: 0.65
+  statChangeType: 1
+  statChangeMultiplier: 0.5
+  statChangeDuration: 3
