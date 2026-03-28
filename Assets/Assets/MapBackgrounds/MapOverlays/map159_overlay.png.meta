@@ -1,0 +1,1677 @@
+fileFormatVersion: 2
+guid: 4ae656af879eba54096a86296246c43b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2217035091308705014
+    second: map159_overlay_0
+  - first:
+      213: 6034430921898308880
+    second: map159_overlay_1
+  - first:
+      213: 4726076458592189773
+    second: map159_overlay_2
+  - first:
+      213: -7426635328368593611
+    second: map159_overlay_3
+  - first:
+      213: 1935099072184997681
+    second: map159_overlay_4
+  - first:
+      213: 7035820978382294080
+    second: map159_overlay_5
+  - first:
+      213: -2186614163439730950
+    second: map159_overlay_6
+  - first:
+      213: 4728852036802117459
+    second: map159_overlay_7
+  - first:
+      213: -2753264855295449201
+    second: map159_overlay_8
+  - first:
+      213: -2117408788254384571
+    second: map159_overlay_9
+  - first:
+      213: 8228276928639743405
+    second: map159_overlay_10
+  - first:
+      213: 7302121058419779973
+    second: map159_overlay_11
+  - first:
+      213: -6912002848678952781
+    second: map159_overlay_12
+  - first:
+      213: -5724051047677825516
+    second: map159_overlay_13
+  - first:
+      213: 7986615391953991738
+    second: map159_overlay_14
+  - first:
+      213: -5843896430558730454
+    second: map159_overlay_15
+  - first:
+      213: -7046856906192050251
+    second: map159_overlay_16
+  - first:
+      213: -6646977047590351131
+    second: map159_overlay_17
+  - first:
+      213: -5736218058919119965
+    second: map159_overlay_18
+  - first:
+      213: -922980881513701174
+    second: map159_overlay_19
+  - first:
+      213: 8411643661334183332
+    second: map159_overlay_20
+  - first:
+      213: 5589432458765261917
+    second: map159_overlay_21
+  - first:
+      213: 7825929113461826837
+    second: map159_overlay_22
+  - first:
+      213: 7377632780067456337
+    second: map159_overlay_23
+  - first:
+      213: -4231959168252731660
+    second: map159_overlay_24
+  - first:
+      213: -5869224178876274967
+    second: map159_overlay_25
+  - first:
+      213: 2981425529213120444
+    second: map159_overlay_26
+  - first:
+      213: 8393928272300499878
+    second: map159_overlay_27
+  - first:
+      213: -8421226455519147708
+    second: map159_overlay_28
+  - first:
+      213: -4683926774112537497
+    second: map159_overlay_29
+  - first:
+      213: 1531127873280670290
+    second: map159_overlay_30
+  - first:
+      213: -284547109475742115
+    second: map159_overlay_31
+  - first:
+      213: -3290756579728652123
+    second: map159_overlay_32
+  - first:
+      213: 502751763201134552
+    second: map159_overlay_33
+  - first:
+      213: -3017363489502830932
+    second: map159_overlay_34
+  - first:
+      213: 3322322658759943503
+    second: map159_overlay_35
+  - first:
+      213: -1528867007957587859
+    second: map159_overlay_36
+  - first:
+      213: -8641992700102046411
+    second: map159_overlay_37
+  - first:
+      213: -622456425584393722
+    second: map159_overlay_38
+  - first:
+      213: 4033637336851317576
+    second: map159_overlay_39
+  - first:
+      213: -4708716605185698978
+    second: map159_overlay_40
+  - first:
+      213: 8469048413618538465
+    second: map159_overlay_41
+  - first:
+      213: -3963621329748070440
+    second: map159_overlay_42
+  - first:
+      213: 2779856842115286126
+    second: map159_overlay_43
+  - first:
+      213: 7653637506735628905
+    second: map159_overlay_44
+  - first:
+      213: -6711923724993584889
+    second: map159_overlay_45
+  - first:
+      213: 3227174465076437729
+    second: map159_overlay_46
+  - first:
+      213: -1981486206101911034
+    second: map159_overlay_47
+  - first:
+      213: 8323735108330056872
+    second: map159_overlay_48
+  - first:
+      213: 6412176156772713818
+    second: map159_overlay_49
+  - first:
+      213: -1259272895884588335
+    second: map159_overlay_50
+  - first:
+      213: -4522333492511455043
+    second: map159_overlay_51
+  - first:
+      213: -706180459512394001
+    second: map159_overlay_52
+  - first:
+      213: -3559485031364039185
+    second: map159_overlay_53
+  - first:
+      213: -7728141525651367054
+    second: map159_overlay_54
+  - first:
+      213: 2144617356785799540
+    second: map159_overlay_55
+  - first:
+      213: -7312668887350377219
+    second: map159_overlay_56
+  - first:
+      213: 7513016767366688273
+    second: map159_overlay_57
+  - first:
+      213: 5266137529510696385
+    second: map159_overlay_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: map159_overlay_0
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 927
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b08ffa4528b31e0800000000000000
+      internalID: -2217035091308705014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_1
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 899
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015b161a3fa9eb350800000000000000
+      internalID: 6034430921898308880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 801
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d39bfcf75669140800000000000000
+      internalID: 4726076458592189773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 863
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5353930548a4fe890800000000000000
+      internalID: -7426635328368593611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 833
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13756c28a5adada10800000000000000
+      internalID: 1935099072184997681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_5
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 803
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04cc7b707e144a160800000000000000
+      internalID: 7035820978382294080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 833
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe3657e00697a1e0800000000000000
+      internalID: -2186614163439730950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_7
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 831
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ff8f87fd140a140800000000000000
+      internalID: 4728852036802117459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_8
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 831
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f872c8793307ac9d0800000000000000
+      internalID: -2753264855295449201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_9
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 831
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e9ec3fce37d92e0800000000000000
+      internalID: -2117408788254384571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_10
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 739
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da53d157546b03270800000000000000
+      internalID: 8228276928639743405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_11
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 735
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589a2021a68565560800000000000000
+      internalID: 7302121058419779973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_12
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 671
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0c00ec702a310a0800000000000000
+      internalID: -6912002848678952781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_13
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 639
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ee5f246e51090b0800000000000000
+      internalID: -5724051047677825516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_14
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 671
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38b513526826de60800000000000000
+      internalID: 7986615391953991738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_15
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 608
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27af50a82f46eea0800000000000000
+      internalID: -5843896430558730454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_16
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 545
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b72a6bcaf8843e90800000000000000
+      internalID: -7046856906192050251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_17
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 545
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eec338a79131c3a0800000000000000
+      internalID: -6646977047590351131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_18
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 575
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3f1f3311cd460b0800000000000000
+      internalID: -5736218058919119965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_19
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 483
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac026e647c9e033f0800000000000000
+      internalID: -922980881513701174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_20
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 511
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad7dfad7592cb470800000000000000
+      internalID: 8411643661334183332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 511
+        width: 65
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5cddb80537a19d40800000000000000
+      internalID: 5589432458765261917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 511
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515a74da0194b9c60800000000000000
+      internalID: 7825929113461826837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_23
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 415
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155c233dced926660800000000000000
+      internalID: 7377632780067456337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 415
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe9650fe8f0545c0800000000000000
+      internalID: -4231959168252731660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_25
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 447
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e622fea4b35c8ea0800000000000000
+      internalID: -5869224178876274967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_26
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 415
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf6709f8b6206920800000000000000
+      internalID: 2981425529213120444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_27
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 415
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3649c6a493d7470800000000000000
+      internalID: 8393928272300499878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_28
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 415
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449c8a1082bc12b80800000000000000
+      internalID: -8421226455519147708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_29
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 415
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764b41b5a695ffeb0800000000000000
+      internalID: -4683926774112537497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_30
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25af79040b8af3510800000000000000
+      internalID: 1531127873280670290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_31
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 351
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e85d959e51d0cf0800000000000000
+      internalID: -284547109475742115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_32
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 321
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a88efe6352e452d0800000000000000
+      internalID: -3290756579728652123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_33
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 351
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df0ecf90122af600800000000000000
+      internalID: 502751763201134552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_34
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 351
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae53f994eb2026d0800000000000000
+      internalID: -3017363489502830932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_35
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 351
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f452e901bd24b1e20800000000000000
+      internalID: 3322322658759943503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_36
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 351
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68afd97e8f58cae0800000000000000
+      internalID: -1528867007957587859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_37
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 227
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d06ee2d69711880800000000000000
+      internalID: -8641992700102046411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_38
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 246
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60202e8cd279c57f0800000000000000
+      internalID: -622456425584393722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_39
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 246
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84386c769cb5af730800000000000000
+      internalID: 4033637336851317576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_40
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 246
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e535ce7023747aeb0800000000000000
+      internalID: -4708716605185698978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_41
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 237
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7815749aa188570800000000000000
+      internalID: 8469048413618538465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_42
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 237
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df643896636ef8c0800000000000000
+      internalID: -3963621329748070440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_43
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 237
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6488b0d119049620800000000000000
+      internalID: 2779856842115286126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_44
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 163
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962659cf2ce273a60800000000000000
+      internalID: 7653637506735628905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_45
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 225
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701ad34fee47ad2a0800000000000000
+      internalID: -6711923724993584889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_46
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 225
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2a713e31a39cc20800000000000000
+      internalID: 3227174465076437729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_47
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 225
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a85fd3bc85084e0800000000000000
+      internalID: -1981486206101911034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_48
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 182
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ace570eaf8d38370800000000000000
+      internalID: 8323735108330056872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_49
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 182
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55caadcd30acf850800000000000000
+      internalID: 6412176156772713818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_50
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 182
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da858d19f9268ee0800000000000000
+      internalID: -1259272895884588335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_51
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 173
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8c00f16a17d31c0800000000000000
+      internalID: -4522333492511455043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_52
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 173
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee01731d942336f0800000000000000
+      internalID: -706180459512394001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_53
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 173
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fede932193b2a9ec0800000000000000
+      internalID: -3559485031364039185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_54
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 161
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bda955a3020c490800000000000000
+      internalID: -7728141525651367054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_55
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 161
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471da529f1633cd10800000000000000
+      internalID: 2144617356785799540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_56
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 161
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df40e61246e248a90800000000000000
+      internalID: -7312668887350377219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_57
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 31
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ee17ab1f8934860800000000000000
+      internalID: 7513016767366688273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map159_overlay_58
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 31
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c596d09e24151940800000000000000
+      internalID: 5266137529510696385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      map159_overlay_0: -2217035091308705014
+      map159_overlay_1: 6034430921898308880
+      map159_overlay_10: 8228276928639743405
+      map159_overlay_11: 7302121058419779973
+      map159_overlay_12: -6912002848678952781
+      map159_overlay_13: -5724051047677825516
+      map159_overlay_14: 7986615391953991738
+      map159_overlay_15: -5843896430558730454
+      map159_overlay_16: -7046856906192050251
+      map159_overlay_17: -6646977047590351131
+      map159_overlay_18: -5736218058919119965
+      map159_overlay_19: -922980881513701174
+      map159_overlay_2: 4726076458592189773
+      map159_overlay_20: 8411643661334183332
+      map159_overlay_21: 5589432458765261917
+      map159_overlay_22: 7825929113461826837
+      map159_overlay_23: 7377632780067456337
+      map159_overlay_24: -4231959168252731660
+      map159_overlay_25: -5869224178876274967
+      map159_overlay_26: 2981425529213120444
+      map159_overlay_27: 8393928272300499878
+      map159_overlay_28: -8421226455519147708
+      map159_overlay_29: -4683926774112537497
+      map159_overlay_3: -7426635328368593611
+      map159_overlay_30: 1531127873280670290
+      map159_overlay_31: -284547109475742115
+      map159_overlay_32: -3290756579728652123
+      map159_overlay_33: 502751763201134552
+      map159_overlay_34: -3017363489502830932
+      map159_overlay_35: 3322322658759943503
+      map159_overlay_36: -1528867007957587859
+      map159_overlay_37: -8641992700102046411
+      map159_overlay_38: -622456425584393722
+      map159_overlay_39: 4033637336851317576
+      map159_overlay_4: 1935099072184997681
+      map159_overlay_40: -4708716605185698978
+      map159_overlay_41: 8469048413618538465
+      map159_overlay_42: -3963621329748070440
+      map159_overlay_43: 2779856842115286126
+      map159_overlay_44: 7653637506735628905
+      map159_overlay_45: -6711923724993584889
+      map159_overlay_46: 3227174465076437729
+      map159_overlay_47: -1981486206101911034
+      map159_overlay_48: 8323735108330056872
+      map159_overlay_49: 6412176156772713818
+      map159_overlay_5: 7035820978382294080
+      map159_overlay_50: -1259272895884588335
+      map159_overlay_51: -4522333492511455043
+      map159_overlay_52: -706180459512394001
+      map159_overlay_53: -3559485031364039185
+      map159_overlay_54: -7728141525651367054
+      map159_overlay_55: 2144617356785799540
+      map159_overlay_56: -7312668887350377219
+      map159_overlay_57: 7513016767366688273
+      map159_overlay_58: 5266137529510696385
+      map159_overlay_6: -2186614163439730950
+      map159_overlay_7: 4728852036802117459
+      map159_overlay_8: -2753264855295449201
+      map159_overlay_9: -2117408788254384571
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

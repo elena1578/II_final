@@ -1566,7 +1566,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2022666971
-  m_SortingLayer: 7
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 7b95fc102ec0c6f428866c341b4ec907, type: 3}
@@ -2920,7 +2920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5128274967279480234, guid: 2d510a3222f119b418388830ba442ac5, type: 3}
       propertyPath: spawnPointID
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7656889022875781749, guid: 2d510a3222f119b418388830ba442ac5, type: 3}
       propertyPath: m_Icon
@@ -2970,10 +2970,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1765182277}
-  - {fileID: 1817557229}
-  - {fileID: 905257649}
   - {fileID: 1638517698}
+  - {fileID: 1817557229}
   - {fileID: 1647601566}
+  - {fileID: 905257649}
   - {fileID: 1730900195}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

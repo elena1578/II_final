@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/BrokenRailroad156_04.unity
     guid: 6cc56578c32c25d48a8102ed1e3330df
   - enabled: 1
+    path: Assets/Scenes/FirstPicnic158_06.unity
+    guid: 8853389748a28584ba64db2b47f94714
+  - enabled: 1
+    path: Assets/Scenes/FirstPuzzle159_07.unity
+    guid: 83dfc36ef7d658a4ebc43331c9a087a1
+  - enabled: 1
     path: Assets/Scenes/KingCrawler164_12.unity
     guid: 65f4a2bb5902c954fb99b0e5e921a2d4
   - enabled: 1

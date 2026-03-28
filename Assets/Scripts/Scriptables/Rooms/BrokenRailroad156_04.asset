@@ -22,7 +22,7 @@ MonoBehaviour:
     targetRoom: {fileID: 11400000, guid: 1bc8148e0962f584bad4ffaf49deac23, type: 2}
   - exitingTo: 6
     spawnPointID: 2
-    targetRoom: {fileID: 0}
+    targetRoom: {fileID: 11400000, guid: 0bb823fcc44a89244906c42a4a497513, type: 2}
   - exitingTo: 0
     spawnPointID: 5
     targetRoom: {fileID: 11400000, guid: 8f27165ca6f362a4094eaeecaf703d2d, type: 2}

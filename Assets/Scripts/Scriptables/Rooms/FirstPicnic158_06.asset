@@ -22,9 +22,9 @@ MonoBehaviour:
     targetRoom: {fileID: 11400000, guid: 9681235cc0c04254388626b4eb4bbe0f, type: 2}
   - exitingTo: 8
     spawnPointID: 1
-    targetRoom: {fileID: 0}
+    targetRoom: {fileID: 11400000, guid: f93ab5ac4c7ed6b4596fb889fc48118e, type: 2}
   - exitingTo: 7
     spawnPointID: 2
-    targetRoom: {fileID: 0}
+    targetRoom: {fileID: 11400000, guid: a205f26dfa47f0c41980447185692838, type: 2}
   enemySpawning:
     enemiesToSpawn: []
