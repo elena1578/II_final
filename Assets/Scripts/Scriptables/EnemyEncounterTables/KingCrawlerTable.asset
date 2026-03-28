@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: KingCrawlerTable
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnGroup
   encounters:
-  - weight: 0
+  - weight: 100
     enemies:
     - {fileID: 11400000, guid: bbb979b729d401549a1b0ffb95deca31, type: 2}

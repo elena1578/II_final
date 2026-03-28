@@ -20,7 +20,7 @@ MonoBehaviour:
     enemies:
     - {fileID: 11400000, guid: 813286e67f15e49449c72f81f647f6c5, type: 2}
     - {fileID: 11400000, guid: 813286e67f15e49449c72f81f647f6c5, type: 2}
-  - weight: 20
+  - weight: 15
     enemies:
     - {fileID: 11400000, guid: 813286e67f15e49449c72f81f647f6c5, type: 2}
     - {fileID: 11400000, guid: 4711c9f6172a1264b962878f8ff8efe6, type: 2}

@@ -152,7 +152,7 @@ public class BattleManager : MonoBehaviour
             if (!context.currentActor.isAlive)
             {
                 planningIndex++;
-                HandleCurrentActorTurn();
+                HandleCurrentActorTurn();  // recursive call to skip dead actor
                 return;
             }
 
@@ -164,7 +164,8 @@ public class BattleManager : MonoBehaviour
                 commandButtons.ShowMainCommands();
                 BattleDialogManager.instance.ShowPlanningPrompt(player);
             }
-            return;
+
+            return;  // no incrementing planningIndex here!! wait until player commits action
         }
 
         // once all character actors have planned, enemies plan/decide their actions
@@ -181,7 +182,8 @@ public class BattleManager : MonoBehaviour
             plannedActions.Add((enemy, action, null));
         }
 
-        ResolvePlannedActions();  // once all actors have planned, play out round actions (ordered by speed stat)
+        // execute all planned actions once, ordered by speed
+        ResolvePlannedActions();  
     }
 
     /// <summary>
@@ -262,7 +264,10 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator ResolveActionsRoutine()
     {
-        foreach (var entry in plannedActions)
+        // make copy to iterate over if plannedActions gets modified mid-round (e.g., from actor deaths)
+        var actionsToResolve = new List<(BattleActor actor, BattleActionData action, BattleActor target)>(plannedActions);
+        
+        foreach (var entry in actionsToResolve)
         {
             // skip if actor is null, action is null, or actor is dead
             if (entry.actor == null || entry.action == null || !entry.actor.isAlive)
@@ -337,8 +342,8 @@ public class BattleManager : MonoBehaviour
             yield return new WaitForSeconds(postDialogDelay);
         }
 
-        // remove dead actors from planned actions before next turn
-        plannedActions.RemoveAll(p => p.actor == null || !p.actor.isAlive);
+        // clear planned actions & reset planning index for next round
+        plannedActions.Clear();
         planningIndex = 0;
 
         // check round events

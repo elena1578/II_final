@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: RareBearTable
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnGroup
   encounters:
-  - weight: 1
+  - weight: 100
     enemies:
     - {fileID: 11400000, guid: dc678e88b3ff027459f551fdae09d276, type: 2}

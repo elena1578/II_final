@@ -33,6 +33,7 @@ public class BattleActorUI : MonoBehaviour
     private Coroutine highlightRoutine;
     private Color normalColor = Color.white;
     private Color hoverColor = new Color(1.1f, 1.05f, 0.6f);  // light yellow for highlight
+    private bool toast = false;
 
 
     public void Bind(BattleActor actor, Sprite portrait)
@@ -157,9 +158,10 @@ public class BattleActorUI : MonoBehaviour
 
     public void PlayHurtAnimation()
     {
-        if (portraitAnimator == null)
-            return;
+        if (portraitAnimator == null || toast)
+            return;  // skip hurt if toast-ed
 
+        
         // Debug.Log($"[BattleActorUI] Playing hurt animation for {boundActor}");
         portraitAnimator.ResetTrigger("hurt");  // safety reset
         portraitAnimator.SetTrigger("hurt");
@@ -189,7 +191,8 @@ public class BattleActorUI : MonoBehaviour
         if (portraitAnimator == null)
             return;
 
-        // toast animation currently isn't playing correctly, need to fix
+        toast = true;
+        portraitAnimator.ResetTrigger("hurt");
         portraitAnimator.SetBool("toast", true);
     }
 
