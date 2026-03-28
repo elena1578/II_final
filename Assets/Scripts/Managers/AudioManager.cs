@@ -20,6 +20,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip alert;
     public AudioClip victoryMusic;
     public AudioClip defeatMusic;
+    public AudioClip heal;
 
 
     private void Awake()
@@ -110,5 +111,6 @@ public class AudioManager : MonoBehaviour
     public void PlaySelectSFX() => PlaySFX(mouseClick);
     public void PlayBackSFX() => PlaySFX(back);
     public void PlayErrorSFX() => PlaySFX(error);
+    public void PlayHealSFX() => PlaySFX(heal);
     #endregion
 }

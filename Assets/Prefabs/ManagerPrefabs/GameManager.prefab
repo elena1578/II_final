@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7179640996490331023}
   - component: {fileID: 257833728431794734}
   - component: {fileID: 911340480460410833}
+  - component: {fileID: 933020763171383661}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -61,4 +62,24 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 2048
-  tileSize: 1
+  gridSize: 0.32
+  gridOffset: {x: 0.23, y: -2.75, z: 0}
+--- !u!114 &933020763171383661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517601069223776035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fcb01468ec88234787512e0f25d9f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattlePartyDataManager
+  partyMembers:
+  - {fileID: 11400000, guid: 08d5bd8c0c8784b46b3eaad666f7585d, type: 2}
+  - {fileID: 11400000, guid: 1f13fce36c8a6a84793ca6ca8e35f624, type: 2}
+  - {fileID: 11400000, guid: 684e808610249724c934a57a432bd287, type: 2}
+  - {fileID: 11400000, guid: 3f13eb584ac7afe4dab89d7186ad1e10, type: 2}
+  initialHP: 6a0000007d0000005a00000072000000
+  initialJuice: 49000000290000005800000049000000

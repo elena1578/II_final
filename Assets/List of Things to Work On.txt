@@ -6,10 +6,15 @@ priorities for milestone:
 to-do:
 - animations need to move depending on where enemy is/who is being targeted
 - sfx + animations for enemy actions
-- persisting health changes after battles (if implemented, will also need to add picnic healing points)
 - battle start transition update/polish
+- persisting health changes after battles (if implemented, will also need to add picnic healing points)
+
+
+known bugs to fix:
 - toast player characters animation not playing properly
 - in enemy encounters of 2+, enemy that is toast is not removed from battle + does not slide down screen
+- player gets stuck when returning from battle -> overworld
+- {target} takes {damage} repeating twice for last acting party member
 
 
 

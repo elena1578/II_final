@@ -8,7 +8,8 @@ public class PlayerOverworldController : GridMovementController
     // [Space] can use to break up sections  
     
     // private refs
-    private InputAction walkAction, sprintAction; 
+    private InputAction walkAction, sprintAction;
+    public InputAction interactAction;
     private bool canMove = true;
     private bool sprinting = false; 
 
@@ -16,6 +17,7 @@ public class PlayerOverworldController : GridMovementController
     {
         walkAction = InputSystemManager.instance.actions["Walk"];
         sprintAction = InputSystemManager.instance.actions["Sprint"];
+        interactAction = InputSystemManager.instance.actions["Interact"];
         base.Awake();
     }
 
@@ -81,4 +83,9 @@ public class PlayerOverworldController : GridMovementController
     }
 
     public void EnablePlayerMovement() => canMove = true;
+
+    public bool InteractPressed()
+    {
+        return interactAction != null && interactAction.WasPressedThisFrame();
+    }
 }

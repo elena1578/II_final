@@ -424,6 +424,16 @@ public class BattleManager : MonoBehaviour
             else
                 yield return HandleDefeatSequence();
 
+        // record HP/juice changes
+        foreach (var member in context.party)
+        {
+            if (member is PlayerBattleActor player)
+            {
+                BattlePartyDataManager.instance.SetHP(player.characterData.characterName, player.currentHP);
+                BattlePartyDataManager.instance.SetJuice(player.characterData.characterName, player.currentJuice);
+            }
+        }
+
         // small pause before transition
         yield return new WaitForSeconds(4f);
 

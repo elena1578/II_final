@@ -12,6 +12,11 @@ public class PlayerBattleActor : BattleActor
     {
         characterData = data;
 
+        // pull starting HP and juice from BattlePartyDataManager
+        // which tracks runtime HP/juice for party members (vs. base HP/juice in CharacterBattleData)
+        int startingHP = BattlePartyDataManager.instance.GetHP(data.characterName);
+        int startingJuice = BattlePartyDataManager.instance.GetJuice(data.characterName);
+
         InitializeFromData(
             name: data.characterName,
             maxHP: data.baseHP,
@@ -19,10 +24,12 @@ public class PlayerBattleActor : BattleActor
             atk: data.baseAttack,
             def: data.baseDefense,
             speed: data.baseSpeed,
-            startingEmotion: EmotionType.Neutral
+            startingEmotion: EmotionType.Neutral,
+            currentHP: startingHP,
+            currentJuice: startingJuice
         );
 
-        Debug.Log($"[PlayerBattleActor Created] {characterData.characterName} with {maxHP} HP, {atk} ATK, {def} DEF, {speed} SPD.");
+        Debug.Log($"[PlayerBattleActor Created] {characterData.characterName} with {currentHP}/{maxHP} HP, {currentJuice}/{maxJuice} juice, {def} DEF, {speed} SPD.");
     }
 
     public override BattleActionData DecideAction(BattleContext context)

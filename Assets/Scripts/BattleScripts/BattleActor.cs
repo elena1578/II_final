@@ -28,14 +28,17 @@ public abstract class BattleActor
         int atk,
         int def,
         int speed,
-        EmotionType startingEmotion
+        EmotionType startingEmotion,
+        // optional current HP/juice override parameters
+        int? currentHP = null,
+        int? currentJuice = null
     )
     {
         this.maxHP = maxHP;
-        this.currentHP = maxHP;
+        this.currentHP = currentHP ?? maxHP;  // use passed currentHP if not null, else maxHP
 
         this.maxJuice = maxJuice;
-        this.currentJuice = maxJuice;
+        this.currentJuice = currentJuice ?? maxJuice;  // same for juice
 
         this.atk = atk;
         this.def = def;
@@ -67,6 +70,10 @@ public abstract class BattleActor
         currentHP = Mathf.Max(0, currentHP - hpDamage);
         currentJuice = Mathf.Max(0, currentJuice - juiceDamage);
         Debug.Log($"[BattleActor - Damage] {GetType().Name} took {hpDamage} HP and {juiceDamage} juice");
+
+        // record changes to BattlePartyDataManager if player actor
+        if (this is PlayerBattleActor)
+            BattlePartyDataManager.instance.SetHP(name, currentHP);
 
         // animations + UI updates
         ui?.PlayHurtAnimation();
@@ -104,6 +111,11 @@ public abstract class BattleActor
 
         int healAmount = Mathf.Max(0, amount);
         currentHP = Mathf.Min(maxHP, currentHP + healAmount);
+
+        // record changes to BattlePartyDataManager if player actor
+        if (this is PlayerBattleActor)
+            BattlePartyDataManager.instance.SetHP(name, currentHP);
+
         ui?.UpdateAll();
     }
 
@@ -117,6 +129,11 @@ public abstract class BattleActor
 
         currentJuice -= amount;
         ui?.UpdateAll();
+
+        // record changes to BattlePartyDataManager if player actor
+        if (this is PlayerBattleActor)
+            BattlePartyDataManager.instance.SetJuice(name, currentJuice);
+
         return true;
     }
 

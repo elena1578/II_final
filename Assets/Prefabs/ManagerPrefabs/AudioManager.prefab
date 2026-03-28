@@ -56,6 +56,7 @@ MonoBehaviour:
   alert: {fileID: 8300000, guid: c16f841168e9a2c4e942d8a237009c96, type: 3}
   victoryMusic: {fileID: 8300000, guid: e555d2a77707ecc4b98ae166054701d2, type: 3}
   defeatMusic: {fileID: 8300000, guid: 1705c08e24301f34392363337227e512, type: 3}
+  heal: {fileID: 8300000, guid: 95b3af470e8ce684095951d5e0ec4e01, type: 3}
 --- !u!114 &8923897153587187627
 MonoBehaviour:
   m_ObjectHideFlags: 0
