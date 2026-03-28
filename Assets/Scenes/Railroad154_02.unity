@@ -4450,7 +4450,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 454611591
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8181034395862407383, guid: d868f8f61d6e2124b9313b022fd605f4, type: 3}
@@ -6328,6 +6328,10 @@ PrefabInstance:
     - target: {fileID: 991610228986591082, guid: 6a665f9bada17bb4a8fb27eeaca1ffe3, type: 3}
       propertyPath: gridOffset.y
       value: -2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 991610228986591082, guid: 6a665f9bada17bb4a8fb27eeaca1ffe3, type: 3}
+      propertyPath: interactAction.m_Name
+      value: Interact
       objectReference: {fileID: 0}
     - target: {fileID: 1900548104859450384, guid: 6a665f9bada17bb4a8fb27eeaca1ffe3, type: 3}
       propertyPath: m_LocalPosition.x

@@ -14,12 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 0
   actionType: 0
-  targetType: 0
   validTargets: 4
   multiTarget: 1
   battleLogText: 
-  descriptionText: 
-  juiceCost: 0
+  descriptionText: Acts first, reducing a foe's ATTACK.
+  juiceCost: 25
   healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0

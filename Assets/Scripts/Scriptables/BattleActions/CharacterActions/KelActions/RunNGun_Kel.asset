@@ -18,7 +18,7 @@ MonoBehaviour:
   multiTarget: 0
   battleLogText: '{actor} rushes at the {target}!'
   descriptionText: KEL does an attack based on his SPEED instead of his ATTACK.
-  juiceCost: 0
+  juiceCost: 15
   healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0

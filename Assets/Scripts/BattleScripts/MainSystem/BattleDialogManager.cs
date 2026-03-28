@@ -70,7 +70,9 @@ public class BattleDialogManager : MonoBehaviour
         text = text.Replace("{damage}", result.damage.ToString());
         text = text.Replace("{heal}", result.heal.ToString());
 
-        text += GetAutoResultText(action, result);  // auto-add damage, heal, etc. text depending on action type
+        // only add auto result text if base text doesn't already include damage/heal to avoid repetition
+        if (!action.battleLogText.Contains("{damage}") && !action.battleLogText.Contains("{heal}"))
+            text += GetAutoResultText(action, result);
 
         if (result.didCrit)
             text = "IT HIT RIGHT IN THE HEART!\n" + text;

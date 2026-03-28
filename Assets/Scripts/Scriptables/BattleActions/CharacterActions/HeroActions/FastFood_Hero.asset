@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a12b7a56dc38142ab63a31fd1e2841, type: 3}
   m_Name: FastFood_Hero
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
-  actionName: 1
+  actionName: 24
   actionType: 1
   validTargets: 2
   multiTarget: 0
   battleLogText: '{actor} cooks a meal for {target}!'
-  descriptionText: 
-  juiceCost: 10
+  descriptionText: Heals a friend for 75% of their HEART. Can be used outside of
+    battle.
+  juiceCost: 15
   healPercentage: 0.75
   emotionEffect: 0
   damageReductionMultiplier: 0

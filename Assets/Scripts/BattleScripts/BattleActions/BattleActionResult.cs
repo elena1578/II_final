@@ -21,7 +21,7 @@ public class BattleActionResult
         return new BattleActionResult
         {
             actor = actor,
-            targets = null,
+            targets = new List<BattleActor>(),
             damage = 0,
             heal = 0,
             emotion = null,

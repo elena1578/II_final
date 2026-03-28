@@ -23,6 +23,9 @@ MonoBehaviour:
   - exitingTo: 6
     spawnPointID: 2
     targetRoom: {fileID: 11400000, guid: 0bb823fcc44a89244906c42a4a497513, type: 2}
+  - exitingTo: 2
+    spawnPointID: 0
+    targetRoom: {fileID: 11400000, guid: 99ff6f0607bc3c849ad56b0e680acce0, type: 2}
   - exitingTo: 0
     spawnPointID: 5
     targetRoom: {fileID: 11400000, guid: 8f27165ca6f362a4094eaeecaf703d2d, type: 2}

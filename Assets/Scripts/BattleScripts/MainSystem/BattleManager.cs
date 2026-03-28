@@ -171,6 +171,10 @@ public class BattleManager : MonoBehaviour
         foreach (var enemy in context.enemies)
         {
             if (!enemy.isAlive)
+                continue;  // skip dead
+
+            // also check if already has an action in plannedActions
+            if (plannedActions.Exists(p => p.actor == enemy))
                 continue;
 
             BattleActionData action = enemy.DecideAction(context);
@@ -260,43 +264,61 @@ public class BattleManager : MonoBehaviour
     {
         foreach (var entry in plannedActions)
         {
-            // skip if died during round
-            if (!entry.actor.isAlive)
+            // skip if actor is null, action is null, or actor is dead
+            if (entry.actor == null || entry.action == null || !entry.actor.isAlive)
                 continue;
 
-            List<BattleActor> targets;
+            List<BattleActor> targets = entry.target != null 
+                ? new List<BattleActor> { entry.target } 
+                : context.GetActionTargets(entry.actor, entry.action);
 
-            // player: use selected target
-            if (entry.target != null)
-                targets = new List<BattleActor> { entry.target };
-            else
-                targets = context.GetActionTargets(entry.actor, entry.action);  // enemy: resolve targets automatically
+            // remove null/dead targets
+            targets.RemoveAll(t => t == null || !t.isAlive);
 
-            targets.RemoveAll(t => t == null || !t.isAlive);  // remove any null/dead targets (e.g., if target died earlier in round from another action)
-
-            // if no valid targets, skip action (e.g., attack when all enemies dead)
             if (targets.Count == 0)
             {
                 Debug.Log($"[BattleManager] {entry.actor.name}'s action cancelled (no targets)");
                 continue;
             }
 
+            // double-check actor & action before use
+            if (entry.actor == null || entry.action == null)
+                continue;
+
             Debug.Log($"[BattleManager] {entry.actor.name} uses {entry.action.actionName}");
 
             // 1. play action animation & sound + apply logic
-            float animTime = BattleAnimationController.instance.PlayAction(entry.actor, entry.action, targets);
-            AudioManager.instance.PlaySFX(entry.action.audioClip, entry.action.clipVolume);
+            float animTime = 0f;
+            if (BattleAnimationController.instance != null)
+                animTime = BattleAnimationController.instance.PlayAction(entry.actor, entry.action, targets);
+
+            if (entry.action.audioClip != null)
+                AudioManager.instance.PlaySFX(entry.action.audioClip, entry.action.clipVolume);
 
             BattleActionResult result = UseAction(entry.actor, entry.action, targets);
+            if (result == null) continue;  // just in case
 
             // 1a. trigger shake + spawn dmg digits if dmg'd
             if (result.didDamage)
             {
                 screenShake?.Shake(0.25f, result.didCrit ? 25f : 15f);
-                foreach (var target in result.targets)
+
+                // only spawn if alive & has UI 
+                // (e.g., if target died earlier in round from another action, don't spawn dmg digits for them)
+                foreach (var target in result.targets ?? new List<BattleActor>())  // null check just in case
                 {
-                    if (target.ui != null)
+                    if (target != null && target.isAlive && target.ui != null && target.ui.gameObject.activeInHierarchy)
                         digitSpawner.SpawnDamage(result, target.ui.GetComponent<RectTransform>());
+                }
+            }
+
+            // 1b. if any targets died from this action, play death animation + slide off screen
+            foreach (var target in result.targets)
+            {
+                if (target != null && !target.isAlive && target.ui != null)
+                {
+                    target.ui.SetToastAnimation();
+                    target.ui.SlideOffScreen();
                 }
             }
 
@@ -315,8 +337,8 @@ public class BattleManager : MonoBehaviour
             yield return new WaitForSeconds(postDialogDelay);
         }
 
-        // after all actions resolved, clear planned actions and reset for next turn
-        plannedActions.Clear();
+        // remove dead actors from planned actions before next turn
+        plannedActions.RemoveAll(p => p.actor == null || !p.actor.isAlive);
         planningIndex = 0;
 
         // check round events

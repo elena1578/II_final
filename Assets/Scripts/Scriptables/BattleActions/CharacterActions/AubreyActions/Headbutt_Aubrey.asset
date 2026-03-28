@@ -17,8 +17,8 @@ MonoBehaviour:
   validTargets: 4
   multiTarget: 0
   battleLogText: '{actor} headbutts {target}!'
-  descriptionText: 
-  juiceCost: 0
+  descriptionText: Deals big damage, but AUBREY also takes damage.
+  juiceCost: 5
   healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0

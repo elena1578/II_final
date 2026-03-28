@@ -17,7 +17,7 @@ MonoBehaviour:
   validTargets: 1
   multiTarget: 0
   battleLogText: '{actor} guards.'
-  descriptionText: N/A
+  descriptionText: Acts first, reducing damage taken by 50% for 1 turn.
   juiceCost: 0
   healPercentage: 0
   emotionEffect: 0

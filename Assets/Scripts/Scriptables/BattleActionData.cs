@@ -64,7 +64,8 @@ public class BattleActionData : ScriptableObject
         Screech, 
         Crunch,
         Ram,
-        Consume
+        Consume,
+        FastFood
     }
 
     public enum ActionType
