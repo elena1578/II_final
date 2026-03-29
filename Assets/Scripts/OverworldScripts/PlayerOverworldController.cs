@@ -82,6 +82,19 @@ public class PlayerOverworldController : GridMovementController
         UpdateWalkingAnimation();
     }
 
+    public void FreezeForBattle()
+    {
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        movement = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
+        isMoving = false;
+        gameObject.layer = LayerMask.NameToLayer("IgnorePhysics"); 
+
+        Animator animator = GetComponentInChildren<Animator>();
+        if (animator != null)
+            animator.speed = 0f;
+    }
+
     public void EnablePlayerMovement() => canMove = true;
 
     public bool InteractPressed()

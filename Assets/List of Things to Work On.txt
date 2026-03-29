@@ -10,8 +10,7 @@ to-do:
 
 
 known bugs to fix:
-- player gets stuck when returning from battle -> overworld
-- enemy pushes player upon colliding to start battle
+- player gets stuck sometimes when returning from battle -> overworld
 
 
 done:
@@ -31,3 +30,4 @@ fixed bugs:
 - {target} takes {damage} repeating twice for last acting party member
 - in enemy encounters of 2+, enemy that is toast is not removed from battle + does not slide down screen
 - toast player characters animation not playing properly
+- enemy pushes player upon colliding to start battle

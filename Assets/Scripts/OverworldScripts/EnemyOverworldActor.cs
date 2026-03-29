@@ -295,10 +295,10 @@ public class EnemyOverworldActor : GridMovementController
             enteringBattle = true;
 
             // disable movement of this enemy and player
-            DisableMovement(); 
+            FreezeForBattle(); 
             PlayerOverworldController player = other.collider.GetComponent<PlayerOverworldController>();
             if (player != null)
-                player.DisablePlayerMovement();
+                player.FreezeForBattle();
 
             Debug.Log("[EnemyOverworldActor] Beginning battle with " + data.name);
             BattleTransitionManager.instance.StartBattle(data);
@@ -320,6 +320,20 @@ public class EnemyOverworldActor : GridMovementController
 
         rb.linearVelocity = Vector2.zero;
         rb.bodyType = RigidbodyType2D.Kinematic;
+    }
+    
+    public void FreezeForBattle()
+    {
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        movement = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
+        frozen = true;
+        isMoving = false;
+        gameObject.layer = LayerMask.NameToLayer("IgnorePhysics"); 
+
+        Animator animator = GetComponentInChildren<Animator>();
+        if (animator != null)
+            animator.speed = 0f;
     }
 
     public void FreezeForDuration(float duration)
