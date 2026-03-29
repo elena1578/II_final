@@ -7,6 +7,7 @@ to-do:
 - animations need to move depending on where enemy is/who is being targeted
 - sfx + animations for enemy actions
 - battle start transition update/polish
+- make emotions actually do things logic-wise
 
 
 known bugs to fix:

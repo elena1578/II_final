@@ -200,12 +200,31 @@ public abstract class BattleActor
 
     public void SetStatChange(BattleActionData.StatChangeType statChangeType, float multiplier, int duration)
     {
-        activeStatModifiers.Add(new ActiveStatModifier
+        // check if modifier already exists
+        var existing = activeStatModifiers.Find(m => m.type == statChangeType);
+
+        if (existing != null)
         {
-            type = statChangeType,
-            multiplier = multiplier,
-            remainingTurns = duration
-        });
+            // refresh duration instead of stacking
+            existing.remainingTurns = duration;
+
+            // also update multiplier in case of dif val 
+            // (e.g., applying Attack Up again while already under Attack Up buff should refresh duration &
+            //  update multiplier to new val)
+            existing.multiplier = multiplier; 
+
+            Debug.Log($"[BattleActor - SetStatChange] Refreshed existing {statChangeType} modifier with multiplier {multiplier} for {duration} turns");
+        }
+        else
+        {
+            // add modifier if new
+            activeStatModifiers.Add(new ActiveStatModifier
+            {
+                type = statChangeType,
+                multiplier = multiplier,
+                remainingTurns = duration
+            });
+        }
 
         RecalcStats();
     }
@@ -277,7 +296,7 @@ public abstract class BattleActor
 }
 
 
-#region ActiveStatModifer Struct
+#region ActiveStatModifier
 public class ActiveStatModifier
 {
     public BattleActionData.StatChangeType type;
