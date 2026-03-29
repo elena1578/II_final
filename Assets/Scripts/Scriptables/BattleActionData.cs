@@ -123,8 +123,8 @@ public class BattleActionData : ScriptableObject
     {
         didCrit = false;
         int damage = 0;
-        int atk = GetModifiedAttackFromEmotion(actor);
-        int def = GetModifiedDefenseFromEmotion(target);
+        int atk = Mathf.RoundToInt(actor.atk * EmotionSystem.GetAttackMultiplier(actor.currentEmotion));
+        int def = Mathf.RoundToInt(target.def * EmotionSystem.GetDefenseMultiplier(target.currentEmotion));
 
         // damage formula breakdown:
         // Final Damage = {[(damage formula) * (emotion multiplier) * (critical multiplier) * (damage variance)] 
@@ -192,36 +192,16 @@ public class BattleActionData : ScriptableObject
         damage = Mathf.RoundToInt(damage * varianceRoll);
 
         // crit roll
-        if (Random.value < critChance)
+        // apply crit bonus if happy
+        float finalCritChance = critChance + EmotionSystem.GetCritBonus(actor.currentEmotion);
+
+        if (Random.value < finalCritChance)
         {
             didCrit = true;
-            damage = Mathf.RoundToInt((damage * critMultiplier) + 2);  
+            damage = Mathf.RoundToInt((damage * critMultiplier) + 2);  // add flat 2 dmg since it's like this in base game
         }
 
         return Mathf.Max(0, damage);
-    }
-
-    private int GetModifiedAttackFromEmotion(BattleActor actor)
-    {
-        float multiplier = 1f;
-
-        if (actor.currentEmotion == EmotionType.Angry)
-            multiplier = 1.3f;
-
-        return Mathf.RoundToInt(actor.atk * multiplier);
-    }
-
-    private int GetModifiedDefenseFromEmotion(BattleActor actor)
-    {
-        float multiplier = 1f;
-
-        if (actor.currentEmotion == EmotionType.Sad)
-            multiplier = 1.25f;
-
-        if (actor.currentEmotion == EmotionType.Angry)
-            multiplier = 0.5f;
-
-        return Mathf.RoundToInt(actor.def * multiplier);
     }
     #endregion
 }

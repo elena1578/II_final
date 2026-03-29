@@ -19,6 +19,7 @@ MonoBehaviour:
   baseAttack: 27
   baseDefense: 17
   baseSpeed: 16
+  maxEmotionTier: 2
   defaultAttack: {fileID: 11400000, guid: b64e635f4c4b87743a7bf8678e933d6f, type: 2}
   universalGuardAction: {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
   allActions:

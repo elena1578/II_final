@@ -16,6 +16,7 @@ public class CharacterBattleData : ScriptableObject
     public int baseAttack;
     public int baseDefense;
     public int baseSpeed;
+    [Range(2, 3)] public int maxEmotionTier = 2;  // everyone 2 except omori w/ 3
 
     [Header("Actions")]
     public BattleActionData defaultAttack;

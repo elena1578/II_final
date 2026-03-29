@@ -52,7 +52,7 @@ public class BattleActorUI : MonoBehaviour
         {
             portraitAnimator.Rebind();
             portraitAnimator.Update(0f);
-            SetEmotionAnimation(actor.currentEmotion);
+            SetEmotionAnimation(actor.currentEmotion, actor.currentEmotionTier);
         }
 
         UpdateAll();
@@ -138,18 +138,20 @@ public class BattleActorUI : MonoBehaviour
 
 
     #region Animations
-    public void SetEmotionAnimation(EmotionType emotion)
+    public void SetEmotionAnimation(EmotionType emotion, int tier)
     {
         if (portraitAnimator == null)
             return;
 
         // face animation
+        // ignore tier for faces since they'll take a longgg time to implement
         portraitAnimator.SetInteger("emotion", (int)emotion);
+        
 
         // background and label sprites
         if (emotionUIVisuals != null)
         {
-            emotionUIVisuals.GetSprites(emotion, out var bg, out var label);
+            emotionUIVisuals.GetSprites(emotion, tier, out var bg, out var label);
 
             portraitBackgroundImage.sprite = bg;
             emotionLabelImage.sprite = label;
@@ -161,7 +163,6 @@ public class BattleActorUI : MonoBehaviour
         if (portraitAnimator == null || toast)
             return;  // skip hurt if toast-ed
 
-        
         // Debug.Log($"[BattleActorUI] Playing hurt animation for {boundActor}");
         portraitAnimator.ResetTrigger("hurt");  // safety reset
         portraitAnimator.SetTrigger("hurt");

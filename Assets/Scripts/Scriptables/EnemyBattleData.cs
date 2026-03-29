@@ -26,6 +26,7 @@ public class EnemyBattleData : ScriptableObject
     public int baseAttack;
     public int baseDefense;
     public int baseSpeed;
+    [Range(1, 2)] public int maxEmotionTier = 1;  // most enemies only have 1 tier but some special bosses have 2
     // public int baseLuck;
     // this probably won't be added but leaving it here just in case
 

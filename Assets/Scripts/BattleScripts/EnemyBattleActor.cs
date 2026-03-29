@@ -11,6 +11,7 @@ public class EnemyBattleActor : BattleActor
     public EnemyBattleActor(EnemyBattleData data)
     {
         enemyData = data;
+        maxEmotionTier = data.maxEmotionTier;
 
         InitializeFromData(
             name: data.characterName,   

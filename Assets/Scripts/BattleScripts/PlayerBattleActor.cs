@@ -11,6 +11,7 @@ public class PlayerBattleActor : BattleActor
     public PlayerBattleActor(CharacterBattleData data)
     {
         characterData = data;
+        maxEmotionTier = data.maxEmotionTier;
 
         // pull starting HP and juice from BattlePartyDataManager
         // which tracks runtime HP/juice for party members (vs. base HP/juice in CharacterBattleData)

@@ -17,8 +17,20 @@ MonoBehaviour:
   sadBackground: {fileID: -685057357, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
   angryBackground: {fileID: 1562771463, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
   afraidBackground: {fileID: 2142652181, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  ecstaticBackground: {fileID: -1681623989, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  depressedBackground: {fileID: 239225913, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  enragedBackground: {fileID: -1862302842, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  manicBackground: {fileID: -355335889, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  miserableBackground: {fileID: 499315515, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  furiousBackground: {fileID: 520583109, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
   neutralLabel: {fileID: -2757132410801158890, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
   happyLabel: {fileID: -7193376334235582596, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
   sadLabel: {fileID: -2337842730492131984, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
   angryLabel: {fileID: 3658708253363423272, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
   afraidLabel: {fileID: 4933090311096885412, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
+  ecstaticLabel: {fileID: -4542055102463356073, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
+  depressedLabel: {fileID: 3319191525687953841, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
+  enragedLabel: {fileID: -9035801024196240104, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
+  manicLabel: {fileID: -7064768734707012452, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
+  miserableLabel: {fileID: -8691802539313342531, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
+  furiousLabel: {fileID: 1318093181072024177, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}

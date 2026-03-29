@@ -28,11 +28,11 @@ public class EmotionSystem : MonoBehaviour
             (target.currentEmotion == EmotionType.Sad && attacker.currentEmotion == EmotionType.Happy) ||
             (target.currentEmotion == EmotionType.Happy && attacker.currentEmotion == EmotionType.Angry);
 
-        int tier = GetEmotionTier(attacker.currentEmotion);
+        // use tier of attacker's emotion to get appropriate multiplier
+        int tier = attacker.currentEmotionTier;
 
         if (attackerStrong)
             return 1f + GetWeaknessBonus(tier);
-
         if (attackerWeak)
             return 1f - GetResistanceBonus(tier);
 
@@ -74,8 +74,74 @@ public class EmotionSystem : MonoBehaviour
             EmotionType.Happy => 1,
             EmotionType.Sad => 1,
             EmotionType.Angry => 1,
-            // might add tiered emotions here later if there's time
+            EmotionType.Afraid => 1,
+            EmotionType.Ecstatic => 2,
+            EmotionType.Depressed => 2,
+            EmotionType.Enraged => 2,
+            EmotionType.Manic => 3,
+            EmotionType.Miserable => 3,
+            EmotionType.Furious => 3,
             _ => 1
         };
     }
+
+
+    #region Multiplier Helpers
+    public static float GetAttackMultiplier(EmotionType emotion)
+    {
+        return emotion switch
+        {
+            // angry
+            EmotionType.Angry => 1.3f,
+            EmotionType.Enraged => 1.5f,
+            EmotionType.Furious => 2f,
+            _ => 1f
+        };
+    }
+
+    public static float GetDefenseMultiplier(EmotionType emotion)
+    {
+        return emotion switch
+        {
+            // sad
+            EmotionType.Sad => 1.25f,
+            EmotionType.Depressed => 1.35f,
+            EmotionType.Miserable => 1.5f,
+            // angry
+            EmotionType.Angry => 0.5f,
+            EmotionType.Enraged => 0.3f,
+            EmotionType.Furious => 0.15f,
+            _ => 1f
+        };
+    }
+
+    public static float GetSpeedMultiplier(EmotionType emotion)
+    {
+        return emotion switch
+        {
+            // happy
+            EmotionType.Happy => 1.25f,
+            EmotionType.Ecstatic => 1.5f,
+            EmotionType.Manic => 2f,
+            // sad
+            EmotionType.Sad => 0.8f,
+            EmotionType.Depressed => 0.65f,
+            EmotionType.Miserable => 0.5f,
+            _ => 1f
+        };
+    }
+
+    public static float GetCritBonus(EmotionType emotion)
+    {
+        return emotion switch
+        {
+            // in base game this is luck so to compensate just giving a flat crit bonus
+            // happy
+            EmotionType.Happy => 0.1f,
+            EmotionType.Ecstatic => 0.15f,
+            EmotionType.Manic => 0.2f,
+            _ => 0f
+        };
+    }
+    #endregion
 }

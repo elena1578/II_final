@@ -6,14 +6,18 @@ public abstract class BattleActor
 {
     public CharacterName name { get; protected set; }
 
+    // HP
     public int maxHP { get; protected set; }
     public int currentHP { get; protected set; }
     public float hpPercent => (float)currentHP / maxHP;
+    public bool isAlive => currentHP > 0;
     protected bool hasHasNotSuccumbed = false;
 
+    // juice
     public int maxJuice { get; protected set; }
     public int currentJuice { get; protected set; }
 
+    // stats
     public int atk { get; protected set; }
     public int def { get; protected set; }
     public int speed { get; protected set; }
@@ -21,11 +25,16 @@ public abstract class BattleActor
     protected int baseDef;
     protected int baseSpeed;
 
+    // emotion
     public EmotionType currentEmotion { get; protected set; }
-    public bool isAlive => currentHP > 0;
+    public int currentEmotionTier { get; protected set; } = 1;
+    public int maxEmotionTier { get; protected set; } = 1;  // set in scriptables
+
+    // stat changes
     protected float damageMultiplier = 1f;
     [HideInInspector] public List<ActiveStatModifier> activeStatModifiers = new();
 
+    // other
     [HideInInspector] public bool moveFirst = false;  // for actions that should always go first in the turn order, e.g., Hero's Smile
     public BattleActorUI ui { get; set; }
 
@@ -160,24 +169,36 @@ public abstract class BattleActor
 
 
     #region Emotion
-    public virtual void SetEmotion(EmotionType emotion)
-    {
-        currentEmotion = emotion;
-        ui?.SetEmotionAnimation(emotion);
+    // public virtual void SetEmotion(EmotionType emotion)
+    // {
+    //     currentEmotion = emotion;
+    //     ui?.SetEmotionAnimation(emotion);
 
-        Debug.Log($"[BattleActor] {GetType().Name} emotion set to {emotion}");
+    //     Debug.Log($"[BattleActor] {GetType().Name} emotion set to {emotion}");
+    // }
+
+    public virtual void SetEmotion(EmotionType newEmotion)
+    {
+        if (newEmotion == currentEmotion)
+        {
+            // if same emotion, increase tier if not at max
+            if (currentEmotionTier < maxEmotionTier)
+                currentEmotionTier++;
+        }
+        else
+        {
+            // if new emotion, reset to tier 1
+            currentEmotion = newEmotion;
+            currentEmotionTier = 1;
+        }
+
+        ui?.SetEmotionAnimation(currentEmotion, currentEmotionTier);
+        Debug.Log($"[BattleActor] {GetType().Name} emotion set to {currentEmotion} at tier {currentEmotionTier}");
     }
 
     public int GetModifiedSpeedFromEmotion()
     {
-        float multiplier = 1f;
-
-        if (currentEmotion == EmotionType.Happy)
-            multiplier = 1.25f;
-
-        if (currentEmotion == EmotionType.Sad)
-            multiplier = 0.8f;
-
+        float multiplier = EmotionSystem.GetSpeedMultiplier(currentEmotion);
         return Mathf.RoundToInt(speed * multiplier);
     }
     #endregion
