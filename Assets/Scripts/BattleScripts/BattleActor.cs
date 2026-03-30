@@ -199,14 +199,6 @@ public abstract class BattleActor
 
 
     #region Emotion
-    // public virtual void SetEmotion(EmotionType emotion)
-    // {
-    //     currentEmotion = emotion;
-    //     ui?.SetEmotionAnimation(emotion);
-
-    //     Debug.Log($"[BattleActor] {GetType().Name} emotion set to {emotion}");
-    // }
-
     public virtual void SetEmotion(EmotionType newEmotion)
     {
         if (newEmotion == currentEmotion)
@@ -223,7 +215,7 @@ public abstract class BattleActor
         }
 
         ui?.SetEmotionAnimation(currentEmotion, currentEmotionTier);
-        Debug.Log($"[BattleActor] {GetType().Name} emotion set to {currentEmotion} at tier {currentEmotionTier}");
+        Debug.Log($"[BattleActor] {name} emotion set to {currentEmotion} at tier {currentEmotionTier}");
     }
 
     public int GetModifiedSpeedFromEmotion()
@@ -310,7 +302,7 @@ public abstract class BattleActor
         def = Mathf.Max(0, Mathf.RoundToInt(modifiedDef));
         speed = Mathf.Max(1, Mathf.RoundToInt(modifiedSpeed));
 
-        Debug.Log($"[BattleActor - RecalcStats] {GetType().Name} stats recalculated: ATK={atk}, DEF={def}, SPD={speed} with {activeStatModifiers.Count} active modifiers");
+        Debug.Log($"[BattleActor] {name} stats recalculated: ATK={atk}, DEF={def}, SPD={speed} with {activeStatModifiers.Count} active modifiers");
         ui?.UpdateAll();
     }
 
@@ -339,7 +331,7 @@ public abstract class BattleActor
         if (actionData.alwaysMoveFirst)
         {
             moveFirst = true;  // flag actor for TurnOrderManager
-            Debug.Log($"[BattleActor] {GetType().Name} will move first with action {actionData.name}");
+            Debug.Log($"[BattleActor] {name} will move first with action {actionData.name}");
         }
     }
 

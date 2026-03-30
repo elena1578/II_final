@@ -16,9 +16,10 @@ MonoBehaviour:
   actionType: 0
   validTargets: 4
   multiTarget: 0
+  alwaysMoveFirst: 0
   battleLogText: 
-  descriptionText: Makes a foe feel a random EMOTION. Deals extra damage to foes
-    with EMOTION.
+  descriptionText: Makes foe feel a random EMOTION. Deals extra damage to foes with
+    EMOTION.
   juiceCost: 20
   healPercentage: 0
   emotionEffect: 0
@@ -32,3 +33,6 @@ MonoBehaviour:
   animationTarget: 0
   audioClip: {fileID: 8300000, guid: 76f46037e00db2848934121cc4e8df6f, type: 3}
   clipVolume: 1
+  statChangeType: 0
+  statChangeMultiplier: 0
+  statChangeDuration: 0

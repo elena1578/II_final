@@ -16,19 +16,22 @@ MonoBehaviour:
   actionType: 1
   validTargets: 2
   multiTarget: 0
+  alwaysMoveFirst: 1
   battleLogText: '{actor} cooks a meal for {target}!'
-  descriptionText: Heals a friend for 75% of their HEART. Can be used outside of
-    battle.
+  descriptionText: Acts first, healing a friend for 40% of their HEART.
   juiceCost: 15
-  healPercentage: 0.75
+  healPercentage: 0.4
   emotionEffect: 0
   damageReductionMultiplier: 0
   damageFormula: 0
   basePower: 0
   critChance: 0.1
   critMultiplier: 1.5
-  animationTrigger: 
+  animationTrigger: fastfood
   animationDuration: 1.5
   animationTarget: 0
   audioClip: {fileID: 0}
   clipVolume: 1
+  statChangeType: 0
+  statChangeMultiplier: 0
+  statChangeDuration: 0

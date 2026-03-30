@@ -193,6 +193,8 @@ public class BattleActorUI : MonoBehaviour
             return;
 
         toast = true;
+        boundActor.SetEmotion(EmotionType.Toast);  // override emotion to toast
+        
         portraitAnimator.ResetTrigger("hurt");
         portraitAnimator.SetBool("toast", true);
     }

@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69e196fc5d5f84438e83dbbf677ba00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldSpawner
-  enemyActorPrefab: {fileID: 5771076273832984138, guid: dd8868801155c664199470c16096a5fc, type: 3}
+  enemyActorPrefab: {fileID: 264151802917820732, guid: 07334fdb217173940ab75cc656455db5, type: 3}
   collisionLayer:
     serializedVersion: 2
     m_Bits: 2048

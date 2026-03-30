@@ -75,6 +75,7 @@ public class EmotionSystem : MonoBehaviour
             EmotionType.Sad => 1,
             EmotionType.Angry => 1,
             EmotionType.Afraid => 1,
+            EmotionType.Toast => 1,  // treating as 1 to reset multipliers & built-up tiers
             EmotionType.Ecstatic => 2,
             EmotionType.Depressed => 2,
             EmotionType.Enraged => 2,

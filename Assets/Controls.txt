@@ -5,7 +5,7 @@ Shift/Control (press/toggle on/off): Sprint
 
 --- Battle ---
 
-Point and click w/ mouse: Select [button/action]
+Point and click w/ mouse: Select [button/action/target]
 Escape, Backspace, or Delete: Back
 
 --- Editor Tools ---

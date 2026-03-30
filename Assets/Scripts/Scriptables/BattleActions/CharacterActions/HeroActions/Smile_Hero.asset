@@ -18,7 +18,7 @@ MonoBehaviour:
   multiTarget: 0
   alwaysMoveFirst: 1
   battleLogText: '{actor} smiles at {target}! '
-  descriptionText: Acts first, reducing a foe's ATTACK.
+  descriptionText: Acts first, reducing a foe's ATK.
   juiceCost: 25
   healPercentage: 0
   emotionEffect: 0
@@ -32,6 +32,6 @@ MonoBehaviour:
   animationTarget: 0
   audioClip: {fileID: 0}
   clipVolume: 0.65
-  statChangeType: 1
+  statChangeType: 2
   statChangeMultiplier: 0.5
   statChangeDuration: 3

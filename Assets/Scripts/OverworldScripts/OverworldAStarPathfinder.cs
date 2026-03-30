@@ -7,8 +7,11 @@ public class OverworldAStarPathfinder : MonoBehaviour
 {
     public static OverworldAStarPathfinder instance;
     public LayerMask collisionMask;
-    public float gridSize = 0.32f;  // use from GridMovementController to ensure pathfinding grid matches movement grid
+    public float gridSize = 0.32f;  // use vals from GridMovementController to ensure pathfinding grid matches movement grid
     public Vector3 gridOffset = new Vector3(0.23f, -2.75f, 0f);
+#if UNITY_EDITOR
+    public bool drawGrid = true;
+#endif
 
     private void Awake()
     {
@@ -19,8 +22,7 @@ public class OverworldAStarPathfinder : MonoBehaviour
     {
         Vector2Int grid = WorldToGrid(worldPos);
         Vector3 snapped = GridToWorld(grid);
-
-        float checkSize = gridSize * 0.6f;
+        float checkSize = gridSize * 0.6f; 
 
         return !Physics2D.OverlapBox(
             snapped,  // center of box (on grid) = snapped
@@ -160,6 +162,9 @@ public class OverworldAStarPathfinder : MonoBehaviour
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
+        if (!drawGrid)
+            return;
+
         float size = gridSize;
         const int radius = 40;  // how many cells to draw in each direction from current position
         Vector3 origin = Vector3.zero; 

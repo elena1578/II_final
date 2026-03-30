@@ -72,7 +72,8 @@ public class BattleActionData : ScriptableObject
         Ram,
         Consume,
         FastFood,
-        Smile
+        Smile,
+        PowerHit
     }
 
     public enum ActionType
@@ -103,17 +104,19 @@ public class BattleActionData : ScriptableObject
         RunNGun,
         Curveball,
         Crunch,
-        RunAround
+        RunAround,
+        PowerHit,
     }
 
     public enum StatChangeType
     {
+        None = 0,
         AttackUp,
         AttackDown,
         DefenseUp,
         DefenseDown,
         SpeedUp,
-        SpeedDown
+        SpeedDown,
     }
     #endregion
 
@@ -148,7 +151,11 @@ public class BattleActionData : ScriptableObject
                 break;
 
             case DamageFormula.Stab:
-                damage = actor.atk * 2;
+            // ignore DEF if afflicted w/ a sad tier
+                if (IsSadTier(target.currentEmotion))
+                    damage = actor.atk * 2;
+                else  // normal calc
+                    damage = Mathf.RoundToInt(actor.atk * 1.5f) - target.def;
                 break;
 
             case DamageFormula.BreadSlice:
@@ -181,6 +188,10 @@ public class BattleActionData : ScriptableObject
             case DamageFormula.RunAround:
                 damage = Mathf.RoundToInt((actor.atk * 1.5f - target.def) * 2);  // technically deals dmg twice but that'll take more work so i'll add it later
                 break;
+
+            case DamageFormula.PowerHit:
+                damage = Mathf.RoundToInt(actor.atk * 2);
+                break;
         }
 
         // emotion multiplier
@@ -202,6 +213,13 @@ public class BattleActionData : ScriptableObject
         }
 
         return Mathf.Max(0, damage);
+    }
+
+    public static bool IsSadTier(EmotionType emotion)
+    {
+        return emotion == EmotionType.Sad ||
+            emotion == EmotionType.Depressed ||
+            emotion == EmotionType.Miserable;
     }
     #endregion
 }

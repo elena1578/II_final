@@ -15,6 +15,7 @@ public class EmotionUIVisuals : ScriptableObject
     public Sprite manicBackground;
     public Sprite miserableBackground;
     public Sprite furiousBackground;
+    public Sprite toastBackground;
 
     [Header("Portrait Emotion Labels")]
     public Sprite neutralLabel;
@@ -28,6 +29,7 @@ public class EmotionUIVisuals : ScriptableObject
     public Sprite manicLabel;
     public Sprite miserableLabel;
     public Sprite furiousLabel;
+    public Sprite toastLabel;
 
     public void GetSprites(EmotionType emotion, int tier, out Sprite background, out Sprite label)
     {
@@ -51,6 +53,11 @@ public class EmotionUIVisuals : ScriptableObject
             case EmotionType.Afraid:
                 background = afraidBackground;
                 label = afraidLabel;
+                break;
+
+            case EmotionType.Toast:  // toast isn't actually an emotion but classifying it as such so it can override other emotions
+                background = toastBackground;
+                label = toastLabel;
                 break;
 
             default:

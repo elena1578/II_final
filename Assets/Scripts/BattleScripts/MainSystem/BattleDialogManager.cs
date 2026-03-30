@@ -105,13 +105,20 @@ public class BattleDialogManager : MonoBehaviour
         switch (action.actionType)
         {
             case BattleActionData.ActionType.Attack:
+                if (result.damage > 0 && (result.statChange != BattleActionData.StatChangeType.None || action.statChangeDuration > 0))
+                {
+                    string turns = NumberToWords(result.statChangeDuration);  // e.g., "3" -> "three"
+                    string changeText = result.statMultiplier == 0.5f ? "halved"  // = 0.5, then "halved"
+                        : (result.statMultiplier > 1f ? "increased" : "decreased");  // otherwise just "increased"/"decreased"
+                    return $"\n{GetActorName(result.targets)} takes {result.damage} damage and their {GetStatusTypeForText(result.statChange.Value)} was {changeText} for {turns} turn{(result.statChangeDuration > 1 ? "s" : "")}!";
+                }
                 if (result.damage > 0)
                     return $"\n{GetActorName(result.targets)} takes {result.damage} damage!";
 
                 return "";
 
             case BattleActionData.ActionType.Heal:
-                if (result.heal > 0 && result.emotion != EmotionType.Neutral)
+                if (result.heal > 0 && (result.emotion.HasValue && result.emotion.Value != EmotionType.Neutral))
                     return $"\n{GetActorName(result.targets)} recovers {result.heal} HP and became {result.emotion}!";
                 if (result.heal > 0)
                     return $"\n{GetActorName(result.targets)} recovers {result.heal} HP!";
@@ -120,7 +127,7 @@ public class BattleDialogManager : MonoBehaviour
 
             case BattleActionData.ActionType.Emotion:
                 if (action.emotionEffect != EmotionType.Neutral)
-                    return $"\n{GetActorName(result.targets)} became {action.emotionEffect}.";
+                    return $"\n{GetActorName(result.targets)} became {action.emotionEffect}!";
 
                 return "";
 
@@ -171,7 +178,7 @@ public class BattleDialogManager : MonoBehaviour
         if (number >= 0 && number <= 20)
             return words[number];
 
-        return number.ToString();  // fallback for numbers over 20
+        return number.ToString();  // fallback for numbers over 20 (even if this'll prob never happen)
     }
     #endregion
 }

@@ -65,8 +65,15 @@ public class EnemyOverworldSpawner : MonoBehaviour
                     // initialize enemy actor w/ the randomly selected data
                     EnemyOverworldActor actor = enemyGO.GetComponent<EnemyOverworldActor>();
                     actor.InitializeData(selectedData);
-                    actor.SetSpawnArea(area);  // set spawn area so enemy can't walk outside it 
 
+                    if (selectedData == null)
+                    {
+                        Debug.LogError($"[EnemyOverworldSpawner] Selected enemy data is null for {selectedData.name}");
+                        continue;
+                    }
+
+                    actor.SetSpawnArea(area);  // set spawn area so enemy can't walk outside it 
+                    
                     Debug.Log($"[EnemyOverworldSpawner] Spawned {selectedData.name} at {pos}");
                 }
             }

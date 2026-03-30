@@ -44,6 +44,10 @@ public class AttackAction : IBattleAction
             if (didCritForHit)
                 crit = true;
 
+            // check for power hit case (ignores def (done through dmg calc) & drops def by 30% for 3 turns)
+            if (data.actionName == BattleActionData.BattleActionName.PowerHit)
+                target.SetStatChange(BattleActionData.StatChangeType.DefenseDown, 0.7f, 3);
+
             target.TakeDamage(damage);
             totalDamage += damage;
         }
@@ -58,7 +62,10 @@ public class AttackAction : IBattleAction
             targets = targets,
             damage = totalDamage,
             moveFirst = moveFirst,
-            didCrit = crit
+            didCrit = crit,
+            statChange = data.statChangeType,
+            statMultiplier = data.statChangeMultiplier,
+            statChangeDuration = data.statChangeDuration
         };
     }
 }

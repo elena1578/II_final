@@ -23,6 +23,7 @@ MonoBehaviour:
   manicBackground: {fileID: -355335889, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
   miserableBackground: {fileID: 499315515, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
   furiousBackground: {fileID: 520583109, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
+  toastBackground: {fileID: 386285181, guid: cadc81141b9e76840a0bd15239b75de4, type: 3}
   neutralLabel: {fileID: -2757132410801158890, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
   happyLabel: {fileID: -7193376334235582596, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
   sadLabel: {fileID: -2337842730492131984, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
@@ -34,3 +35,4 @@ MonoBehaviour:
   manicLabel: {fileID: -7064768734707012452, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
   miserableLabel: {fileID: -8691802539313342531, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
   furiousLabel: {fileID: 1318093181072024177, guid: 2917b706063ccc540b7360c0a51dcac7, type: 3}
+  toastLabel: {fileID: 21300000, guid: f017e8fdf63ac474dbe31f19c7375ec1, type: 3}

@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42a12b7a56dc38142ab63a31fd1e2841, type: 3}
-  m_Name: Charm_Hero
+  m_Name: Cook_Hero
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
-  actionName: 0
-  actionType: 0
-  validTargets: 4
-  multiTarget: 1
-  alwaysMoveFirst: 1
-  battleLogText: 
-  descriptionText: Act's first, a foe targets HERO for 1 turn.
-  juiceCost: 0
-  healPercentage: 0
+  actionName: 1
+  actionType: 1
+  validTargets: 2
+  multiTarget: 0
+  alwaysMoveFirst: 0
+  battleLogText: '{actor} cooks a meal for {target}!'
+  descriptionText: Heals a friend for 75% of their HEART.
+  juiceCost: 10
+  healPercentage: 0.75
   emotionEffect: 0
   damageReductionMultiplier: 0
   damageFormula: 0
   basePower: 0
   critChance: 0.1
   critMultiplier: 1.5
-  animationTrigger: 
+  animationTrigger: cook
   animationDuration: 1.5
   animationTarget: 0
   audioClip: {fileID: 0}

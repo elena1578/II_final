@@ -10,28 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42a12b7a56dc38142ab63a31fd1e2841, type: 3}
-  m_Name: RunNGun_Kel
+  m_Name: PowerHit_Aubrey
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
-  actionName: 18
+  actionName: 26
   actionType: 0
   validTargets: 4
   multiTarget: 0
   alwaysMoveFirst: 0
-  battleLogText: '{actor} rushes at the {target}!'
-  descriptionText: KEL does an attack based on his SPD instead of his ATK.
-  juiceCost: 15
+  battleLogText: '{actor} swings at {target}!'
+  descriptionText: An attack that ignores a foe's DEF, then reduces the foe's DEF
+    by 30%.
+  juiceCost: 20
   healPercentage: 0
   emotionEffect: 0
   damageReductionMultiplier: 0
-  damageFormula: 6
+  damageFormula: 10
   basePower: 0
   critChance: 0.1
   critMultiplier: 1.5
-  animationTrigger: runngun
-  animationDuration: 3.5
+  animationTrigger: powerhit
+  animationDuration: 1.5
   animationTarget: 0
   audioClip: {fileID: 0}
   clipVolume: 1
-  statChangeType: 0
-  statChangeMultiplier: 0
-  statChangeDuration: 0
+  statChangeType: 4
+  statChangeMultiplier: 0.3
+  statChangeDuration: 3

@@ -53,6 +53,26 @@ public class BattleActionButton : MonoBehaviour, IPointerEnterHandler, IPointerE
         gameObject.SetActive(true);
     }
 
+    /// <summary>
+    /// ensures elements are hidden even when coroutines are still running
+    /// </summary>
+    private void OnDisable()
+    {
+        // stop fades
+        if (juiceFadeRoutine != null)
+            StopCoroutine(juiceFadeRoutine);
+
+        if (descriptionFadeRoutine != null)
+            StopCoroutine(descriptionFadeRoutine);
+
+        // force hidden state
+        if (juiceCostCanvasGroup != null)
+            juiceCostCanvasGroup.alpha = 0f;
+
+        if (skillDescriptionCanvasGroup != null)
+            skillDescriptionCanvasGroup.alpha = 0f;
+    }
+
     public void Clear()
     {
         actionData = null;

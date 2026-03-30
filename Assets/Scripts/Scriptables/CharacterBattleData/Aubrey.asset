@@ -25,6 +25,7 @@ MonoBehaviour:
   allActions:
   - {fileID: 11400000, guid: a1ac62fc659fecc4b908d71e95f83580, type: 2}
   - {fileID: 11400000, guid: 7ffcbf14e82330a48b2a1addca08994d, type: 2}
+  - {fileID: 11400000, guid: 777dbe7e5c3fa5e42bbfee4793edcb74, type: 2}
   - {fileID: 11400000, guid: b80c3868e2fb2e74d968d102cbc4b9d8, type: 2}
   attackActions: []
   healActions:
