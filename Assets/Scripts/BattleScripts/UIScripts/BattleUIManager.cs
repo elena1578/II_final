@@ -40,9 +40,9 @@ public class BattleUIManager : MonoBehaviour
     [Header("Other")]
     [SerializeField] private CanvasGroup fleeCanvasGroup;
     [SerializeField] private GameObject fleeImage;
-    [SerializeField] [Tooltip("Scale factor for zooming in the flee image")] private float zoomScale = 1.5f;
-    [SerializeField] [Tooltip("Duration of flee animation in seconds")] private float fleeDuration = 1.5f;
-    [SerializeField] [Tooltip("Time to wait after flee animation before transitioning")] private float fleeWaitTime = 1f;
+    [SerializeField] [Tooltip("Scale factor for zooming in flee image")] private float zoomScale = 1.5f;
+    [SerializeField] private float fleeDuration = 1.5f;
+    [SerializeField] private float fleeWaitTime = 1f;
 
     private List<BattleActorUI> enemySlots = new();
 
@@ -67,7 +67,7 @@ public class BattleUIManager : MonoBehaviour
         {
             var enemyActor = enemy as EnemyBattleActor;
 
-            // default first enemy = center
+            // default first enemy = center, then left, then right
             EnemySpawnPosition spawnPos = EnemySpawnPosition.Center;
 
             if (IsPositionOccupied(EnemySpawnPosition.Center))
@@ -122,14 +122,13 @@ public class BattleUIManager : MonoBehaviour
         var ui = Instantiate(enemySlotPrefab, parent);
         enemy.ui = ui;
         enemySlots.Add(ui);  // track enemy UIs for cleanup later
-
         ui.Bind(enemy, enemy.enemyData.battleSprite);
 
         var dataSetter = ui.GetComponent<EnemyBattleActorDataSetter>();
         if (dataSetter != null)
             dataSetter.SetBattleData(enemy.enemyData);
 
-        ui.transform.SetAsFirstSibling();
+        ui.transform.SetAsFirstSibling();  
     }
 
     public void RemoveEnemyUI(EnemyBattleActor enemy)
@@ -222,14 +221,12 @@ public class BattleUIManager : MonoBehaviour
     {       
         if (fleeCanvasGroup != null)
         {
-            Debug.Log("[BattleUIManager] Showing flee screen");
             if (fleeImage != null)
                 yield return StartCoroutine(FadeAndZoomIn());
             else
                 Debug.LogWarning("[BattleUIManager] Flee image not assigned, skipping fade/zoom effect");
 
             yield return new WaitForSeconds(fleeWaitTime);
-            // Debug.Log("[BattleManager] Fled from battle successfully!");
         }
         else
             Debug.LogWarning("[BattleUIManager] Flee canvas group not assigned, skipping showing it");

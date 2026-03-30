@@ -16,7 +16,7 @@ public class BattleManager : MonoBehaviour
     private List<(BattleActor actor, BattleActionData action, BattleActor target)> plannedActions;
     private int planningIndex = 0;
     public bool HasActiveBattle { get; private set; }
-    private const float fleeChance = 0.5f;  // 50% chance to flee successfully
+    private const float fleeChance = 0.5f;
     private bool fleeSuccessful;
 
     // runtime systems
@@ -152,7 +152,7 @@ public class BattleManager : MonoBehaviour
             if (!context.currentActor.isAlive)
             {
                 planningIndex++;
-                HandleCurrentActorTurn();  // recursive call to skip dead actor
+                HandleCurrentActorTurn();
                 return;
             }
 
@@ -165,7 +165,7 @@ public class BattleManager : MonoBehaviour
                 BattleDialogManager.instance.ShowPlanningPrompt(player);
             }
 
-            return;  // no incrementing planningIndex here!! wait until player commits action
+            return; 
         }
 
         // once all character actors have planned, enemies plan/decide their actions
@@ -206,33 +206,11 @@ public class BattleManager : MonoBehaviour
         );
     }
 
-    // public void OnPlayerSelectedAction(BattleActionData actionData)
-    // {
-    //     // if the action needs a target, begin targeting
-    //     if (actionData.validTargets != TargetGroup.None)
-    //     {
-    //         BeginTargetSelection(actionData);
-    //         return;
-    //     }
-
-    //     // otherwise immediately commit the action
-    //     plannedActions.Add((context.currentActor, actionData, null));
-    //     planningIndex++;
-
-    //     commandButtons.HideAllCommands();
-    //     turnStateMachine.EnterState(BattleState.ActorTurn);  // proceed to next actor's turn (player or enemy)
-    // }
-
     public void OnPlayerSelectedAction(BattleActionData actionData)
     {
         if (actionData.validTargets != TargetGroup.None)
         {
-            TargetingController.instance.BeginTargeting(
-                context.currentActor,
-                actionData,
-                OnTargetSelected
-            );
-
+            TargetingController.instance.BeginTargeting(context.currentActor, actionData, OnTargetSelected);
             return;
         }
 
@@ -242,8 +220,7 @@ public class BattleManager : MonoBehaviour
     public void OnTargetSelected(BattleActor target) => CommitAction(TargetingController.instance.PendingAction, target);
     public void CommitAction(BattleActionData action, BattleActor target)
     {
-        // set moveFirst flag here if applicable
-        context.currentActor.CheckIfMovingFirst(action);
+        context.currentActor.CheckIfMovingFirst(action);  // set moveFirst flag here if applicable
         
         plannedActions.Add((context.currentActor, action, target));
         planningIndex++;
@@ -273,7 +250,7 @@ public class BattleManager : MonoBehaviour
             if (a.actor.moveFirst && !b.actor.moveFirst) return -1;
             if (!a.actor.moveFirst && b.actor.moveFirst) return 1;
 
-            // otherwise sort by highest to lowest speed
+            // otherwise sort by speed like normal
             return b.actor.speed.CompareTo(a.actor.speed);
         });
         StartCoroutine(ResolveActionsRoutine());
@@ -286,10 +263,10 @@ public class BattleManager : MonoBehaviour
         
         foreach (var entry in actionsToResolve)
         {
-            // skip if actor is null, action is null, or actor is dead
             if (entry.actor == null || entry.action == null || !entry.actor.isAlive)
                 continue;
 
+            // determine targets for action
             List<BattleActor> targets = entry.target != null 
                 ? new List<BattleActor> { entry.target } 
                 : context.GetActionTargets(entry.actor, entry.action);
@@ -345,11 +322,7 @@ public class BattleManager : MonoBehaviour
             }
 
             // 2. show battle dialog
-            BattleDialogManager.instance.Show(
-                entry.action,
-                result
-            );
-
+            BattleDialogManager.instance.Show(entry.action, result);
             yield return new WaitForSeconds(animTime);  // wait for animation to complete (def'd in BattleActionData)
 
             // 3. wait for dialog to finish + small delay after
@@ -389,8 +362,7 @@ public class BattleManager : MonoBehaviour
     /// can also be used later to reselect an actor's action before all party members have committed 
     /// </summary>
     /// <param name="actor"></param>
-    public void RemoveActorFromPlans(BattleActor actor) =>
-        plannedActions.RemoveAll(p => p.actor == actor);
+    public void RemoveActorFromPlans(BattleActor actor) => plannedActions.RemoveAll(p => p.actor == actor);
 
     private void ResolveEmotions()
     {
@@ -422,6 +394,10 @@ public class BattleManager : MonoBehaviour
         return false;
     }
    
+    /// <summary>
+    /// handles end of round events such as king crawler spawning sprout moles, decrementing stat mod durations, etc.
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator HandleEndOfRoundEvents()
     {
         // king crawler case:
@@ -435,9 +411,7 @@ public class BattleManager : MonoBehaviour
                 continue;
 
             if (enemy is EnemyBattleActor eba && eba.behavior != null)
-            {
                 yield return eba.behavior.OnEndOfRound(this, context, eba);
-            }
         }
 
         // check stat mods and handle accordingly
@@ -486,7 +460,6 @@ public class BattleManager : MonoBehaviour
 
     #region Battle End
     public void EndBattle(bool win) => StartCoroutine(BattleEndRoutine(win));
-
     private IEnumerator BattleEndRoutine(bool win)
     {
         commandButtons.HideAllCommands();
@@ -499,7 +472,7 @@ public class BattleManager : MonoBehaviour
             else
                 yield return HandleDefeatSequence();
 
-        // record HP/juice changes
+        // record HP/juice changes so they carry over to the next battle
         foreach (var member in context.party)
         {
             if (member is PlayerBattleActor player)

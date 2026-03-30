@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public class OverworldPathfinder : MonoBehaviour
+public class OverworldAStarPathfinder : MonoBehaviour
 {
-    public static OverworldPathfinder instance;
+    public static OverworldAStarPathfinder instance;
     public LayerMask collisionMask;
     public float gridSize = 0.32f;  // use from GridMovementController to ensure pathfinding grid matches movement grid
     public Vector3 gridOffset = new Vector3(0.23f, -2.75f, 0f);
@@ -23,13 +23,18 @@ public class OverworldPathfinder : MonoBehaviour
         float checkSize = gridSize * 0.6f;
 
         return !Physics2D.OverlapBox(
-            snapped,  // center of box is snapped position (aligned to grid)
+            snapped,  // center of box (on grid) = snapped
             new Vector2(checkSize, checkSize),
             0,
             collisionMask
         );
     }
 
+    /// <summary>
+    /// same as GridMovementController's WorldToGrid
+    /// </summary>
+    /// <param name="worldPos"></param>
+    /// <returns></returns>
     public Vector2Int WorldToGrid(Vector3 worldPos)
     {
         int x = Mathf.RoundToInt((worldPos.x - gridOffset.x) / gridSize);
@@ -38,6 +43,11 @@ public class OverworldPathfinder : MonoBehaviour
         return new Vector2Int(x, y);
     }
 
+    /// <summary>
+    /// same as GridMovementController's GridToWorld
+    /// </summary>
+    /// <param name="grid"></param>
+    /// <returns></returns>
     public Vector3 GridToWorld(Vector2Int grid)
     {
         float x = grid.x * gridSize + gridOffset.x;
@@ -52,8 +62,7 @@ public class OverworldPathfinder : MonoBehaviour
     /// A* pathfinding used by overworld enemies to navigate toward the player.
     /// converts world positions to grid coords, searches for a valid path avoiding walls,
     /// and returns a list of world positions for the enemy to follow.
-    /// 
-    /// if no path is found (completely blocked), returns null
+    /// if no path is found (i.e., completely blocked), returns null
     /// </summary>
     public List<Vector3> FindPath(Vector3 startWorld, Vector3 targetWorld)
     {
@@ -75,10 +84,9 @@ public class OverworldPathfinder : MonoBehaviour
         {
             PathNode current = open[0];
 
-            // find node in open list w/ lowest total cost (fCost)
-            // fCost = gCost (distance from start) + hCost (estimated distance to target)
+            // find node in open list w/ lowest total cost
             foreach (var node in open)
-                if (node.fCost < current.fCost)
+                if (node.totalCost < current.totalCost)
                     current = node;
 
             // move current node from open list -> closed list
@@ -94,6 +102,7 @@ public class OverworldPathfinder : MonoBehaviour
             {
                 Vector2Int neighborPos = current.gridPos + dir;
 
+                // skip neighbor if already in closed list 
                 if (closed.Contains(neighborPos))
                     continue;
 
@@ -104,19 +113,19 @@ public class OverworldPathfinder : MonoBehaviour
 
                 PathNode neighbor = new PathNode(neighborPos, true);
 
-                neighbor.gCost = current.gCost + 10;  // gCost = movement cost from start -> this node
-                neighbor.hCost =  
-                    Mathf.Abs(neighborPos.x - target.x) +
-                    Mathf.Abs(neighborPos.y - target.y);  // hCost = estimated cost from this node -> target
+                // uniform cost for moving to any adjacent tile (no diagonals (hence why manhattan distance is used)), 
+                // so just add 10 to current node's distance from start
+                neighbor.distanceFromStart = current.distanceFromStart + 10; 
+                neighbor.estimatedDistanceToGoal = Mathf.Abs(neighborPos.x - target.x) + Mathf.Abs(neighborPos.y - target.y); 
 
                 neighbor.parent = current;  // remember which node led to this one (used when reconstructing path)
 
-                // if neighbor is already in open list w/ lower fCost, skip adding it again
+                // if neighbor is already in open list w/ lower total cost, skip adding
                 bool alreadyOpen = open.Exists(n => n.gridPos == neighborPos);
                 if (alreadyOpen)
                     continue;
 
-                open.Add(neighbor);  // add neighbor to open list so it can be evaluated later
+                open.Add(neighbor); 
             }
         }
         return null;
@@ -125,7 +134,6 @@ public class OverworldPathfinder : MonoBehaviour
     private List<Vector3> RetracePath(PathNode endNode)
     {
         List<Vector3> path = new();
-
         PathNode current = endNode;
 
         while (current != null)
@@ -134,10 +142,13 @@ public class OverworldPathfinder : MonoBehaviour
             current = current.parent;
         }
 
-        path.Reverse();
+        path.Reverse(); 
         return path;
     }
 
+    /// <summary>
+    /// directions for checking neighboring tiles during A* search
+    /// </summary>
     private static readonly Vector2Int[] directions =
     {
         Vector2Int.up,
@@ -149,9 +160,9 @@ public class OverworldPathfinder : MonoBehaviour
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-        const int radius = 40;
-
-        Vector3 origin = Vector3.zero;
+        float size = gridSize;
+        const int radius = 40;  // how many cells to draw in each direction from current position
+        Vector3 origin = Vector3.zero; 
 
         origin.x = Mathf.Round((origin.x - gridOffset.x) / gridSize) * gridSize + gridOffset.x;
         origin.y = Mathf.Round((origin.y - gridOffset.y) / gridSize) * gridSize + gridOffset.y;
@@ -160,16 +171,17 @@ public class OverworldPathfinder : MonoBehaviour
         {
             for (int y = -radius; y <= radius; y++)
             {
-                Vector3 cell = new Vector3(
+                // cal center of each cell based on grid size & offset
+                Vector3 cellCenter = new Vector3(
                     origin.x + x * gridSize,
                     origin.y + y * gridSize,
                     0
                 );
 
-                bool walkable = IsWalkable(cell);
+                bool walkable = IsWalkable(cellCenter);  // also show which cells are walkable vs. blocked by walls
 
-                Gizmos.color = walkable ? new Color(0,1,0,0.25f) : new Color(1,0,0,0.35f);
-                Gizmos.DrawCube(cell, Vector3.one * gridSize * 0.9f);
+                Gizmos.color = walkable ? new Color(0,1,0,0.25f) : new Color(1,0,0,0.35f);  // green for walkable, red for blocked
+                Gizmos.DrawCube(cellCenter, Vector3.one * gridSize * 0.9f);  
             }
         }
     }

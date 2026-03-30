@@ -8,7 +8,7 @@ public class PicnicBasket : MonoBehaviour
 {
     public float fadeDuration = 1f;
     public float sfxWaitTime = 1f;  // time to wait for heal SFX to play before fading out
-    private PlayerOverworldController currentPlayer;
+    private PlayerOverworldController currentPlayer;  // ref to player currently in range to interact w/ picnic basket
 
     private void Start()
     {
@@ -17,7 +17,7 @@ public class PicnicBasket : MonoBehaviour
             col.isTrigger = true;
     }
 
-        private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         PlayerOverworldController player = other.GetComponent<PlayerOverworldController>();
         if (player != null)

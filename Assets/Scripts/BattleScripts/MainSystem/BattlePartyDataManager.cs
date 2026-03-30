@@ -56,7 +56,7 @@ public class BattlePartyDataManager : MonoBehaviour
             // only set HP if key doesn't exist yet
             if (!currentHP.ContainsKey(member.characterName))
             {
-                // use debug slider value if > 0, otherwise use baseHP
+                // use debug slider val if > 0, otherwise use baseHP
                 int hp = Mathf.Clamp(initialHP[i] > 0 ? initialHP[i] : member.baseHP, 0, member.baseHP);
                 currentHP[member.characterName] = hp;
             }

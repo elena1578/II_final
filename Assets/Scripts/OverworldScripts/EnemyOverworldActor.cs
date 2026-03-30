@@ -161,7 +161,7 @@ public class EnemyOverworldActor : GridMovementController
 
         if (pathTimer <= 0)
         {
-            currentPath = OverworldPathfinder.instance.FindPath(transform.position, player.position);
+            currentPath = OverworldAStarPathfinder.instance.FindPath(transform.position, player.position);
             pathIndex = 0;
             pathTimer = pathUpdateInterval;
         }
@@ -193,7 +193,7 @@ public class EnemyOverworldActor : GridMovementController
         }
 
         // safety check if tile becomes blocked
-        if (!OverworldPathfinder.instance.IsWalkable(nextTile))
+        if (!OverworldAStarPathfinder.instance.IsWalkable(nextTile))
         {
             currentPath = null;
             return;
@@ -211,7 +211,7 @@ public class EnemyOverworldActor : GridMovementController
 
         if (pathTimer <= 0)
         {
-            currentPath = OverworldPathfinder.instance.FindPath(transform.position, spawnedPos);
+            currentPath = OverworldAStarPathfinder.instance.FindPath(transform.position, spawnedPos);
             pathIndex = 0;
             pathTimer = pathUpdateInterval;
         }

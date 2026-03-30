@@ -35,7 +35,7 @@ public abstract class BattleActor
     [HideInInspector] public List<ActiveStatModifier> activeStatModifiers = new();
 
     // other
-    [HideInInspector] public bool moveFirst = false;  // for actions that should always go first in the turn order, e.g., Hero's Smile
+    [HideInInspector] public bool moveFirst = false;
     public BattleActorUI ui { get; set; }
 
     public virtual void InitializeFromData(
@@ -85,12 +85,13 @@ public abstract class BattleActor
         int hpDamage = finalDamage;
         int juiceDamage = 0;
 
-        // check if sad, if yes, 30% of damage is juice damage instead of HP damage
-        if (currentEmotion == EmotionType.Sad)
-        {
-            juiceDamage = Mathf.RoundToInt(finalDamage * 0.3f);
-            hpDamage = finalDamage - juiceDamage;
-        }
+        // if sad/depressed/miserable, convert portion of HP dmg to juice dmg
+        if (currentEmotion == EmotionType.Sad || currentEmotion == EmotionType.Depressed || currentEmotion == EmotionType.Miserable)
+            ConvertToJuiceDamage(ref hpDamage, ref juiceDamage, finalDamage);
+
+        // apply damage
+        currentHP = Mathf.Max(0, currentHP - hpDamage);
+        currentJuice = Mathf.Max(0, currentJuice - juiceDamage);
 
         // apply dmg + juice changes, ensuring neither goes below 0
         currentHP = Mathf.Max(0, currentHP - hpDamage);
@@ -122,6 +123,35 @@ public abstract class BattleActor
                 OnDeath();
             }
         }
+    }
+
+    /// <summary>
+    /// converts a portion of incoming HP damage to juice damage if actor is sad, depressed, or miserable
+    /// </summary>
+    private void ConvertToJuiceDamage(ref int hpDamage, ref int juiceDamage, int incomingDamage)
+    {
+        float juicePercent = 0f;
+
+        // percentage based off tier (30% / 50% / 100% for sad / depressed / miserable)
+        switch (currentEmotion)
+        {
+            case EmotionType.Sad:       
+                juicePercent = 0.3f; 
+                break;
+            case EmotionType.Depressed: 
+                juicePercent = 0.5f; 
+                break;
+            case EmotionType.Miserable: 
+                juicePercent = 1f;   
+                break;
+            default:                    
+                juicePercent = 0f;   
+                break;
+        }
+
+        // calc juice & hp damage
+        juiceDamage = Mathf.RoundToInt(incomingDamage * juicePercent);
+        hpDamage = incomingDamage - juiceDamage;
     }
 
     public virtual void OnDeath()

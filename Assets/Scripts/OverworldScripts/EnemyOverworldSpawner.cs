@@ -139,11 +139,11 @@ public class EnemyOverworldSpawner : MonoBehaviour
             
             // use pathfinder's walkability check (which uses a slightly smaller collision box than the physical one) 
             // to weed out positions that are technically not colliding but would still be unreachable for enemies
-            Vector3 snapped = OverworldPathfinder.instance.GridToWorld(
-                OverworldPathfinder.instance.WorldToGrid(candidate)
+            Vector3 snapped = OverworldAStarPathfinder.instance.GridToWorld(
+                OverworldAStarPathfinder.instance.WorldToGrid(candidate)
             );
 
-            if (!OverworldPathfinder.instance.IsWalkable(snapped))
+            if (!OverworldAStarPathfinder.instance.IsWalkable(snapped))
                 continue;
 
             // if collision @ candidate position, try to find spawn pos again
@@ -153,8 +153,8 @@ public class EnemyOverworldSpawner : MonoBehaviour
                 continue;
 
             // check pathfinder walkability (since counts collision a bit differently)
-            if (OverworldPathfinder.instance != null &&
-                !OverworldPathfinder.instance.IsWalkable(candidate))
+            if (OverworldAStarPathfinder.instance != null &&
+                !OverworldAStarPathfinder.instance.IsWalkable(candidate))
                 continue;
 
             position = snapped;

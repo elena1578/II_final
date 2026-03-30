@@ -28,7 +28,7 @@ public class KingCrawlerBehaviour : IBattleEnemyBehaviour
             manager.uiManager.AddEnemyUI(newMole, openPosition);
             manager.uiManager.UpdateAll();
 
-            BattleDialogManager.instance.Show("KING CRAWLER calls to LOST SPROUT MOLE!");
+            BattleDialogManager.instance.Show("King Crawler calls to Lost Sprout Mole!");
 
             while (BattleDialogManager.instance.typing)
                 yield return null;
@@ -64,10 +64,7 @@ public class KingCrawlerBehaviour : IBattleEnemyBehaviour
                 context.enemies.Remove(mole);  // remove from context and immediately rebuild turn order
                 manager.RebuildTurnOrder();
 
-                BattleDialogManager.instance.Show(
-                    consume,
-                    result
-                );
+                BattleDialogManager.instance.Show(consume, result);  // show heal dialog
 
                 while (BattleDialogManager.instance.typing)
                     yield return null;

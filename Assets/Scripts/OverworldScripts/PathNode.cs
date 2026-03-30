@@ -5,9 +5,11 @@ public class PathNode
 {
     public Vector2Int gridPos;
     public bool walkable;
-    public int gCost;  // distance from start node
-    public int hCost;  // heuristic distance from end node
-    public int fCost => gCost + hCost;
+
+    // ref: https://www.geeksforgeeks.org/artificial-intelligence/a-algorithm-and-its-heuristic-search-strategy-in-artificial-intelligence/
+    public int distanceFromStart;
+    public int estimatedDistanceToGoal;
+    public int totalCost => distanceFromStart + estimatedDistanceToGoal;
     public PathNode parent;
 
     public PathNode(Vector2Int pos, bool walkable)

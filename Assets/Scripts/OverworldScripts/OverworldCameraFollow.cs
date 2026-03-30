@@ -7,7 +7,6 @@ public class OverworldCameraFollow : MonoBehaviour
     private Transform target;  // player
     private float camHalfHeight;
     private float camHalfWidth;
-
     private float minX, maxX, minY, maxY;
 
     private void Awake()
@@ -16,7 +15,7 @@ public class OverworldCameraFollow : MonoBehaviour
     }
 
     private void OnDestroy() => SceneManager.sceneLoaded -= OnSceneLoaded;
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) => SetupCameraBounds();
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) => InitializeCameraBounds();
 
     private void Start()
     {
@@ -25,7 +24,7 @@ public class OverworldCameraFollow : MonoBehaviour
         camHalfWidth = camHalfHeight * cam.aspect;
 
         FindPlayer();
-        SetupCameraBounds();
+        InitializeCameraBounds();
     }
 
     private void FindPlayer()
@@ -38,19 +37,19 @@ public class OverworldCameraFollow : MonoBehaviour
             Debug.LogWarning("[CameraFollow] Player not found");
     }
 
-    private void SetupCameraBounds()
+    private void InitializeCameraBounds()
     {
         GameObject boundsObj = GameObject.Find("CameraBounds");
         if (boundsObj == null)
         {
-            Debug.LogWarning("[CameraFollow] CameraBounds object not found in scene.");
+            Debug.LogWarning("[CameraFollow] CameraBounds object not found in scene");
             return;
         }
 
         BoxCollider2D box = boundsObj.GetComponent<BoxCollider2D>();
         if (box == null)
         {
-            Debug.LogWarning("[CameraFollow] No BoxCollider2D found on CameraBounds object.");
+            Debug.LogWarning("[CameraFollow] No BoxCollider2D found on CameraBounds object, needed to define camera limits");
             return;
         }
 

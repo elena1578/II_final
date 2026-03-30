@@ -3,7 +3,7 @@ using UnityEngine;
 
 /// <summary>
 /// simplified version of EnemyOverworldActor (i.e., no movement or alert behavior).
-/// mainly used for stationary boss enemies & testing purposes
+/// mainly used for stationary boss enemies (i.e. king crawler) & testing
 /// </summary>
 public class SimpleEnemyOverworldActor : MonoBehaviour
 {
@@ -20,12 +20,10 @@ public class SimpleEnemyOverworldActor : MonoBehaviour
         
         if (data != null)
         {
-            // sprite
             SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
             if (sr != null && data.sprite != null)
                 sr.sprite = data.sprite;
 
-            // animator controller
             if (animator != null && data.animatorController != null)
                 animator.runtimeAnimatorController = data.animatorController;
         }
@@ -51,7 +49,7 @@ public class SimpleEnemyOverworldActor : MonoBehaviour
             // disable player movement
             PlayerOverworldController player = other.collider.GetComponent<PlayerOverworldController>();
             if (player != null)
-                player.DisablePlayerMovement();
+                player.FreezeForBattle();
 
             Debug.Log("[EnemyOverworldActor] Beginning battle with " + data.name);
             BattleTransitionManager.instance.StartBattle(data);
