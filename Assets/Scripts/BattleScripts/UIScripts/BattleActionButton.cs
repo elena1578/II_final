@@ -8,9 +8,11 @@ using System.Collections;
 public class BattleActionButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public TextMeshProUGUI buttonTextChild;
-    [SerializeField] private BattleActionData actionData;
-    private BattleUIManager battleUIManager;
+    [HideInInspector] public BattleActionData actionData;
+    [HideInInspector] public BattleUIManager battleUIManager;
     private MainCommandButtons mainCommandButtons;
+    private PlayerBattleActor actor;
+    private Button button;
     
     // internal refs pulled from BattleUIManager
     private TextMeshProUGUI juiceCostText;
@@ -24,10 +26,11 @@ public class BattleActionButton : MonoBehaviour, IPointerEnterHandler, IPointerE
     private Coroutine descriptionFadeRoutine;
 
 
-    private void Start()
+    private void Awake()
     {
         battleUIManager = GetComponentInParent<BattleUIManager>();
         mainCommandButtons = GetComponentInParent<MainCommandButtons>();
+        button = GetComponent<Button>();
 
         // cache refs from BattleUIManager
         // juice cost
@@ -46,10 +49,38 @@ public class BattleActionButton : MonoBehaviour, IPointerEnterHandler, IPointerE
         gameObject.SetActive(true);
     }
 
+    public void SetActor(PlayerBattleActor actor) => this.actor = actor;
     public void Initialize(BattleActionData data)
     {
+        if (data == null || actor == null)
+        {
+            Clear();
+            return;
+        }
+
+        // cache internal refs if they happen to be null
+        battleUIManager ??= GetComponentInParent<BattleUIManager>();
+        mainCommandButtons ??= GetComponentInParent<MainCommandButtons>();
+        button ??= GetComponent<Button>();
+
+        // cache refs again if they happen to be null
+        juiceCostText ??= battleUIManager.juiceCostText;
+        juiceImage ??= battleUIManager.juiceCostIcon;
+        skillDescriptionBox ??= battleUIManager.skillDescriptionBox;
+        skillNameText ??= battleUIManager.skillNameText;
+        skillDescriptionText ??= battleUIManager.skillDescriptionText;
+        skillDescriptionCanvasGroup ??= battleUIManager.skillDescriptionCanvasGroup;
+        juiceCostCanvasGroup ??= battleUIManager.juiceCostCanvasGroup;
+
+        // set data & text
         actionData = data;
         buttonTextChild.text = data.actionName.ToDisplayName();
+
+        // check if actor has enough juice for this action & set interactable state
+        bool canUse = battleUIManager.CanUseAction(actor, actionData);
+        button.interactable = canUse;
+        buttonTextChild.color = canUse ? Color.white : Color.gray;
+
         gameObject.SetActive(true);
     }
 

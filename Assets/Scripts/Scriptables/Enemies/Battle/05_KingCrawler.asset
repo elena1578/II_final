@@ -25,7 +25,7 @@ MonoBehaviour:
   baseHP: 730
   baseJuice: 250
   baseAttack: 25
-  baseDefense: 30
+  baseDefense: 24
   baseSpeed: 18
   maxEmotionTier: 1
   expReward: 2400

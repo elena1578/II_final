@@ -12,6 +12,7 @@ to-do:
 
 known bugs to fix:
 - player gets stuck sometimes when returning from battle -> overworld
+- updating text parsing to support tier 2 and 3 emotions AND "{actor} cannot become more sad/happy/angry!" if max tier is met
 
 
 done:
@@ -32,3 +33,4 @@ fixed bugs:
 - in enemy encounters of 2+, enemy that is toast is not removed from battle + does not slide down screen
 - toast player characters animation not playing properly
 - enemy pushes player upon colliding to start battle
+- disable action button for use if actor doesn't have enough juice

@@ -443,7 +443,14 @@ public class BattleManager : MonoBehaviour
 
         // reset all moveFirst flags at end of round so they don't carry over to next round
         foreach (var actor in GetAllActors())
+        {
             actor.moveFirst = false;
+
+            // refresh buttons for alive player actors
+            // used for if actors can no longer afford juice costs of certain actions
+            if (actor is PlayerBattleActor player)
+                uiManager.RefreshActionButtons(player); 
+        }
 
         uiManager.UpdateAll();
     }

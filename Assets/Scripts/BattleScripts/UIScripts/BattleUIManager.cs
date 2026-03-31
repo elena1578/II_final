@@ -199,7 +199,13 @@ public class BattleUIManager : MonoBehaviour
         }
 
         foreach (var button in actionButtons)
+        {
+            if (button.battleUIManager == null)
+                button.battleUIManager = this;
+            
             button.Clear();
+            button.SetActor(actor);
+        }
 
         var actions = actor.AllActions;
 
@@ -211,6 +217,32 @@ public class BattleUIManager : MonoBehaviour
         {
             actionButtons[i].Initialize(actions[i]);
         }
+    }
+
+    /// <summary>
+    /// called at the end of each turn to determine if an actor can still use the action
+    /// (e.g., if the actor no longer has the amount of juice needed to use the action)
+    /// </summary>
+    /// <param name="actor"></param>
+    public void RefreshActionButtons(PlayerBattleActor actor)
+    {
+        foreach (var button in actionButtons)
+        {
+            if (button.actionData != null)
+                button.Initialize(button.actionData);
+        }
+    }
+
+    public bool CanUseAction(PlayerBattleActor actor, BattleActionData actionData)
+    {
+        if (actor == null || actionData == null)
+            return false;
+
+        // check juice cost
+        if (actor.currentJuice < actionData.juiceCost)
+            return false;
+
+        return true;
     }
     #endregion
 
