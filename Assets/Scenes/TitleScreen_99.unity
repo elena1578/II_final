@@ -886,6 +886,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 911340480460410833, guid: a7654d8c7556cfb4dae1a1dd1959f431, type: 3}
+      propertyPath: drawGrid
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1517601069223776035, guid: a7654d8c7556cfb4dae1a1dd1959f431, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -1643,11 +1647,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 999060283}
-  - {fileID: 2024143274}
   - {fileID: 1139092923}
   - {fileID: 1527275959}
   - {fileID: 1036449863}
   - {fileID: 1262733789}
+  - {fileID: 2024143274}
   - {fileID: 1303565046}
   - {fileID: 1811492715}
   - {fileID: 381491520}

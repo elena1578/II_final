@@ -63,7 +63,7 @@ public class BattleActionButton : MonoBehaviour, IPointerEnterHandler, IPointerE
         mainCommandButtons ??= GetComponentInParent<MainCommandButtons>();
         button ??= GetComponent<Button>();
 
-        // cache refs again if they happen to be null
+        // cache these refs again too if they happen to be null
         juiceCostText ??= battleUIManager.juiceCostText;
         juiceImage ??= battleUIManager.juiceCostIcon;
         skillDescriptionBox ??= battleUIManager.skillDescriptionBox;
