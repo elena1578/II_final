@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: 7782bc84f615d114f88f9709671e8b3f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8810255726734063408
+    second: spr_other_pyrefly_decor_0
+  - first:
+      213: 5299708990694044649
+    second: spr_other_pyrefly_decor_1
+  - first:
+      213: -5752870470729852351
+    second: spr_other_pyrefly_decor_2
+  - first:
+      213: 7081312315904929061
+    second: spr_other_pyrefly_decor_3
+  - first:
+      213: -7000134967427458531
+    second: spr_other_pyrefly_decor_4
+  - first:
+      213: -6784710544858152807
+    second: spr_other_pyrefly_decor_5
+  - first:
+      213: 7141205957845011834
+    second: spr_other_pyrefly_decor_6
+  - first:
+      213: -3185299316978310874
+    second: spr_other_pyrefly_decor_7
+  - first:
+      213: -2527739447091171835
+    second: spr_other_pyrefly_decor_8
+  - first:
+      213: -8714115657375425061
+    second: spr_other_pyrefly_decor_9
+  - first:
+      213: 5401568409924463624
+    second: spr_other_pyrefly_decor_10
+  - first:
+      213: -3899886373103978239
+    second: spr_other_pyrefly_decor_11
+  - first:
+      213: -707004750456269009
+    second: spr_other_pyrefly_decor_12
+  - first:
+      213: 3201771994197561387
+    second: spr_other_pyrefly_decor_13
+  - first:
+      213: -741758887284018278
+    second: spr_other_pyrefly_decor_14
+  - first:
+      213: -9126588002799528746
+    second: spr_other_pyrefly_decor_15
+  - first:
+      213: 1712286226156441988
+    second: spr_other_pyrefly_decor_16
+  - first:
+      213: 7037739856347116405
+    second: spr_other_pyrefly_decor_17
+  - first:
+      213: 7515543658538902446
+    second: spr_other_pyrefly_decor_18
+  - first:
+      213: -8569810847469336685
+    second: spr_other_pyrefly_decor_19
+  - first:
+      213: -5962822764357094831
+    second: spr_other_pyrefly_decor_20
+  - first:
+      213: 3765867033247726879
+    second: spr_other_pyrefly_decor_21
+  - first:
+      213: -460107530457597194
+    second: spr_other_pyrefly_decor_22
+  - first:
+      213: 5706389503109203740
+    second: spr_other_pyrefly_decor_23
+  - first:
+      213: -846987796017653952
+    second: spr_other_pyrefly_decor_24
+  - first:
+      213: -7781798521548710348
+    second: spr_other_pyrefly_decor_25
+  - first:
+      213: 1972125038332816616
+    second: spr_other_pyrefly_decor_26
+  - first:
+      213: 3624119965558593098
+    second: spr_other_pyrefly_decor_27
+  - first:
+      213: -5311845989560237602
+    second: spr_other_pyrefly_decor_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 159
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d84aa3681fabb580800000000000000
+      internalID: -8810255726734063408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 159
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3334b7f395c8940800000000000000
+      internalID: 5299708990694044649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_2
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 138
+        width: 18
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a105179c2b920b0800000000000000
+      internalID: -5752870470729852351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 136
+        width: 20
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52dac1d6800e54260800000000000000
+      internalID: 7081312315904929061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 69
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a12bed5568ade90800000000000000
+      internalID: -7000134967427458531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 69
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99002e5d4bdd7d1a0800000000000000
+      internalID: -6784710544858152807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_6
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 65
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d4141abf8aa1360800000000000000
+      internalID: 7141205957845011834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 65
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621a63cc52b8bc3d0800000000000000
+      internalID: -3185299316978310874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 115
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e636b8d5aabecd0800000000000000
+      internalID: -2527739447091171835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 113
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddd77e9afd311780800000000000000
+      internalID: -8714115657375425061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_10
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 106
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ce48f99d936fa40800000000000000
+      internalID: 5401568409924463624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_11
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 114
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10930c29102d0e9c0800000000000000
+      internalID: -3899886373103978239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_12
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 114
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f275a82ece63036f0800000000000000
+      internalID: -707004750456269009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 33
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2090fd3aaafe6c20800000000000000
+      internalID: 3201771994197561387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_14
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 64
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a937276d83eb4b5f0800000000000000
+      internalID: -741758887284018278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 101
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d4dac1f098d75180800000000000000
+      internalID: -9126588002799528746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_16
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 101
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48159d7204343c710800000000000000
+      internalID: 1712286226156441988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_17
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 105
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573bd2f9c131ba160800000000000000
+      internalID: 7037739856347116405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_18
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 105
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3a62d63239c4860800000000000000
+      internalID: 7515543658538902446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_19
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 5
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3970d44607ae11980800000000000000
+      internalID: -8569810847469336685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 65
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152f1e7c94ccf3da0800000000000000
+      internalID: -5962822764357094831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_21
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 63
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1db5144d1c034430800000000000000
+      internalID: 3765867033247726879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_22
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 34
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fab79883ae5d99f0800000000000000
+      internalID: -460107530457597194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_23
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 24
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1787d2f40b213f40800000000000000
+      internalID: 5706389503109203740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_24
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 31
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047d6494615ee34f0800000000000000
+      internalID: -846987796017653952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_25
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 18
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43edd61797f710490800000000000000
+      internalID: -7781798521548710348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 28
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec2b7a06456e5b10800000000000000
+      internalID: 1972125038332816616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_27
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a46558248e57b4230800000000000000
+      internalID: 3624119965558593098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_other_pyrefly_decor_28
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1cda247388846b0800000000000000
+      internalID: -5311845989560237602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spr_other_pyrefly_decor_0: -8810255726734063408
+      spr_other_pyrefly_decor_1: 5299708990694044649
+      spr_other_pyrefly_decor_10: 5401568409924463624
+      spr_other_pyrefly_decor_11: -3899886373103978239
+      spr_other_pyrefly_decor_12: -707004750456269009
+      spr_other_pyrefly_decor_13: 3201771994197561387
+      spr_other_pyrefly_decor_14: -741758887284018278
+      spr_other_pyrefly_decor_15: -9126588002799528746
+      spr_other_pyrefly_decor_16: 1712286226156441988
+      spr_other_pyrefly_decor_17: 7037739856347116405
+      spr_other_pyrefly_decor_18: 7515543658538902446
+      spr_other_pyrefly_decor_19: -8569810847469336685
+      spr_other_pyrefly_decor_2: -5752870470729852351
+      spr_other_pyrefly_decor_20: -5962822764357094831
+      spr_other_pyrefly_decor_21: 3765867033247726879
+      spr_other_pyrefly_decor_22: -460107530457597194
+      spr_other_pyrefly_decor_23: 5706389503109203740
+      spr_other_pyrefly_decor_24: -846987796017653952
+      spr_other_pyrefly_decor_25: -7781798521548710348
+      spr_other_pyrefly_decor_26: 1972125038332816616
+      spr_other_pyrefly_decor_27: 3624119965558593098
+      spr_other_pyrefly_decor_28: -5311845989560237602
+      spr_other_pyrefly_decor_3: 7081312315904929061
+      spr_other_pyrefly_decor_4: -7000134967427458531
+      spr_other_pyrefly_decor_5: -6784710544858152807
+      spr_other_pyrefly_decor_6: 7141205957845011834
+      spr_other_pyrefly_decor_7: -3185299316978310874
+      spr_other_pyrefly_decor_8: -2527739447091171835
+      spr_other_pyrefly_decor_9: -8714115657375425061
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
