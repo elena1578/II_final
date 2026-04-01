@@ -81,6 +81,8 @@ public class BattleDialogManager : MonoBehaviour
         if (result.didCrit)
             text = "IT HIT RIGHT IN THE HEART!\n" + text;
 
+        // add toast parsing here
+
         return text;
     }
 
@@ -118,18 +120,42 @@ public class BattleDialogManager : MonoBehaviour
                 return "";
 
             case BattleActionData.ActionType.Heal:
+                var target = result.targets[0];
+
                 if (result.heal > 0 && (result.emotion.HasValue && result.emotion.Value != EmotionType.Neutral))
-                    return $"\n{GetActorName(result.targets)} recovers {result.heal} HP and became {result.emotion}!";
+                    return $"\n{GetActorName(result.targets)} recovers {result.heal} HP and became {GetEmotionText(target)}!";
                 if (result.heal > 0)
                     return $"\n{GetActorName(result.targets)} recovers {result.heal} HP!";
 
                 return "";
 
             case BattleActionData.ActionType.Emotion:
-                if (action.emotionEffect != EmotionType.Neutral && BattleManager.instance.maxEmotionReached)
-                    return $"\n{GetActorName(result.targets)} cannot become more {GetEmotionText()}!";
-                if (action.emotionEffect != EmotionType.Neutral)
-                    return $"\n{GetActorName(result.targets)} became {GetEmotionText()}!";
+                target = result.targets[0];
+                EmotionType appliedEmotion = result.emotion ?? action.emotionEffect;
+
+                // tier 1 cases
+                // just hit max
+                if (result.previousEmotion != target.currentEmotion && target.IsMaxTierOneEmotion())
+                    return $"\n{GetActorName(result.targets)} became {GetEmotionText(target)} (now cannot become more {EmotionSystem.GetEmotionGroupingText(target.currentEmotion)})!";
+
+                // already max
+                if (result.previousEmotion == target.currentEmotion && target.IsMaxTierOneEmotion())
+                    return $"\n{GetActorName(result.targets)} cannot become more {GetEmotionText(target)}!";
+
+                // tier 2+ 
+                // just hit max
+                if (result.previousEmotion == target.currentEmotion &&
+                    target.currentEmotionTier == target.maxEmotionTier &&
+                    result.previousEmotionTier < target.maxEmotionTier)
+                    return $"\n{GetActorName(result.targets)} became {GetEmotionText(target)} (now cannot become more {EmotionSystem.GetEmotionGroupingText(target.currentEmotion)})!";
+
+                // already maxed
+                if (target.IsMaxEmotion())
+                    return $"\n{GetActorName(result.targets)} cannot become more {GetEmotionText(target)}!";
+                
+                // standard parsing
+                if (result.emotion.HasValue && action.emotionEffect != EmotionType.Neutral)
+                    return $"\n{GetActorName(result.targets)} became {GetEmotionText(target)}!";
 
                 return "";
 
@@ -152,33 +178,9 @@ public class BattleDialogManager : MonoBehaviour
 
 
     #region Text Helpers
-    private string GetEmotionText()
+    private string GetEmotionText(BattleActor actor)
     {
-        if (BattleManager.instance.currentTargetEmotion == EmotionType.Sad)
-            if (BattleManager.instance.currentTargetEmotionTier == 1)
-                return "Sad";
-            else if (BattleManager.instance.currentTargetEmotionTier == 2)
-                return "Depressed";
-            else if (BattleManager.instance.currentTargetEmotionTier == 3)
-                return "Miserable";
-
-        if (BattleManager.instance.currentTargetEmotion == EmotionType.Angry)
-            if (BattleManager.instance.currentTargetEmotionTier == 1)
-                return "Angry";
-            else if (BattleManager.instance.currentTargetEmotionTier == 2)
-                return "Enraged";
-            else if (BattleManager.instance.currentTargetEmotionTier == 3)
-                return "Furious";
-
-        if (BattleManager.instance.currentTargetEmotion == EmotionType.Happy)
-            if (BattleManager.instance.currentTargetEmotionTier == 1)
-                return "Happy";
-            else if (BattleManager.instance.currentTargetEmotionTier == 2)
-                return "Ecstatic";
-            else if (BattleManager.instance.currentTargetEmotionTier == 3)
-                return "Manic";
-
-        return "Neutral";
+        return EmotionText.Get(actor.currentEmotion, actor.currentEmotionTier);
     }
 
     private string GetStatusTypeForText(BattleActionData.StatChangeType statChangeType)

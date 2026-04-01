@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 
 public class EmotionSystem : MonoBehaviour
@@ -43,8 +44,6 @@ public class EmotionSystem : MonoBehaviour
     private static float GetWeaknessBonus(int tier)
     {
         // 50% / 100% / 150%
-        // tier system currently unimplemented since emotions only hit tier 1, 
-        // but is built to handle multiple since they'll prob be added later
         return tier switch
         {
             1 => 0.5f,
@@ -145,4 +144,61 @@ public class EmotionSystem : MonoBehaviour
         };
     }
     #endregion
+
+
+    #region Text Helpers
+    public static string GetEmotionGroupingText(EmotionType emotion)
+    {
+        switch (emotion)
+        {
+            case EmotionType.Happy:
+            case EmotionType.Ecstatic:
+            case EmotionType.Manic:
+                return "Happy";
+
+            case EmotionType.Sad:
+            case EmotionType.Depressed:
+            case EmotionType.Miserable:
+                return "Sad";
+
+            case EmotionType.Angry:
+            case EmotionType.Enraged:
+            case EmotionType.Furious:
+                return "Angry";
+
+            case EmotionType.Neutral:
+            default:
+                return "";
+        }
+    }
 }
+
+
+#region EmotionText
+public static class EmotionText
+{
+    /// <summary>
+    /// maps each EmotionType to an array of strings rep'ing emotion @ each tier
+    /// (e.g., Sad -> ["Sad", "Depressed", "Miserable"]).
+    /// used to parse text correctly in BattleDialogManager when an emotion changes/is set
+    /// </summary>
+    private static readonly Dictionary<EmotionType, string[]> emotionNames = new()
+    {
+        { EmotionType.Sad, new[] { "Sad", "Depressed", "Miserable" } },
+        { EmotionType.Angry, new[] { "Angry", "Enraged", "Furious" } },
+        { EmotionType.Happy, new[] { "Happy", "Ecstatic", "Manic" } }
+    };
+
+    public static string Get(EmotionType emotion, int tier)
+    {
+        if (emotionNames.TryGetValue(emotion, out var tiers))
+        {
+            int index = Mathf.Clamp(tier - 1, 0, tiers.Length - 1);
+            return tiers[index];
+        }
+
+        return "Neutral";
+    }
+}
+#endregion
+#endregion

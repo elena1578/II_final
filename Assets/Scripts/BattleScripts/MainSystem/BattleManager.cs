@@ -18,9 +18,6 @@ public class BattleManager : MonoBehaviour
     public bool HasActiveBattle { get; private set; }
     private const float fleeChance = 0.5f;
     private bool fleeSuccessful;
-    [HideInInspector] public EmotionType currentTargetEmotion;
-    [HideInInspector] public int currentTargetEmotionTier; 
-    [HideInInspector] public bool maxEmotionReached; 
 
     // runtime systems
     private TurnStateMachine turnStateMachine;
@@ -300,20 +297,7 @@ public class BattleManager : MonoBehaviour
             BattleActionResult result = UseAction(entry.actor, entry.action, targets);
             if (result == null) continue;  // just in case
 
-            // 1a. record what emotion targets currently have to parse current emotion in BattleDialogManager
-            foreach (var target in targets)
-            {   
-                if (target != null) 
-                {
-                    currentTargetEmotion = target.RecordCurrentEmotion();
-                    currentTargetEmotionTier = target.RecordEmotionTier();
-                    maxEmotionReached = target.IsMaxEmotion();
-
-                    Debug.Log($"[BattleManager] Recorded target emotion: {currentTargetEmotion} at tier {currentTargetEmotionTier} for {target.name}. Max tier reached: {maxEmotionReached}"); 
-                } 
-            }
-
-            // 1b. trigger shake + spawn dmg digits if dmg'd
+            // 1a. trigger shake + spawn dmg digits if dmg'd
             if (result.didDamage)
             {
                 screenShake?.Shake(0.25f, result.didCrit ? 25f : 15f);
@@ -327,7 +311,7 @@ public class BattleManager : MonoBehaviour
                 }
             }
 
-            // 1c. if any targets died from this action, play death animation + slide off screen
+            // 1b. if any targets died from this action, play death animation + slide off screen
             foreach (var target in result.targets)
             {
                 if (target != null && !target.isAlive && target.ui != null)

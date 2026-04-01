@@ -25,6 +25,11 @@ public class EmotionAction : IBattleAction
         }
         
         BattleActor target = targets[0];
+
+        // record prev emotion & tier for dialog parsing
+        EmotionType? prevEmotion = target.currentEmotion;
+        int prevEmotionTier = target.currentEmotionTier;
+
         target.SetEmotion(data.emotionEffect);
 
         // check for special roar case
@@ -48,7 +53,9 @@ public class EmotionAction : IBattleAction
         {
             actor = actor,
             targets = targets,
-            emotion = data.emotionEffect
+            emotion = data.emotionEffect,
+            previousEmotion = prevEmotion,
+            previousEmotionTier = prevEmotionTier
         };
     }
 }

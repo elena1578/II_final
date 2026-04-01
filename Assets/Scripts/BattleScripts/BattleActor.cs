@@ -224,23 +224,15 @@ public abstract class BattleActor
         return Mathf.RoundToInt(speed * multiplier);
     }
 
-    public EmotionType RecordCurrentEmotion()
-    {
-        return currentEmotion;
-    }
-
-    public int RecordEmotionTier()
-    {
-        return currentEmotionTier;
-    }
-
     public bool IsMaxEmotion()
     {
         return currentEmotionTier >= maxEmotionTier;
     }
 
-    // public bool IsFirstTimeReachingMaxEmotion()
-    // {}
+    public bool IsMaxTierOneEmotion()
+    {
+        return currentEmotionTier == 1 && maxEmotionTier == 1;
+    }
     #endregion
 
 

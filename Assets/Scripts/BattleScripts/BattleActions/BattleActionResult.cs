@@ -10,6 +10,8 @@ public class BattleActionResult
     public int damage;
     public int heal;
     public EmotionType? emotion;  // nullable = option for actions that don't involve emotion changes
+    public EmotionType? previousEmotion;
+    public int previousEmotionTier;
 
     public bool didDamage => damage > 0;
     public bool didHeal => heal > 0;
@@ -31,6 +33,8 @@ public class BattleActionResult
             damage = 0,
             heal = 0,
             emotion = null,
+            previousEmotion = null,
+            previousEmotionTier = 0,
             moveFirst = false,
             didCrit = false,
             statChange = null,
