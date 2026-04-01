@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
-  m_Name: WaterfallTile
+  m_Name: WaterFoamTile
   m_EditorClassIdentifier: Unity.2D.Tilemap.Extras::UnityEngine.Tilemaps.AnimatedTile
   m_AnimatedSprites:
-  - {fileID: 1149714872, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
-  - {fileID: -1527270481, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
-  - {fileID: -1989100376, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
-  - {fileID: 1335560725, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
-  - {fileID: 1149714872, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
-  m_MinSpeed: 12
-  m_MaxSpeed: 12
+  - {fileID: -6313814537007472917, guid: 6e68227578585a74d9d58e9c88706737, type: 3}
+  - {fileID: 4391961847465340638, guid: 6e68227578585a74d9d58e9c88706737, type: 3}
+  - {fileID: 4427190202522403941, guid: 6e68227578585a74d9d58e9c88706737, type: 3}
+  - {fileID: 5671996290437559591, guid: 6e68227578585a74d9d58e9c88706737, type: 3}
+  - {fileID: -6313814537007472917, guid: 6e68227578585a74d9d58e9c88706737, type: 3}
+  m_MinSpeed: 5
+  m_MaxSpeed: 5
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0
