@@ -126,8 +126,10 @@ public class BattleDialogManager : MonoBehaviour
                 return "";
 
             case BattleActionData.ActionType.Emotion:
+                if (action.emotionEffect != EmotionType.Neutral && BattleManager.instance.maxEmotionReached)
+                    return $"\n{GetActorName(result.targets)} cannot become more {GetEmotionText()}!";
                 if (action.emotionEffect != EmotionType.Neutral)
-                    return $"\n{GetActorName(result.targets)} became {action.emotionEffect}!";
+                    return $"\n{GetActorName(result.targets)} became {GetEmotionText()}!";
 
                 return "";
 
@@ -145,6 +147,38 @@ public class BattleDialogManager : MonoBehaviour
             default:
                 return "";
         }
+    }
+    #endregion
+
+
+    #region Text Helpers
+    private string GetEmotionText()
+    {
+        if (BattleManager.instance.currentTargetEmotion == EmotionType.Sad)
+            if (BattleManager.instance.currentTargetEmotionTier == 1)
+                return "Sad";
+            else if (BattleManager.instance.currentTargetEmotionTier == 2)
+                return "Depressed";
+            else if (BattleManager.instance.currentTargetEmotionTier == 3)
+                return "Miserable";
+
+        if (BattleManager.instance.currentTargetEmotion == EmotionType.Angry)
+            if (BattleManager.instance.currentTargetEmotionTier == 1)
+                return "Angry";
+            else if (BattleManager.instance.currentTargetEmotionTier == 2)
+                return "Enraged";
+            else if (BattleManager.instance.currentTargetEmotionTier == 3)
+                return "Furious";
+
+        if (BattleManager.instance.currentTargetEmotion == EmotionType.Happy)
+            if (BattleManager.instance.currentTargetEmotionTier == 1)
+                return "Happy";
+            else if (BattleManager.instance.currentTargetEmotionTier == 2)
+                return "Ecstatic";
+            else if (BattleManager.instance.currentTargetEmotionTier == 3)
+                return "Manic";
+
+        return "Neutral";
     }
 
     private string GetStatusTypeForText(BattleActionData.StatChangeType statChangeType)

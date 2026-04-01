@@ -223,6 +223,24 @@ public abstract class BattleActor
         float multiplier = EmotionSystem.GetSpeedMultiplier(currentEmotion);
         return Mathf.RoundToInt(speed * multiplier);
     }
+
+    public EmotionType RecordCurrentEmotion()
+    {
+        return currentEmotion;
+    }
+
+    public int RecordEmotionTier()
+    {
+        return currentEmotionTier;
+    }
+
+    public bool IsMaxEmotion()
+    {
+        return currentEmotionTier >= maxEmotionTier;
+    }
+
+    // public bool IsFirstTimeReachingMaxEmotion()
+    // {}
     #endregion
 
 
