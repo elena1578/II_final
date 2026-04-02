@@ -70,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -162,12 +162,12 @@ TextureImporter:
       name: spr_world_bear_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 192
-        width: 30
-        height: 44
+        x: 0
+        y: 180
+        width: 32
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: spr_world_bear_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 191
+        x: 32
+        y: 180
         width: 32
-        height: 44
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: spr_world_bear_2
       rect:
         serializedVersion: 2
-        x: 66
-        y: 192
-        width: 30
-        height: 44
+        x: 64
+        y: 180
+        width: 32
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: spr_world_bear_3
       rect:
         serializedVersion: 2
-        x: 4
-        y: 128
-        width: 26
-        height: 44
+        x: 0
+        y: 120
+        width: 32
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,12 +250,12 @@ TextureImporter:
       name: spr_world_bear_4
       rect:
         serializedVersion: 2
-        x: 36
-        y: 127
-        width: 26
-        height: 44
+        x: 32
+        y: 120
+        width: 32
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -272,12 +272,12 @@ TextureImporter:
       name: spr_world_bear_5
       rect:
         serializedVersion: 2
-        x: 68
-        y: 129
-        width: 26
-        height: 43
+        x: 64
+        y: 120
+        width: 32
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,12 +294,12 @@ TextureImporter:
       name: spr_world_bear_6
       rect:
         serializedVersion: 2
-        x: 4
-        y: 65
-        width: 26
-        height: 43
+        x: 0
+        y: 60
+        width: 32
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -316,12 +316,12 @@ TextureImporter:
       name: spr_world_bear_7
       rect:
         serializedVersion: 2
-        x: 36
-        y: 63
-        width: 26
-        height: 44
+        x: 32
+        y: 60
+        width: 32
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -338,12 +338,12 @@ TextureImporter:
       name: spr_world_bear_8
       rect:
         serializedVersion: 2
-        x: 68
-        y: 64
-        width: 26
-        height: 44
+        x: 64
+        y: 60
+        width: 32
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -360,12 +360,12 @@ TextureImporter:
       name: spr_world_bear_9
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 30
-        height: 44
+        width: 32
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -382,12 +382,12 @@ TextureImporter:
       name: spr_world_bear_10
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
         width: 32
-        height: 43
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -404,12 +404,12 @@ TextureImporter:
       name: spr_world_bear_11
       rect:
         serializedVersion: 2
-        x: 66
+        x: 64
         y: 0
-        width: 30
-        height: 44
+        width: 32
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -426,7 +426,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d0c4fd07c46254e439febdf5cf420ce5
     internalID: 0
     vertices: []
     indices: 
@@ -434,7 +434,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":4.0},"gridSpriteSize":{"x":32.0,"y":60.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       spr_world_bear_0: -2475295358667395429
       spr_world_bear_1: -5464303942442692296

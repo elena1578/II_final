@@ -1315,6 +1315,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 133296830526762159, guid: 7355264115b4f5e4593d910ace5f54e3, type: 3}
+      propertyPath: m_Size.x
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 133296830526762159, guid: 7355264115b4f5e4593d910ace5f54e3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8987018054605711263, guid: ec80cdb307d2aa8419f98739d4d6a464, type: 3}
+    - target: {fileID: 133296830526762159, guid: 7355264115b4f5e4593d910ace5f54e3, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4206837712416558037, guid: 7355264115b4f5e4593d910ace5f54e3, type: 3}
       propertyPath: m_Size.y
       value: 0.6388087
@@ -1363,6 +1375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8248114528195879476, guid: 7355264115b4f5e4593d910ace5f54e3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 811ce2e10d2393342979ebe6335b3992, type: 2}
     - target: {fileID: 8304074894680288552, guid: 7355264115b4f5e4593d910ace5f54e3, type: 3}
       propertyPath: m_Name
       value: SimpleEnemyOverworldActorPrefab

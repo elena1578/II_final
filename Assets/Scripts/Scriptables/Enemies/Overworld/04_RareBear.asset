@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyOverworldData
   correspondingBattleData: {fileID: 11400000, guid: dc678e88b3ff027459f551fdae09d276, type: 2}
   encounterTable: {fileID: 11400000, guid: d7bb1a901a3a225478098f237b226673, type: 2}
-  sprite: {fileID: 0}
-  animatorController: {fileID: 0}
-  spawnChance: 0.5
-  moveSpeed: 1
-  chanceToMove: 1
-  alertRadius: 5
+  sprite: {fileID: -5464303942442692296, guid: 4f1fb201b42992e42be9b1c5406f966c, type: 3}
+  animatorController: {fileID: 9100000, guid: 02fba8f95db96c049a50cb89c8086089, type: 2}
+  spawnChance: 1
+  moveSpeed: 0
+  chanceToMove: 0
+  alertRadius: 0

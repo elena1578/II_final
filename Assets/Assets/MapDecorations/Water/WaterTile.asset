@@ -16,8 +16,8 @@ MonoBehaviour:
   - {fileID: 254879609, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
   - {fileID: -298234495, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
   - {fileID: 254879609, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
-  m_MinSpeed: 1
-  m_MaxSpeed: 1
+  m_MinSpeed: 2
+  m_MaxSpeed: 2
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0
