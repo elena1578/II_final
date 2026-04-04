@@ -1306,8 +1306,6 @@ MonoBehaviour:
   uiManager: {fileID: 801025638}
   commandButtons: {fileID: 801025637}
   postDialogDelay: 0.7
-  currentTargetEmotion: 0
-  currentTargetEmotionTier: 0
 --- !u!4 &179198697
 Transform:
   m_ObjectHideFlags: 0

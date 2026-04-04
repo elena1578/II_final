@@ -218,6 +218,14 @@ public abstract class BattleActor
         Debug.Log($"[BattleActor] {name} emotion set to {currentEmotion} at tier {currentEmotionTier}");
     }
 
+    public EmotionType SetRandomEmotion()
+    {
+        EmotionType randomEmotion = EmotionSystem.GetRandomEmotionGrouping();
+        SetEmotion(randomEmotion);
+        Debug.Log($"[BattleActor] {name} had a random emotion applied: {randomEmotion}");
+        return randomEmotion;
+    }
+
     public int GetModifiedSpeedFromEmotion()
     {
         float multiplier = EmotionSystem.GetSpeedMultiplier(currentEmotion);

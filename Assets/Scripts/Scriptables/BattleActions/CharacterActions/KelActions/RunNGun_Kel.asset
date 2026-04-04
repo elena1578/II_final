@@ -18,7 +18,7 @@ MonoBehaviour:
   multiTarget: 0
   alwaysMoveFirst: 0
   battleLogText: '{actor} rushes at the {target}!'
-  descriptionText: KEL does an attack based on his SPD instead of his ATK.
+  descriptionText: Kel does an attack based on his SPD instead of his ATK.
   juiceCost: 15
   healPercentage: 0
   emotionEffect: 0

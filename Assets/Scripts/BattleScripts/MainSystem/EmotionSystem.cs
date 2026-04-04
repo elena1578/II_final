@@ -146,6 +146,20 @@ public class EmotionSystem : MonoBehaviour
     #endregion
 
 
+    public static EmotionType GetRandomEmotionGrouping()
+    {
+        int groupingRoll = Random.Range(0, 3);
+
+        return groupingRoll switch
+        {
+            0 => EmotionType.Happy,
+            1 => EmotionType.Sad,
+            2 => EmotionType.Angry,
+            _ => EmotionType.Neutral
+        };
+    }
+
+
     #region Text Helpers
     public static string GetEmotionGroupingText(EmotionType emotion)
     {
