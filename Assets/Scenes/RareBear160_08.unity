@@ -690,6 +690,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2560935346246038118, guid: 7355264115b4f5e4593d910ace5f54e3, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 96021da7a277bb345a51e10d699f9d97, type: 2}
     - target: {fileID: 5434196916128475481, guid: 7355264115b4f5e4593d910ace5f54e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.931
@@ -3212,7 +3216,7 @@ Tilemap:
       - {fileID: -1989100376, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
       - {fileID: 1335560725, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
       - {fileID: 1149714872, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
-      m_AnimationSpeed: 12.000001
+      m_AnimationSpeed: 12
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -13, y: 7, z: 0}
@@ -5093,7 +5097,7 @@ Tilemap:
       - {fileID: -1989100376, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
       - {fileID: 1335560725, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
       - {fileID: 1149714872, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
-      m_AnimationSpeed: 12
+      m_AnimationSpeed: 12.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -13, y: 10, z: 0}
@@ -5105,7 +5109,7 @@ Tilemap:
       - {fileID: -1989100376, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
       - {fileID: 1335560725, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
       - {fileID: 1149714872, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
-      m_AnimationSpeed: 12
+      m_AnimationSpeed: 12.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -12, y: 10, z: 0}
@@ -5117,7 +5121,7 @@ Tilemap:
       - {fileID: -1989100376, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
       - {fileID: 1335560725, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
       - {fileID: 1149714872, guid: 13dc35186b5b488409f47b7940bfd59c, type: 3}
-      m_AnimationSpeed: 12
+      m_AnimationSpeed: 12.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -8571,7 +8575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3774375776938866301, guid: 46e39d1ec4b826d45bb1c20e905ef437, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3809004374880497277, guid: 46e39d1ec4b826d45bb1c20e905ef437, type: 3}
       propertyPath: m_LocalPosition.x

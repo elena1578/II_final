@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -130,6 +132,12 @@ public abstract class GridMovementController : MonoBehaviour
         targetPosition = SnapToGrid(worldPosition);
         rb.position = targetPosition;
         rb.linearVelocity = Vector2.zero;
+    }
+
+    public IEnumerator ForceSnapToGridNextFrame(PlayerOverworldController controller, Vector3 pos)
+    {
+        yield return null;
+        controller.ForceSnapToGrid(pos);
     }
 
     /// <summary>

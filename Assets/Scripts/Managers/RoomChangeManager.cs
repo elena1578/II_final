@@ -248,7 +248,7 @@ public class RoomChangeManager : MonoBehaviour
             if (controller != null)
             {
                 Debug.Log("[RoomChangeManager] Stored player position from BattleTransitionManager: " + playerPosition);
-                controller.ForceSnapToGrid(playerPosition);
+                controller.StartCoroutine(controller.ForceSnapToGridNextFrame(controller, playerPosition));
             }
             else
                 playerGO.transform.position = playerPosition;

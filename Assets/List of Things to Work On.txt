@@ -10,10 +10,6 @@ to-do:
 - remember which enemies were spawned in a room when returning to it & respawn them (removing the defeated enemy)
 
 
-known bugs to fix:
-- player gets stuck sometimes when returning from battle -> overworld
-
-
 done:
 - party member skill descriptions + juice cost in selection menu
 - if fleeing fails, skip actor's turn/count as their action
@@ -26,6 +22,7 @@ done:
 - stat change bat actions (e.g., atk, def, and speed up/down, such as for hero's smile action)
 - allow flag for bat actions that allows action to always move first regardless of speed built in turn queue
 - emotion tiers (max up to 3, but can easily add more)
+- curveball bat action
 
 fixed bugs:
 - {target} takes {damage} repeating twice for last acting party member
@@ -34,3 +31,5 @@ fixed bugs:
 - enemy pushes player upon colliding to start battle
 - disable action button for use if actor doesn't have enough juice
 - updating text parsing to support tier 2 and 3 emotions AND "{actor} cannot become more sad/happy/angry!" if max tier is met
+- player gets stuck sometimes when returning from battle -> overworld
+- if party targets one target and that target dies but another target is avaliable, move all remaining actions to that target

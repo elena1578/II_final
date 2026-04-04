@@ -276,8 +276,27 @@ public class BattleManager : MonoBehaviour
 
             if (targets.Count == 0)
             {
-                Debug.Log($"[BattleManager] {entry.actor.name}'s action cancelled (no targets)");
-                continue;
+                // try retargeting if action was a single-target enemy action
+                if (!entry.action.multiTarget && entry.action.validTargets.HasFlag(TargetGroup.Enemies))
+                {
+                    BattleActor newTarget = GetRandomValidEnemyTarget(entry.actor);
+
+                    if (newTarget != null)
+                    {
+                        Debug.Log($"[BattleManager] {entry.actor.name} retargeted to {newTarget.name}");
+                        targets = new List<BattleActor> { newTarget };
+                    }
+                    else
+                    {
+                        Debug.Log($"[BattleManager] {entry.actor.name}'s action cancelled (no targets)");
+                        continue;
+                    }
+                }
+                else
+                {
+                    Debug.Log($"[BattleManager] {entry.actor.name}'s action cancelled (no targets)");
+                    continue;
+                }
             }
 
             // double-check actor & action before use
@@ -364,11 +383,26 @@ public class BattleManager : MonoBehaviour
     /// <param name="actor"></param>
     public void RemoveActorFromPlans(BattleActor actor) => plannedActions.RemoveAll(p => p.actor == actor);
 
-    private void ResolveEmotions()
+    /// <summary>
+    /// helper to get random valid target for an actor based on whether they're a player or enemy.
+    /// used for if an enemy dies mid-round but there's still (a) target(s) that the action can be applied to
+    /// </summary>
+    /// <param name="actor"></param>
+    /// <returns></returns>
+    private BattleActor GetRandomValidEnemyTarget(BattleActor actor)
     {
-        // check for emotion 
-        // if no, skip 
-        // if yes, handle emotion accordingly
+        List<BattleActor> validTargets;
+
+        // if actor is player, target enemies
+        if (context.party.Contains(actor))
+            validTargets = context.enemies.FindAll(e => e.isAlive);
+        else
+            validTargets = context.party.FindAll(p => p.isAlive);
+
+        if (validTargets.Count == 0)
+            return null;
+
+        return validTargets[Random.Range(0, validTargets.Count)];
     }
 
     private bool CheckBattleEnd()
@@ -392,6 +426,11 @@ public class BattleManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    private void ResolveEmotions()
+    {
+        // i don't think i need this function anymore but will keep here just in case
     }
    
     /// <summary>
