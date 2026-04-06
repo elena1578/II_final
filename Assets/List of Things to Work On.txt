@@ -5,9 +5,14 @@ priorities for milestone:
 
 to-do:
 - animations need to move depending on where enemy is/who is being targeted
-- sfx + animations for enemy actions
+- animations for enemy actions
 - battle start transition update/polish
 - remember which enemies were spawned in a room when returning to it & respawn them (removing the defeated enemy)
+
+
+know bugs to fix:
+- player sometimes temporarily misaligned from grid when returning from battle
+- players still use emotion & stat actions even if all actors are dead (mid-round change)
 
 
 done:
@@ -23,6 +28,8 @@ done:
 - allow flag for bat actions that allows action to always move first regardless of speed built in turn queue
 - emotion tiers (max up to 3, but can easily add more)
 - curveball bat action
+- battle victory & defeat music (pause & override battle music so it can fade out properly)
+- sfx for enemy actions
 
 fixed bugs:
 - {target} takes {damage} repeating twice for last acting party member

@@ -71,32 +71,4 @@ public class EnemyBattleActor : BattleActor
             _ => rule.neutralChance  // default to neutral chance if somehow emotion is invalid
         };
     }
-
-    // placeholder DecideAction, actions decided by random chance
-    // public override BattleActionData DecideAction(BattleContext context)
-    // {
-    //     List<BattleActionData> possibleActions = new();
-
-    //     // very important to check for nulls here, as not all enemies will have all action types
-    //     // otherwise WILL cause crash
-    //     var attack = enemyData.GetRandomAttackAction();
-    //     if (attack != null) possibleActions.Add(attack);
-
-    //     var heal = enemyData.GetRandomHealAction();
-    //     if (heal != null) possibleActions.Add(heal);
-
-    //     var emotion = enemyData.GetRandomEmotionAction();
-    //     if (emotion != null) possibleActions.Add(emotion);
-
-    //     var none = enemyData.GetRandomNoneAction();
-    //     if (none != null) possibleActions.Add(none);
-
-    //     if (possibleActions.Count == 0)
-    //     {
-    //         Debug.LogWarning($"{enemyData.name} has no valid actions! Using fallback defaultAction");
-    //         return enemyData.defaultAction;
-    //     }
-
-    //     return possibleActions[Random.Range(0, possibleActions.Count)];
-    // }
 }

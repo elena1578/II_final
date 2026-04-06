@@ -16,6 +16,7 @@ MonoBehaviour:
   actionType: 0
   validTargets: 4
   multiTarget: 1
+  alwaysMoveFirst: 0
   battleLogText: '{actor} charges forward!'
   descriptionText: 
   juiceCost: 0
@@ -29,5 +30,8 @@ MonoBehaviour:
   animationTrigger: ram
   animationDuration: 1.5
   animationTarget: 0
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: f573ecd3a008f84418a980fc69bcad1b, type: 3}
   clipVolume: 1
+  statChangeType: 0
+  statChangeMultiplier: 0
+  statChangeDuration: 0

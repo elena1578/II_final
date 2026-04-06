@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 6
   actionType: 0
-  targetType: 0
   validTargets: 4
   multiTarget: 0
+  alwaysMoveFirst: 0
   battleLogText: '{actor} slams into {target}!
 
     {target} takes {damage} damage!'
@@ -26,11 +26,14 @@ MonoBehaviour:
   emotionEffect: 0
   damageReductionMultiplier: 0
   damageFormula: 1
-  basePower: 0
+  basePower: 10
   critChance: 0.1
   critMultiplier: 1.5
-  animationTrigger: 
+  animationTrigger: attack
   animationDuration: 1.5
   animationTarget: 0
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: f573ecd3a008f84418a980fc69bcad1b, type: 3}
   clipVolume: 1
+  statChangeType: 0
+  statChangeMultiplier: 0
+  statChangeDuration: 0

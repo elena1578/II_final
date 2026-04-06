@@ -18,9 +18,14 @@ public class AudioManager : MonoBehaviour
 
     [Header("Battle")]
     public AudioClip alert;
+    public AudioClip battleStart;
     public AudioClip victoryMusic;
     public AudioClip defeatMusic;
-    public AudioClip heal;
+    public AudioClip picnicHeal;
+    public AudioClip healthHeal;
+    public AudioClip statUp;
+    public AudioClip statDown;
+    public AudioClip statDownAlt;
 
 
     private void Awake()
@@ -79,7 +84,6 @@ public class AudioManager : MonoBehaviour
         AudioSource src = sfxSources[nextSFXIndex];
         nextSFXIndex = (nextSFXIndex + 1) % sfxSources.Length;  // cycle through sources to allow overlapping SFX
 
-        src.Stop();  // prevent leftover state from any prev clip(s)
         src.clip = clip;
         src.volume = Mathf.Clamp01(volume);
         src.pitch = Mathf.Clamp(pitch, 0.1f, 3f); 
@@ -111,6 +115,14 @@ public class AudioManager : MonoBehaviour
     public void PlaySelectSFX() => PlaySFX(mouseClick);
     public void PlayBackSFX() => PlaySFX(back);
     public void PlayErrorSFX() => PlaySFX(error);
-    public void PlayHealSFX() => PlaySFX(heal);
+    public void PlayHealSFX() => PlaySFX(picnicHeal);
+    public void PlayBattleHealSFX() => PlaySFX(healthHeal);
+    public void PlayStatUpSFX() => PlaySFX(statUp); 
+    public void PlayStatDownSFX()
+    {
+        // randomly choose btwn 2 stat down SFX (equal chance for either)
+        AudioClip chosenClip = Random.value < 0.5f ? statDown : statDownAlt;
+        PlaySFX(chosenClip);
+    }
     #endregion
 }

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 4
   actionType: 4
-  targetType: 4
   validTargets: 1
   multiTarget: 0
+  alwaysMoveFirst: 0
   battleLogText: '{actor} is rolling around.'
   descriptionText: 
   juiceCost: 0
@@ -30,5 +30,8 @@ MonoBehaviour:
   animationTrigger: 
   animationDuration: 1.5
   animationTarget: 0
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: c8493081b62d0e247b5725e8c21dd23c, type: 3}
   clipVolume: 1
+  statChangeType: 0
+  statChangeMultiplier: 0
+  statChangeDuration: 0

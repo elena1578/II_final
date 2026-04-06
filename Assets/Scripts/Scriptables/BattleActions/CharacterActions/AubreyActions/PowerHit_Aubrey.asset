@@ -28,8 +28,8 @@ MonoBehaviour:
   basePower: 0
   critChance: 0.1
   critMultiplier: 1.5
-  animationTrigger: powerhit
-  animationDuration: 1.5
+  animationTrigger: power_hit
+  animationDuration: 3
   animationTarget: 0
   audioClip: {fileID: 0}
   clipVolume: 1

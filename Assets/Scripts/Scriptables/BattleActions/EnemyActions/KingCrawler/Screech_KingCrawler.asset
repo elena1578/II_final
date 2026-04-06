@@ -16,6 +16,7 @@ MonoBehaviour:
   actionType: 2
   validTargets: 1
   multiTarget: 0
+  alwaysMoveFirst: 0
   battleLogText: '{actor} lets out an ear-piercing screech!'
   descriptionText: 
   juiceCost: 0
@@ -29,5 +30,8 @@ MonoBehaviour:
   animationTrigger: screech
   animationDuration: 1.5
   animationTarget: 0
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 469dd0bf0db120f4d8ae762701dedfb4, type: 3}
   clipVolume: 1
+  statChangeType: 0
+  statChangeMultiplier: 0
+  statChangeDuration: 0

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 6
   actionType: 0
-  targetType: 0
   validTargets: 4
   multiTarget: 0
+  alwaysMoveFirst: 0
   battleLogText: '{actor} bumps into {target}!
 
     {target} takes {damage} damage!'
@@ -32,5 +32,8 @@ MonoBehaviour:
   animationTrigger: attack
   animationDuration: 3
   animationTarget: 0
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: d7bf9ed60bac6eb44beb9e4a1e1e4374, type: 3}
   clipVolume: 1
+  statChangeType: 0
+  statChangeMultiplier: 0
+  statChangeDuration: 0

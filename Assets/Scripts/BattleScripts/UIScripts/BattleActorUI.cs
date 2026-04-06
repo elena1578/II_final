@@ -146,7 +146,6 @@ public class BattleActorUI : MonoBehaviour
         // face animation
         // ignore tier for faces since they'll take a longgg time to implement
         portraitAnimator.SetInteger("emotion", (int)emotion);
-        
 
         // background and label sprites
         if (emotionUIVisuals != null)
@@ -207,6 +206,15 @@ public class BattleActorUI : MonoBehaviour
         portraitAnimator.SetBool("succumb", true);
         // set up screen dark pulsing here later
         // also not sure if succumb animation is reset back to neutral when healed? need to check
+    }
+
+    public void ResetLabelAndBackground()
+    {
+        if (emotionUIVisuals != null)
+        {
+            portraitBackgroundImage.sprite = emotionUIVisuals.GetDefaultBackground();
+            emotionLabelImage.sprite = emotionUIVisuals.neutralLabel;
+        }
     }
 
     public void SlideOffScreen() => StartCoroutine(SlideOffScreenRoutine(transform));

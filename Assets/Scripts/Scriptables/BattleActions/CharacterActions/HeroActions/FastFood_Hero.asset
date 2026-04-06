@@ -30,7 +30,7 @@ MonoBehaviour:
   animationTrigger: fastfood
   animationDuration: 1.5
   animationTarget: 0
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 9f4b7fa6ca41ef546895c9c5311f5e1b, type: 3}
   clipVolume: 1
   statChangeType: 0
   statChangeMultiplier: 0

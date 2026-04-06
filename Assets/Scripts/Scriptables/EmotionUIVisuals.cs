@@ -66,4 +66,6 @@ public class EmotionUIVisuals : ScriptableObject
                 break;
         }
     }
+
+    public Sprite GetDefaultBackground() => neutralBackground;
 }

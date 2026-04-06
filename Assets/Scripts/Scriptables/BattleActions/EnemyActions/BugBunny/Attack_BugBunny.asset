@@ -16,6 +16,7 @@ MonoBehaviour:
   actionType: 0
   validTargets: 4
   multiTarget: 0
+  alwaysMoveFirst: 0
   battleLogText: '{actor} swipes at {target}!'
   descriptionText: 
   juiceCost: 0
@@ -29,5 +30,8 @@ MonoBehaviour:
   animationTrigger: 
   animationDuration: 1.5
   animationTarget: 0
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: d7bf9ed60bac6eb44beb9e4a1e1e4374, type: 3}
   clipVolume: 1
+  statChangeType: 0
+  statChangeMultiplier: 0
+  statChangeDuration: 0

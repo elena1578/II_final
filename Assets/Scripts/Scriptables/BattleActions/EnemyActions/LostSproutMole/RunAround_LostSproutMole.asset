@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 5
   actionType: 0
-  targetType: 0
   validTargets: 4
   multiTarget: 1
+  alwaysMoveFirst: 0
   battleLogText: '{actor} runs around!
 
     {target} takes {damage} damage!'
@@ -32,5 +32,8 @@ MonoBehaviour:
   animationTrigger: runaround
   animationDuration: 5
   animationTarget: 0
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: afdce3ab8b16a084385eaa9a2357ad9c, type: 3}
   clipVolume: 1
+  statChangeType: 0
+  statChangeMultiplier: 0
+  statChangeDuration: 0

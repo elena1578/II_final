@@ -15,12 +15,10 @@ MonoBehaviour:
   roomID: 0
   isOverworldScene: 0
   music: {fileID: 8300000, guid: bce34dd6c404f704b920cd18e588efaa, type: 3}
-  musicVolume: 0.8
+  musicVolume: 0.7
   exits:
   - exitingTo: 2
     spawnPointID: 5
     targetRoom: {fileID: 11400000, guid: 99ff6f0607bc3c849ad56b0e680acce0, type: 2}
   enemySpawning:
     enemiesToSpawn: []
-    maxOverallSpawn: 0
-    minOverallSpawn: 0

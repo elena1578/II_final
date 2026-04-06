@@ -18,6 +18,7 @@ public class BattleManager : MonoBehaviour
     public bool HasActiveBattle { get; private set; }
     private const float fleeChance = 0.5f;
     private bool fleeSuccessful;
+    private const float sfxDelay = 0.75f;
 
     // runtime systems
     private TurnStateMachine turnStateMachine;
@@ -305,18 +306,42 @@ public class BattleManager : MonoBehaviour
 
             Debug.Log($"[BattleManager] {entry.actor.name} uses {entry.action.actionName}");
 
-            // 1. play action animation & sound + apply logic
+            // 1. play action animation
             float animTime = 0f;
             if (BattleAnimationController.instance != null)
                 animTime = BattleAnimationController.instance.PlayAction(entry.actor, entry.action, targets);
 
+            // 2. play action SFX
             if (entry.action.audioClip != null)
                 AudioManager.instance.PlaySFX(entry.action.audioClip, entry.action.clipVolume);
 
+            // 3. apply logic
             BattleActionResult result = UseAction(entry.actor, entry.action, targets);
-            if (result == null) continue;  // just in case
+            if (result == null) continue;
 
-            // 1a. trigger shake + spawn dmg digits if dmg'd
+            // 3a. play optional SFX depending on result
+            // heal
+            if (result.heal > 0)
+            {
+                yield return new WaitForSeconds(sfxDelay);
+                AudioManager.instance.PlayBattleHealSFX();
+            }
+
+            // 3b. stat up
+            if (result.statMultiplier > 1f)
+            {
+                yield return new WaitForSeconds(sfxDelay);
+                AudioManager.instance.PlayStatUpSFX();
+            }
+
+            // 3c. stat down
+            if (result.statMultiplier < 1f && result.statMultiplier > 0f)
+            {
+                yield return new WaitForSeconds(sfxDelay);
+                AudioManager.instance.PlayStatDownSFX();
+            }
+
+            // 4. trigger shake + spawn dmg digits if dmg'd
             if (result.didDamage)
             {
                 screenShake?.Shake(0.25f, result.didCrit ? 25f : 15f);
@@ -330,7 +355,7 @@ public class BattleManager : MonoBehaviour
                 }
             }
 
-            // 1b. if any targets died from this action, play death animation + slide off screen
+            // 5. if any targets died from this action, play death animation + slide off screen
             foreach (var target in result.targets)
             {
                 if (target != null && !target.isAlive && target.ui != null)
@@ -340,11 +365,11 @@ public class BattleManager : MonoBehaviour
                 }
             }
 
-            // 2. show battle dialog
+            // 6. show battle dialog
             BattleDialogManager.instance.Show(entry.action, result);
             yield return new WaitForSeconds(animTime);  // wait for animation to complete (def'd in BattleActionData)
 
-            // 3. wait for dialog to finish + small delay after
+            // 7. wait for dialog to finish + small delay after
             while (BattleDialogManager.instance.typing)
                 yield return null;
 
@@ -543,20 +568,24 @@ public class BattleManager : MonoBehaviour
             enemy.ui?.SlideOffScreen();
         }
         yield return new WaitForSeconds(1f);
-        
-        // 2. party victory animations
+
+        // 2. play victory music 
+        MusicFadeInOut.instance.CheckMusic(AudioManager.instance.victoryMusic, 0.75f);
+
+        // 3. party victory animations
         foreach (var actor in context.party)
         {
             if (!actor.isAlive) continue;
             actor.ui?.portraitAnimator.SetTrigger("victory");
+            actor.ui?.ResetLabelAndBackground();
         }
         yield return new WaitForSeconds(1f);
 
-        // 3. calc rewards
+        // 4. calc rewards
         battleResult.expEarned = CalculateEXP();
         battleResult.clamsEarned = CalculateClams();
 
-        // 4. show victory dialog
+        // 5. show victory dialog
         BattleDialogManager.instance.Show(
             "OMORI's party was victorious!\n" +
             $"You gained {battleResult.expEarned} EXP!\n" +
@@ -601,14 +630,17 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator HandleDefeatSequence()
     {
-        // 1. show defeat dialog
+        // 1. play defeat music
+        MusicFadeInOut.instance.CheckMusic(AudioManager.instance.defeatMusic, 0.75f);
+
+        // 2. show defeat dialog
         BattleDialogManager.instance.Show("OMORI's party was defeated...");
         while (BattleDialogManager.instance.typing)
             yield return null;
 
         yield return new WaitForSeconds(postDialogDelay);
 
-        // 2. return to title screen
+        // 3. return to title screen
         BattleTransitionManager.instance.ReturnToTitleScreen();
     }
 

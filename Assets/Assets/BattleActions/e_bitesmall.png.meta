@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: dcb5ff371b39e564588ff45afd4d8b6c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -984956670587213248
+    second: e_bitesmall_0
+  - first:
+      213: 6520028398035724425
+    second: e_bitesmall_1
+  - first:
+      213: -4026593115707260785
+    second: e_bitesmall_2
+  - first:
+      213: -6673800030626243277
+    second: e_bitesmall_3
+  - first:
+      213: 831438560208078635
+    second: e_bitesmall_4
+  - first:
+      213: -1999000407077033631
+    second: e_bitesmall_5
+  - first:
+      213: 184483727944594152
+    second: e_bitesmall_6
+  - first:
+      213: 3412545806249618325
+    second: e_bitesmall_7
+  - first:
+      213: 8310747371906186754
+    second: e_bitesmall_8
+  - first:
+      213: -6338626710305067128
+    second: e_bitesmall_9
+  - first:
+      213: 5867204971753254450
+    second: e_bitesmall_10
+  - first:
+      213: 7280090499289302142
+    second: e_bitesmall_11
+  - first:
+      213: 5065102192006004186
+    second: e_bitesmall_12
+  - first:
+      213: -6313500293521218405
+    second: e_bitesmall_13
+  - first:
+      213: 4345304125154473691
+    second: e_bitesmall_14
+  - first:
+      213: -7191348374142954636
+    second: e_bitesmall_15
+  - first:
+      213: 4899378415341812415
+    second: e_bitesmall_16
+  - first:
+      213: -7198556498027609284
+    second: e_bitesmall_17
+  - first:
+      213: 8655129001839103791
+    second: e_bitesmall_18
+  - first:
+      213: -8774336129383169415
+    second: e_bitesmall_19
+  - first:
+      213: -5590633761155243131
+    second: e_bitesmall_20
+  - first:
+      213: -8930574546685709593
+    second: e_bitesmall_21
+  - first:
+      213: 2386196655420947310
+    second: e_bitesmall_22
+  - first:
+      213: 7405630179282871092
+    second: e_bitesmall_23
+  - first:
+      213: 2977680633328400867
+    second: e_bitesmall_24
+  - first:
+      213: -7296327892434915900
+    second: e_bitesmall_25
+  - first:
+      213: -1684566757711585055
+    second: e_bitesmall_26
+  - first:
+      213: 5249565570595424553
+    second: e_bitesmall_27
+  - first:
+      213: -4413658983083577102
+    second: e_bitesmall_28
+  - first:
+      213: -4261679028748865700
+    second: e_bitesmall_29
+  - first:
+      213: -5708862844824131351
+    second: e_bitesmall_30
+  - first:
+      213: 2470163486043523719
+    second: e_bitesmall_31
+  - first:
+      213: 2256927257850450025
+    second: e_bitesmall_32
+  - first:
+      213: -4469774588710195869
+    second: e_bitesmall_33
+  - first:
+      213: 9548834216909462
+    second: e_bitesmall_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: e_bitesmall_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 316
+        width: 102
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a6f7a602bb452f0800000000000000
+      internalID: -984956670587213248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_1
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 298
+        width: 102
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988e06e884bcb7a50800000000000000
+      internalID: 6520028398035724425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_2
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 252
+        width: 147
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f804c3325eaae18c0800000000000000
+      internalID: -4026593115707260785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_3
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 260
+        width: 102
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d18804b36e163a0800000000000000
+      internalID: -6673800030626243277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_4
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 277
+        width: 102
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27c3c127fcd98b00800000000000000
+      internalID: 831438560208078635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_5
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 271
+        width: 116
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169ef4e88bf1244e0800000000000000
+      internalID: -1999000407077033631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_6
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 241
+        width: 102
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e23afe19fa6f8200800000000000000
+      internalID: 184483727944594152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59be141945ccb5f20800000000000000
+      internalID: 3412545806249618325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 116
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20eba78d3b4b55370800000000000000
+      internalID: 8310747371906186754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 116
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88fa678279ca808a0800000000000000
+      internalID: -6338626710305067128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_10
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 112
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e22c506df7c6150800000000000000
+      internalID: 5867204971753254450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_11
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 122
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74c5deccb3180560800000000000000
+      internalID: 7280090499289302142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_12
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 126
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: addf1998b9bda4640800000000000000
+      internalID: 5065102192006004186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_13
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 130
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94e753fee0f168a0800000000000000
+      internalID: -6313500293521218405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_14
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 127
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd63fd4541f9d4c30800000000000000
+      internalID: 4345304125154473691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_15
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 124
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473502f41c2333c90800000000000000
+      internalID: -7191348374142954636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_16
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 105
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba3aa2f5b61ef340800000000000000
+      internalID: 4899378415341812415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 105
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c330c7f2107991c90800000000000000
+      internalID: -7198556498027609284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_18
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 114
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f0dc768f13d1870800000000000000
+      internalID: 8655129001839103791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_19
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 90
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9728d3c57cb4b3680800000000000000
+      internalID: -8774336129383169415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_20
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 89
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5832905f6341a62b0800000000000000
+      internalID: -5590633761155243131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_21
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 90
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e237a814c9301480800000000000000
+      internalID: -8930574546685709593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_22
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 87
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b379a27397d1120800000000000000
+      internalID: 2386196655420947310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_23
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 64
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433611e496516c660800000000000000
+      internalID: 7405630179282871092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 61
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9791472c8d25920800000000000000
+      internalID: 2977680633328400867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_25
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 59
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd64ae707c3eba90800000000000000
+      internalID: -7296327892434915900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 60
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e06b2685773f98e0800000000000000
+      internalID: -1684566757711585055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_27
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 61
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9290674b2143ad840800000000000000
+      internalID: 5249565570595424553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 67
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f077991a888fb2c0800000000000000
+      internalID: -4413658983083577102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_29
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 58
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f21b0b0897bd4c0800000000000000
+      internalID: -4261679028748865700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_30
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 55
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8e4de4d7b06c0b0800000000000000
+      internalID: -5708862844824131351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_31
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 54
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ac3c26a98c74220800000000000000
+      internalID: 2470163486043523719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_32
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 54
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96092102267325f10800000000000000
+      internalID: 2256927257850450025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_33
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 57
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d6cd581bb28f1c0800000000000000
+      internalID: -4469774588710195869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e_bitesmall_34
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 57
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a94873d9ce12000800000000000000
+      internalID: 9548834216909462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      e_bitesmall_0: -984956670587213248
+      e_bitesmall_1: 6520028398035724425
+      e_bitesmall_10: 5867204971753254450
+      e_bitesmall_11: 7280090499289302142
+      e_bitesmall_12: 5065102192006004186
+      e_bitesmall_13: -6313500293521218405
+      e_bitesmall_14: 4345304125154473691
+      e_bitesmall_15: -7191348374142954636
+      e_bitesmall_16: 4899378415341812415
+      e_bitesmall_17: -7198556498027609284
+      e_bitesmall_18: 8655129001839103791
+      e_bitesmall_19: -8774336129383169415
+      e_bitesmall_2: -4026593115707260785
+      e_bitesmall_20: -5590633761155243131
+      e_bitesmall_21: -8930574546685709593
+      e_bitesmall_22: 2386196655420947310
+      e_bitesmall_23: 7405630179282871092
+      e_bitesmall_24: 2977680633328400867
+      e_bitesmall_25: -7296327892434915900
+      e_bitesmall_26: -1684566757711585055
+      e_bitesmall_27: 5249565570595424553
+      e_bitesmall_28: -4413658983083577102
+      e_bitesmall_29: -4261679028748865700
+      e_bitesmall_3: -6673800030626243277
+      e_bitesmall_30: -5708862844824131351
+      e_bitesmall_31: 2470163486043523719
+      e_bitesmall_32: 2256927257850450025
+      e_bitesmall_33: -4469774588710195869
+      e_bitesmall_34: 9548834216909462
+      e_bitesmall_4: 831438560208078635
+      e_bitesmall_5: -1999000407077033631
+      e_bitesmall_6: 184483727944594152
+      e_bitesmall_7: 3412545806249618325
+      e_bitesmall_8: 8310747371906186754
+      e_bitesmall_9: -6338626710305067128
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

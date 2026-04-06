@@ -301,6 +301,7 @@ public class EnemyOverworldActor : GridMovementController
                 player.FreezeForBattle();
 
             Debug.Log("[EnemyOverworldActor] Beginning battle with " + data.name);
+            AudioManager.instance.PlaySFX(AudioManager.instance.battleStart, 0.5f);
             BattleTransitionManager.instance.StartBattle(data);
         }
     }

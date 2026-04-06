@@ -30,8 +30,8 @@ MonoBehaviour:
   animationTrigger: smile
   animationDuration: 2
   animationTarget: 0
-  audioClip: {fileID: 0}
-  clipVolume: 0.65
+  audioClip: {fileID: 8300000, guid: 2dcd26b060ae0074eaac42ce856b95f0, type: 3}
+  clipVolume: 0.812
   statChangeType: 2
   statChangeMultiplier: 0.5
   statChangeDuration: 3
