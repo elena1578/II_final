@@ -38,6 +38,7 @@ public class EnemyOverworldActor : GridMovementController
     private bool alerted = false;
     private Transform playerTransform;
     private bool enteringBattle = false;
+    private Camera cam;
 
 
     protected override void Awake()
@@ -301,7 +302,17 @@ public class EnemyOverworldActor : GridMovementController
                 player.FreezeForBattle();
 
             Debug.Log("[EnemyOverworldActor] Beginning battle with " + data.name);
-            AudioManager.instance.PlaySFX(AudioManager.instance.battleStart, 0.5f);
+
+            // audio & effects
+            AudioManager.instance?.PlaySFX(AudioManager.instance.battleStart, 0.5f);
+
+            cam = Camera.main;
+            if (cam != null)            
+            {
+                OverworldCameraScreenShake screenShake = cam.GetComponent<OverworldCameraScreenShake>();
+                screenShake?.Shake();
+            }
+
             BattleTransitionManager.instance.StartBattle(data);
         }
     }

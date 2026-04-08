@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4094990081883778536}
   - component: {fileID: 1327971450360667108}
+  - component: {fileID: 8792453697624892736}
   - component: {fileID: 1174264592507780576}
   - component: {fileID: 1844757958274779642}
   - component: {fileID: 78095925340639147}
@@ -48,6 +49,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa1f92c0767d4e43b74adaff4e1d332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OverworldCameraFollow
+--- !u!114 &8792453697624892736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5236534034307492167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757a86a8a3a2b5459e7b1ca0f2d168e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OverworldCameraScreenShake
+  defaultDuration: 0.55
+  defaultMagnitude: 0.1
 --- !u!114 &1174264592507780576
 MonoBehaviour:
   m_ObjectHideFlags: 0

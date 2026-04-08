@@ -13,6 +13,7 @@ public class SimpleEnemyOverworldActor : MonoBehaviour
     private SpriteRenderer sr;
     private Transform playerTransform;
     private bool enteringBattle = false;
+    private Camera cam;
 
     public void InitializeData(EnemyOverworldData enemyData)
     {
@@ -48,8 +49,17 @@ public class SimpleEnemyOverworldActor : MonoBehaviour
 
             // disable player movement
             PlayerOverworldController player = other.collider.GetComponent<PlayerOverworldController>();
-            if (player != null)
-                player.FreezeForBattle();
+            player?.FreezeForBattle();
+
+            // audio & effects
+            AudioManager.instance?.PlaySFX(AudioManager.instance.battleStart, 0.5f);
+
+            cam = Camera.main;
+            if (cam != null)            
+            {
+                OverworldCameraScreenShake screenShake = cam.GetComponent<OverworldCameraScreenShake>();
+                screenShake?.Shake();
+            }
 
             Debug.Log("[EnemyOverworldActor] Beginning battle with " + data.name);
             BattleTransitionManager.instance.StartBattle(data);

@@ -134,6 +134,13 @@ public abstract class GridMovementController : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
     }
 
+    /// <summary>
+    /// used in RoomChangeManager to give extra time for player to spawn in &
+    /// have physics etc. initialize prior to snapping
+    /// </summary>
+    /// <param name="controller"></param>
+    /// <param name="pos"></param>
+    /// <returns></returns>
     public IEnumerator ForceSnapToGridNextFrame(PlayerOverworldController controller, Vector3 pos)
     {
         yield return null;

@@ -275,9 +275,21 @@ public class BattleManager : MonoBehaviour
             // remove null/dead targets
             targets.RemoveAll(t => t == null || !t.isAlive);
 
+            // check to make sure there's at least one enemy alive before using heal, emotion, & status moves that target
+            // party memebers (since there's no point in using them if all targets are dead)
+            bool enemiesAlive = context.enemies.Exists(e => e.isAlive);
+             
+            if (!enemiesAlive && 
+                (entry.action.validTargets.HasFlag(TargetGroup.Self) ||
+                 entry.action.validTargets.HasFlag(TargetGroup.Allies)))
+            {
+                Debug.Log($"[BattleManager] {entry.actor.name}'s action cancelled (enemies all dead)");
+                continue;
+            }
+
             if (targets.Count == 0)
             {
-                // try retargeting if action was a single-target enemy action
+                // try retargeting if action was a single-target enemy attack action
                 if (!entry.action.multiTarget && entry.action.validTargets.HasFlag(TargetGroup.Enemies))
                 {
                     BattleActor newTarget = GetRandomValidEnemyTarget(entry.actor);

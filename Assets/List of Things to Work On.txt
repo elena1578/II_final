@@ -12,7 +12,8 @@ to-do:
 
 know bugs to fix:
 - player sometimes temporarily misaligned from grid when returning from battle
-- players still use emotion & stat actions even if all actors are dead (mid-round change)
+- sometimes overworld enemies get stuck up/down on walls; might be b/c they're leaving the spawn area zone?
+- fix conflict w/ quit button and go back button [in battle]
 
 
 done:
@@ -40,3 +41,4 @@ fixed bugs:
 - updating text parsing to support tier 2 and 3 emotions AND "{actor} cannot become more sad/happy/angry!" if max tier is met
 - player gets stuck sometimes when returning from battle -> overworld
 - if party targets one target and that target dies but another target is avaliable, move all remaining actions to that target
+- players still use emotion & stat actions even if all actors are dead (mid-round change)

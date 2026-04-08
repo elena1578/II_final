@@ -32,11 +32,11 @@ public class ClickBattleActorUI : MonoBehaviour, IPointerClickHandler, IPointerE
         if (!TargetingController.instance.IsTargeting)
             return;
 
-        if (actor == null || !actor.isAlive)  // can't select if null/dead
+        if (actor == null || !actor.isAlive)
             return;
 
         TargetingController.instance.SelectTarget(actor);
-        Debug.Log($"[ClickBattleActorUI] Clicked {actor.name} | waiting: {TargetingController.instance.IsTargeting} | targetable: {targetable}");
+        // Debug.Log($"[ClickBattleActorUI] Clicked {actor.name}, targetable: {targetable}");
     }
 
 

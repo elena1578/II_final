@@ -45,18 +45,18 @@ public class TargetingController : MonoBehaviour
         if (!IsTargeting)
             return;
 
-        BattleUIManager ui = BattleManager.instance.uiManager;
-
         IsTargeting = false;
 
-        // reset command buttons to main commands after selecting target
-        mainCommandButtons.PostSkillSelection(); 
+        BattleUIManager ui = BattleManager.instance.uiManager;
+        mainCommandButtons.PostSkillSelection();  // reset command buttons to main commands after selecting target
 
+        // disable targeting capabilities
         ui.EnableEnemyTargeting(false);
         ui.EnableAllyTargeting(false);
 
         var callback = onTargetSelected;
         callback?.Invoke(target);
+        AudioManager.instance.PlaySelectSFX();
 
         // reset targeting state
         onTargetSelected = null;

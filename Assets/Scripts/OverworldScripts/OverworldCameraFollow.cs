@@ -8,6 +8,7 @@ public class OverworldCameraFollow : MonoBehaviour
     private float camHalfHeight;
     private float camHalfWidth;
     private float minX, maxX, minY, maxY;
+    private Vector3 shakeOffset;
 
     private void Awake()
     {
@@ -26,6 +27,8 @@ public class OverworldCameraFollow : MonoBehaviour
         FindPlayer();
         InitializeCameraBounds();
     }
+
+    public void SetShakeOffset(Vector3 offset) => shakeOffset = offset;
 
     private void FindPlayer()
     {
@@ -69,6 +72,6 @@ public class OverworldCameraFollow : MonoBehaviour
         float clampedX = Mathf.Clamp(targetX, minX + camHalfWidth, maxX - camHalfWidth);
         float clampedY = Mathf.Clamp(targetY, minY + camHalfHeight, maxY - camHalfHeight);
 
-        transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+        transform.position = new Vector3(clampedX, clampedY, transform.position.z) + shakeOffset;
     }
 }
