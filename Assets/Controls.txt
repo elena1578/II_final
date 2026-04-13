@@ -2,6 +2,7 @@
 
 WASD/Arrow Keys: Move
 Shift/Control (press/toggle on/off): Sprint
+E (currently only w/ picnic basket object): Interact
 
 --- Battle ---
 

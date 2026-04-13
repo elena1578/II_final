@@ -17,12 +17,21 @@ public class QuittingCanvas : MonoBehaviour
         }
         else
             Destroy(gameObject);
+    }
 
+    private void OnEnable()
+    {
         GameManager.OnStartingQuitHold += ShowQuittingCanvas;
         GameManager.OnCancelingQuitHold += HideQuittingCanvas;
     }
+
+    private void OnDisable()
+    {
+        GameManager.OnStartingQuitHold -= ShowQuittingCanvas;
+        GameManager.OnCancelingQuitHold -= HideQuittingCanvas;
+    }
     
-    void Start()
+    private void Start()
     {
         // pause animation
         Animator animator = GetComponent<Animator>();
@@ -32,6 +41,10 @@ public class QuittingCanvas : MonoBehaviour
 
     private void ShowQuittingCanvas()
     {
+        RoomManager.GetRoomFromActiveScene();
+        if (RoomManager.GetRoomFromActiveScene()?.roomID == RoomData.RoomID.BattleRoom_00)
+            return;
+        
         if (canvasGroup == null)
             canvasGroup = GetComponent<CanvasGroup>();
         canvasGroup.alpha = 1f;

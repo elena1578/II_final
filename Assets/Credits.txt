@@ -1,1 +1,2 @@
 Game concept, sprites, SFX, and music: OMOCAT/OMORI 
+"Quitting..." text sprite: Toby Fox/UNDERTALE

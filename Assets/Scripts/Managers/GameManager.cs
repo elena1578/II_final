@@ -55,14 +55,14 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void QuitGameSession()
     {
-        Debug.Log("[GameManager] Quitting game...");
+        RoomManager.GetRoomFromActiveScene();
+        if (RoomManager.GetRoomFromActiveScene()?.roomID == RoomData.RoomID.BattleRoom_00)
+            return;
 
 #if UNITY_EDITOR
-      // stop play mode if in editor
-      UnityEditor.EditorApplication.isPlaying = false;
+        UnityEditor.EditorApplication.isPlaying = false;  // stop play mode if in editor
 #else
-        // quit application if built
-        Application.Quit();
+        Application.Quit();  // quit application if built
 #endif
     }
 }
