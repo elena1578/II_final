@@ -4,6 +4,7 @@ priorities for milestone:
 
 
 to-do:
+[optional / stretch goals]
 - animations need to move depending on where enemy is/who is being targeted
 - animations for enemy actions
 - battle start transition update/polish

@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -2044783895
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6112249517942510374, guid: 34fc769cf4831804b88224372609d364, type: 3}
@@ -162,7 +162,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerOverworldController
   walkSpeed: 1.1
-  sprintSpeed: 1.75
+  sprintSpeed: 2.1
+  interactAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a83e0cb0-8c0a-4c4d-8b04-7617e7b6c98b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!70 &4956903681935393239
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
