@@ -209,6 +209,13 @@ public class BattleManager : MonoBehaviour
 
     public void OnPlayerSelectedAction(BattleActionData actionData)
     {
+        // skip targeting completely if action is multi-target
+        if (actionData.multiTarget)
+        {
+            CommitAction(actionData, null);
+            return;
+        }
+        
         if (actionData.validTargets != TargetGroup.None)
         {
             TargetingController.instance.BeginTargeting(context.currentActor, actionData, OnTargetSelected);
@@ -268,9 +275,15 @@ public class BattleManager : MonoBehaviour
                 continue;
 
             // determine targets for action
-            List<BattleActor> targets = entry.target != null 
-                ? new List<BattleActor> { entry.target } 
-                : context.GetActionTargets(entry.actor, entry.action);
+            // check if multi-target, if yes, get all valid targets based on action's valid target group
+            // if no, use targeted enemy or get single target based on valid target group
+            List<BattleActor> targets;
+            if (entry.action.multiTarget)
+                targets = context.GetActionTargets(entry.actor, entry.action);
+            else if (entry.target != null)
+                targets = new List<BattleActor> { entry.target };
+            else
+                targets = context.GetActionTargets(entry.actor, entry.action);
 
             // remove null/dead targets
             targets.RemoveAll(t => t == null || !t.isAlive);

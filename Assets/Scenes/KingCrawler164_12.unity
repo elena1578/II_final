@@ -4143,7 +4143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1900548104859450384, guid: 6a665f9bada17bb4a8fb27eeaca1ffe3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.9
+      value: 5.891
       objectReference: {fileID: 0}
     - target: {fileID: 1900548104859450384, guid: 6a665f9bada17bb4a8fb27eeaca1ffe3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5606,6 +5606,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3717550196506902407, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_Size.x
+      value: 0.59588385
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717550196506902407, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6001034
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717550196506902407, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.04143405
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717550196506902407, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.42523813
+      objectReference: {fileID: 0}
     - target: {fileID: 5812429494586774210, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
       propertyPath: m_Name
       value: PicnicBasket
@@ -5649,6 +5665,22 @@ PrefabInstance:
     - target: {fileID: 7748857220255687477, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099079222571071684, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1762805
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099079222571071684, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2210479
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099079222571071684, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.051028967
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099079222571071684, guid: ba85105d692f2ff448ea6ab53524d391, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.42033267
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

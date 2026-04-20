@@ -11,7 +11,6 @@ to-do:
 
 know bugs to fix:
 - rare bear battle doesn't save location/causes player to get stuck
-- rebound doesn't hit all enemies
 
 
 done:
@@ -45,3 +44,4 @@ fixed bugs:
 - fix conflict w/ quit button and go back button [in battle]
 - sometimes overworld enemies get stuck up/down on walls; might be b/c they're leaving the spawn area zone?
 - enemy battle action table not calc'ing properly (= default action only used)
+- rebound doesn't hit all enemies

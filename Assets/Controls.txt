@@ -1,6 +1,6 @@
 --- General (Overworld & Battle) ---
 
-Hold escape: Quit (both in editor & build)
+Hold Escape: Quit (both in editor & build)
 F11: Fullscreen
 
 --- Overworld ---
