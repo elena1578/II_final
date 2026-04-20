@@ -30,6 +30,8 @@ done:
 - sfx for enemy actions
 - fullscreen toggle in options on title screen (+ f11 key function)
 - allow player to back out upon reaching select target part of battle turn
+- loading screen if loads take awhile
+- screen darkening trigger sequence in lead up to king crawler
 
 fixed bugs:
 - {target} takes {damage} repeating twice for last acting party member
