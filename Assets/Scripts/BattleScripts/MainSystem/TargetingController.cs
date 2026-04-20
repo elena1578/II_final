@@ -63,4 +63,28 @@ public class TargetingController : MonoBehaviour
         PendingAction = null;
         actingActor = null;
     }
+
+    public void CancelTargeting()
+    {
+        if (!IsTargeting)
+            return;
+
+        IsTargeting = false;
+
+        BattleUIManager ui = BattleManager.instance.uiManager;
+        mainCommandButtons.PostSkillSelection();  // reset command buttons to main commands after canceling
+
+        // disable targeting capabilities
+        ui.EnableEnemyTargeting(false);
+        ui.EnableAllyTargeting(false);
+
+        // restore planning prompt
+        if (actingActor != null)
+            BattleDialogManager.instance.ShowPlanningPrompt(actingActor);
+
+        // reset targeting state
+        onTargetSelected = null;
+        PendingAction = null;
+        actingActor = null;
+    }
 }

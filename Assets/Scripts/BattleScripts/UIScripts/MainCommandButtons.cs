@@ -34,7 +34,9 @@ public class MainCommandButtons : MonoBehaviour
 
     private void OnBackInput(InputAction.CallbackContext context)
     {
-        if (secondaryCommandCanvasGroup.interactable)
+        if (TargetingController.instance.IsTargeting)
+            TargetingController.instance.CancelTargeting();
+        else if (secondaryCommandCanvasGroup.interactable)
         {
             HideSecondaryCommands();
             ShowMainCommands();

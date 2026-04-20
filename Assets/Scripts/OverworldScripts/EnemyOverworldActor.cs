@@ -229,7 +229,6 @@ public class EnemyOverworldActor : GridMovementController
         }
     }
 
-    // this is slightly outdated/broken (i.e. fix animation flags to be more sim to playercontroller)
     private void UpdateWalkingAnimation()
     {
         bool isMoving = movement.sqrMagnitude > 0.01f;

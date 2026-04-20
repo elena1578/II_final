@@ -7,11 +7,11 @@ to-do:
 [optional / stretch goals]
 - battle start transition update/polish
 - remember which enemies were spawned in a room when returning to it & respawn them (removing the defeated enemy)
-- allow player to back out upon reaching select target part of battle turn
 
 
 know bugs to fix:
 - rare bear battle doesn't save location/causes player to get stuck
+- rebound doesn't hit all enemies
 
 
 done:
@@ -29,6 +29,8 @@ done:
 - curveball bat action
 - battle victory & defeat music (pause & override battle music so it can fade out properly)
 - sfx for enemy actions
+- fullscreen toggle in options on title screen (+ f11 key function)
+- allow player to back out upon reaching select target part of battle turn
 
 fixed bugs:
 - {target} takes {damage} repeating twice for last acting party member
@@ -43,4 +45,3 @@ fixed bugs:
 - fix conflict w/ quit button and go back button [in battle]
 - sometimes overworld enemies get stuck up/down on walls; might be b/c they're leaving the spawn area zone?
 - enemy battle action table not calc'ing properly (= default action only used)
-- fullscreen toggle in options on title screen (+ f11 key function)
