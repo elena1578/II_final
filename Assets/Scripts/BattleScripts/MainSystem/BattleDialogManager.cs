@@ -10,7 +10,11 @@ public class BattleDialogManager : MonoBehaviour
     public static BattleDialogManager instance;
 
     [SerializeField] private TextMeshProUGUI text;
-    [SerializeField] private float typeSpeed = 0.04f;
+#if UNITY_EDITOR
+    private float typeSpeed = 0.02f;
+#else
+    private float typeSpeed = 0.008f;  // text speed is slower in build for some reason so increase
+#endif
 
     private Coroutine typingRoutine;
     public bool typing { get; private set; }

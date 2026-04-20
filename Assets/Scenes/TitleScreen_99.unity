@@ -1417,6 +1417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2024143274}
+  - component: {fileID: 2024143276}
   - component: {fileID: 2024143273}
   - component: {fileID: 2024143272}
   - component: {fileID: 2024143275}
@@ -1545,6 +1546,18 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &2024143276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024143271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9c26b5f46ccef4094baec9f3eafaf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyCamera
 --- !u!1001 &9151935312676941225
 PrefabInstance:
   m_ObjectHideFlags: 0

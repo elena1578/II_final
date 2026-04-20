@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+#if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_STANDALONE_LINUX
+using System.Collections;
+#endif
 
 
 public class OverworldCameraFollow : MonoBehaviour
@@ -34,11 +37,33 @@ public class OverworldCameraFollow : MonoBehaviour
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
+#if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_STANDALONE_LINUX
+        StartCoroutine(WaitUntilPlayerExists());
+    }
+#else
         if (player != null)
             target = player.transform;
         else
             Debug.LogWarning("[CameraFollow] Player not found");
     }
+#endif
+
+#if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_STANDALONE_LINUX
+    private IEnumerator WaitUntilPlayerExists()
+    {
+        while (target == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                target = player.transform;
+                Debug.Log("[CameraFollow] Player found, starting to follow");
+                yield break;
+            }
+            yield return null;  // wait for next frame
+        }
+    }
+#endif
 
     private void InitializeCameraBounds()
     {

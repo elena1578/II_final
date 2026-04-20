@@ -1,4 +1,3 @@
-#if UNITY_EDITOR
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -6,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class BattleDebugTool : MonoBehaviour
 {
+#if UNITY_EDITOR
     [Header("Debug Party")]
     public List<CharacterBattleData> party;
 
@@ -27,5 +27,6 @@ public class BattleDebugTool : MonoBehaviour
         Debug.Log("[BattleDebugTool] Starting debug battle");
         BattleManager.instance.StartBattle(party, enemies);
     }
-}
 #endif
+}
+

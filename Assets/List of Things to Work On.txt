@@ -5,14 +5,12 @@ priorities for milestone:
 
 to-do:
 [optional / stretch goals]
-- animations need to move depending on where enemy is/who is being targeted
-- animations for enemy actions
 - battle start transition update/polish
 - remember which enemies were spawned in a room when returning to it & respawn them (removing the defeated enemy)
 
 
 know bugs to fix:
-- player sometimes temporarily misaligned from grid when returning from battle
+- king might only be picking default action for some reason, check how table is working
 - sometimes overworld enemies get stuck up/down on walls; might be b/c they're leaving the spawn area zone?
 
 
