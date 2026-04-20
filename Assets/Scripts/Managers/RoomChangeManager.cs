@@ -107,8 +107,25 @@ public class RoomChangeManager : MonoBehaviour
     private IEnumerator EnterRoomRoutine(RoomData targetRoom, RoomData.SpawnPointID spawnPointID)
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(targetRoom.roomID.ToString());  // e.g., "Entrance153_01"
+
+        // show loading screen if load takes awhile 
+        float timer = 0f;
+        bool loadingShown = false;
+        float loadingDelay = 0.4f;
+
         while (!asyncLoad.isDone)
+        {
+            timer += Time.deltaTime;
+
+            if (!loadingShown && timer >= loadingDelay)
+            {
+                LoadingScreen.instance?.Show();
+                loadingShown = true;
+            }
+
             yield return null;
+        }
+        LoadingScreen.instance?.Hide();
 
         // place player immediately after scene loads prior to fade out
         if (targetRoom.isOverworldScene)
@@ -210,8 +227,25 @@ public class RoomChangeManager : MonoBehaviour
     private IEnumerator ReturnToRoomRoutine(RoomData targetRoom, Vector3 playerPosition)
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(targetRoom.roomID.ToString());  // e.g., "Entrance153_01"
+
+        // show loading screen if load takes awhile 
+        float timer = 0f;
+        bool loadingShown = false;
+        float loadingDelay = 0.4f;
+
         while (!asyncLoad.isDone)
+        {
+            timer += Time.deltaTime;
+
+            if (!loadingShown && timer >= loadingDelay)
+            {
+                LoadingScreen.instance?.Show();
+                loadingShown = true;
+            }
+
             yield return null;
+        }
+        LoadingScreen.instance?.Hide();
 
         // freeze enemies for a few seconds after returning from battle to prevent immediate re-entering
         EnemyOverworldSpawner spawner = FindFirstObjectByType<EnemyOverworldSpawner>();
