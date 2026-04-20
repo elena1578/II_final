@@ -82,14 +82,27 @@ public class OverworldAStarPathfinder : MonoBehaviour
         open.Add(startNode);
 
         // run A* search until path is found or no more nodes to check
+        int i = 0;
+        int maxI = 500;
+
         while (open.Count > 0)
         {
+            i++;
+            if (i > maxI)
+            {
+                Debug.LogWarning("[OverworldAStarPathfinder] Max iterations reached in FindPath");
+                return null;
+            }
+            
             PathNode current = open[0];
 
             // find node in open list w/ lowest total cost
             foreach (var node in open)
-                if (node.totalCost < current.totalCost)
+            {
+                if (node.totalCost < current.totalCost || 
+                (node.totalCost == current.totalCost && node.estimatedDistanceToGoal < current.estimatedDistanceToGoal))
                     current = node;
+            }
 
             // move current node from open list -> closed list
             open.Remove(current);
@@ -123,11 +136,16 @@ public class OverworldAStarPathfinder : MonoBehaviour
                 neighbor.parent = current;  // remember which node led to this one (used when reconstructing path)
 
                 // if neighbor is already in open list w/ lower total cost, skip adding
-                bool alreadyOpen = open.Exists(n => n.gridPos == neighborPos);
-                if (alreadyOpen)
-                    continue;
+                // however, if new path to neighbor is cheaper, update existing node's costs & parent
+                PathNode existingNode = open.Find(n => n.gridPos == neighborPos);
 
-                open.Add(neighbor); 
+                if (existingNode == null)
+                    open.Add(neighbor);
+                else if (neighbor.distanceFromStart < existingNode.distanceFromStart)
+                {
+                    existingNode.distanceFromStart = neighbor.distanceFromStart;
+                    existingNode.parent = current;
+                }
             }
         }
         return null;
