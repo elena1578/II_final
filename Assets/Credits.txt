@@ -1,2 +1,3 @@
 Game concept, sprites, SFX, and music: OMOCAT/OMORI 
 "Quitting..." text sprite: Toby Fox/UNDERTALE
+Checkmark sprite in Options menu: Henry Software via itch.io (https://henrysoftware.itch.io/pixel-interface)
