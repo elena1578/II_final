@@ -28,47 +28,67 @@ public class EnemyBattleActor : BattleActor
     }
 
     public override BattleActionData DecideAction(BattleContext context)
-    {          
-        // sort by priority (lowest number = highest priority)
-        // for OrderBy: https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.orderby?view=net-8.0
-        // in this context, result = sorted list of EnemyAI rules:
-        // r = each individual EnemyAI rule, r.priorityNumber = what the list is being sorted by
-        var sortedRules = enemyData.actionAI.OrderBy(r => r.priorityNumber);
+    {
+        var validRules = enemyData.actionAI
+            .Where(r => r.action != null)
+            .ToList();
 
-        foreach (var rule in sortedRules)
+        // 1. build weighted pool
+        float totalWeight = 0f;
+        List<(EnemyAI rule, float weight)> weighted = new();
+
+        foreach (var rule in validRules)
         {
-            if (rule.action == null)
+            if (rule.requireHpBelow && hpPercent > rule.hpBelowPercent)
                 continue;
 
-            // HP conditional
-            if (rule.requireHpBelow)
-            {
-                if (hpPercent > rule.hpBelowPercent)
-                    continue;
-            }
+            float weight = GetEmotionWeight(rule);
+            if (weight <= 0f)
+                continue;
 
-            // check if last action has been reached, if so, guarantee use
-            if (rule.alwaysUseIfReached)
-                return rule.action;
-
-            float chance = GetEmotionChance(rule);
-
-            if (Random.value < chance)
-                return rule.action;
+            totalWeight += weight;
+            weighted.Add((rule, weight));
         }
 
-        return enemyData.defaultAction;  // fallback if no rules are met
+        // 2. weighted selection
+        if (totalWeight > 0f)
+        {
+            float roll = Random.Range(0f, totalWeight);
+            float current = 0f;
+
+            foreach (var (rule, weight) in weighted)
+            {
+                current += weight;
+                if (roll <= current)
+                    return rule.action;
+            }
+        }
+
+        // 3. fallback to last (always-use) rule (if exists, if not, just default action)
+        foreach (var rule in validRules)
+        {
+            if (!rule.alwaysUseIfReached)
+                continue;
+
+            if (rule.requireHpBelow && hpPercent > rule.hpBelowPercent)
+                continue;
+
+            return rule.action;
+        }
+
+        return enemyData.defaultAction;
     }
 
-    private float GetEmotionChance(EnemyAI rule)
+    private float GetEmotionWeight(EnemyAI rule)
     {
-        return currentEmotion switch
+        string group = EmotionSystem.GetEmotionGroupingText(currentEmotion);
+
+        return group switch
         {
-            EmotionType.Neutral => rule.neutralChance,
-            EmotionType.Happy => rule.happyChance,
-            EmotionType.Sad => rule.sadChance,
-            EmotionType.Angry => rule.angryChance,
-            _ => rule.neutralChance  // default to neutral chance if somehow emotion is invalid
+            "Happy" => rule.happyChance,
+            "Sad" => rule.sadChance,
+            "Angry" => rule.angryChance,
+            _ => rule.neutralChance
         };
     }
 }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleActionData
   actionName: 9
   actionType: 2
-  validTargets: 0
+  validTargets: 1
   multiTarget: 0
   alwaysMoveFirst: 0
   battleLogText: '{actor} happily scuttles around. It was really cute!'
