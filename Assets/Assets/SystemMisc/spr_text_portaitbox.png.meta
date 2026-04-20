@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 8246d0fe381399f4a836b7a0945d3337
+guid: e1d6902becbd1174880b3ff93a0e520b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6960346610263140286
-    second: spr_omori_titlescreen_0
-  - first:
-      213: -8051978662262086429
-    second: spr_omori_titlescreen_1
-  - first:
-      213: -2091508790370213467
-    second: spr_omori_titlescreen_2
+      213: 682556953327798486
+    second: spr_text_portaitbox_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -81,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,67 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spr_omori_titlescreen_0
+      name: spr_text_portaitbox_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 233
-        height: 351
+        width: 257
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb724525d5e189060800000000000000
-      internalID: 6960346610263140286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_omori_titlescreen_1
-      rect:
-        serializedVersion: 2
-        x: 236
-        y: 0
-        width: 234
-        height: 351
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e4e7d06110a14090800000000000000
-      internalID: -8051978662262086429
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_omori_titlescreen_2
-      rect:
-        serializedVersion: 2
-        x: 473
-        y: 0
-        width: 235
-        height: 351
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a1606126d779f2e0800000000000000
-      internalID: -2091508790370213467
+      spriteID: 6d88316ceede87900800000000000000
+      internalID: 682556953327798486
       vertices: []
       indices: 
       edges: []
@@ -201,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 287366e3be2a37b4b85351bcf923d113
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -209,13 +159,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":236.0,"y":351.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      spr_omori_titlescreen_0: 6960346610263140286
-      spr_omori_titlescreen_1: -8051978662262086429
-      spr_omori_titlescreen_2: -2091508790370213467
+      spr_text_portaitbox_0: 682556953327798486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

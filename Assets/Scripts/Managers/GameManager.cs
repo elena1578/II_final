@@ -34,19 +34,27 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         var quitAction = new InputAction(binding: "<Keyboard>/escape", interactions: "hold(duration=2)");
+        var fullscreenAction = new InputAction(binding: "<Keyboard>/f11", interactions: "press");
 
+        // quit
         quitAction.started += ctx => OnStartingQuitHold();
         quitAction.performed += ctx => QuitGameSession();
         quitAction.canceled += ctx => OnCancelingQuitHold();
 
+        // fullscreen toggle
+        fullscreenAction.performed += ctx => Screen.fullScreen = !Screen.fullScreen;
+
         quitAction.Enable();
-        Debug.Log("[GameManager] Can now quit game session by holding Escape for 2 seconds");
+        fullscreenAction.Enable();
+        // Debug.Log("[GameManager] Can now quit game session by holding Escape for 2 seconds");
     }
 
     private void OnDisable()
     {
         var quitAction = new InputAction(binding: "<Keyboard>/escape", interactions: "hold(duration=2)");
+        var fullscreenAction = new InputAction(binding: "<Keyboard>/f11", interactions: "press");
         quitAction.Disable();
+        fullscreenAction.Disable();
     }
 
     /// <summary>
