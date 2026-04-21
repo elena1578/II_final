@@ -6094,6 +6094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DarknessUI
   darknessOverlayImage: {fileID: 589206651}
   vignetteImage: {fileID: 1972690339}
+  transitionSpeed: 0.75
 --- !u!1001 &763314563
 PrefabInstance:
   m_ObjectHideFlags: 0
