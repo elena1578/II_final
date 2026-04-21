@@ -664,6 +664,7 @@ public class BattleManager : MonoBehaviour
             yield return null;
 
         yield return new WaitForSeconds(postDialogDelay);
+        yield return new WaitForSeconds(4f);  // extra wait time
 
         // 3. return to title screen
         BattleTransitionManager.instance.ReturnToTitleScreen();
