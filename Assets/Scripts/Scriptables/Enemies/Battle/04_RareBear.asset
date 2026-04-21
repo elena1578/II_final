@@ -15,12 +15,11 @@ MonoBehaviour:
   characterName: 7
   battleSprite: {fileID: 3218662090380093037, guid: c1a6cb5e7271d6443879b86b084e52aa, type: 3}
   animatorController: {fileID: 9100000, guid: 1d73df738fefa4549b73c2083c69a1ba, type: 2}
-  allowDuplicateSpawn: 0
   setCustomWidthHeight: 0
   customWidth: 0
   customHeight: 0
-  setCustomTransformPosition: 0
-  customTransformPosition: {x: 0, y: 0, z: 0}
+  setCustomTransformPosition: 1
+  customTransformPosition: {x: 0, y: -75, z: 0}
   music: {fileID: 0}
   musicVolume: 1
   baseHP: 700
@@ -28,6 +27,7 @@ MonoBehaviour:
   baseAttack: 15
   baseDefense: 15
   baseSpeed: 10
+  maxEmotionTier: 1
   expReward: 350
   clamReward: 20
   attackActions:

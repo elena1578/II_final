@@ -481,6 +481,7 @@ public class BattleManager : MonoBehaviour
     private void ResolveEmotions()
     {
         // i don't think i need this function anymore but will keep here just in case
+        // (yeah i don't really need this but is easier just to keep this here)
     }
    
     /// <summary>

@@ -195,6 +195,7 @@ public class BattleActorUI : MonoBehaviour
         boundActor.SetEmotion(EmotionType.Toast);  // override emotion to toast
         
         portraitAnimator.ResetTrigger("hurt");
+        portraitAnimator?.ResetTrigger("succumb");  // only applicable for omori
         portraitAnimator.SetBool("toast", true);
     }
 

@@ -9,7 +9,6 @@ to-do:
 - remember which enemies were spawned in a room when returning to it & respawn them (removing the defeated enemy)
 
 
-
 done:
 - party member skill descriptions + juice cost in selection menu
 - if fleeing fails, skip actor's turn/count as their action
@@ -44,3 +43,4 @@ fixed bugs:
 - sometimes overworld enemies get stuck up/down on walls; might be b/c they're leaving the spawn area zone?
 - enemy battle action table not calc'ing properly (= default action only used)
 - rebound doesn't hit all enemies
+- rare bear not sliding down off screen (was due to setting anchored position in the animations so it was overriding local pos set in coroutine)
