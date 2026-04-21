@@ -9,9 +9,6 @@ to-do:
 - remember which enemies were spawned in a room when returning to it & respawn them (removing the defeated enemy)
 
 
-know bugs to fix:
-- rare bear battle doesn't save location/causes player to get stuck
-
 
 done:
 - party member skill descriptions + juice cost in selection menu
